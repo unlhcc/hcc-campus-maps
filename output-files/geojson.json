@@ -2403,8 +2403,10 @@
                 "CAMPUS": "UNL-EAST",
                 "location": "East Campus",
                 "id": "ACB",
-                "departments": [],
-                "fill": "#808080"
+                "departments": [
+                    "Agricultural & Research Division"
+                ],
+                "fill": "#FF0000"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2556,8 +2558,10 @@
                 "CAMPUS": "UNL-CITY",
                 "location": "City Campus",
                 "id": "ADMN",
-                "departments": [],
-                "fill": "#808080"
+                "departments": [
+                    "Sponsored Programs"
+                ],
+                "fill": "#FF0000"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2726,10 +2730,8 @@
                 "CAMPUS": "UNL-EAST",
                 "location": "East Campus",
                 "id": "AGH",
-                "departments": [
-                    "Forensics"
-                ],
-                "fill": "#FF0000"
+                "departments": [],
+                "fill": "#808080"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3446,7 +3448,10 @@
                 "location": "City Campus",
                 "id": "ANDN",
                 "departments": [
-                    "Journalism and Mass Communications"
+                    "Advertising & Public Relations",
+                    "Journalism and Mass Communications",
+                    "Public Policy Center",
+                    "News-Editorial"
                 ],
                 "fill": "#FF0000"
             },
@@ -4828,6 +4833,7 @@
                 "id": "AVH",
                 "departments": [
                     "School of Computing",
+                    "Physical & Mathematics Dept",
                     "Mathematics"
                 ],
                 "fill": "#FF0000"
@@ -7374,8 +7380,10 @@
                 "CAMPUS": "UNL-CITY",
                 "location": "City Campus",
                 "id": "BURN",
-                "departments": [],
-                "fill": "#808080"
+                "departments": [
+                    "Psychology"
+                ],
+                "fill": "#FF0000"
             },
             "geometry": {
                 "type": "Polygon",
@@ -8679,8 +8687,7 @@
                 "location": "City Campus",
                 "id": "CEMA",
                 "departments": [
-                    "Theatre & Film",
-                    "Carson & Media Arts"
+                    "Theatre & Film"
                 ],
                 "fill": "#FF0000"
             },
@@ -10440,6 +10447,7 @@
                 "departments": [
                     "Education and Human Sciences",
                     "Child, Youth and Family Studies",
+                    "Nebraska Center for Research on Children, Youth, Families and Schools",
                     "Teaching, Learning and Teacher Education"
                 ],
                 "fill": "#FF0000"
@@ -19771,7 +19779,8 @@
                 "location": "East Campus",
                 "id": "FYH",
                 "departments": [
-                    "Agricultural Economics"
+                    "Agricultural Economics",
+                    "School of Natural Resources"
                 ],
                 "fill": "#FF0000"
             },
@@ -20623,7 +20632,8 @@
                 "location": "City Campus",
                 "id": "HAH",
                 "departments": [
-                    "Chemistry"
+                    "Chemistry",
+                    "Department of Chemistry and Biochemistry"
                 ],
                 "fill": "#FF0000"
             },
@@ -20760,7 +20770,6 @@
                 "departments": [
                     "School of Natural Resources",
                     "Biostatistics",
-                    "Applied Ecologys",
                     "Environmental Studies"
                 ],
                 "fill": "#FF0000"
@@ -27324,8 +27333,7 @@
                 "location": "City Campus",
                 "id": "JH",
                 "departments": [
-                    "Physics and Astronomy",
-                    "Astronomy"
+                    "Physics and Astronomy"
                 ],
                 "fill": "#FF0000"
             },
@@ -27839,8 +27847,10 @@
                 "CAMPUS": "UNL-EAST",
                 "location": "East Campus",
                 "id": "KEIM",
-                "departments": [],
-                "fill": "#808080"
+                "departments": [
+                    "Nebraska Statewide Arboretum - NFS"
+                ],
+                "fill": "#FF0000"
             },
             "geometry": {
                 "type": "Polygon",
@@ -30795,7 +30805,9 @@
                 "location": "City Campus",
                 "id": "LLS",
                 "departments": [
-                    "Information Technology Services"
+                    "Information Technology Services",
+                    "Network & Technology Services",
+                    "IT Security Services"
                 ],
                 "fill": "#FF0000"
             },
@@ -33640,8 +33652,10 @@
                 "CAMPUS": "UNL-EAST",
                 "location": "East Campus",
                 "id": "MUSH",
-                "departments": [],
-                "fill": "#808080"
+                "departments": [
+                    "4-H & Youth Development"
+                ],
+                "fill": "#FF0000"
             },
             "geometry": {
                 "type": "Polygon",
@@ -35427,6 +35441,8 @@
                 "departments": [
                     "Mechanical & Materials Engineering",
                     "Architectural Engineering",
+                    "Epscor",
+                    "Gerontology",
                     "Criminal Justice"
                 ],
                 "fill": "#FF0000"
@@ -36675,6 +36691,7 @@
                 "id": "OLDH",
                 "departments": [
                     "Political Science",
+                    "Arts and Sciences",
                     "Sociology",
                     "Anthropology",
                     "History"
@@ -38171,7 +38188,8 @@
                 "id": "PKI",
                 "departments": [
                     "School of Interdisciplinary Informatics",
-                    "Information Science & Technology"
+                    "Information Science & Technology",
+                    "ISQA"
                 ],
                 "fill": "#FF0000"
             },
@@ -57989,8 +58007,10 @@
                 "CAMPUS": "UNL-EAST",
                 "location": "East Campus",
                 "id": "VBS",
-                "departments": [],
-                "fill": "#808080"
+                "departments": [
+                    "School of Veterinary Medicine and Biomedical Sciences"
+                ],
+                "fill": "#FF0000"
             },
             "geometry": {
                 "type": "Polygon",
@@ -63457,8 +63477,10 @@
                 "CAMPUS": "UNL-CITY",
                 "location": "City Campus",
                 "id": "WHIT",
-                "departments": [],
-                "fill": "#808080"
+                "departments": [
+                    "Buffett & Childhood Institute"
+                ],
+                "fill": "#FF0000"
             },
             "geometry": {
                 "type": "Polygon",

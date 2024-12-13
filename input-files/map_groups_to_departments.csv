@@ -1,7 +1,7 @@
 Department,Revised_Department,Group_Name,Needs Revision,Notes,Building
 food science and technology,Food Science & Technology,%gladyshev%walter%benson%drose%jclarke%hutkinslab%hallenadams%ramertait%roselab%foodsafety%sinha%biopeptide%auchtunglab%yinlab%xulab%chaveslab%fdst396%izardlabhcc%fdst430%gomesneto2%fdst460%group1535%deehanlab,,,Food Innovation Center
 engineering,,%perez%li%amsl%statcybersec,yes,???,
-computer science and engineering,School of Computing,%swanson%elbaum%jiang%costello%ramamurthy%choueiry%srisa-an%deogun%samal%scott%reichenbach%cohen%cse856%lxu%vinod%vuran%cse435%radiology%bockelman%esquared%osg%nimbus%juancui%fnal_users%cse896%cse990%plantvision%yingresearch%cse990ying%dwyer%cse496dl%csce421821%hccdata%20180611test%cseos2g%nextt%seresl%csce465%raikesds%emse%mrhasanlab%cse479%bagheri%csesd%surge%cse465865%efuchstest%mygroup%unsat%purgatory%dweitzel%idealab%dyerlab%yaolab%nexttngran%sdhcc,,,
+computer science and engineering,School of Computing,%swanson%elbaum%jiang%costello%ramamurthy%choueiry%srisa-an%deogun%samal%scott%reichenbach%cohen%cse856%lxu%vinod%vuran%cse435%radiology%bockelman%esquared%osg%nimbus%juancui%fnal_users%cse896%cse990%plantvision%yingresearch%cse990ying%dwyer%cse496dl%csce421821%hccdata%20180611test%cseos2g%nextt%seresl%csce465%raikesds%emse%mrhasanlab%cse479%bagheri%csesd%surge%cse465865%efuchstest%mygroup%unsat%purgatory%dweitzel%idealab%dyerlab%yaolab%nexttngran%sdhcc,,,Avery Hall
 physics and astronomy,Physics and Astronomy,%starace%tsymbal%sellmyer%dominguez%hep%umstadter%snow%batelaan%belashchenko%ducharme%shadwick%gay%fabrikant%bloom%velev%centurion%kovalev%xuphysics%fuchs%yostgroup%ngoko%rskomski%tranthamkw%uiterwaallab%golfclass%awysocki%xuferrofilms%armstronggrp%phys360%galaxyimage,,,Theodore Jorgensen Hall
 research,School of Computing,%goddard%carriesgroup%hjkg,yes,??? - Not an official department,Avery Hall
 earth and atmospheric sciences,Earth and Atmospheric Sciences,%rowe%anderson%loope%ahouston%bigweather%oglesby%idb%vandenbroeke%gates%fritz%glimpert%metr908%dixon%haackerlab%chenclimate,,,Bessey Hall
@@ -14,7 +14,7 @@ agronomy & horticulture,Agronomy and Horticulture,%diestler%cassman%kcassman%tes
 ,,%narayanan%caldwell%merillium%chess%guest%wang%nopbs%stezowski%gdm%cusack%gaskell%allen%sridhar%parprog%rcfsrv%morc%nagiocmd%outreach%zhang%brand%bleak%t3-ku%t3-ksu%uno%unmccompchem,,,
 electrical and computer engineering,Electrical & Computer Engineering,%bahar%sayood%yang%hoffman%lu%han%wysocki%tellab%nianno%machines%markatlnk%balkir%schubert%otu%eevak%eenji%netthinker%qinghuilab%ecepsrg%cnsunl%pesl%imageslab%argyropoulos%harmslab%csce471%rfgroup%qphoxonics%cest4mri%vakilzadian,,,Scott Engineering Center
 educational media,Education and Human Sciences,%deallab,yes,???,Carolyn Pope Edwards Hall
-retirees,"Statistics, Physics & Astronomy",%jaecks%jaswal%dmarx,yes,??? - Not standard,
+retirees,Physics and Astronomy,%jaecks%jaswal%dmarx,yes,??? - Not standard,Theodore Jorgensen Hall
 agronomy and horticulture,Agronomy and Horticulture,%mackenzie%mower%entomology%amundsen%waters%baenziger%walia%lorenz%agrobinf%sattler%schachtmanlb%popcorn%grassini%schnablelab%staswick%stablefly%soybean%yerka%unlsbp%lindquist%twidwell%cropmodel%jyanglab%agro932%libaultlab%jarquin%sunflower%frelslab%holdinglab%maharjanlab%ricelab,,,Beadle Center
 earth & atmospheric sciences,Earth and Atmospheric Sciences,%chen%gates_eas%nasawrf,,,Bessey Hall
 chemical and biomolecular engineering,Chemical & Biomolecular Engineering,%bsbm%alexandrov%ssbio%chme412%focuslab%disharigroup%viljoen%bavarian%niulab,,,Othmer Hall
@@ -34,7 +34,7 @@ physics,Physics and Astronomy,%sabirianov%mei%gauss%komesugroup%hepph%honggroup%
 civil engineering-lincoln,Civil & Environmental Engineering,%nowak%yusongli%xuli%steelman%structures%cematerials%csong%celincolnsea%wittichlab%dadmiraal%sangster%skimlab%simlab%haghshenas%yfeng6%jeunlab%hawkinslab%herdeznoe%teixeiralab%huynhresgrp%eunresearch,,,Scott Engineering Center
 civil engineering,Civil & Environmental Engineering,%sicking%roygroup,,,Scott Engineering Center
 biological systems engineering,Biological Systems Engineering,%woldt%subbiah%hydro%agriwateruse%bsesensing%nres879%shigroup%bibalab%xqiaophrec%songlab%bai%biba%amilab%agdata%pannierlab%wachslab%manureteam%dappt%omarlab,,,Chase Hall
-"center for brain, biology and behavior",Psychology,%pytlikzillig%barbey,,,Stadium East
+"center for brain, biology and behavior",Psychology,%pytlikzillig%barbey,,,Burnett Hall
 center for biotechnology,Center for Biotechnology,%riethoven%unlkegg%biotech,yes,??? - Not an official department,Beadle Center
 psychology,Psychology,%lhoffman%templin%psyc943%tvalab%943%943%943%pedhealthlab%jjew1963%schuttelab%mccharguelab%bobbelli%dbrainlab%canlab%cnnlab%dschultz%adml%hubnctlab%nmblab%schwarblab,,,Stadium East
 mmi developmental neuroscience,Neurological Sciences,%smith,,,
@@ -67,24 +67,24 @@ pharmacology/exp neuroscience,Pharmacology & Experimental Neuroscience,%buchlab%
 supply chain management and analytics,Supply Chain Management and Analytics Department,%dbatur%ompro%lanych%xudatalab%scmahcccitil%egelresearch,,,Howard L. Hawks Hall
 nutrition and health sciences,Nutrition and Health Sciences,%malkaram%zempleni%chunglab%sulab%aliaktar%sathishkumar%yulab%sukumaranlab%vechettilab%borc%moreaulab%rasmussenlab,,,Leverton Hall
 animal science,Animal Science,%samodha%nielsen%spangler%rmlewis%millerburkey%yateslab%anscgenomics%morota%ciobanu%asci431%unlbeefgroup%asci832%jwoodlab%welfare%yijiexiong%sullivanlab%burkey%motenutrack%zhao%cupplab,,,Animal Science Complex
-epscor,Epscor,%eemarket,yes,,
+epscor,Epscor,%eemarket,yes,,Nebraska Hall
 biochemistry,Biochemistry,%sarath%jleelab%pblack%helikarlab%akramlab%dbecker%lzhang%roston%adamecgroup%harris%fatttlab%qssblab%cahoonlab%sunxhlab%lzhangbioc%rolab%mwilsonlab%khalimonchuk%vecchiolab%huanglab%romero%glowackalab%puniya,,,Beadle Center
 university libraries,University Libraries,%archcrg%unldr%libmediasvcs,,,Love Library North & Link
-physical sciences & mathematics dept,Physical & Mathematics Dept,%karr_wsc%peitzwsc,,,
+physical sciences & mathematics dept,Physical & Mathematics Dept,%karr_wsc%peitzwsc,,,Avery Hall
 pathology,Pathology,%kucuk_c%ma2021,,,
 entomology,Entomology,%miller%reeuento%louislab%usdaento%taylorflylab%mcmechanlab%velezarango%ento896%lpingault%japeterson%mondal,,,
 oral biology,Oral Biology,%oakley%petrolab,,,
-buffett early childhood institute,Buffett & Childhood Institute,%welch_g%tomtestgroup%dafsfs%xyz,yes,,
-network & technology services,Network & Technology Services,%wsc,yes,,
+buffett early childhood institute,Buffett & Childhood Institute,%welch_g%tomtestgroup%dafsfs%xyz,yes,,Prem S. Paul Research Center at Whittier School
+network & technology services,Network & Technology Services,%wsc,yes,,Love Library South
 center for brain biology and behavior,"Center for Brain, Biology & Behavior",%cb3%muncylab,yes,,Stadium East
 biochem and molecular biology,Biochem & Molecular Biology,%epigenomics%mottlab%steinke%dattalab%deeganlab%kumars%hydelab,,,
-advertising & public relations,Public Relations (Advertising),%bmwang,,,
-ctr on children families and the law,Ctr on Children Families & the Law,%ebrank,yes,,
+advertising & public relations,Advertising & Public Relations,%bmwang,,,Andersen Hall
+ctr on children families and the law,Psychology,%ebrank,yes,,Burnett Hall
 information assurance,Information Assurances,%skynet,,,
-arts and sciences,arts and sciences,%jockers%francisco%pilson%gladich,yes,,
+arts and sciences,Arts and Sciences,%jockers%francisco%pilson%gladich,yes,,Oldfather Hall
 radiology,Radiology,%bioimaging%unmcrads,,,
 health services res and admin,Health Services Research & Administration,%cophnayar%hsrahw,yes,UNMC,
-geriatrics,Geriatrics,%bonasera,,,
+geriatrics,Gerontology,%bonasera,,,Nebraska Hall
 research it office,"Department of Genetics, Cell Biology, and Anatomy",%unmccompen,yes,UNMC,
 mathematics and statistics,Mathematics,%frontiers%combin%kimek%kjklkjl%math420,,,Avery Hall
 sociology,Sociology,%jsmyth%kolson5%nsociology%snrglab%reachlab%olsonlab%jamy,,,Oldfather Hall
@@ -93,49 +93,49 @@ communication studies,Communication Studies,%solizrsrch,,,Louise Pound Hall
 educational psychology,Educational Psychology,%ebuhs2%mapacademy%edpsyc%edps971%cmccormick%clarkblablab%beelab%gormleylab%blablab,,,Teachers College Hall
 dem,Dem,%endocrine%desouza,yes,,
 raikes school,Raikes Schools,%guru,yes,,Kauffman Academic Residential Center
-4-h youth development,4-H & Youth Development,%guru,yes,,
+4-h youth development,4-H & Youth Development,%guru,yes,,Mussehl Hall
 educational administration,Educational Administration,%edadhighed%califfinaid,,,Teachers College Hall
-other department,Other Departments,%testgroup01,yes,,
+other department,Holland Computing Center,%testgroup01,yes,,Schorr Center
 plant pathology,Plant Pathology,%harrislab%everhartlab%nematologytp%herrlab%amitmitra%vanetten%hgrlab%alfanolab%microbiome%gadams3lab%wilsonlab%plptzeng%praccomp%rawilsonlab%bsigmon%corndiseases%rojasclab%kimlab%wegulolab,,,Plant Sciences Hall
 mathematics & statistics,Mathematics,%primedegconj,,,Avery Hall
-panhandle rsch and ext center,"Panhandle Research, Extension and Education Center",%altcropsprec,yes,,
+panhandle rsch and ext center,Agronomy and Horticulture,%altcropsprec,yes,,Beadle Center
 bureau business research,Bureau & Business Research,%bbrwscgroup%jjj%yyy,,,Howard L. Hawks Hall
 survey division - school of nat res,School of Natural Resources,%tadesse%gilmoregwlab,,,Hardin Hall
-water for food institute,Water & Food Institute,%waterforfood,yes,,
-henry doorly zoo,Henry & Doorly Zoo,%hdzoo,yes,???,
+water for food institute,School of Natural Resources,%waterforfood,yes,,Hardin Hall
+henry doorly zoo,Henry Doorly Zoo,%hdzoo,yes,???,
 biomechanics,Biomechanics,%biomechanics%yenteslab%huntlab%dotov%mjadidilab,,UNO,
 management information systems,Management,%halll,,,Howard L. Hawks Hall
 marketing and mis,Marketing,%taylor,,,Howard L. Hawks Hall
 radiation oncology,Radiation Oncology,%radonc%medphys%wanglabrad%leiclab%unmcradonc,,,
 journalism and mass comm,Journalism and Mass Communications,%cojmc,,,Andersen Hall
-vet and biomedical sciences,School of Veterinary Medicine and Biomedical Sciences,%keen918%barletta%reddy,,,
-natural resources,School of Natural Resources,%complexities,,,
+vet and biomedical sciences,School of Veterinary Medicine and Biomedical Sciences,%keen918%barletta%reddy,,,Veterinary Medicine and Biomedical Sciences Hall
+natural resources,School of Natural Resources,%complexities,,,Hardin Hall
 architecture,Architecture,%hemsath%archcomplab,,,Architecture Hall
 pharmacy practice,Pharmacy Practice and Science,%mcguire%fletcherlab,,,
-isqa,ISQA,%isqa8080%germonprez%rschuetzler%quality%chaas%citsci%tunixdl%mhealthhelp,yes,Should we spell this out? It's quite long.,
+isqa,ISQA,%isqa8080%germonprez%rschuetzler%quality%chaas%citsci%tunixdl%mhealthhelp,yes,Should we spell this out? It's quite long.,Peter Kiewit Institute
 npod,Nutrition and Health Sciences,%npodtest,,,Leverton Hall
 agronomy,Agronomy and Horticulture,%cornsoywater%microlab,,,Beadle Center
-public administration,Public Administrations,%nporesgrp,,,
+public administration,Public Administration,%nporesgrp,,,
 economics,Economics,%econfeng%btimpe%teckyongtan%zinmetrics%yuxiyao%econ981%uchejarrett%aghosh%yifangong%econmota,,,Howard L. Hawks Hall
 school of accountancy,Accountancy,%heritatony%downes,,,Howard L. Hawks Hall
 buros center for testing,Educational Psychology,%buros,,,Teachers College Hall
-agricultural research division,Agricultural & Research Division,%citbpheno,yes,,
+agricultural research division,Agricultural & Research Division,%citbpheno,yes,,Agricultural Communications Building
 neurosurgery,Neurosurgery,%aizenberg%gliskelab%kovachlab,,,
 computer science and information tech,School of Computing,%unklopers%csit499unk,,,Avery Hall
 "nebraska center for research on children, youth, families & schools","Child, Youth and Family Studies",%nkoziol,,,Carolyn Pope Edwards Hall
 classics and religious studies,Classical and Religious Studies,%greeksyntax,,,Louise Pound Hall
 university museum,School of Biological Sciences,%unsmgenomics,yes,School of Natural Resources too?,Manter Hall
 ag leadership educ and comm,School of Natural Resources,%plattebasin,,,Hardin Hall
-fee for service user,Fee & Serviceerimental User,%magdanz,yes,???,
+fee for service user,Fee For Service User,%magdanz,yes,???,
 internal medicine,Internal Medicine,%chatzizisis%kharbanda%rombergerlab%cbbl%brailitalab,,,
-special ed and communic disorders,Special Education and Communication Disorders,%nl3wanglab%dietschlab,,,
+special ed and communic disorders,Special Education and Communication Disorders,%nl3wanglab%dietschlab,,,Barkley Memorial Center
 epidemiology,Epidemiology,%lungcancer%farazilab%fauverlab,,UNMC department,
 nebraska food for health center,Food Science & Technology,%nfhc,,,Food Innovation Center
 business administration,Finance,%gfriesen,,,Howard L. Hawks Hall
 nebraska water center,Internal Medicine,%nwccray%mitralab,,UNMC department,
 nebraska state climate office,Earth and Atmospheric Sciences,%nscomeso,,,Bessey Hall
 department of accounting,Accountancy,%acctwu,,,Howard L. Hawks Hall
-nebraska innovation campus,Nebraska & Innovation Campus,%goodallergy%sanitation,yes,,
+nebraska innovation campus,Food Science & Technology,%goodallergy%sanitation,yes,,Food Innovation Center
 center for advanced land management information technologies,School of Natural Resources,%qilab,,,Hardin Hall
 new student programming,School of Computing,%pitlaresear,yes,???,Avery Hall
 food science & technology,Food Science & Technology,%farrp,,,Food Innovation Center
@@ -143,41 +143,41 @@ management,Management,%yjf%deeplearning%yujiajoya19%mirzo%lpoppo%mirzokhidjon,,,
 pediatrics,Pediatrics,%durdenlab%mahapatralab%archang%salomonlab,,,
 food science and technology / biochemistry,Food Science & Technology,%khplab,,,Food Innovation Center
 marketing,Marketing,%alokkumarmkt%qianchen%oiojiju%marketing%nataliemktg,,,Howard L. Hawks Hall
-applied ecology,Applied Ecologys,%wildecology%awesmlab,,,Hardin Hall
-university of nebraska public policy center,university of nebraska public policy center,%abdelmonem,yes,,
+applied ecology,School of Natural Resources,%wildecology%awesmlab,,,Hardin Hall
+university of nebraska public policy center,Public Policy Center,%abdelmonem,yes,,Andersen Hall
 computer and electronics engineering,Electrical & Computer Engineering,%hengletest%liulab,,,Scott Engineering Center
 cyber systems,Cyber Systems,%qolomanybash%hastings,,UNK department,
-school of veterinary medicine and biomedical sciences (svmbs),School of Veterinary Medicine and Biomedical Sciences,%xianglab,,,
+school of veterinary medicine and biomedical sciences (svmbs),School of Veterinary Medicine and Biomedical Sciences,%xianglab,,,Veterinary Medicine and Biomedical Sciences Hall
 anthropology,Anthropology,%wandsnider%heitman,,,Oldfather Hall
-astronomy,Astronomy,%testgroup2,,,Theodore Jorgensen Hall
-"ne ctr  rsrch on youth,fam and school","Nebraska Center for Research on Children, Youth, Families and Schools",%rreichenberg,yes,???,
+astronomy,Physics and Astronomy,%testgroup2,,,Theodore Jorgensen Hall
+"ne ctr  rsrch on youth,fam and school","Nebraska Center for Research on Children, Youth, Families and Schools",%rreichenberg,yes,???,Carolyn Pope Edwards Hall
 "environ, agri and occ health","Environmental, Agricultural, and Occupational Health",%jessebell%wileylab%crosslab,yes,UNMC,
-ogs,Ogs,%cbio,yes,??? - Biological Systems,
-public policy center,Public & Policy Center,%nlupeterm,yes,???,
-office of vice pres/vice chancellor,Office Of Vice Pres & Vice Chancellor,%carrietest%tom123,yes,???,
+ogs,School of Natural Resources,%cbio,yes,??? - Biological Systems,Hardin Hall
+public policy center,Public Policy Center,%nlupeterm,yes,???,Andersen Hall
+office of vice pres/vice chancellor,School of Natural Resources,%carrietest%tom123,yes,???,Hardin Hall
 department of redundant monkey department,Holland Computing Center,%groupygroup,,Garhan Attebury,Schorr Center
-nebraska statewide arboretum - nfs,Nebraska Statewide Arboretum - NFS,%tomtestspam,yes,??? - No Info,
+nebraska statewide arboretum - nfs,Nebraska Statewide Arboretum - NFS,%tomtestspam,yes,??? - No Info,Keim Hall
 afghanistan,Afghanistan,%tomtestspam2,yes,??? - No Info,
 na,Na,%skoepsell,yes,??? - Not found - UNMC,
 rheumatology,Rheumatology,%unmcrheum,,UNMC,
 law,Law,%jtierney4%adsafs%pppp%ioopp%jkn,,,McCollum Hall
 nutrition and human health,Nutrition and Health Sciences,%auchtung,yes,??? Closest department I could find,Leverton Hall
-carson ctr for emerging media arts,Carson & Media Arts,%twomeylab%carsoncenter%emar349,yes,??? Edgeworks - Johnny Carson School-Theatre & Film,Johnny Carson Center for Emerging Media Arts
+carson ctr for emerging media arts,Theatre & Film,%twomeylab%carsoncenter%emar349,yes,??? Edgeworks - Johnny Carson School-Theatre & Film,Johnny Carson Center for Emerging Media Arts
 cellular/integrative physiology,Cellular and Integrative Physiology,%gundrylab,,UNMC,
-its,IT Security Services,%itssecops%cobits,yes,This is a college I think. There are 3 departments underneath it.,
-forensic science program,Forensics,%adamowiczlab,,,Agricultural Hall
+its,IT Security Services,%itssecops%cobits,yes,This is a college I think. There are 3 departments underneath it.,Love Library South
+forensic science program,School of Natural Resources,%adamowiczlab,,,Filley Hall
 chemistry and biochemistry,Biochemistry,%creighton%dieckmanlab,,,Beadle Center
 library,McGoogan Library of Medicine,%mcgooganhsl,,UNMC,
 school of computing,School of Computing,%cse478%ins%csce473%variyam%variyamlab%csce471871,,,Avery Hall
 department of agronomy and horticulture,Agronomy and Horticulture,%santralab,,,Beadle Center
-school of veterinary medicine and biomedical sciences,School of Veterinary Medicine and Biomedical Sciences,%vanwormerlab,,,
+school of veterinary medicine and biomedical sciences,School of Veterinary Medicine and Biomedical Sciences,%vanwormerlab,,,Veterinary Medicine and Biomedical Sciences Hall
 eng dean&#39;s office-omaha,Eng & Office Omaha,%coedo,yes,??? College of Engineering,
 nebraska dhhs,Nebraska Dhhss,%bryantegomoh,yes,??? UC Berkeley,
 community and regional planning program,Community & Regional Planning,%geoai,,,Architecture Hall
 nswers,nswers,%nswers,yes,??? Not on departments website,
 nebraska nanoscale facility,Nanoscience Research Center,%binek,yes,??? Not on departments website,
 physical therapy education,Nebraska Athletic Performance Lab,%napl,yes,???,
-pharmacology & neuroscience,Pharmacology & Experimental Neuroscience,%stessmanlab,,Creighton University,
+pharmacology & neuroscience,Pharmacology & Experimental Neuroscience,%stessmanlab,,,
 history,History,%lesueurfilms%dhhub,,,Oldfather Hall
 systems,Systems,%unolibrary,,UNO,
 department of medical microbiology and immunology,Medical Microbiology and Immunology,%swansonlab,yes,Creighton University,
@@ -194,9 +194,9 @@ cggs,Electrical & Computer Engineering,%zhangyan,yes,???,Scott Engineering Cente
 "teaching, learning and teacher ed","Teaching, Learning and Teacher Education",%lanalytics,,,Carolyn Pope Edwards Hall
 nic,Food Science & Technology,%synbiotic,,,Food Innovation Center
 dept of finance banking and real est,Finance,%unofinance,,,Howard L. Hawks Hall
-school of veterinary medicine & biomedical sciences,School of Veterinary Medicine and Biomedical Sciences,%desaul,,,
-"hlth pr, soc and behv health",Hlth & Behv Health,%silva%roganlab,yes,"Fabiana Silva - Health Promotion / Eleanor Rogan - Environmental, Agricultural & Occupational Health",
-news - editorial,News-Editorial,%jomc491,,,
+school of veterinary medicine & biomedical sciences,School of Veterinary Medicine and Biomedical Sciences,%desaul,,,Veterinary Medicine and Biomedical Sciences Hall
+"hlth pr, soc and behv health",Health & Behavioral Health,%silva%roganlab,yes,"Fabiana Silva - Health Promotion / Eleanor Rogan - Environmental, Agricultural & Occupational Health",
+news - editorial,News-Editorial,%jomc491,,,Andersen Hall
 pulmonary,Pulmonary,%samuelsonlab,yes,???,
 communication and biology,Communication,%harnerlab,yes,UNK,Louise Pound Hall
 deans/directors,Mechanical & Materials Engineering,%hgjgjgl,yes,???,Nebraska Hall
@@ -211,14 +211,14 @@ online and distance education,Mechanical & Materials Engineering,%rqwerqwer%qwre
 ode independent study hs,Mechanical & Materials Engineering,%oij,yes,???,Nebraska Hall
 ode professional programs,Mechanical & Materials Engineering,%qwerqwerqwer,yes,???,Nebraska Hall
 default,Ophthalmology and Visual Sciences,%thoresonlab,,UNMC,
-department of chemistry and biochemistry,Department of Chemistry and Biochemistry,%mlong,yes,Creighton University,
+department of chemistry and biochemistry,Department of Chemistry and Biochemistry,%mlong,yes,Creighton University,Hamilton Hall
 architectural engineeing,Architectural Engineering,%bakht2,,,Nebraska Hall
-sponsored programs,Sponsored Programs,%ored,yes,Lee Miller - Department??,
+sponsored programs,Sponsored Programs,%ored,yes,Lee Miller - Department??,Canfield Administration Building North
 research finance and information systems,Finance,%oredrfis,,,Howard L. Hawks Hall
 school of natural resources; department of agronomy and horticulture,Agronomy and Horticulture,%uden,,,Beadle Center
 communication,Communication Studies,%unotv,,,Louise Pound Hall
 gi,Internal Medicine,%mannonlab,,UNMC,
 "textiles, merchan and fashion design",Apparel Design,%fashion,,,Gwendolyn A. Newkirk Human Sciences Building
-pharmacy sciences,Pharmacy Sciencess,%sarkarlab,,Creighton University,
+pharmacy sciences,Pharmaceutical Sciences,%sarkarlab,,Creighton University,
 geography/geology,Geography/Geology,%dvecelliolab,yes,,Bessey Hall
 school of criminology and crim justice,Criminal Justice,%deitzersccj,,,Nebraska Hall
