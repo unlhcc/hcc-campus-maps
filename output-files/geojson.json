@@ -12,7 +12,8 @@
                 "location": "City Campus",
                 "id": "14PG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -1029,7 +1030,8 @@
                 "location": "City Campus",
                 "id": "NRC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -1460,7 +1462,8 @@
                 "location": "City Campus",
                 "id": "17PG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2173,7 +2176,8 @@
                 "location": "City Campus",
                 "id": "18R",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2286,7 +2290,8 @@
                 "location": "City Campus",
                 "id": "18S",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2327,7 +2332,8 @@
                 "location": "City Campus",
                 "id": "19PG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2406,7 +2412,8 @@
                 "departments": [
                     "Agricultural & Research Division"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2561,7 +2568,8 @@
                 "departments": [
                     "Sponsored Programs"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2610,7 +2618,8 @@
                 "location": "City Campus",
                 "id": "ADMS",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2731,7 +2740,8 @@
                 "location": "East Campus",
                 "id": "AGH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2808,7 +2818,8 @@
                 "location": "East Campus",
                 "id": "AHFS",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2849,7 +2860,8 @@
                 "location": "East Campus",
                 "id": "AHG1",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2890,7 +2902,8 @@
                 "location": "East Campus",
                 "id": "AHG2",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -2963,7 +2976,8 @@
                 "location": "East Campus",
                 "id": "AHG3",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -3092,7 +3106,8 @@
                 "location": "East Campus",
                 "id": "AHG4",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -3325,7 +3340,8 @@
                 "location": "East Campus",
                 "id": "AHPH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -3366,7 +3382,8 @@
                 "location": "East Campus",
                 "id": "AHTL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -3407,7 +3424,8 @@
                 "location": "City Campus",
                 "id": "ALEX",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -3453,7 +3471,8 @@
                     "Public Policy Center",
                     "News-Editorial"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -3598,7 +3617,8 @@
                 "location": "City Campus",
                 "id": "ANDR",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -3674,7 +3694,8 @@
                     "Statistics",
                     "Animal Science"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -3894,7 +3915,8 @@
                     "Community & Regional Planning",
                     "Architecture"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -4055,7 +4077,8 @@
                 "location": "City Campus",
                 "id": "ARCL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -4136,7 +4159,8 @@
                 "location": "City Campus",
                 "id": "ARCW",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -4317,7 +4341,8 @@
                 "location": "City Campus",
                 "id": "ARH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -4390,7 +4415,8 @@
                 "location": "City Campus",
                 "id": "ASFS",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -4563,7 +4589,8 @@
                 "location": "City Campus",
                 "id": "ASWC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -4836,7 +4863,8 @@
                     "Physical & Mathematics Dept",
                     "Mathematics"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -5089,7 +5117,8 @@
                 "location": "East Campus",
                 "id": "BDL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -5143,7 +5172,8 @@
                     "Microbiology",
                     "Biochemistry"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -5692,7 +5722,8 @@
                 "location": "City Campus",
                 "id": "BEL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -6017,7 +6048,8 @@
                 "location": "City Campus",
                 "id": "BENH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -6093,7 +6125,8 @@
                     "Earth and Atmospheric Sciences",
                     "Geography/Geology"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -6182,7 +6215,8 @@
                 "location": "Off Campus",
                 "id": "BIC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -6287,7 +6321,8 @@
                 "location": "City Campus",
                 "id": "BIOG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -6438,7 +6473,8 @@
                 "departments": [
                     "Special Education and Communication Disorders"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -7191,7 +7227,8 @@
                 "location": "City Campus",
                 "id": "BL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -7256,7 +7293,8 @@
                 "location": "City Campus",
                 "id": "BSC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -7383,7 +7421,8 @@
                 "departments": [
                     "Psychology"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -8056,7 +8095,8 @@
                 "location": "City Campus",
                 "id": "BUSG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -8097,7 +8137,8 @@
                 "location": "City Campus",
                 "id": "CCUP",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -8630,7 +8671,8 @@
                 "location": "East Campus",
                 "id": "CDL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -8689,7 +8731,8 @@
                 "departments": [
                     "Theatre & Film"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -8732,7 +8775,8 @@
                 "departments": [
                     "Biological Systems Engineering"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -8821,7 +8865,8 @@
                 "location": "City Campus",
                 "id": "CHC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -8886,7 +8931,8 @@
                 "location": "City Campus",
                 "id": "COL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -9415,7 +9461,8 @@
                 "location": "City Campus",
                 "id": "COOK",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -10068,7 +10115,8 @@
                 "location": "City Campus",
                 "id": "CORT",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -10450,7 +10498,8 @@
                     "Nebraska Center for Research on Children, Youth, Families and Schools",
                     "Teaching, Learning and Teacher Education"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -10691,7 +10740,8 @@
                 "location": "City Campus",
                 "id": "CREC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -10816,7 +10866,8 @@
                 "location": "Innovation Campus",
                 "id": "CRES",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -10857,7 +10908,8 @@
                 "location": "East Campus",
                 "id": "CSA",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11010,7 +11062,8 @@
                 "location": "East Campus",
                 "id": "CTA1",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11051,7 +11104,8 @@
                 "location": "East Campus",
                 "id": "CTA2",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11092,7 +11146,8 @@
                 "location": "East Campus",
                 "id": "CTA3",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11133,7 +11188,8 @@
                 "location": "East Campus",
                 "id": "CTA4",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11174,7 +11230,8 @@
                 "location": "East Campus",
                 "id": "CTB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11215,7 +11272,8 @@
                 "location": "East Campus",
                 "id": "CTC1",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11256,7 +11314,8 @@
                 "location": "East Campus",
                 "id": "CTC2",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11297,7 +11356,8 @@
                 "location": "East Campus",
                 "id": "CTC3",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11338,7 +11398,8 @@
                 "location": "East Campus",
                 "id": "CTC4",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11379,7 +11440,8 @@
                 "location": "East Campus",
                 "id": "CTD1",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11420,7 +11482,8 @@
                 "location": "East Campus",
                 "id": "CTD2",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11461,7 +11524,8 @@
                 "location": "City Campus",
                 "id": "CTES",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -11656,7 +11720,8 @@
                 "location": "East Campus",
                 "id": "CTS1",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11697,7 +11762,8 @@
                 "location": "East Campus",
                 "id": "CTS2",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -11738,7 +11804,8 @@
                 "location": "East Campus",
                 "id": "DENT",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -14227,7 +14294,8 @@
                 "location": "City Campus",
                 "id": "DEV",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -14604,7 +14672,8 @@
                 "location": "City Campus",
                 "id": "DF",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -14645,7 +14714,8 @@
                 "location": "East Campus",
                 "id": "DINS",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -14686,7 +14756,8 @@
                 "location": "City Campus",
                 "id": "DTC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -14943,7 +15014,8 @@
                 "location": "East Campus",
                 "id": "ECUP",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -15320,7 +15392,8 @@
                 "location": "East Campus",
                 "id": "EGR2",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -15361,7 +15434,8 @@
                 "location": "East Campus",
                 "id": "EGR3",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -15402,7 +15476,8 @@
                 "location": "East Campus",
                 "id": "ENTO",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -15459,7 +15534,8 @@
                 "location": "City Campus",
                 "id": "ERC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -15568,7 +15644,8 @@
                 "location": "City Campus",
                 "id": "ESST",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -15913,7 +15990,8 @@
                 "location": "East Campus",
                 "id": "ETES",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -16192,7 +16270,8 @@
                 "location": "City Campus",
                 "id": "FAIR",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -16297,7 +16376,8 @@
                 "location": "City Campus",
                 "id": "FCB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -16338,7 +16418,8 @@
                 "location": "East Campus",
                 "id": "FFAB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -16379,7 +16460,8 @@
                 "location": "Off Campus",
                 "id": "FFCB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -16420,7 +16502,8 @@
                 "location": "City Campus",
                 "id": "FIB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -16463,7 +16546,8 @@
                 "departments": [
                     "Food Science & Technology"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19056,7 +19140,8 @@
                 "location": "City Campus",
                 "id": "FMC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19097,7 +19182,8 @@
                 "location": "City Campus",
                 "id": "FMD",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19138,7 +19224,8 @@
                 "location": "City Campus",
                 "id": "FME",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19179,7 +19266,8 @@
                 "location": "City Campus",
                 "id": "FMF",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19220,7 +19308,8 @@
                 "location": "City Campus",
                 "id": "FMG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19261,7 +19350,8 @@
                 "location": "City Campus",
                 "id": "FMP",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19302,7 +19392,8 @@
                 "location": "City Campus",
                 "id": "FMS",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19363,7 +19454,8 @@
                 "location": "East Campus",
                 "id": "FOOD",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19520,7 +19612,8 @@
                 "location": "East Campus",
                 "id": "FORL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19593,7 +19686,8 @@
                 "location": "East Campus",
                 "id": "FORS",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19654,7 +19748,8 @@
                 "location": "East Campus",
                 "id": "FRC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19782,7 +19877,8 @@
                     "Agricultural Economics",
                     "School of Natural Resources"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -19839,7 +19935,8 @@
                 "location": "City Campus",
                 "id": "GAUN",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -20198,7 +20295,8 @@
                 "departments": [
                     "Apparel Design"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -20591,7 +20689,8 @@
                 "location": "East Campus",
                 "id": "GRDN",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -20635,7 +20734,8 @@
                     "Chemistry",
                     "Department of Chemistry and Biochemistry"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -20772,7 +20872,8 @@
                     "Biostatistics",
                     "Environmental Studies"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -20985,7 +21086,8 @@
                 "location": "Off Campus",
                 "id": "HAYB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -22330,7 +22432,8 @@
                 "location": "Off Campus",
                 "id": "HAYS",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -22811,7 +22914,8 @@
                 "location": "City Campus",
                 "id": "HCC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -22908,7 +23012,8 @@
                 "location": "City Campus",
                 "id": "HCCN",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -23265,7 +23370,8 @@
                 "location": "City Campus",
                 "id": "HDC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -24406,7 +24512,8 @@
                 "location": "City Campus",
                 "id": "HENZ",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -24579,7 +24686,8 @@
                 "location": "Off Campus",
                 "id": "HEWP",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -24628,7 +24736,8 @@
                     "Economics",
                     "Accountancy"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -24737,7 +24846,8 @@
                 "location": "City Campus",
                 "id": "HRH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -25190,7 +25300,8 @@
                 "location": "City Campus",
                 "id": "HUSK",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -25231,7 +25342,8 @@
                 "location": "Innovation Campus",
                 "id": "ICBX",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -25332,7 +25444,8 @@
                 "location": "Innovation Campus",
                 "id": "ICC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -26813,7 +26926,8 @@
                 "location": "Innovation Campus",
                 "id": "ICG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -26982,7 +27096,8 @@
                 "location": "East Campus",
                 "id": "INSB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -27071,7 +27186,8 @@
                 "location": "East Campus",
                 "id": "IQM",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -27264,7 +27380,8 @@
                 "location": "City Campus",
                 "id": "ITSA",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -27335,7 +27452,8 @@
                 "departments": [
                     "Physics and Astronomy"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -27482,7 +27600,8 @@
                 "departments": [
                     "Raikes Schools"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -27807,7 +27926,8 @@
                 "location": "East Campus",
                 "id": "KCR",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -27850,7 +27970,8 @@
                 "departments": [
                     "Nebraska Statewide Arboretum - NFS"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -27971,7 +28092,8 @@
                 "location": "City Campus",
                 "id": "KH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -28068,7 +28190,8 @@
                 "location": "City Campus",
                 "id": "KNOL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -28401,7 +28524,8 @@
                 "location": "City Campus",
                 "id": "KRH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -28674,7 +28798,8 @@
                 "location": "Off Campus",
                 "id": "L014",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -28715,7 +28840,8 @@
                 "location": "Off Campus",
                 "id": "L045",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -28796,7 +28922,8 @@
                 "location": "Off Campus",
                 "id": "L055",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -28871,7 +28998,8 @@
                 "departments": [
                     "Law"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -29564,7 +29692,8 @@
                 "location": "East Campus",
                 "id": "LDR",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -29895,7 +30024,8 @@
                 "departments": [
                     "Nutrition and Health Sciences"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -30024,7 +30154,8 @@
                 "location": "City Campus",
                 "id": "LIB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -30065,7 +30196,8 @@
                 "location": "City Campus",
                 "id": "LIED",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -30396,7 +30528,8 @@
                 "departments": [
                     "University Libraries"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -30809,7 +30942,8 @@
                     "Network & Technology Services",
                     "IT Security Services"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -30930,7 +31064,8 @@
                 "location": "East Campus",
                 "id": "LML",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -31024,7 +31159,8 @@
                     "Classical and Religious Studies",
                     "Communication"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -31177,7 +31313,8 @@
                 "location": "East Campus",
                 "id": "LRH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -31274,7 +31411,8 @@
                 "location": "East Campus",
                 "id": "LSEB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -31323,7 +31461,8 @@
                 "location": "East Campus",
                 "id": "LSEC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -31388,7 +31527,8 @@
                 "location": "City Campus",
                 "id": "LSMC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -31429,7 +31569,8 @@
                 "location": "East Campus",
                 "id": "LTM",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -31486,7 +31627,8 @@
                 "location": "City Campus",
                 "id": "M&N",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -31561,7 +31703,8 @@
                 "departments": [
                     "School of Biological Sciences"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -31914,7 +32057,8 @@
                 "location": "East Campus",
                 "id": "MBH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -32015,7 +32159,8 @@
                 "location": "East Campus",
                 "id": "MHF",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -32056,7 +32201,8 @@
                 "location": "City Campus",
                 "id": "MIPC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -32097,7 +32243,8 @@
                 "location": "City Campus",
                 "id": "MLSS",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -32138,7 +32285,8 @@
                 "location": "East Campus",
                 "id": "MMF",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -32191,7 +32339,8 @@
                 "location": "East Campus",
                 "id": "MOLR",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -32408,7 +32557,8 @@
                 "location": "City Campus",
                 "id": "MORR",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -32601,7 +32751,8 @@
                 "location": "East Campus",
                 "id": "MRC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -32938,7 +33089,8 @@
                 "location": "City Campus",
                 "id": "MSB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -32979,7 +33131,8 @@
                 "location": "City Campus",
                 "id": "MSTD",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -33596,7 +33749,8 @@
                 "location": "City Campus",
                 "id": "MUEL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -33655,7 +33809,8 @@
                 "departments": [
                     "4-H & Youth Development"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -33936,7 +34091,8 @@
                 "location": "East Campus",
                 "id": "NAC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -34525,7 +34681,8 @@
                 "location": "East Campus",
                 "id": "NAST",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -34566,7 +34723,8 @@
                 "location": "City Campus",
                 "id": "NB1",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -34679,7 +34837,8 @@
                 "location": "City Campus",
                 "id": "NB2",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -34768,7 +34927,8 @@
                 "location": "City Campus",
                 "id": "NECH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -35161,7 +35321,8 @@
                 "location": "City Campus",
                 "id": "NEMA",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -35318,7 +35479,8 @@
                 "location": "East Campus",
                 "id": "NEU",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -35445,7 +35607,8 @@
                     "Gerontology",
                     "Criminal Justice"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -35554,7 +35717,8 @@
                 "location": "East Campus",
                 "id": "NRRA",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -35611,7 +35775,8 @@
                 "location": "East Campus",
                 "id": "NSA2",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -35668,7 +35833,8 @@
                 "location": "East Campus",
                 "id": "NSAG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -35709,7 +35875,8 @@
                 "location": "City Campus",
                 "id": "NTC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -35946,7 +36113,8 @@
                 "location": "City Campus",
                 "id": "NU",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -36163,7 +36331,8 @@
                 "location": "East Campus",
                 "id": "NVDC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -36388,7 +36557,8 @@
                 "location": "City Campus",
                 "id": "OAC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -36649,7 +36819,8 @@
                 "location": "East Campus",
                 "id": "OHR",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -36696,7 +36867,8 @@
                     "Anthropology",
                     "History"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -36737,7 +36909,8 @@
                 "location": "City Campus",
                 "id": "ORB7",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -36780,7 +36953,8 @@
                 "departments": [
                     "Chemical & Biomolecular Engineering"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -37793,7 +37967,8 @@
                 "location": "Off Campus",
                 "id": "PBA",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -38146,7 +38321,8 @@
                 "location": "East Campus",
                 "id": "PER",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -38191,7 +38367,8 @@
                     "Information Science & Technology",
                     "ISQA"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -38390,7 +38567,8 @@
                 "departments": [
                     "Plant Pathology"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -38511,7 +38689,8 @@
                 "location": "Off Campus",
                 "id": "PM",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -38680,7 +38859,8 @@
                 "location": "East Campus",
                 "id": "PPG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -38817,7 +38997,8 @@
                 "location": "East Campus",
                 "id": "PSTG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -38860,7 +39041,8 @@
                 "departments": [
                     "Art and Art History"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -39165,7 +39347,8 @@
                 "location": "Innovation Campus",
                 "id": "RISE",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -39206,7 +39389,8 @@
                 "location": "City Campus",
                 "id": "RRB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -39259,7 +39443,8 @@
                 "location": "City Campus",
                 "id": "RVB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -40688,7 +40873,8 @@
                 "location": "East Campus",
                 "id": "RWC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -40957,7 +41143,8 @@
                 "location": "Innovation Campus",
                 "id": "SCAR",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -41774,7 +41961,8 @@
                 "location": "City Campus",
                 "id": "SCRH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -42263,7 +42451,8 @@
                 "location": "City Campus",
                 "id": "SDPG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -42372,7 +42561,8 @@
                     "Civil & Environmental Engineering",
                     "Architectural Engineering"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -42509,7 +42699,8 @@
                 "location": "City Campus",
                 "id": "SEH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -42638,7 +42829,8 @@
                 "location": "City Campus",
                 "id": "SELD",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -42679,7 +42871,8 @@
                 "location": "City Campus",
                 "id": "SELE",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -42744,7 +42937,8 @@
                 "location": "City Campus",
                 "id": "SELF",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -42785,7 +42979,8 @@
                 "location": "City Campus",
                 "id": "SELG",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -42850,7 +43045,8 @@
                 "location": "City Campus",
                 "id": "SELH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -42907,7 +43103,8 @@
                 "location": "City Campus",
                 "id": "SELJ",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -43456,7 +43653,8 @@
                 "location": "City Campus",
                 "id": "SELK",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -43497,7 +43695,8 @@
                 "location": "City Campus",
                 "id": "SELL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -43874,7 +44073,8 @@
                 "location": "East Campus",
                 "id": "SEW",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -43931,7 +44131,8 @@
                 "location": "City Campus",
                 "id": "SHEL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -53458,7 +53659,8 @@
                 "departments": [
                     "Holland Computing Center"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -53743,7 +53945,8 @@
                 "location": "City Campus",
                 "id": "SMRH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -54200,7 +54403,8 @@
                 "location": "East Campus",
                 "id": "SPL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -54299,7 +54503,8 @@
                 "location": "East Campus",
                 "id": "SSL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -54351,7 +54556,8 @@
                     "Psychology",
                     "Center for Brain, Biology & Behavior"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -55008,7 +55214,8 @@
                 "location": "City Campus",
                 "id": "STNO",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -55109,7 +55316,8 @@
                 "location": "City Campus",
                 "id": "STSO",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -55206,7 +55414,8 @@
                 "location": "City Campus",
                 "id": "STW",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -55807,7 +56016,8 @@
                 "location": "East Campus",
                 "id": "SVC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -55864,7 +56074,8 @@
                 "location": "City Campus",
                 "id": "SZRH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -55972,7 +56183,8 @@
                     "Educational Psychology",
                     "Educational Administration"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -56909,7 +57121,8 @@
                 "location": "East Campus",
                 "id": "TELC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57054,7 +57267,8 @@
                 "location": "City Campus",
                 "id": "TEMP",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57171,7 +57385,8 @@
                 "location": "East Campus",
                 "id": "TGE",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57212,7 +57427,8 @@
                 "location": "East Campus",
                 "id": "TGW",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57253,7 +57469,8 @@
                 "location": "City Campus",
                 "id": "TRAN",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57350,7 +57567,8 @@
                 "location": "Off Campus",
                 "id": "UNFCU",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57399,7 +57617,8 @@
                 "location": "City Campus",
                 "id": "UNST",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57844,7 +58063,8 @@
                 "location": "East Campus",
                 "id": "USDP",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57885,7 +58105,8 @@
                 "location": "City Campus",
                 "id": "UST",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57926,7 +58147,8 @@
                 "location": "East Campus",
                 "id": "UTF",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -57967,7 +58189,8 @@
                 "location": "Off Campus",
                 "id": "VARH",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -58010,7 +58233,8 @@
                 "departments": [
                     "School of Veterinary Medicine and Biomedical Sciences"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -58123,7 +58347,8 @@
                 "location": "East Campus",
                 "id": "VBSA",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -58196,7 +58421,8 @@
                 "location": "East Campus",
                 "id": "VCSL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -58285,7 +58511,8 @@
                 "location": "City Campus",
                 "id": "VILL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -62932,7 +63159,8 @@
                 "location": "East Campus",
                 "id": "W1",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -62973,7 +63201,8 @@
                 "location": "East Campus",
                 "id": "W2",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -63014,7 +63243,8 @@
                 "location": "City Campus",
                 "id": "WAB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -63067,7 +63297,8 @@
                 "location": "City Campus",
                 "id": "WAT",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -63272,7 +63503,8 @@
                 "location": "City Campus",
                 "id": "WCDC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -63369,7 +63601,8 @@
                 "location": "East Campus",
                 "id": "WELC",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -63480,7 +63713,8 @@
                 "departments": [
                     "Buffett & Childhood Institute"
                 ],
-                "fill": "#FF0000"
+                "fill": "#FF0000",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -63737,7 +63971,8 @@
                 "location": "City Campus",
                 "id": "WICK",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -63798,7 +64033,8 @@
                 "location": "East Campus",
                 "id": "WL",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -63843,7 +64079,8 @@
                 "location": "City Campus",
                 "id": "WMB",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -64008,7 +64245,8 @@
                 "location": "Off Campus",
                 "id": "YS1",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -64049,7 +64287,8 @@
                 "location": "City Campus",
                 "id": "501",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -64154,7 +64393,8 @@
                 "location": "City Campus",
                 "id": "2222",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -64195,7 +64435,8 @@
                 "location": "City Campus",
                 "id": "2244",
                 "departments": [],
-                "fill": "#808080"
+                "fill": "#808080",
+                "stroke-width": 0.5
             },
             "geometry": {
                 "type": "Polygon",

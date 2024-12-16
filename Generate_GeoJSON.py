@@ -12,6 +12,7 @@ print(normalized_original_data_df.columns)
 
 normalized_original_data_df['properties.departments'] = [[] for _ in range(len(normalized_original_data_df))]
 normalized_original_data_df['properties.fill'] = ["#808080" for _ in range(len(normalized_original_data_df))]
+normalized_original_data_df['properties.stroke-width'] = [0.5 for _ in range(len(normalized_original_data_df))]
 
 for i in range(0, len(updated_departments_df)):
     for j in range(0, len(normalized_original_data_df)):
@@ -30,11 +31,13 @@ normalized_original_data_df["properties"] = normalized_original_data_df.apply(la
                                                                                             "location": row["properties.location"],
                                                                                             "id": row["properties.id"],
                                                                                             "departments": row["properties.departments"],
-                                                                                            "fill": row["properties.fill"]
+                                                                                            "fill": row["properties.fill"],
+                                                                                            "stroke-width": row["properties.stroke-width"]
                                                                                             }, axis=1)
+
 normalized_original_data_df = normalized_original_data_df.drop(columns=["properties.bldg_no", "properties.ABBREV", "properties.NAME",
                                                                         "properties.Address", "properties.CAMPUS", "properties.location",
-                                                                        "properties.id", "properties.departments", "properties.fill"])
+                                                                        "properties.id", "properties.departments", "properties.fill", "properties.stroke-width"])
 
 normalized_original_data_df["geometry"] = normalized_original_data_df.apply(lambda row: {"type": row["geometry.type"], "coordinates": row["geometry.coordinates"]}, axis=1)
 
