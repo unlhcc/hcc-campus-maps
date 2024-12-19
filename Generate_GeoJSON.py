@@ -18,7 +18,7 @@ normalized_original_data_df['properties.stroke-width'] = [0.5 for _ in range(len
 # in the geojson and set the color of the building to red.
 for i in range(0, len(updated_departments_df)):
     for j in range(0, len(normalized_original_data_df)):
-        if updated_departments_df.iloc[i, 5] == normalized_original_data_df.iloc[j, 5]:
+        if updated_departments_df.iloc[i, 3] == normalized_original_data_df.iloc[j, 5]:
             if updated_departments_df.iloc[i, 1] not in normalized_original_data_df.iloc[j, 10]:
                 normalized_original_data_df.iloc[j, 10].append(updated_departments_df.iloc[i, 1])
             if len(normalized_original_data_df.iloc[j, 10]) > 0:
