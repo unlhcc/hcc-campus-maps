@@ -8,7 +8,7 @@ This project provides geo-json that highlights the buildings on UNL's campuses c
 
 We assume that anyone contributing to this repo will be working in their Swan account.
 
-The program, `Generate_GeoJSON.py` takes `map_data.json` and `map_groups_to_departments.csv` as input and generates an output file called `geojson.json`.
+The program, `generate_geojson.py` takes `map_data.json` and `map_groups_to_departments.csv` as input and generates an output file called `geojson.json`.
 
 `map_data.json` contains the original campus map geo-json found on `https://maps.unl.edu/`.
 
