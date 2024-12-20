@@ -4,7 +4,7 @@ PYTHON = ./venv/bin/python
 PIP = ./venv/bin/pip
 
 run: venv
-	$(PYTHON) Generate_GeoJSON.py
+	$(PYTHON) generate_geojson.py
 
 venv: venv/bin/activate
 	. venv/bin/activate
