@@ -1,6 +1,18 @@
 import pandas as pd
 import json 
+########################################################################################################
+# LUKE'S COMMENTS
+# I don't like how the dataframe is created by modifying the dataframe in place, I'd prefer for each column to be created explicitly at once. Much more readable that way.
+# Also, using iloc is not very readable, it would be better to use column names. Magic numbers are bad.
 
+# QUESTIONS
+# Where did the list of groups come from?
+# Accounting data?
+# Where did map_data.json come from?
+# Was the geojson ever placed onto a map? Was anything made with this code before? 
+# How will users interact with my map? Will it be a web app? Available where?
+
+########################################################################################################
 # Read input file that maps departments to buildings
 updated_departments_df = pd.read_csv('input-files/map_groups_to_departments.csv', header=0)
 
