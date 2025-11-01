@@ -2,7 +2,6 @@ import {APIProvider, Map} from '@vis.gl/react-google-maps';
 
 const GoogleMap = () => {
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-  // university of nebraska lincoln
   const defaultCenter = {lat: 40.8202, lng: -96.7006};
   
   return (
