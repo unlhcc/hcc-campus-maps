@@ -39,11 +39,11 @@ const GoogleMap = () => {
   return (
     <APIProvider apiKey={apiKey}>
       <Map
-        style={{ width: '100%', height: '100vh' }}
+        style={{ width: '100%', height: '100%' }}
         defaultCenter={defaultCenter}
         defaultZoom={16}
         gestureHandling={'greedy'}
-        disableDefaultUI={false}
+        disableDefaultUI={true}
       >
         <GeoJsonLayer geojsonUrl="buildings.geojson" />
       </Map>
