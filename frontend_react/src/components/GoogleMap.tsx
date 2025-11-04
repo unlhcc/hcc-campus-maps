@@ -45,7 +45,7 @@ const GoogleMap = () => {
         gestureHandling={'greedy'}
         disableDefaultUI={false}
       >
-        <GeoJsonLayer geojsonUrl="/data/hcc-campus-map.geojson" />
+        <GeoJsonLayer geojsonUrl="buildings.geojson" />
       </Map>
     </APIProvider>
   );
