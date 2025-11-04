@@ -17,7 +17,7 @@ const GeoJsonLayer = ({ geojsonUrl }: { geojsonUrl: string }) => {
     });
 
     map.data.addListener('click', (event: google.maps.Data.MouseEvent) => {
-      const properties = event.feature.getProperty('name');
+      const properties = event.feature.getProperty('NAME');
       console.log('Clicked building:', properties);
     });
 
@@ -43,7 +43,17 @@ const GoogleMap = () => {
         defaultCenter={defaultCenter}
         defaultZoom={16}
         gestureHandling={'greedy'}
-        disableDefaultUI={true}
+        mapTypeControl={true}
+        streetViewControl={false}
+        fullscreenControl={false}
+        zoomControl={true}
+        styles={[
+          {
+            "featureType": "poi",
+            "elementType": "labels",
+            "stylers": [{visibility: "off"}]
+          },
+        ]}
       >
         <GeoJsonLayer geojsonUrl="buildings.geojson" />
       </Map>
