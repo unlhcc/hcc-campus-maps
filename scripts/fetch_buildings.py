@@ -1,6 +1,10 @@
 import json
-import re
 import requests
+import re
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).parent.parent
+OUTPUT_DIR = PROJECT_ROOT / 'data'
 
 def save_geojson_to_file(geojson_data: dict, filename: str):
   with open(filename, 'w') as file:
@@ -27,9 +31,9 @@ def fetch_building_geojson(url: str) -> dict:
     return {}
 
 if __name__ == "__main__":
-  OUTPUT_PATH = 'buildings.json'
+  output_path = OUTPUT_DIR / 'buildings.geojson'
   buildings_dict = fetch_building_geojson('https://maps.unl.edu')
   if buildings_dict:
-    save_geojson_to_file(buildings_dict, OUTPUT_PATH)
-    print(f"Building geojson data saved to {OUTPUT_PATH}.")
+    save_geojson_to_file(buildings_dict, output_path)
+    print(f"Building geojson data saved to {output_path}.")
   

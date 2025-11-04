@@ -1,5 +1,7 @@
 import pandas as pd
 import json 
+from pathlib import Path
+
 ########################################################################################################
 # LUKE'S COMMENTS
 # I don't like how the dataframe is created by modifying the dataframe in place, I'd prefer for each column to be created explicitly at once. Much more readable that way.
@@ -13,11 +15,15 @@ import json
 # How will users interact with my map? Will it be a web app? Available where?
 
 ########################################################################################################
+PROJECT_ROOT = Path(__file__).parent.parent
+OUTPUT_DIR = PROJECT_ROOT / 'data'
+INPUT_DIR = PROJECT_ROOT / 'data'
+
 # Read input file that maps departments to buildings
-updated_departments_df = pd.read_csv('input-files/map_groups_to_departments.csv', header=0)
+updated_departments_df = pd.read_csv(INPUT_DIR / 'map_groups_to_departments.csv', header=0)
 
 # Read original geojson of campus map
-original_map_data_df = pd.read_json('input-files/map_data.json')
+original_map_data_df = pd.read_json(INPUT_DIR / 'old_buildings.geojson')
 normalized_original_data_df = pd.json_normalize(original_map_data_df['features'])
 
 # Add new fields to the geojson
@@ -67,5 +73,5 @@ compressed_data = {
 }
 
 # Write updated geojson data to output file
-with open("output-files/geojson.json", "w") as file:
+with open(OUTPUT_DIR / "old_buildings_using_hcc.geojson", "w") as file:
     json.dump(compressed_data, file, indent=4)

@@ -27,5 +27,5 @@ dist-ssr
 .env
 
 # Python Stuff
-__pycache__/
-venv/
+__pycache__
+venv
