@@ -21,9 +21,11 @@ def execute_sacct(sacct_obj):
 
 def get_jobs_completed_today():
   today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+  end_of_day = today.replace(hour=23, minute=59, second=59, microsecond=999999)
   command = sacct.Sacct(
     allusers=True,
     starttime=today.strftime('%Y-%m-%dT%H:%M:%S'),
+    endtime=end_of_day.strftime('%Y-%m-%dT%H:%M:%S'),
     format=['JobID', 'JobName', 'User', 'End', 'State'],
     state=['COMPLETED', 'FAILED'],
     noheader=True,
@@ -32,6 +34,7 @@ def get_jobs_completed_today():
     
   )
   df = execute_sacct(command)
+  df = df[df['User'].notna() & (df['User'] != '')]
   return df
     
 def get_current_top_users_swan():
@@ -45,13 +48,13 @@ def get_current_top_users_swan():
 
   )
   df = execute_sacct(command)
-
+  df = df[df['User'].notna() & (df['User'] != '')]
   
   if not df.empty:
+    df['AllocCPUS'] = pd.to_numeric(df['AllocCPUS'], errors='coerce').fillna(0)
     user_stats = df.groupby('User').agg({
-      'AllocCPUS': 'sum',
-      'JobID': 'count'
-    }).rename(columns={'JobID': 'JobCount'})
+      'AllocCPUS': 'sum'
+    })
     
     user_stats = user_stats.sort_values('AllocCPUS', ascending=False)
     return user_stats
@@ -63,8 +66,10 @@ def get_current_top_users_swan():
 
 if __name__ == "__main__":
   top_users = get_current_top_users_swan()
+  print("Top Users:")
   print(top_users.head(5))
   print('\n')
+  print("Jobs Completed Today:")
   jobs_completed_today = get_jobs_completed_today()
   print(jobs_completed_today.head(5))
   
