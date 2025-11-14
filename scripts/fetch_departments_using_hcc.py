@@ -1,4 +1,6 @@
 import os
+from dotenv import load_dotenv
+
 import subprocess
 from io import StringIO
 import pandas as pd
@@ -9,6 +11,7 @@ from datetime import datetime, timedelta
 # RCF stands for "Research Computing Facility".
 # Currently, this script only works when run from Swan.
 # Sacct.execute() didn't work for me ):
+load_dotenv()
 mysql_host = os.getenv("RCF_MYSQL_HOST")
 mysql_user = os.getenv("RCF_MYSQL_USER")
 mysql_password = os.getenv("RCF_MYSQL_PASSWORD")
@@ -82,7 +85,6 @@ def get_current_top_users_swan():
 
 
 if __name__ == "__main__":
-  START_OF_YEAR = datetime(2025)
   TODAY = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
   END_OF_DAY = datetime.now().replace(hour=23, minute=59, second=59, microsecond=999999)
   top_users = get_current_top_users_swan()
@@ -100,8 +102,4 @@ if __name__ == "__main__":
   departments = get_departments_from_slurm_users(users)
   print(departments.head(10))
   print('\n')
-  
-  # print("Jobs Completed This Year:")
-  # jobs_completed_this_month = get_jobs_completed_in_time_range(datetime(2025, 10), END_OF_DAY)
-  # print(jobs_completed_today.head(10))
   
