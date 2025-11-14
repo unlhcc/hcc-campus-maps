@@ -100,6 +100,12 @@ if __name__ == "__main__":
   print("Departments Completing Jobs Today:")
   users = jobs_completed_today['User']
   departments = get_departments_from_slurm_users(users)
-  print(departments.head(10))
+  print(departments)
   print('\n')
+
+  print("Departments Completing Jobs in the past hour:")
+  jobs_completed_in_past_hour = get_jobs_completed_in_time_range(datetime.now() - timedelta(hours=1), datetime.now())
+  users = jobs_completed_in_past_hour['User']
+  depts = get_departments_from_slurm_users(users)
+  print(depts)
   
