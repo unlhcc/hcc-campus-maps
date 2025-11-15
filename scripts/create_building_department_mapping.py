@@ -41,7 +41,7 @@ def get_and_revise_departments(): # based on provided csv
   users = jobs_completed_in_past_hour['User']
   departments = get_departments_from_slurm_users(users)
   normalizer_map = create_department_normalizer_map()
-  normalized_departments = [normalizer_map[department] for department in departments]
+  normalized_departments = [normalizer_map.get(department, department) for department in departments]
   return set(normalized_departments)
 
 def get_relations(): # based on provided csv
