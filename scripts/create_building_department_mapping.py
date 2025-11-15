@@ -42,7 +42,7 @@ def get_and_revise_departments(): # based on provided csv
   departments = get_departments_from_slurm_users(users)
   normalizer_map = create_department_normalizer_map()
   normalized_departments = [normalizer_map.get(department, department) for department in departments]
-  return set(normalized_departments)
+  return tuple(set(normalized_departments))
 
 def get_relations(): # based on provided csv
   relations = [
@@ -66,10 +66,10 @@ if __name__ == "__main__":
   building_department_mapping = {
     "buildings": buildings,
     "departments": departments,
-    "relations": get_relations
+    "relations": relations
   }
   
-  print(building_department_mapping)
-  output_path = OUTPUT_DIR / 'buildings.geojson'
+  output_path = OUTPUT_DIR / 'building_department_mapping.json'
   save_dict_as_json(building_department_mapping, output_path)
+  print(f"building-department map saved to {output_path}.")
 

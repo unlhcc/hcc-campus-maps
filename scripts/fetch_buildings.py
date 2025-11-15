@@ -14,9 +14,9 @@ PROJECT_ROOT = Path(__file__).parent.parent
 OUTPUT_DIR = PROJECT_ROOT / 'data'
 SCRAPE_SOURCE_URL = 'https://maps.unl.edu'
 
-def save_dict_as_json(json: dict, filename: str):
-  with open(filename, 'w') as file:
-    json.dump(json, file, indent=2)
+def save_dict_as_json(data_dict: dict, filename: str):
+  with open(filename, 'w') as json_file:
+    json.dump(data_dict, json_file, indent=2)
     
 
 def fetch_building_geojson(url: str) -> dict:
