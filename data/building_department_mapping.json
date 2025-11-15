@@ -1,0 +1,1153 @@
+{
+  "buildings": [
+    "14th & Avery Parking Garage",
+    "Neihardt Center",
+    "17th & R Parking Garage",
+    "18th & R Parking Garage",
+    "18th & S Support Building",
+    "19th and Vine Parking Garage",
+    "Agricultural Communications Building",
+    "Canfield Administration Building North",
+    "Canfield Administration Building South",
+    "Agricultural Hall",
+    "Agronomy & Horticulture/Forestry Shops",
+    "Agronomy & Horticulture Greenhouse 1",
+    "Agronomy & Horticulture Greenhouse 2",
+    "Agronomy & Horticulture Greenhouse 3",
+    "Agronomy & Horticulture Greenhouse 4",
+    "Agronomy & Horticulture Physiology Building",
+    "Agronomy & Horticulture Outstate Testing Laboratory",
+    "Alexander Building",
+    "Andersen Hall",
+    "Andrews Hall",
+    "Animal Science Complex",
+    "Architecture Hall",
+    "Architecture Hall Link",
+    "Architecture Hall West",
+    "Abel Hall",
+    "Abel-Sandoz Food Service Building",
+    "Abel-Sandoz Welcome Center",
+    "Avery Hall",
+    "Bio-Fiber Development Laboratory",
+    "Beadle Center",
+    "Behlen Laboratory",
+    "Benton Hall",
+    "Bessey Hall",
+    "Breslow Ice Center",
+    "Bioscience Greenhouses",
+    "Barkley Memorial Center",
+    "Brace Laboratory",
+    "Business Services Complex",
+    "Burnett Hall",
+    "Bus Garage",
+    "Utility Plant, City Campus",
+    "Ruth Staples Laboratory",
+    "Johnny Carson Center for Emerging Media Arts",
+    "Chase Hall",
+    "UNL Children's Center",
+    "Coliseum",
+    "Cook Pavilion",
+    "The Courtyards",
+    "Carolyn Pope Edwards Hall",
+    "Sapp Recreation Facility",
+    "Campus Renewable Energy System Building",
+    "Conservation & Survey Annex",
+    "Colonial Terrace Apartment A-1",
+    "Colonial Terrace Apartment A-2",
+    "Colonial Terrace Apartment A-3",
+    "Colonial Terrace Apartment A-4",
+    "Colonial Terrace Apartment B",
+    "Colonial Terrace Apartment C-1",
+    "Colonial Terrace Apartment C-2",
+    "Colonial Terrace Apartment C-3",
+    "Colonial Terrace Apartment C-4",
+    "Colonial Terrace Apartment D-1",
+    "Colonial Terrace Apartment D-2",
+    "City Thermal Energy Storage",
+    "Colonial Terrace Apartments Shop 1",
+    "Colonial Terrace Apartments Shop 2",
+    "College of Dentistry",
+    "Devaney Sports Center",
+    "Documents Facility",
+    "Dinsdale Family Learning Commons",
+    "Sid and Hazel Dillon Tennis Center",
+    "Utility Plant, East Campus",
+    "Entomology Greenhouse 2",
+    "Entomology Greenhouse 3",
+    "Entomology Hall",
+    "Engineering Research Center",
+    "Eastside Suites",
+    "East Thermal Energy Storage",
+    "Fairfield Hall",
+    "Fluid Cooler Building",
+    "Fleming Fields Annex Building",
+    "Fleming Fields Park Concessions Bldg",
+    "Facilities Implement Building",
+    "Food Innovation Center",
+    "Facilities Management C",
+    "Facilities Management D",
+    "Facilities Management E",
+    "Facilities Management F",
+    "Facilities Management G",
+    "Facilities Management & Planning",
+    "Facilities Management Shops",
+    "Food Industry Complex",
+    "Forage Research Laboratory - USDA",
+    "Forestry Hall",
+    "Family Resource Center",
+    "Filley Hall",
+    "Jackie Gaughan Multicultural Center",
+    "Gwendolyn A. Newkirk Human Sciences Building",
+    "Community Garden Shed",
+    "Hamilton Hall",
+    "Hardin Hall",
+    "Haymarket Park Baseball Stadium Complex",
+    "Haymarket Park Softball Stadium Complex",
+    "Hawks Championship Center",
+    "University Health Center and College of Nursing",
+    "Harper Dining Center",
+    "Henzlik Hall",
+    "Hewit Place",
+    "Howard L. Hawks Hall",
+    "Harper Hall",
+    "Husker Hall",
+    "Ice Box",
+    "Innovation Commons Conference Center",
+    "Greenhouse Innovation Center",
+    "Insectary Building",
+    "International Quilt Museum",
+    "ITS Annex",
+    "Theodore Jorgensen Hall",
+    "Kauffman Academic Residential Center",
+    "Kiesselbach Crops Research Laboratory",
+    "Keim Hall",
+    "Kiewit Hall",
+    "The Robert E. Knoll Residential Center",
+    "Kimball Recital Hall",
+    "2511 Kimco Court A",
+    "Alex Gordon Training Complex",
+    "1217 Q St",
+    "McCollum Hall",
+    "Library Depository Retrieval Facility",
+    "Leverton Hall",
+    "Landscape Implement Building",
+    "Lied Center for Performing Arts",
+    "Love Library North & Link",
+    "Love Library South",
+    "Loeffel Meat Laboratory",
+    "Louise Pound Hall",
+    "Love Memorial Hall",
+    "Landscape Services Equipment Building",
+    "Landscape Services East Campus",
+    "Landscape Services Metal Canopy",
+    "Larsen Tractor Museum",
+    "Pershing Military & Naval Science Building",
+    "Manter Hall",
+    "Baker Hall",
+    "Material Handling Facility",
+    "Mabel Lee Fields IPC",
+    "Mabel Lee Storage Shed",
+    "Materials Management Facility",
+    "Morrison Center",
+    "Morrill Hall",
+    "Massengale Residential Center",
+    "Maintenance Storage Building",
+    "Cornhuskers Athletic Complex",
+    "Mueller Tower",
+    "Mussehl Hall",
+    "National Agroforestry Center - USDA",
+    "National Agroforestry Center Storage Building - USDA",
+    "North Building 1",
+    "North Building 2",
+    "Nebraska Champions Club",
+    "NEMA Building",
+    "Nebraska East Union",
+    "Nebraska Hall",
+    "Natural Resources Research Annex",
+    "Nebraska Statewide Arboretum Greenhouse 2",
+    "Nebraska Statewide Arboretum Greenhouse",
+    "Nebraska Union",
+    "Nebraska Veterinary Diagnostic Center",
+    "Outdoor Adventures Center",
+    "Orchard House Replacement",
+    "Osborne Legacy Center",
+    "Oldfather Hall",
+    "Campus Rec Equipment Building 7 - Mabel Lee Fields",
+    "Othmer Hall",
+    "Pinnacle Bank Arena",
+    "Perin Porch",
+    "Peter Kiewit Institute",
+    "Plant Sciences Hall",
+    "Pershing Maintenance",
+    "Plant Pathology Greenhouse",
+    "Plant Science Teaching Greenhouse",
+    "Richards Hall",
+    "The Rise Building",
+    "Recycling and Refuse Building",
+    "Mary Riepma Ross Media Arts Center-Van Brunt Visitors Center",
+    "Recreation and Wellness Center",
+    "The Scarlet Hotel",
+    "Schramm Hall",
+    "Stadium Drive Parking Garage",
+    "Scott Engineering Center",
+    "Seaton Hall",
+    "Selleck Quad Building D",
+    "Selleck Quad Building E",
+    "Selleck Quad Building F",
+    "Selleck Quad Building G",
+    "Selleck Quad Building H",
+    "Selleck Quad Building J",
+    "Selleck Quad Building K",
+    "Selleck Quad Building L - Food Service",
+    "Sewage Sterilization Plant",
+    "Sheldon Museum of Art",
+    "Schorr Center",
+    "Smith Hall",
+    "Splinter Laboratories",
+    "Stewart Seed Laboratory",
+    "Stadium East",
+    "Stadium North",
+    "Stadium South",
+    "Stadium West",
+    "Service Building",
+    "Sandoz Hall",
+    "Teachers College Hall",
+    "Terry M. Carpenter Telecommunications Center",
+    "Temple Building",
+    "Teaching Greenhouse East",
+    "Teaching Greenhouse West",
+    "Transportation Services",
+    "University of Nebraska Federal Credit Union",
+    "University Suites",
+    "USDA Physiology Building - USDA",
+    "U Street Apartments",
+    "Utility Response Facility",
+    "Varner Hall",
+    "Veterinary Medicine and Biomedical Sciences Hall",
+    "VBS Annex",
+    "Veterinary Clinical Skills Laboratory",
+    "The Village",
+    "Warehouse 1",
+    "Warehouse 2",
+    "Woods Art Building",
+    "Watson Building",
+    "Willa S. Cather Dining Complex",
+    "Welpton Courtroom Building",
+    "Prem S. Paul Research Center at Whittier School",
+    "Wick Alumni Center",
+    "Water Sciences Laboratory",
+    "Westbrook Music Building",
+    "1101 Y",
+    "501 Building",
+    "Vine Street Apartments West",
+    "Vine Street Apartments East"
+  ],
+  "departments": [
+    "Chemistry",
+    "School of Biological Sciences",
+    "Food Science and Technology",
+    "Eppley Inst Faculty",
+    "Civil Engineering-Omaha",
+    "Phys",
+    "Biochemistry",
+    "Nebraska Cooperative Fish and Wildlife Research Unit",
+    "Physics",
+    "MwRSF",
+    "Agronomy",
+    "Chemical and Biomolecular Engineering"
+  ],
+  "relations": [
+    {
+      "building": "Food Innovation Center",
+      "department": "Food Science & Technology"
+    },
+    {
+      "building": NaN,
+      "department": NaN
+    },
+    {
+      "building": "Avery Hall",
+      "department": "School of Computing"
+    },
+    {
+      "building": "Theodore Jorgensen Hall",
+      "department": "Physics and Astronomy"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "School of Computing"
+    },
+    {
+      "building": "Bessey Hall",
+      "department": "Earth and Atmospheric Sciences"
+    },
+    {
+      "building": "Hamilton Hall",
+      "department": "Chemistry"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "School of Computing"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": "Bessey Hall",
+      "department": "Earth and Atmospheric Sciences"
+    },
+    {
+      "building": "Schorr Center",
+      "department": "Holland Computing Center"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Agronomy and Horticulture"
+    },
+    {
+      "building": NaN,
+      "department": NaN
+    },
+    {
+      "building": "Scott Engineering Center",
+      "department": "Electrical & Computer Engineering"
+    },
+    {
+      "building": "Carolyn Pope Edwards Hall",
+      "department": "Education and Human Sciences"
+    },
+    {
+      "building": "Theodore Jorgensen Hall",
+      "department": "Physics and Astronomy"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Agronomy and Horticulture"
+    },
+    {
+      "building": "Bessey Hall",
+      "department": "Earth and Atmospheric Sciences"
+    },
+    {
+      "building": "Othmer Hall",
+      "department": "Chemical & Biomolecular Engineering"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "School of Computing"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": "Oldfather Hall",
+      "department": "Political Science"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Finance"
+    },
+    {
+      "building": "Peter Kiewit Institute",
+      "department": "School of Interdisciplinary Informatics"
+    },
+    {
+      "building": "Scott Engineering Center",
+      "department": "Civil & Environmental Engineering"
+    },
+    {
+      "building": "Manter Hall",
+      "department": "School of Biological Sciences"
+    },
+    {
+      "building": "Theodore Jorgensen Hall",
+      "department": "Physics and Astronomy"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": NaN,
+      "department": "Mathematics"
+    },
+    {
+      "building": "Peter Kiewit Institute",
+      "department": "Information Science & Technology"
+    },
+    {
+      "building": "Animal Science Complex",
+      "department": "Statistics"
+    },
+    {
+      "building": "Theodore Jorgensen Hall",
+      "department": "Physics and Astronomy"
+    },
+    {
+      "building": "Scott Engineering Center",
+      "department": "Civil & Environmental Engineering"
+    },
+    {
+      "building": "Scott Engineering Center",
+      "department": "Civil & Environmental Engineering"
+    },
+    {
+      "building": "Chase Hall",
+      "department": "Biological Systems Engineering"
+    },
+    {
+      "building": "Burnett Hall",
+      "department": "Psychology"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Center for Biotechnology"
+    },
+    {
+      "building": "Stadium East",
+      "department": "Psychology"
+    },
+    {
+      "building": NaN,
+      "department": "Neurological Sciences"
+    },
+    {
+      "building": "Peter Kiewit Institute",
+      "department": "Information Science & Technology"
+    },
+    {
+      "building": NaN,
+      "department": NaN
+    },
+    {
+      "building": "Peter Kiewit Institute",
+      "department": "Information Science & Technology"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "School of Computing"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Architectural Engineering"
+    },
+    {
+      "building": "Scott Engineering Center",
+      "department": "Electrical & Computer Engineering"
+    },
+    {
+      "building": NaN,
+      "department": NaN
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": "Manter Hall",
+      "department": "School of Biological Sciences"
+    },
+    {
+      "building": "Scott Engineering Center",
+      "department": "Architectural Engineering"
+    },
+    {
+      "building": "Scott Engineering Center",
+      "department": "Civil & Environmental Engineering"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "School of Computing"
+    },
+    {
+      "building": "Louise Pound Hall",
+      "department": "English"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Microbiology"
+    },
+    {
+      "building": NaN,
+      "department": "Eppley Institute for Research in Cancer and Allied Diseases"
+    },
+    {
+      "building": "Love Library South",
+      "department": "Information Technology Services"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Microbiology"
+    },
+    {
+      "building": NaN,
+      "department": "Genetics, Cell Biology & Anatomy"
+    },
+    {
+      "building": "Johnny Carson Center for Emerging Media Arts",
+      "department": "Theatre & Film"
+    },
+    {
+      "building": NaN,
+      "department": "Pharmacology & Experimental Neuroscience"
+    },
+    {
+      "building": "Filley Hall",
+      "department": "Agricultural Economics"
+    },
+    {
+      "building": NaN,
+      "department": "Neurological Sciences"
+    },
+    {
+      "building": "Richards Hall",
+      "department": "Art and Art History"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "Biostatistics"
+    },
+    {
+      "building": NaN,
+      "department": "Pharmaceutical Sciences"
+    },
+    {
+      "building": NaN,
+      "department": "Pharmacology & Experimental Neuroscience"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Supply Chain Management and Analytics Department"
+    },
+    {
+      "building": "Leverton Hall",
+      "department": "Nutrition and Health Sciences"
+    },
+    {
+      "building": "Animal Science Complex",
+      "department": "Animal Science"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Epscor"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Biochemistry"
+    },
+    {
+      "building": "Love Library North & Link",
+      "department": "University Libraries"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "Physical & Mathematics Dept"
+    },
+    {
+      "building": NaN,
+      "department": "Pathology"
+    },
+    {
+      "building": NaN,
+      "department": "Entomology"
+    },
+    {
+      "building": NaN,
+      "department": "Oral Biology"
+    },
+    {
+      "building": "Prem S. Paul Research Center at Whittier School",
+      "department": "Buffett & Childhood Institute"
+    },
+    {
+      "building": "Love Library South",
+      "department": "Network & Technology Services"
+    },
+    {
+      "building": "Stadium East",
+      "department": "Center for Brain, Biology & Behavior"
+    },
+    {
+      "building": NaN,
+      "department": "Biochem & Molecular Biology"
+    },
+    {
+      "building": "Andersen Hall",
+      "department": "Advertising & Public Relations"
+    },
+    {
+      "building": "Burnett Hall",
+      "department": "Psychology"
+    },
+    {
+      "building": NaN,
+      "department": "Information Assurances"
+    },
+    {
+      "building": "Oldfather Hall",
+      "department": "Arts and Sciences"
+    },
+    {
+      "building": NaN,
+      "department": "Radiology"
+    },
+    {
+      "building": NaN,
+      "department": "Health Services Research & Administration"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Gerontology"
+    },
+    {
+      "building": NaN,
+      "department": "Department of Genetics, Cell Biology, and Anatomy"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "Mathematics"
+    },
+    {
+      "building": "Oldfather Hall",
+      "department": "Sociology"
+    },
+    {
+      "building": "Architecture Hall",
+      "department": "Community & Regional Planning"
+    },
+    {
+      "building": "Louise Pound Hall",
+      "department": "Communication Studies"
+    },
+    {
+      "building": "Teachers College Hall",
+      "department": "Educational Psychology"
+    },
+    {
+      "building": NaN,
+      "department": "Dem"
+    },
+    {
+      "building": "Kauffman Academic Residential Center",
+      "department": "Raikes Schools"
+    },
+    {
+      "building": "Mussehl Hall",
+      "department": "4-H & Youth Development"
+    },
+    {
+      "building": "Teachers College Hall",
+      "department": "Educational Administration"
+    },
+    {
+      "building": "Schorr Center",
+      "department": "Holland Computing Center"
+    },
+    {
+      "building": "Plant Sciences Hall",
+      "department": "Plant Pathology"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "Mathematics"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Agronomy and Horticulture"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Bureau & Business Research"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": NaN,
+      "department": "Henry Doorly Zoo"
+    },
+    {
+      "building": NaN,
+      "department": "Biomechanics"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Management"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Marketing"
+    },
+    {
+      "building": NaN,
+      "department": "Radiation Oncology"
+    },
+    {
+      "building": "Andersen Hall",
+      "department": "Journalism and Mass Communications"
+    },
+    {
+      "building": "Veterinary Medicine and Biomedical Sciences Hall",
+      "department": "School of Veterinary Medicine and Biomedical Sciences"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": "Architecture Hall",
+      "department": "Architecture"
+    },
+    {
+      "building": NaN,
+      "department": "Pharmacy Practice and Science"
+    },
+    {
+      "building": "Peter Kiewit Institute",
+      "department": "ISQA"
+    },
+    {
+      "building": "Leverton Hall",
+      "department": "Nutrition and Health Sciences"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Agronomy and Horticulture"
+    },
+    {
+      "building": NaN,
+      "department": "Public Administration"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Economics"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Accountancy"
+    },
+    {
+      "building": "Teachers College Hall",
+      "department": "Educational Psychology"
+    },
+    {
+      "building": "Agricultural Communications Building",
+      "department": "Agricultural & Research Division"
+    },
+    {
+      "building": NaN,
+      "department": "Neurosurgery"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "School of Computing"
+    },
+    {
+      "building": "Carolyn Pope Edwards Hall",
+      "department": "Child, Youth and Family Studies"
+    },
+    {
+      "building": "Louise Pound Hall",
+      "department": "Classical and Religious Studies"
+    },
+    {
+      "building": "Manter Hall",
+      "department": "School of Biological Sciences"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": NaN,
+      "department": "Fee For Service User"
+    },
+    {
+      "building": NaN,
+      "department": "Internal Medicine"
+    },
+    {
+      "building": "Barkley Memorial Center",
+      "department": "Special Education and Communication Disorders"
+    },
+    {
+      "building": NaN,
+      "department": "Epidemiology"
+    },
+    {
+      "building": "Food Innovation Center",
+      "department": "Food Science & Technology"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Finance"
+    },
+    {
+      "building": NaN,
+      "department": "Internal Medicine"
+    },
+    {
+      "building": "Bessey Hall",
+      "department": "Earth and Atmospheric Sciences"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Accountancy"
+    },
+    {
+      "building": "Food Innovation Center",
+      "department": "Food Science & Technology"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "School of Computing"
+    },
+    {
+      "building": "Food Innovation Center",
+      "department": "Food Science & Technology"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Management"
+    },
+    {
+      "building": NaN,
+      "department": "Pediatrics"
+    },
+    {
+      "building": "Food Innovation Center",
+      "department": "Food Science & Technology"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Marketing"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": "Andersen Hall",
+      "department": "Public Policy Center"
+    },
+    {
+      "building": "Scott Engineering Center",
+      "department": "Electrical & Computer Engineering"
+    },
+    {
+      "building": NaN,
+      "department": "Cyber Systems"
+    },
+    {
+      "building": "Veterinary Medicine and Biomedical Sciences Hall",
+      "department": "School of Veterinary Medicine and Biomedical Sciences"
+    },
+    {
+      "building": "Oldfather Hall",
+      "department": "Anthropology"
+    },
+    {
+      "building": "Theodore Jorgensen Hall",
+      "department": "Physics and Astronomy"
+    },
+    {
+      "building": "Carolyn Pope Edwards Hall",
+      "department": "Nebraska Center for Research on Children, Youth, Families and Schools"
+    },
+    {
+      "building": NaN,
+      "department": "Environmental, Agricultural, and Occupational Health"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": "Andersen Hall",
+      "department": "Public Policy Center"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": "Schorr Center",
+      "department": "Holland Computing Center"
+    },
+    {
+      "building": "Keim Hall",
+      "department": "Nebraska Statewide Arboretum - NFS"
+    },
+    {
+      "building": NaN,
+      "department": "Afghanistan"
+    },
+    {
+      "building": NaN,
+      "department": "Na"
+    },
+    {
+      "building": NaN,
+      "department": "Rheumatology"
+    },
+    {
+      "building": "McCollum Hall",
+      "department": "Law"
+    },
+    {
+      "building": "Leverton Hall",
+      "department": "Nutrition and Health Sciences"
+    },
+    {
+      "building": "Johnny Carson Center for Emerging Media Arts",
+      "department": "Theatre & Film"
+    },
+    {
+      "building": NaN,
+      "department": "Cellular and Integrative Physiology"
+    },
+    {
+      "building": "Love Library South",
+      "department": "IT Security Services"
+    },
+    {
+      "building": "Filley Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Biochemistry"
+    },
+    {
+      "building": NaN,
+      "department": "McGoogan Library of Medicine"
+    },
+    {
+      "building": "Avery Hall",
+      "department": "School of Computing"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Agronomy and Horticulture"
+    },
+    {
+      "building": "Veterinary Medicine and Biomedical Sciences Hall",
+      "department": "School of Veterinary Medicine and Biomedical Sciences"
+    },
+    {
+      "building": NaN,
+      "department": "Eng & Office Omaha"
+    },
+    {
+      "building": NaN,
+      "department": "Nebraska Dhhss"
+    },
+    {
+      "building": "Architecture Hall",
+      "department": "Community & Regional Planning"
+    },
+    {
+      "building": NaN,
+      "department": "nswers"
+    },
+    {
+      "building": "Voelte-Keegan Nanoscience Research Center",
+      "department": "Nanoscience Research Center"
+    },
+    {
+      "building": NaN,
+      "department": "Nebraska Athletic Performance Lab"
+    },
+    {
+      "building": NaN,
+      "department": "Pharmacology & Experimental Neuroscience"
+    },
+    {
+      "building": "Oldfather Hall",
+      "department": "History"
+    },
+    {
+      "building": NaN,
+      "department": "Systems"
+    },
+    {
+      "building": NaN,
+      "department": "Medical Microbiology and Immunology"
+    },
+    {
+      "building": "Schorr Center",
+      "department": "Holland Computing Center"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Agronomy and Horticulture"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Agronomy and Horticulture"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Agronomy and Horticulture"
+    },
+    {
+      "building": "Barkley Memorial Center",
+      "department": "Special Education and Communication Disorders"
+    },
+    {
+      "building": "Animal Science Complex",
+      "department": "Animal Science"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "Environmental Studies"
+    },
+    {
+      "building": "Plant Sciences Hall",
+      "department": "Plant Pathology"
+    },
+    {
+      "building": "Hardin Hall",
+      "department": "School of Natural Resources"
+    },
+    {
+      "building": "Scott Engineering Center",
+      "department": "Electrical & Computer Engineering"
+    },
+    {
+      "building": "Carolyn Pope Edwards Hall",
+      "department": "Teaching, Learning and Teacher Education"
+    },
+    {
+      "building": "Food Innovation Center",
+      "department": "Food Science & Technology"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Finance"
+    },
+    {
+      "building": "Veterinary Medicine and Biomedical Sciences Hall",
+      "department": "School of Veterinary Medicine and Biomedical Sciences"
+    },
+    {
+      "building": NaN,
+      "department": "Health & Behavioral Health"
+    },
+    {
+      "building": "Andersen Hall",
+      "department": "News-Editorial"
+    },
+    {
+      "building": NaN,
+      "department": "Pulmonary"
+    },
+    {
+      "building": "Louise Pound Hall",
+      "department": "Communication"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": "Richards Hall",
+      "department": "Art and Art History"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": NaN,
+      "department": "Graduate Studies"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Mechanical & Materials Engineering"
+    },
+    {
+      "building": NaN,
+      "department": "Ophthalmology and Visual Sciences"
+    },
+    {
+      "building": "Hamilton Hall",
+      "department": "Department of Chemistry and Biochemistry"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Architectural Engineering"
+    },
+    {
+      "building": "Canfield Administration Building North",
+      "department": "Sponsored Programs"
+    },
+    {
+      "building": "Howard L. Hawks Hall",
+      "department": "Finance"
+    },
+    {
+      "building": "Beadle Center",
+      "department": "Agronomy and Horticulture"
+    },
+    {
+      "building": "Louise Pound Hall",
+      "department": "Communication Studies"
+    },
+    {
+      "building": NaN,
+      "department": "Internal Medicine"
+    },
+    {
+      "building": "Gwendolyn A. Newkirk Human Sciences Building",
+      "department": "Apparel Design"
+    },
+    {
+      "building": NaN,
+      "department": "Pharmaceutical Sciences"
+    },
+    {
+      "building": "Bessey Hall",
+      "department": "Geography/Geology"
+    },
+    {
+      "building": "Nebraska Hall",
+      "department": "Criminal Justice"
+    }
+  ]
+}
