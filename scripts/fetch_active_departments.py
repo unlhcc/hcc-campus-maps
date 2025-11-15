@@ -8,9 +8,15 @@ import sacct
 import mysql.connector
 from datetime import datetime, timedelta
 
+######################################################################################################
+# Purpose: Generates a set of departments whose members have created Slurm jobs in a recent timeframe
+# Author: Luke Doughty (ldoughty2@unl.edu)
+# Notes:
 # RCF stands for "Research Computing Facility".
 # Currently, this script only works when run from Swan.
 # Sacct.execute() didn't work for me ):
+######################################################################################################
+
 load_dotenv()
 mysql_host = os.getenv("RCF_MYSQL_HOST")
 mysql_user = os.getenv("RCF_MYSQL_USER")
