@@ -37,7 +37,7 @@ def create_department_normalizer_map():
   
 
 def get_and_revise_departments(): # based on provided csv
-  jobs_completed_in_past_hour = get_jobs_completed_in_time_range(datetime.now() - timedelta(hours=1), datetime.now())
+  jobs_completed_in_past_hour = get_jobs_completed_in_time_range(datetime.now() - timedelta(days=14), datetime.now())
   users = jobs_completed_in_past_hour['User']
   departments = get_departments_from_slurm_users(users)
   normalizer_map = create_department_normalizer_map()
