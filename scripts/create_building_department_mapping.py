@@ -5,6 +5,14 @@ import pandas as pd
 from fetch_active_departments import get_jobs_completed_in_time_range, get_departments_from_slurm_users
 from fetch_buildings import get_building_properties_dict, fetch_building_geojson, save_dict_as_json
 
+######################################################################################################
+# Purpose: Creates a join table between buildings and departments which can be used to indicate which 
+#          buildings have made use of the HCC recently
+# Author:  Luke Doughty (ldoughty2@unl.edu)
+# Notes:   Building to department relations come from an old CSV. Hopefully there is a better, 
+#          automated solution.
+######################################################################################################
+
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / 'data'
 OUTPUT_DIR = PROJECT_ROOT / 'data'

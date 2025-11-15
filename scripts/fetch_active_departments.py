@@ -10,11 +10,11 @@ from datetime import datetime, timedelta
 
 ######################################################################################################
 # Purpose: Generates a set of departments whose members have created Slurm jobs in a recent timeframe
-# Author: Luke Doughty (ldoughty2@unl.edu)
+# Author:  Luke Doughty (ldoughty2@unl.edu)
 # Notes:
-# RCF stands for "Research Computing Facility".
-# Currently, this script only works when run from Swan.
-# Sacct.execute() didn't work for me ):
+#          RCF stands for "Research Computing Facility".
+#          Currently, this script only works when run from Swan.
+#          Sacct.execute() didn't work for me ):
 ######################################################################################################
 
 load_dotenv()

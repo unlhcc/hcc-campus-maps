@@ -5,9 +5,9 @@ from pathlib import Path
 
 ######################################################################################################
 # Purpose: Scrapes the geojson list of buildings at UNL from maps.unl.edu
-# Author: Luke Doughty (ldoughty2@unl.edu)
+# Author:  Luke Doughty (ldoughty2@unl.edu)
 # Notes:
-# Uses regex to scrape the json from the html, so any updates to maps.unl.edu could break this script.
+#          Uses regex to scrape the json from the html, so any updates to maps.unl.edu could break this script.
 ######################################################################################################
 
 PROJECT_ROOT = Path(__file__).parent.parent
