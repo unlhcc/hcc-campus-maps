@@ -44,14 +44,18 @@ def get_and_revise_departments(): # based on provided csv
   normalized_departments = [normalizer_map.get(department, department) for department in departments]
   return tuple(set(normalized_departments))
 
+
 def get_relations(): # based on provided csv
+  unique_df = df[["Building", "Revised_Department"]].dropna().drop_duplicates()
+  
   relations = [
     {
-    "building": row["Building"],
-    "department": row["Revised_Department"]
+      "building": row["Building"],
+      "department": row["Revised_Department"]
     }
-    for _, row in df.iterrows()    
+    for _, row in unique_df.iterrows()
   ]
+  
   return relations
 
   
