@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 from fetch_active_departments import get_jobs_completed_in_time_range, get_departments_from_slurm_users
-from fetch_buildings import get_building_properties_dict, fetch_building_geojson, save_dict_as_json
+from fetch_buildings import get_building_properties_dict, save_dict_as_json
 
 ######################################################################################################
 # Purpose: Creates a join table between buildings and departments which can be used to indicate which 
@@ -65,11 +65,9 @@ def get_relations(): # based on provided csv
   ]
   
   return relations
-
-  
   
 
-if __name__ == "__main__":
+def create_building_department_mapping():
   building_properties_dict = get_building_properties_dict()
   buildings = [building["NAME"] for building in building_properties_dict]
   departments = get_and_revise_departments()
@@ -80,7 +78,15 @@ if __name__ == "__main__":
     "departments": departments,
     "relations": relations
   }
+  return building_department_mapping
+
+def get_buildings_from_department(department) -> list:
+  relations = get_relations()
+  return [r["building"] for r in relations if r["department"] == department]
   
+
+if __name__ == "__main__":
+  building_department_mapping = create_building_department_mapping()
   output_path = OUTPUT_DIR / 'building_department_mapping.json'
   save_dict_as_json(building_department_mapping, output_path)
   print(f"building-department map saved to {output_path}.")
