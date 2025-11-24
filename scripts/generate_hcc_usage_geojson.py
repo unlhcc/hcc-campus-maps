@@ -19,8 +19,8 @@ def generate_hcc_usage_geojson():
   departments_using_hcc = get_and_revise_departments()
   building_names_using_hcc = [get_buildings_from_department(department) for department in departments_using_hcc]
   buildings_geojson = fetch_building_geojson(SCRAPE_SOURCE_URL)
-  for feature in buildings_geojson.features:
-    feature.properties["uses_hcc"] = (feature.properties.NAME in building_names_using_hcc)
+  for feature in buildings_geojson["features"]:
+    feature["properties"]["uses_hcc"] = (feature["properties"]["NAME"] in building_names_using_hcc)
     
     
 if __name__ == "__main__":
