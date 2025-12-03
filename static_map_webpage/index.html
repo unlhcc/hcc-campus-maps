@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoJSON Map Viewer</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <button id="roadmapBtn" class="active">Roadmap</button>
+      <button id="satelliteBtn">Satellite</button>
+      <button id="hybridBtn">Hybrid</button>
+      <button id="terrainBtn">Terrain</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="info" id="info">Loading GeoJSON data...</div>
+
+    <script>
+      let map;
+      let dataLayer;
+      const GEOJSON_URL = "buildings.geojson"; // Path to your GeoJSON file
+
+      function initMap() {
+        // Initialize map centered on a default location
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 40.8202, lng: -96.7006 }, // University of Nebraska - Lincoln
+          zoom: 16,
+          mapTypeId: "roadmap",
+          mapTypeControl: false,
+          streetViewControl: true,
+          fullscreenControl: true,
+          zoomControl: true,
+          styles: [
+            {
+              featureType: "poi",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+          ],
+        });
+
+        // Create data layer for GeoJSON
+        dataLayer = new google.maps.Data();
+        dataLayer.setMap(map);
+
+        // Style the GeoJSON features
+        dataLayer.setStyle((feature) => {
+          const usesHcc = feature.getProperty("uses_hcc");
+          return {
+            fillColor: usesHcc ? "#FF0000" : "#808080", // Red if true, gray if false
+            fillOpacity: 0.5,
+            strokeColor: usesHcc ? "#CC0000" : "#606060", // Darker borders
+            strokeWeight: 2,
+            clickable: true,
+          };
+        });
+
+        // Add click listener for features
+        dataLayer.addListener("click", (event) => {
+          const properties = event.feature.getProperty("properties") || {};
+          let content = '<div style="padding: 10px;">';
+          content += "<strong>Feature Properties:</strong><br>";
+
+          for (let key in properties) {
+            content += `${key}: ${properties[key]}<br>`;
+          }
+
+          // Also check for direct properties on the feature
+          event.feature.forEachProperty((value, key) => {
+            if (key !== "properties") {
+              content += `${key}: ${value}<br>`;
+            }
+          });
+
+          content += "</div>";
+
+          const infoWindow = new google.maps.InfoWindow({
+            content: content,
+          });
+
+          infoWindow.setPosition(event.latLng);
+          infoWindow.open(map);
+        });
+
+        // Load GeoJSON data
+        loadGeoJSON();
+
+        // Setup map type controls
+        setupControls();
+
+        // Auto-refresh every 6 hours (21600000 ms)
+        setInterval(loadGeoJSON, 21600000);
+      }
+
+      function loadGeoJSON() {
+        const timestamp = new Date().getTime();
+        fetch(`${GEOJSON_URL}?t=${timestamp}`) // Cache busting
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+          })
+          .then((data) => {
+            // Clear existing features
+            dataLayer.forEach((feature) => {
+              dataLayer.remove(feature);
+            });
+
+            // Add new features
+            dataLayer.addGeoJson(data);
+
+            // Update info
+            const featureCount = data.features ? data.features.length : 0;
+            const lastUpdate = new Date().toLocaleString();
+            document.getElementById(
+              "info"
+            ).innerHTML = `Features: ${featureCount} | Last updated: ${lastUpdate}`;
+
+            // Auto-zoom to fit all features
+            const bounds = new google.maps.LatLngBounds();
+            dataLayer.forEach((feature) => {
+              processPoints(feature.getGeometry(), bounds.extend, bounds);
+            });
+
+            if (!bounds.isEmpty()) {
+              map.fitBounds(bounds);
+            }
+          })
+          .catch((error) => {
+            console.error("Error loading GeoJSON:", error);
+            document.getElementById(
+              "info"
+            ).innerHTML = `Error loading data: ${error.message}`;
+          });
+      }
+
+      function processPoints(geometry, callback, thisArg) {
+        if (geometry instanceof google.maps.LatLng) {
+          callback.call(thisArg, geometry);
+        } else if (geometry instanceof google.maps.Data.Point) {
+          callback.call(thisArg, geometry.get());
+        } else {
+          geometry.getArray().forEach((g) => {
+            processPoints(g, callback, thisArg);
+          });
+        }
+      }
+
+      function setupControls() {
+        document
+          .getElementById("roadmapBtn")
+          .addEventListener("click", function () {
+            map.setMapTypeId("roadmap");
+            updateActiveButton(this);
+          });
+
+        document
+          .getElementById("satelliteBtn")
+          .addEventListener("click", function () {
+            map.setMapTypeId("satellite");
+            updateActiveButton(this);
+          });
+
+        document
+          .getElementById("hybridBtn")
+          .addEventListener("click", function () {
+            map.setMapTypeId("hybrid");
+            updateActiveButton(this);
+          });
+
+        document
+          .getElementById("terrainBtn")
+          .addEventListener("click", function () {
+            map.setMapTypeId("terrain");
+            updateActiveButton(this);
+          });
+      }
+
+      function updateActiveButton(activeBtn) {
+        document.querySelectorAll(".controls button").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        activeBtn.classList.add("active");
+      }
+    </script>
+
+    <!-- Replace YOUR_API_KEY with your actual Google Maps API key -->
+    <!-- Make sure to restrict your key to only allow traffic from your domain, and only the certain request type you need -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTPqIEz5OZplY94jKObJyGM6iAWYZUNo&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
