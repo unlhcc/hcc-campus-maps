@@ -17,14 +17,20 @@ def save_dict_as_json(data_dict: dict, filename: str):
 def generate_hcc_usage_geojson() -> dict:
   SCRAPE_SOURCE_URL = 'https://maps.unl.edu'
   departments_using_hcc = get_and_revise_departments()
-  building_names_using_hcc = [get_buildings_from_department(department) for department in departments_using_hcc]
+  building_names_per_department = [get_buildings_from_department(department) for department in departments_using_hcc]
+  buildings_using_hcc = {building for buildings in building_names_per_department for building in buildings} # flattens the list of sets
   buildings_geojson = fetch_building_geojson(SCRAPE_SOURCE_URL)
-  print("\n Buildings Using HCC:")
-  print(building_names_using_hcc)
-  print("\n building NAMEs: ")
+  
+  print("\nBuildings Using HCC:")
+  print("--------------------")
+  print(buildings_using_hcc)
+  
+  print("\nbuilding NAMEs: ")
+  print("--------------------")
   for feature in buildings_geojson["features"]:
-    feature["properties"]["uses_hcc"] = (feature["properties"]["NAME"] in building_names_using_hcc)
+    feature["properties"]["uses_hcc"] = (feature["properties"]["NAME"] in buildings_using_hcc)
     print(feature["properties"]["NAME"])
+    
   return buildings_geojson
     
 if __name__ == "__main__":
