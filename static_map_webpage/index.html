@@ -4,85 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GeoJSON Map Viewer</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""/>
+    
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="controls">
-      <button id="roadmapBtn" class="active">Roadmap</button>
+      <button id="streetsBtn" class="active">Streets</button>
       <button id="satelliteBtn">Satellite</button>
-      <button id="hybridBtn">Hybrid</button>
-      <button id="terrainBtn">Terrain</button>
+      <button id="topoBtn">Topographic</button>
     </div>
 
     <div id="map"></div>
 
     <div class="info" id="info">Loading GeoJSON data...</div>
 
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+
     <script>
       let map;
-      let dataLayer;
+      let geoJsonLayer;
       const GEOJSON_URL = "buildings.geojson"; // Path to your GeoJSON file
 
+      // Define base layers
+      const baseLayers = {
+        streets: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          maxZoom: 19
+        }),
+        satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+          attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+          maxZoom: 19
+        }),
+        topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+          attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+          maxZoom: 17
+        })
+      };
+
       function initMap() {
-        // Initialize map centered on a default location
-        map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 40.8202, lng: -96.7006 }, // University of Nebraska - Lincoln
+        // Initialize map centered on University of Nebraska - Lincoln
+        map = L.map('map', {
+          center: [40.8202, -96.7006],
           zoom: 16,
-          mapTypeId: "roadmap",
-          mapTypeControl: false,
-          streetViewControl: true,
-          fullscreenControl: true,
-          zoomControl: true,
-          styles: [
-            {
-              featureType: "poi",
-              elementType: "labels",
-              stylers: [{ visibility: "off" }],
-            },
-          ],
-        });
-
-        // Create data layer for GeoJSON
-        dataLayer = new google.maps.Data();
-        dataLayer.setMap(map);
-
-        // Style the GeoJSON features
-        dataLayer.setStyle((feature) => {
-          const usesHcc = feature.getProperty("uses_hcc");
-          return {
-            fillColor: usesHcc ? "#FF0000" : "#808080", // Red if true, gray if false
-            fillOpacity: 0.5,
-            strokeColor: usesHcc ? "#CC0000" : "#606060", // Darker borders
-            strokeWeight: 2,
-            clickable: true,
-          };
-        });
-
-        // Add click listener for features
-        dataLayer.addListener("click", (event) => {
-          const properties = event.feature.getProperty("properties") || {};
-          let content = '<div style="padding: 10px;">';
-          content += "<strong>Feature Properties:</strong><br>";
-
-          for (let key in properties) {
-            content += `${key}: ${properties[key]}<br>`;
-          }
-
-          // Also check for direct properties on the feature
-          event.feature.forEachProperty((value, key) => {
-            if (key !== "properties") {
-              content += `${key}: ${value}<br>`;
-            }
-          });
-
-          content += "</div>";
-
-          const infoWindow = new google.maps.InfoWindow({
-            content: content,
-          });
-
-          infoWindow.setPosition(event.latLng);
-          infoWindow.open(map);
+          layers: [baseLayers.streets]
         });
 
         // Load GeoJSON data
@@ -105,13 +77,38 @@
             return response.json();
           })
           .then((data) => {
-            // Clear existing features
-            dataLayer.forEach((feature) => {
-              dataLayer.remove(feature);
-            });
+            // Remove existing GeoJSON layer if it exists
+            if (geoJsonLayer) {
+              map.removeLayer(geoJsonLayer);
+            }
 
-            // Add new features
-            dataLayer.addGeoJson(data);
+            // Add new GeoJSON layer with styling
+            geoJsonLayer = L.geoJSON(data, {
+              style: function(feature) {
+                const usesHcc = feature.properties.uses_hcc;
+                return {
+                  fillColor: usesHcc ? "#FF0000" : "#808080", // Red if true, gray if false
+                  fillOpacity: 0.5,
+                  color: usesHcc ? "#CC0000" : "#606060", // Darker borders
+                  weight: 2
+                };
+              },
+              onEachFeature: function(feature, layer) {
+                // Create popup content
+                let content = '<div style="padding: 10px;">';
+                content += "<strong>Feature Properties:</strong><br>";
+
+                if (feature.properties) {
+                  for (let key in feature.properties) {
+                    content += `${key}: ${feature.properties[key]}<br>`;
+                  }
+                }
+
+                content += "</div>";
+
+                layer.bindPopup(content);
+              }
+            }).addTo(map);
 
             // Update info
             const featureCount = data.features ? data.features.length : 0;
@@ -121,13 +118,8 @@
             ).innerHTML = `Features: ${featureCount} | Last updated: ${lastUpdate}`;
 
             // Auto-zoom to fit all features
-            const bounds = new google.maps.LatLngBounds();
-            dataLayer.forEach((feature) => {
-              processPoints(feature.getGeometry(), bounds.extend, bounds);
-            });
-
-            if (!bounds.isEmpty()) {
-              map.fitBounds(bounds);
+            if (geoJsonLayer.getBounds().isValid()) {
+              map.fitBounds(geoJsonLayer.getBounds());
             }
           })
           .catch((error) => {
@@ -138,44 +130,31 @@
           });
       }
 
-      function processPoints(geometry, callback, thisArg) {
-        if (geometry instanceof google.maps.LatLng) {
-          callback.call(thisArg, geometry);
-        } else if (geometry instanceof google.maps.Data.Point) {
-          callback.call(thisArg, geometry.get());
-        } else {
-          geometry.getArray().forEach((g) => {
-            processPoints(g, callback, thisArg);
-          });
-        }
-      }
-
       function setupControls() {
         document
-          .getElementById("roadmapBtn")
+          .getElementById("streetsBtn")
           .addEventListener("click", function () {
-            map.setMapTypeId("roadmap");
+            map.removeLayer(baseLayers.satellite);
+            map.removeLayer(baseLayers.topo);
+            map.addLayer(baseLayers.streets);
             updateActiveButton(this);
           });
 
         document
           .getElementById("satelliteBtn")
           .addEventListener("click", function () {
-            map.setMapTypeId("satellite");
+            map.removeLayer(baseLayers.streets);
+            map.removeLayer(baseLayers.topo);
+            map.addLayer(baseLayers.satellite);
             updateActiveButton(this);
           });
 
         document
-          .getElementById("hybridBtn")
+          .getElementById("topoBtn")
           .addEventListener("click", function () {
-            map.setMapTypeId("hybrid");
-            updateActiveButton(this);
-          });
-
-        document
-          .getElementById("terrainBtn")
-          .addEventListener("click", function () {
-            map.setMapTypeId("terrain");
+            map.removeLayer(baseLayers.streets);
+            map.removeLayer(baseLayers.satellite);
+            map.addLayer(baseLayers.topo);
             updateActiveButton(this);
           });
       }
@@ -186,15 +165,9 @@
         });
         activeBtn.classList.add("active");
       }
-    </script>
 
-    <!-- Replace YOUR_API_KEY with your actual Google Maps API key -->
-    <!-- Make sure to restrict your key to only allow traffic from your domain, and only the certain request type you need -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTPqIEz5OZplY94jKObJyGM6iAWYZUNo&callback=initMap"
-      async
-      defer
-    ></script>
+      // Initialize map when page loads
+      initMap();
+    </script>
   </body>
 </html>
