@@ -23,13 +23,13 @@ mysql_user = os.getenv("RCF_MYSQL_USER")
 mysql_password = os.getenv("RCF_MYSQL_PASSWORD")
 mysql_database = os.getenv("RCF_MYSQL_DATABASE_NAME")
 
-def execute_sacct(sacct_obj):
+def execute_sacct(sacct_obj) -> pd.DataFrame:
   result = subprocess.run(sacct_obj.cmd, capture_output=True, text=True, check=True)
   column_names = sacct_obj.options['format']
   df = pd.read_csv(StringIO(result.stdout), delimiter='|', names=column_names)
   return df
 
-def get_departments_from_slurm_users(users_list):
+def get_departments_from_slurm_users(users_list) -> pd.DataFrame:
   mydb = mysql.connector.connect(
     host=mysql_host,
     user=mysql_user,
@@ -40,16 +40,20 @@ def get_departments_from_slurm_users(users_list):
   try:
     cursor = mydb.cursor()
     parameterized_users_list = ', '.join(['%s'] * len(users_list))
-    query = f"SELECT LoginID, Department FROM Personal WHERE LoginID IN ({parameterized_users_list})"
+    query = f"SELECT Department FROM Personal WHERE LoginID IN ({parameterized_users_list})"
     cursor.execute(query, tuple(users_list))
     results = cursor.fetchall()
-    departments = set(row[1] for row in results if row[1] is not None) # grabs Department
-    return departments
+    
+    df = pd.DataFrame(results, columns=['Department'])
+    df = df[df['Department'].notna() & (df['Department'].str.strip() != '')]
+    df = df[['Department']].drop_duplicates().reset_index(drop=True)
+
+    return df
   finally:
     cursor.close()
     mydb.close()
 
-def get_jobs_completed_in_time_range(start_time, end_time):
+def get_jobs_completed_in_time_range(start_time, end_time) -> pd.DataFrame:
   command = sacct.Sacct(
     allusers=True,
     starttime=start_time.strftime('%Y-%m-%dT%H:%M:%S'),
@@ -63,7 +67,7 @@ def get_jobs_completed_in_time_range(start_time, end_time):
   df = execute_sacct(command)
   return df
     
-def get_current_top_users_swan():
+def get_current_top_users_swan() -> pd.DataFrame:
   command = sacct.Sacct(
     allusers=True,
     format=['User', 'AllocCPUS'],
@@ -112,6 +116,12 @@ if __name__ == "__main__":
   print("Departments Completing Jobs in the past hour:")
   jobs_completed_in_past_hour = get_jobs_completed_in_time_range(datetime.now() - timedelta(hours=1), datetime.now())
   users = jobs_completed_in_past_hour['User']
+  depts = get_departments_from_slurm_users(users)
+  print(depts)
+  
+  print("Departments Completing Jobs in the past fortnight:")
+  jobs_completed_in_past_fortnite = get_jobs_completed_in_time_range(datetime.now() - timedelta(days=14), datetime.now())
+  users = jobs_completed_in_past_fortnite['User']
   depts = get_departments_from_slurm_users(users)
   print(depts)
   

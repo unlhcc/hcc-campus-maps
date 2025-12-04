@@ -1,0 +1,147 @@
+{
+  "description": "Maps various department name variations to their official canonical names",
+  "mappings": {
+    "biochem and molecular biology": "Biochemistry",
+    "biochemistry": "Biochemistry",
+    "chemistry and biochemistry": "Chemistry and Biochemistry",
+    "department of chemistry and biochemistry": "Chemistry and Biochemistry",
+    "chemistry": "Chemistry",
+    "chem eng": "Chemical and Biomolecular Engineering",
+    "chemical and biomolecular engineering": "Chemical and Biomolecular Engineering",
+    
+    "comp sci": "Computer Science and Engineering",
+    "computer science": "Computer Science and Engineering",
+    "computer science and engineering": "Computer Science and Engineering",
+    "engineering computer science": "Computer Science and Engineering",
+    "software engineering": "Computer Science and Engineering",
+    "school of computing": "School of Computing",
+    "computer and electronics engineering": "Electrical and Computer Engineering",
+    "electrical and computer engineering": "Electrical and Computer Engineering",
+    
+    "agronomy": "Agronomy and Horticulture",
+    "agronomy and horticulture": "Agronomy and Horticulture",
+    "agronomy & horticulture": "Agronomy and Horticulture",
+    "department of agronomy and horticulture": "Agronomy and Horticulture",
+    
+    "food science": "Food Science and Technology",
+    "foodscience": "Food Science and Technology",
+    "food science and technology": "Food Science and Technology",
+    
+    "phys": "Physics and Astronomy",
+    "physics": "Physics and Astronomy",
+    "physics and astronomy": "Physics and Astronomy",
+    
+    "animal science": "Animal Science",
+    "animal breeding and genetics": "Animal Science",
+    "department of animal science": "Animal Science",
+    
+    "biological systems": "Biological Systems Engineering",
+    "biological systems engineering": "Biological Systems Engineering",
+    "biossistems engineer": "Biological Systems Engineering",
+    
+    "pathology": "Pathology/Microbiology",
+    "pathology ": "Pathology/Microbiology",
+    "pathology/microbiology": "Pathology/Microbiology",
+    
+    "biomedical informatics": "Biomedical Informatics",
+    "bioinforma": "Biomedical Informatics",
+    
+    "natural resources": "School of Natural Resources",
+    "school of natural resources": "School of Natural Resources",
+    
+    "civil engineering-lincoln": "Civil Engineering",
+    "civil engineering-omaha": "Civil Engineering",
+    "civ eng": "Civil Engineering",
+    
+    "earth and atmospheric sciences": "Earth and Atmospheric Sciences",
+    "department of earth and atmospheric sciences": "Earth and Atmospheric Sciences",
+    
+    "school of interdisciplinary informat": "School of Interdisciplinary Informatics",
+    
+    "supply chain management and analytics": "Supply Chain Management and Analytics",
+    
+    "school of accountancy": "School of Accountancy",
+    
+    "mechanical and materials engineering": "Mechanical and Materials Engineering",
+    
+    "epidemiology": "Epidemiology",
+    
+    "hydrological sciences": "Hydrological Sciences",
+    
+    "biostatistics": "Biostatistics",
+    
+    "ophthalmology and visual sciences": "Ophthalmology and Visual Sciences",
+    
+    "plant pathology": "Plant Pathology",
+    
+    "entomology": "Entomology",
+    
+    "psychology": "Psychology",
+    
+    "mathematics": "Mathematics",
+    
+    "statistics": "Statistics",
+    
+    "biomechanics": "Biomechanics",
+    
+    "school of biological sciences": "School of Biological Sciences",
+    "biology": "School of Biological Sciences",
+    
+    "center for brain biology and behavior": "Center for Brain Biology and Behavior",
+    
+    "center for biotechnology": "Center for Biotechnology",
+    
+    "midwest roadside safety facility": "Midwest Roadside Safety Facility",
+    "mwrsf": "Midwest Roadside Safety Facility",
+    
+    "durham school arch engr and const": "Durham School of Architectural Engineering and Construction",
+    
+    "eppley inst faculty": "Eppley Institute",
+    
+    "genetics cell biology and anatomy": "Genetics Cell Biology and Anatomy",
+    
+    "neurological sciences": "Neurological Sciences",
+    
+    "radiation oncology": "Radiation Oncology",
+    
+    "pharmaceutical science": "Pharmaceutical Sciences",
+    "pharmacy sciences": "Pharmaceutical Sciences",
+    
+    "environ, agri and occ health": "Environmental, Agricultural and Occupational Health",
+    
+    "nebraska cooperative fish and wildlife research unit": "Nebraska Cooperative Fish and Wildlife Research Unit",
+    
+    "nebraska state climate office": "Nebraska State Climate Office",
+    
+    "nebraska innovation campus": "Nebraska Innovation Campus",
+    
+    "center for plant science innovation": "Center for Plant Science Innovation",
+    "psi": "Center for Plant Science Innovation",
+    
+    "information technology services": "Information Technology Services",
+    
+    "college of agricultural sciences & natural resources": "College of Agricultural Sciences and Natural Resources",
+    
+    "arts and sciences": "Arts and Sciences",
+    
+    "engineering": "Engineering",
+    
+    "complex biosystems": "Complex Biosystems",
+    
+    "osg": "Open Science Grid",
+    
+    "igpbs": "Integrated Biomedical Sciences Graduate Program",
+    
+    "bms": "Biomedical Sciences",
+    
+    "school of basic sciences": "School of Basic Sciences",
+    
+    "student affairs": "Student Affairs",
+    
+    "student": "Student",
+    
+    "graduate studies": "Graduate Studies",
+    
+    "economics": "Economics"
+  }
+}
