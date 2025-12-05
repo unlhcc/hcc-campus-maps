@@ -9,6 +9,8 @@ import sacct
 import mysql.connector
 from datetime import datetime, timedelta
 
+from normalize_department_names import apply_department_normalization
+
 ######################################################################################################
 # Purpose: Generates a set of departments whose members have created Slurm jobs in a recent timeframe
 # Author:  Luke Doughty (ldoughty2@unl.edu)
@@ -131,7 +133,8 @@ if __name__ == "__main__":
   print(depts)
   print('\n')
 
+  normalized_depts = apply_department_normalization(depts)
   output_path = OUTPUT_DIR / 'departments_completing_jobs_in_past_fortnight.json'
   with open(output_path, 'w') as json_file:
-    depts.to_json(json_file, orient='records', indent=2)
-  print(f"Departments completing jobs in past fortnight saved to {output_path}.")
+    normalized_depts.to_json(json_file, orient='records', indent=2)
+  print(f"departments completing jobs in past fortnight saved to {output_path}.")
