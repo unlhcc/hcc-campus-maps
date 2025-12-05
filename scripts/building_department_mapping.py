@@ -16,17 +16,23 @@ from normalize_department_names import apply_department_normalization
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / 'data'
-OUTPUT_DIR = PROJECT_ROOT / 'data'
-map_csv_dataframe = pd.read_csv(DATA_DIR / 'map_groups_to_departments.csv', header=0)
+OUTPUT_DIR = PROJECT_ROOT / 'data' / 'output'
+map_csv_dataframe = pd.read_csv(DATA_DIR / 'maps' / 'map_groups_to_departments.csv', header=0)
 map_csv_dataframe.columns = map_csv_dataframe.columns.str.strip()
 df = map_csv_dataframe[['Department','Revised_Department','Building']]
 
 
 def get_and_revise_departments() -> pd.DataFrame: # based on provided csv
-  jobs_completed_in_past_hour = get_jobs_completed_in_time_range(datetime.now() - timedelta(days=14), datetime.now())
-  users = jobs_completed_in_past_hour['User']
-  departments = get_departments_from_slurm_users(users)
-  normalized_departments = apply_department_normalization(departments)
+  try:
+    jobs_completed_in_past_fortnite = get_jobs_completed_in_time_range(datetime.now() - timedelta(days=14), datetime.now())
+    users = jobs_completed_in_past_fortnite['User']
+    departments = get_departments_from_slurm_users(users)
+    normalized_departments = apply_department_normalization(departments)
+  except Exception as e:
+    print(f"Could not fetch jobs from sacct. Probably because this script is being run on a non-HCC system.")
+    print("Pulling active departments from existing json file instead.")
+    normalized_departments = pd.read_json(DATA_DIR / 'output' / 'departments_completing_jobs_in_past_fortnight.json')
+
   return normalized_departments
 
 

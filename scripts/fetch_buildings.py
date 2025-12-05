@@ -11,7 +11,7 @@ from pathlib import Path
 ######################################################################################################
 
 PROJECT_ROOT = Path(__file__).parent.parent
-OUTPUT_DIR = PROJECT_ROOT / 'data'
+OUTPUT_DIR = PROJECT_ROOT / 'data' / 'output'
 SCRAPE_SOURCE_URL = 'https://maps.unl.edu'
 
 def save_dict_as_json(data_dict: dict, filename: str):

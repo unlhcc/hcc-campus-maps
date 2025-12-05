@@ -2,6 +2,7 @@ import json
 import pandas as pd
 from pathlib import Path
 
+DEFAULT_NORMALIZATION_MAP_PATH = Path(__file__).parent.parent / 'data' / 'department_normalization_map.json'
 
 def load_department_normalization_map(json_path):
   """Load the department normalization mapping from JSON file."""
@@ -40,7 +41,7 @@ def normalize_department_name(dept_name, normalization_map):
 
 
 def apply_department_normalization(df, dept_column='Department', 
-                                   json_path='department_normalization_map.json',
+                                   json_path=DEFAULT_NORMALIZATION_MAP_PATH,
                                    output_column='Department_Canonical'):
   """
   Apply department normalization to a DataFrame.
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     'Chem Eng', 'PSI'
   ]
   
-  normalization_map = load_department_normalization_map('../data/department_normalization_map.json')
+  normalization_map = load_department_normalization_map(DEFAULT_NORMALIZATION_MAP_PATH)
   
   print("Testing department normalization:")
   print("-" * 70)

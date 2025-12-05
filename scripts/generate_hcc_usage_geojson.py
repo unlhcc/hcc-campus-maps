@@ -3,10 +3,10 @@ import sys
 from pathlib import Path
 
 from fetch_buildings import fetch_building_geojson
-from create_building_department_mapping import get_buildings_from_department, get_and_revise_departments
+from scripts.building_department_mapping import get_buildings_from_department, get_and_revise_departments
 
 PROJECT_ROOT = Path(__file__).parent.parent
-DEFAULT_OUTPUT_DIR = PROJECT_ROOT / 'data'
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / 'data' / 'output'
 DEFAULT_OUTPUT_PATH = DEFAULT_OUTPUT_DIR / 'buildings_using_hcc.geojson'
 
 def save_dict_as_json(data_dict: dict, filename: str):

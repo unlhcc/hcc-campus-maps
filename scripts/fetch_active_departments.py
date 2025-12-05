@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
 import subprocess
@@ -95,6 +96,9 @@ def get_current_top_users_swan() -> pd.DataFrame:
 
 
 if __name__ == "__main__":
+  PROJECT_ROOT = Path(__file__).parent.parent
+  DATA_DIR = PROJECT_ROOT / 'data'
+  OUTPUT_DIR = PROJECT_ROOT / 'data' / 'output'
   TODAY = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
   END_OF_DAY = datetime.now().replace(hour=23, minute=59, second=59, microsecond=999999)
   top_users = get_current_top_users_swan()
@@ -118,10 +122,16 @@ if __name__ == "__main__":
   users = jobs_completed_in_past_hour['User']
   depts = get_departments_from_slurm_users(users)
   print(depts)
-  
+  print('\n')
+
   print("Departments Completing Jobs in the past fortnight:")
   jobs_completed_in_past_fortnite = get_jobs_completed_in_time_range(datetime.now() - timedelta(days=14), datetime.now())
   users = jobs_completed_in_past_fortnite['User']
   depts = get_departments_from_slurm_users(users)
   print(depts)
-  
+  print('\n')
+
+  output_path = OUTPUT_DIR / 'departments_completing_jobs_in_past_fortnight.json'
+  with open(output_path, 'w') as json_file:
+    depts.to_json(json_file, orient='records', indent=2)
+  print(f"Departments completing jobs in past fortnight saved to {output_path}.")
