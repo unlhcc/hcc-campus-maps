@@ -2,7 +2,7 @@ import json
 import pandas as pd
 from pathlib import Path
 
-DEFAULT_NORMALIZATION_MAP_PATH = Path(__file__).parent.parent / 'data' / 'department_normalization_map.json'
+DEFAULT_NORMALIZATION_MAP_PATH = Path(__file__).parent.parent / 'data' / 'maps' / 'department_normalization_map.json'
 
 def load_department_normalization_map(json_path):
   """Load the department normalization mapping from JSON file."""
