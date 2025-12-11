@@ -16,9 +16,11 @@ from normalize_department_names import apply_department_normalization
 # Author:  Luke Doughty (ldoughty2@unl.edu)
 # Notes:
 #          RCF stands for "Research Computing Facility".
-#          Currently, this script only works when run from Swan.
+#          Currently, this script only works when run from on the HCC network.
 #          Sacct.execute() didn't work for me ):
 ######################################################################################################
+
+# Get further back usage history from XDmod. Shoot for the web interface because API is very slow. Figure out which call we need to work and work with Caughlin to get it working. 
 
 load_dotenv()
 mysql_host = os.getenv("RCF_MYSQL_HOST")
@@ -31,6 +33,7 @@ def execute_sacct(sacct_obj) -> pd.DataFrame:
   column_names = sacct_obj.options['format']
   df = pd.read_csv(StringIO(result.stdout), delimiter='|', names=column_names)
   return df
+
 
 def get_departments_from_slurm_users(users_list) -> pd.DataFrame:
   mydb = mysql.connector.connect(

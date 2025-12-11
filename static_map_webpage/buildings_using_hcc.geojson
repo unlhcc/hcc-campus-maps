@@ -5948,7 +5948,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "BEL",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -7176,7 +7176,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "BL",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -10904,7 +10904,7 @@
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
         "id": "CSA",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -15330,7 +15330,7 @@
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
         "id": "ENTO",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -15438,7 +15438,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "ERC",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -18916,7 +18916,7 @@
         "CAMPUS": "UNL-NIC",
         "location": "Innovation Campus",
         "id": "FIC",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -19504,7 +19504,7 @@
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
         "id": "FORS",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -23092,7 +23092,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "HCCN",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -24404,7 +24404,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "HENZ",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -27864,7 +27864,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "KH",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -32160,7 +32160,7 @@
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
         "id": "MOLR",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -35284,7 +35284,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "NH",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -35340,7 +35340,7 @@
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
         "id": "NRRA",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -37504,7 +37504,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "OTHM",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -37909,7 +37909,7 @@
         "bldg_no": null,
         "location": "Off Campus",
         "id": "PKI",
-        "uses_hcc": false
+        "uses_hcc": true
       },
       "geometry": {
         "type": "Polygon",
@@ -42192,7 +42192,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "SEC",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -53412,7 +53412,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "SHOR",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -53966,7 +53966,7 @@
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
         "id": "SPL",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -57762,7 +57762,7 @@
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
         "id": "VBS",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -63364,7 +63364,7 @@
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
         "id": "WHIT",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {
@@ -63468,7 +63468,7 @@
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
         "id": "WL",
-        "uses_hcc": false
+        "uses_hcc": true
       }
     },
     {

@@ -49,15 +49,6 @@ def get_building_names():
   building_names_list = [building['NAME'] for building in buildings_properties_dict]
   return building_names_list
 
-def get_building_ids():
-  buildings_properties_dict= get_building_properties_dict()
-  building_ids_list = [building['id'] for building in buildings_properties_dict]
-  # for b in buildings_properties_dict:
-  #   if b["id"] != b["ABBREV"]:
-  #       print(f"id doesn't match ABBREV: {b['id']} vs {b['ABBREV']}")
-  return building_ids_list
-
-  
 
 if __name__ == "__main__":
   output_path = OUTPUT_DIR / 'buildings.geojson'

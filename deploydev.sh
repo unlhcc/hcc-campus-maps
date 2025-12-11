@@ -30,6 +30,7 @@ print_error() {
 
 # Get the directory where this bash script is located
 DEPLOY_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+GEOJSON_PATH="$DEPLOY_SCRIPT_DIR/static_map_webpage/buildings_using_hcc.geojson"
 cd "$DEPLOY_SCRIPT_DIR/scripts"
 
 echo "==============================="
@@ -48,7 +49,9 @@ fi
 print_step "Running HCC usage GeoJSON generation now..."
 
 cd "$DEPLOY_SCRIPT_DIR"
-if python3 scripts/generate_hcc_usage_geojson.py >> "$DEPLOY_SCRIPT_DIR/scripts/generate_hcc_usage_geojson.log" 2>&1; then
+if python3 scripts/generate_hcc_usage_geojson.py "$GEOJSON_PATH" >> "$DEPLOY_SCRIPT_DIR/scripts/generate_hcc_usage_geojson.log" 2>&1; then
+  grep -c "uses_hcc\": true" "$GEOJSON_PATH" | \
+    xargs -I {} echo "Generated GeoJSON with {} buildings using HCC."
   print_step "Initial GeoJSON generation completed successfully"
 else
   print_error "Failed to generate initial GeoJSON. Check the log file."
