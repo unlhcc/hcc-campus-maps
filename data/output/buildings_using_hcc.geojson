@@ -3823,7 +3823,8 @@
         "Address": "3940 Fair St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "ANSC"
+        "id": "ANSC",
+        "uses_hcc": "day"
       }
     },
     {
@@ -5000,7 +5001,8 @@
         "Address": "1144 T St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "AVH"
+        "id": "AVH",
+        "uses_hcc": "day"
       }
     },
     {
@@ -5594,7 +5596,8 @@
         "Address": "1901 Vine St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "BEAD"
+        "id": "BEAD",
+        "uses_hcc": "day"
       }
     },
     {
@@ -5917,7 +5920,8 @@
         "Address": "500 Stadium Dr",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "BEL"
+        "id": "BEL",
+        "uses_hcc": "day"
       }
     },
     {
@@ -6075,7 +6079,8 @@
         "Address": "1215 U St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "BESY"
+        "id": "BESY",
+        "uses_hcc": "day"
       }
     },
     {
@@ -7139,7 +7144,8 @@
         "Address": "510 Stadium Dr",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "BL"
+        "id": "BL",
+        "uses_hcc": "week"
       }
     },
     {
@@ -7933,7 +7939,8 @@
         "Address": "1220 T St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "BURN"
+        "id": "BURN",
+        "uses_hcc": "day"
       }
     },
     {
@@ -8684,7 +8691,8 @@
         "Address": "3605 Fair St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "CHA"
+        "id": "CHA",
+        "uses_hcc": "week"
       }
     },
     {
@@ -10852,7 +10860,8 @@
         "Address": "2000 N 34th St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "CSA"
+        "id": "CSA",
+        "uses_hcc": "day"
       }
     },
     {
@@ -15255,7 +15264,8 @@
         "Address": "1700 East Campus Mall",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "ENTO"
+        "id": "ENTO",
+        "uses_hcc": "day"
       }
     },
     {
@@ -15362,7 +15372,8 @@
         "Address": "880 N 16th St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "ERC"
+        "id": "ERC",
+        "uses_hcc": "week"
       }
     },
     {
@@ -18832,7 +18843,8 @@
         "Address": "1901 N 21st St",
         "CAMPUS": "UNL-NIC",
         "location": "Innovation Campus",
-        "id": "FIC"
+        "id": "FIC",
+        "uses_hcc": "day"
       }
     },
     {
@@ -19410,7 +19422,8 @@
         "Address": "1800 N 37th St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "FORS"
+        "id": "FORS",
+        "uses_hcc": "day"
       }
     },
     {
@@ -19588,7 +19601,8 @@
         "Address": "3720 East Campus Loop S",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "FYH"
+        "id": "FYH",
+        "uses_hcc": "day"
       }
     },
     {
@@ -20504,7 +20518,8 @@
         "Address": "639 N 12th St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "HAH"
+        "id": "HAH",
+        "uses_hcc": "day"
       }
     },
     {
@@ -20715,7 +20730,8 @@
         "Address": "3310 Holdrege St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "HARH"
+        "id": "HARH",
+        "uses_hcc": "day"
       }
     },
     {
@@ -22987,7 +23003,8 @@
         "Address": "550 N 19th St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "HCCN"
+        "id": "HCCN",
+        "uses_hcc": "day"
       }
     },
     {
@@ -24297,7 +24314,8 @@
         "Address": "1430 Vine St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "HENZ"
+        "id": "HENZ",
+        "uses_hcc": "month"
       }
     },
     {
@@ -24443,7 +24461,8 @@
         "Address": "730 N 14th St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "HLH"
+        "id": "HLH",
+        "uses_hcc": "week"
       }
     },
     {
@@ -27166,7 +27185,8 @@
         "Address": "855 N 16th St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "JH"
+        "id": "JH",
+        "uses_hcc": "day"
       }
     },
     {
@@ -27742,7 +27762,8 @@
         "Address": "1700 Vine St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "KH"
+        "id": "KH",
+        "uses_hcc": "week"
       }
     },
     {
@@ -29678,7 +29699,8 @@
         "Address": "1700 N 35th St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "LEV"
+        "id": "LEV",
+        "uses_hcc": "week"
       }
     },
     {
@@ -30451,7 +30473,8 @@
         "Address": "1300 R St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "LLN"
+        "id": "LLN",
+        "uses_hcc": "week"
       }
     },
     {
@@ -30570,7 +30593,8 @@
         "Address": "1248 R St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "LLS"
+        "id": "LLS",
+        "uses_hcc": "day"
       }
     },
     {
@@ -31529,7 +31553,8 @@
         "Address": "1101 T St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "MANT"
+        "id": "MANT",
+        "uses_hcc": "day"
       }
     },
     {
@@ -32011,7 +32036,8 @@
         "Address": "4240 Fair St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "MOLR"
+        "id": "MOLR",
+        "uses_hcc": "week"
       }
     },
     {
@@ -35121,7 +35147,8 @@
         "Address": "900 N 16th St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "NH"
+        "id": "NH",
+        "uses_hcc": "day"
       }
     },
     {
@@ -35176,7 +35203,8 @@
         "Address": "2051 N 38th St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "NRRA"
+        "id": "NRRA",
+        "uses_hcc": "day"
       }
     },
     {
@@ -36280,7 +36308,8 @@
         "Address": "660 N 12th St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "OLDH"
+        "id": "OLDH",
+        "uses_hcc": "month"
       }
     },
     {
@@ -37330,7 +37359,8 @@
         "Address": "820 N 16th St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "OTHM"
+        "id": "OTHM",
+        "uses_hcc": "day"
       }
     },
     {
@@ -37732,7 +37762,8 @@
         "CAMPUS": "UNL-LIN1",
         "bldg_no": null,
         "location": "Off Campus",
-        "id": "PKI"
+        "id": "PKI",
+        "uses_hcc": "week"
       },
       "geometry": {
         "type": "Polygon",
@@ -38034,7 +38065,8 @@
         "Address": "1875 N 38th St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "PLSH"
+        "id": "PLSH",
+        "uses_hcc": "day"
       }
     },
     {
@@ -42002,7 +42034,8 @@
         "Address": "844 N 16th St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "SEC"
+        "id": "SEC",
+        "uses_hcc": "day"
       }
     },
     {
@@ -53210,7 +53243,8 @@
         "Address": "1100 T St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "SHOR"
+        "id": "SHOR",
+        "uses_hcc": "day"
       }
     },
     {
@@ -53762,7 +53796,8 @@
         "Address": "2000 N 35th St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "SPL"
+        "id": "SPL",
+        "uses_hcc": "week"
       }
     },
     {
@@ -54464,7 +54499,8 @@
         "Address": "1100 T St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "STE"
+        "id": "STE",
+        "uses_hcc": "day"
       }
     },
     {
@@ -57538,7 +57574,8 @@
         "Address": "1880 N 42nd St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "VBS"
+        "id": "VBS",
+        "uses_hcc": "day"
       }
     },
     {
@@ -63130,7 +63167,8 @@
         "Address": "2200 Vine St",
         "CAMPUS": "UNL-CITY",
         "location": "City Campus",
-        "id": "WHIT"
+        "id": "WHIT",
+        "uses_hcc": "day"
       }
     },
     {
@@ -63232,7 +63270,8 @@
         "Address": "1840 N 37th St",
         "CAMPUS": "UNL-EAST",
         "location": "East Campus",
-        "id": "WL"
+        "id": "WL",
+        "uses_hcc": "day"
       }
     },
     {
