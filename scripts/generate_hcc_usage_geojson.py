@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime, timedelta
 import json
 import sys
 from pathlib import Path
@@ -25,9 +25,9 @@ def append_hcc_usage_property(buildings_geojson: dict, buildings_using_hcc: set,
 def generate_hcc_usage_geojson() -> dict:
   SCRAPE_SOURCE_URL = 'https://maps.unl.edu'
   buildings_geojson = fetch_building_geojson(SCRAPE_SOURCE_URL)
-  buildings_using_hcc_day, day_count = get_buildings_using_hcc(datetime.now() - datetime.timedelta(days=1), datetime.now())
-  buildings_using_hcc_week, week_count = get_buildings_using_hcc(datetime.now() - datetime.timedelta(days=7), datetime.now())
-  buildings_using_hcc_month, month_count = get_buildings_using_hcc(datetime.now() - datetime.timedelta(days=30), datetime.now())
+  buildings_using_hcc_day, day_count = get_buildings_using_hcc(datetime.now() - timedelta(days=1), datetime.now())
+  buildings_using_hcc_week, week_count = get_buildings_using_hcc(datetime.now() - timedelta(days=7), datetime.now())
+  buildings_using_hcc_month, month_count = get_buildings_using_hcc(datetime.now() - timedelta(days=30), datetime.now())
   print(f"{day_count} Departments Using HCC in the past day\n")
   print(f"{week_count} Departments Using HCC in the past week\n")
   print(f"{month_count} Departments Using HCC in the past month\n")
