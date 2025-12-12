@@ -86,28 +86,32 @@
             geoJsonLayer = L.geoJSON(data, {
               style: function(feature) {
                 const usesHcc = feature.properties.uses_hcc;
-                let fillColor, color;
+                let fillColor, color, fillOpacity;
                 switch (usesHcc) {
                   case "month":
-                    fillColor = "#FFADAD";
-                    color = "#CCADAD";
+                    fillColor = "#FF0000";
+                    fillOpacity = 0.4;
+                    color = "#CC0000";
                     break;
                   case "week":
-                    fillColor = "#FF7777";
-                    color = "#CC7777";
+                    fillColor = "#FF0000";
+                    fillOpacity = 0.6;
+                    color = "#CC0000";
                     break;
                   case "day":
                     fillColor = "#FF0000";
+                    fillOpacity = 0.8;
                     color = "#CC0000";
                     break;
                   default:
                     fillColor = "#808080";
+                    fillOpacity = 0.4;
                     color = "#606060";
                 }
                 return {
-                  fillColor: fillColor, // Red if true, gray if false
-                  fillOpacity: 0.5,
-                  color: color, // Darker borders
+                  fillColor: fillColor,
+                  fillOpacity: fillOpacity,
+                  color: color,
                   weight: 2
                 };
               },
