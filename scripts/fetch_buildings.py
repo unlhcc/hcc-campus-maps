@@ -44,14 +44,14 @@ def fetch_building_geojson(url: str) -> dict:
   building_geojson = dict()
   building_geojson["type"] = "FeatureCollection"
   building_geojson["features"] = []
-  for building in fetch_raw_buildings_dict:
+  for building in fetch_raw_buildings_dict["features"]:
     feature = {
       "type": "Feature",
       "geometry": building["geometry"],
       "properties": dict()
     }
-    feature["properties"]["abbrev"] = building.get("ABBREV", "")
-    feature["properties"]["name"] = building.get("NAME", "")
+    feature["properties"]["abbrev"] = building["properties"].get("ABBREV", "")
+    feature["properties"]["name"] = building["properties"].get("NAME", "")
     # "bldg_no", "ABBREV", "NAME", "Address", "CAMPUS", "location", "id" are all available
     building_geojson["features"].append(feature)
   return building_geojson

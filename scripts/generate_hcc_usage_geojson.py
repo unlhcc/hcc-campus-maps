@@ -23,19 +23,19 @@ def generate_hcc_usage_geojson() -> dict:
   
   # Get departments
   departments = get_and_revise_departments(datetime.now() - timedelta(days=30), datetime.now())
-  usage_geojson["departments_using_hcc"] = departments.to_dict(orient='records')
+  departments = departments["Department_Canonical"].drop_duplicates()
+  usage_geojson["departments_using_hcc"] = departments.to_list()
   
   # Add departments to building properties
   departments_per_building_path = PROJECT_ROOT / 'data' / 'maps' / 'departments_per_building.json'
   with open(departments_per_building_path, 'r') as f:
     departments_per_building = json.load(f)['building_departments']
     
-  for feature in usage_geojson["buildings"]["features"]:
-    building_name = feature["properties"]["name"]
-    if building_name in departments_per_building:
-      feature["properties"]["departments"] = departments_per_building[building_name]
-    else:
-      feature["properties"]["departments"] = []
+  for building in usage_geojson["buildings"]["features"]:
+    print(f"processing building: {building}")
+    building_name = building["properties"]["name"]
+    print(f"building_name: {building_name} has departments: {departments_per_building.get(building_name, [])}")
+    building["properties"]["departments"] = departments_per_building.get(building_name, [])
 
   return usage_geojson
     
