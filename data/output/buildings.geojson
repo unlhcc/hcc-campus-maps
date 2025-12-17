@@ -1007,13 +1007,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C183",
-        "ABBREV": "14PG",
-        "NAME": "14th & Avery Parking Garage",
-        "Address": "1111 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "14PG"
+        "abbrev": "14PG",
+        "name": "14th & Avery Parking Garage"
       }
     },
     {
@@ -1436,13 +1431,8 @@
         ]
       },
       "properties": {
-        "bldg_no": " ",
-        "ABBREV": "NRC",
-        "NAME": "Neihardt Center",
-        "Address": "540 N 16th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "NRC"
+        "abbrev": "NRC",
+        "name": "Neihardt Center"
       }
     },
     {
@@ -2147,13 +2137,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C176",
-        "ABBREV": "17PG",
-        "NAME": "17th & R Parking Garage",
-        "Address": "300 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "17PG"
+        "abbrev": "17PG",
+        "name": "17th & R Parking Garage"
       }
     },
     {
@@ -2258,13 +2243,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C223",
-        "ABBREV": "18R",
-        "NAME": "18th & R Parking Garage",
-        "Address": "1801 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "18R"
+        "abbrev": "18R",
+        "name": "18th & R Parking Garage"
       }
     },
     {
@@ -2297,13 +2277,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C245",
-        "ABBREV": "18S",
-        "NAME": "18th & S Support Building",
-        "Address": "510 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "18S"
+        "abbrev": "18S",
+        "name": "18th & S Support Building"
       }
     },
     {
@@ -2372,13 +2347,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C209",
-        "ABBREV": "19PG",
-        "NAME": "19th and Vine Parking Garage",
-        "Address": "1830 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "19PG"
+        "abbrev": "19PG",
+        "name": "19th and Vine Parking Garage"
       }
     },
     {
@@ -2523,13 +2493,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A021",
-        "ABBREV": "ACB",
-        "NAME": "Agricultural Communications Building",
-        "Address": "3620 East Campus Loop S",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "ACB"
+        "abbrev": "ACB",
+        "name": "Agricultural Communications Building"
       }
     },
     {
@@ -2570,13 +2535,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C052",
-        "ABBREV": "ADMN",
-        "NAME": "Canfield Administration Building North",
-        "Address": "503 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ADMN"
+        "abbrev": "ADMN",
+        "name": "Canfield Administration Building North"
       }
     },
     {
@@ -2689,13 +2649,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C001",
-        "ABBREV": "ADMS",
-        "NAME": "Canfield Administration Building South",
-        "Address": "501 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ADMS"
+        "abbrev": "ADMS",
+        "name": "Canfield Administration Building South"
       }
     },
     {
@@ -2764,13 +2719,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A003",
-        "ABBREV": "AGH",
-        "NAME": "Agricultural Hall",
-        "Address": "3550 East Campus Loop S",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "AGH"
+        "abbrev": "AGH",
+        "name": "Agricultural Hall"
       }
     },
     {
@@ -2803,13 +2753,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A121",
-        "ABBREV": "AHFS",
-        "NAME": "Agronomy & Horticulture/Forestry Shops",
-        "Address": "2103 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "AHFS"
+        "abbrev": "AHFS",
+        "name": "Agronomy & Horticulture/Forestry Shops"
       }
     },
     {
@@ -2842,13 +2787,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A721",
-        "ABBREV": "AHG1",
-        "NAME": "Agronomy & Horticulture Greenhouse 1",
-        "Address": "2100 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "AHG1"
+        "abbrev": "AHG1",
+        "name": "Agronomy & Horticulture Greenhouse 1"
       }
     },
     {
@@ -2913,13 +2853,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A731",
-        "ABBREV": "AHG2",
-        "NAME": "Agronomy & Horticulture Greenhouse 2",
-        "Address": "2041 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "AHG2"
+        "abbrev": "AHG2",
+        "name": "Agronomy & Horticulture Greenhouse 2"
       }
     },
     {
@@ -3040,13 +2975,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A098",
-        "ABBREV": "AHG3",
-        "NAME": "Agronomy & Horticulture Greenhouse 3",
-        "Address": "2065 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "AHG3"
+        "abbrev": "AHG3",
+        "name": "Agronomy & Horticulture Greenhouse 3"
       }
     },
     {
@@ -3271,13 +3201,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A093",
-        "ABBREV": "AHG4",
-        "NAME": "Agronomy & Horticulture Greenhouse 4",
-        "Address": "3855 Merrill St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "AHG4"
+        "abbrev": "AHG4",
+        "name": "Agronomy & Horticulture Greenhouse 4"
       }
     },
     {
@@ -3310,13 +3235,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A106",
-        "ABBREV": "AHPH",
-        "NAME": "Agronomy & Horticulture Physiology Building",
-        "Address": "3710 Merrill St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "AHPH"
+        "abbrev": "AHPH",
+        "name": "Agronomy & Horticulture Physiology Building"
       }
     },
     {
@@ -3349,13 +3269,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A104",
-        "ABBREV": "AHTL",
-        "NAME": "Agronomy & Horticulture Outstate Testing Laboratory",
-        "Address": "3720 Merrill St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "AHTL"
+        "abbrev": "AHTL",
+        "name": "Agronomy & Horticulture Outstate Testing Laboratory"
       }
     },
     {
@@ -3388,13 +3303,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C158",
-        "ABBREV": "ALEX",
-        "NAME": "Alexander Building",
-        "Address": "1410 Q St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ALEX"
+        "abbrev": "ALEX",
+        "name": "Alexander Building"
       }
     },
     {
@@ -3531,13 +3441,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C165",
-        "ABBREV": "ANDN",
-        "NAME": "Andersen Hall",
-        "Address": "200 Centennial Mall N",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ANDN"
+        "abbrev": "ANDN",
+        "name": "Andersen Hall"
       }
     },
     {
@@ -3602,13 +3507,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C003",
-        "ABBREV": "ANDR",
-        "NAME": "Andrews Hall",
-        "Address": "625 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ANDR"
+        "abbrev": "ANDR",
+        "name": "Andrews Hall"
       }
     },
     {
@@ -3817,13 +3717,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A102",
-        "ABBREV": "ANSC",
-        "NAME": "Animal Science Complex",
-        "Address": "3940 Fair St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "ANSC"
+        "abbrev": "ANSC",
+        "name": "Animal Science Complex"
       }
     },
     {
@@ -3976,13 +3871,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C004",
-        "ABBREV": "ARCH",
-        "NAME": "Architecture Hall",
-        "Address": "402 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ARCH"
+        "abbrev": "ARCH",
+        "name": "Architecture Hall"
       }
     },
     {
@@ -4055,13 +3945,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C140",
-        "ABBREV": "ARCL",
-        "NAME": "Architecture Hall Link",
-        "Address": "404 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ARCL"
+        "abbrev": "ARCL",
+        "name": "Architecture Hall Link"
       }
     },
     {
@@ -4234,13 +4119,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C019",
-        "ABBREV": "ARCW",
-        "NAME": "Architecture Hall West",
-        "Address": "400 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ARCW"
+        "abbrev": "ARCW",
+        "name": "Architecture Hall West"
       }
     },
     {
@@ -4305,13 +4185,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C061",
-        "ABBREV": "ARH",
-        "NAME": "Abel Hall",
-        "Address": "880 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ARH"
+        "abbrev": "ARH",
+        "name": "Abel Hall"
       }
     },
     {
@@ -4476,13 +4351,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C063",
-        "ABBREV": "ASFS",
-        "NAME": "Abel-Sandoz Food Service Building",
-        "Address": "840 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ASFS"
+        "abbrev": "ASFS",
+        "name": "Abel-Sandoz Food Service Building"
       }
     },
     {
@@ -4743,13 +4613,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C208",
-        "ABBREV": "ASWC",
-        "NAME": "Abel-Sandoz Welcome Center",
-        "Address": "830 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ASWC"
+        "abbrev": "ASWC",
+        "name": "Abel-Sandoz Welcome Center"
       }
     },
     {
@@ -4994,13 +4859,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C005",
-        "ABBREV": "AVH",
-        "NAME": "Avery Hall",
-        "Address": "1144 T St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "AVH"
+        "abbrev": "AVH",
+        "name": "Avery Hall"
       }
     },
     {
@@ -5041,13 +4901,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A075",
-        "ABBREV": "BDL",
-        "NAME": "Bio-Fiber Development Laboratory",
-        "Address": "1605 N 35th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "BDL"
+        "abbrev": "BDL",
+        "name": "Bio-Fiber Development Laboratory"
       }
     },
     {
@@ -5588,13 +5443,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C148",
-        "ABBREV": "BEAD",
-        "NAME": "Beadle Center",
-        "Address": "1901 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "BEAD"
+        "abbrev": "BEAD",
+        "name": "Beadle Center"
       }
     },
     {
@@ -5911,13 +5761,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C060",
-        "ABBREV": "BEL",
-        "NAME": "Behlen Laboratory",
-        "Address": "500 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "BEL"
+        "abbrev": "BEL",
+        "name": "Behlen Laboratory"
       }
     },
     {
@@ -5982,13 +5827,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C031",
-        "ABBREV": "BENH",
-        "NAME": "Benton Hall",
-        "Address": "1535 U St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "BENH"
+        "abbrev": "BENH",
+        "name": "Benton Hall"
       }
     },
     {
@@ -6069,13 +5909,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C007",
-        "ABBREV": "BESY",
-        "NAME": "Bessey Hall",
-        "Address": "1215 U St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "BESY"
+        "abbrev": "BESY",
+        "name": "Bessey Hall"
       }
     },
     {
@@ -6172,13 +6007,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C226",
-        "ABBREV": "BIC",
-        "NAME": "Breslow Ice Center",
-        "Address": "433 V St",
-        "CAMPUS": "UNL-LIN1",
-        "location": "Off Campus",
-        "id": "BIC"
+        "abbrev": "BIC",
+        "name": "Breslow Ice Center"
       }
     },
     {
@@ -6319,13 +6149,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C149",
-        "ABBREV": "BIOG",
-        "NAME": "Bioscience Greenhouses",
-        "Address": "1901 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "BIOG"
+        "abbrev": "BIOG",
+        "name": "Bioscience Greenhouses"
       }
     },
     {
@@ -7070,13 +6895,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A087",
-        "ABBREV": "BKC",
-        "NAME": "Barkley Memorial Center",
-        "Address": "4075 East Campus Loop S",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "BKC"
+        "abbrev": "BKC",
+        "name": "Barkley Memorial Center"
       }
     },
     {
@@ -7133,13 +6953,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C008",
-        "ABBREV": "BL",
-        "NAME": "Brace Laboratory",
-        "Address": "510 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "BL"
+        "abbrev": "BL",
+        "name": "Brace Laboratory"
       }
     },
     {
@@ -7256,13 +7071,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C076",
-        "ABBREV": "BSC",
-        "NAME": "Business Services Complex",
-        "Address": "1700 Y St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "BSC"
+        "abbrev": "BSC",
+        "name": "Business Services Complex"
       }
     },
     {
@@ -7927,13 +7737,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C009",
-        "ABBREV": "BURN",
-        "NAME": "Burnett Hall",
-        "Address": "1220 T St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "BURN"
+        "abbrev": "BURN",
+        "name": "Burnett Hall"
       }
     },
     {
@@ -7966,13 +7771,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C198",
-        "ABBREV": "BUSG",
-        "NAME": "Bus Garage",
-        "Address": "1935 N Antelope Valley Pky",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "BUSG"
+        "abbrev": "BUSG",
+        "name": "Bus Garage"
       }
     },
     {
@@ -8497,13 +8297,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C028",
-        "ABBREV": "CCUP",
-        "NAME": "Utility Plant, City Campus",
-        "Address": "905 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "CCUP"
+        "abbrev": "CCUP",
+        "name": "Utility Plant, City Campus"
       }
     },
     {
@@ -8552,13 +8347,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A076",
-        "ABBREV": "CDL",
-        "NAME": "Ruth Staples Laboratory",
-        "Address": "1855 N 35th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CDL"
+        "abbrev": "CDL",
+        "name": "Ruth Staples Laboratory"
       }
     },
     {
@@ -8591,13 +8381,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C239",
-        "ABBREV": "CEMA",
-        "NAME": "Johnny Carson Center for Emerging Media Arts",
-        "Address": "1300 Q St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "CEMA"
+        "abbrev": "CEMA",
+        "name": "Johnny Carson Center for Emerging Media Arts"
       }
     },
     {
@@ -8678,13 +8463,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A002",
-        "ABBREV": "CHA",
-        "NAME": "Chase Hall",
-        "Address": "3605 Fair St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CHA"
+        "abbrev": "CHA",
+        "name": "Chase Hall"
       }
     },
     {
@@ -8741,13 +8521,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C217",
-        "ABBREV": "CHC",
-        "NAME": "UNL Children's Center",
-        "Address": "2225 W St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "CHC"
+        "abbrev": "CHC",
+        "name": "UNL Children's Center"
       }
     },
     {
@@ -9268,13 +9043,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C010",
-        "ABBREV": "COL",
-        "NAME": "Coliseum",
-        "Address": "1350 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "COL"
+        "abbrev": "COL",
+        "name": "Coliseum"
       }
     },
     {
@@ -9919,13 +9689,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C143",
-        "ABBREV": "COOK",
-        "NAME": "Cook Pavilion",
-        "Address": "845 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "COOK"
+        "abbrev": "COOK",
+        "name": "Cook Pavilion"
       }
     },
     {
@@ -10294,13 +10059,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C180",
-        "ABBREV": "CORT",
-        "NAME": "The Courtyards",
-        "Address": "733 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "CORT"
+        "abbrev": "CORT",
+        "name": "The Courtyards"
       }
     },
     {
@@ -10533,13 +10293,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C246",
-        "ABBREV": "CPEH",
-        "NAME": "Carolyn Pope Edwards Hall",
-        "Address": "840 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "CPEH"
+        "abbrev": "CPEH",
+        "name": "Carolyn Pope Edwards Hall"
       }
     },
     {
@@ -10656,13 +10411,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C000",
-        "ABBREV": "CREC",
-        "NAME": "Sapp Recreation Facility",
-        "Address": "841 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "CREC"
+        "abbrev": "CREC",
+        "name": "Sapp Recreation Facility"
       }
     },
     {
@@ -10695,13 +10445,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "V004",
-        "ABBREV": "CRES",
-        "NAME": "Campus Renewable Energy System Building",
-        "Address": "2402 Salt Creek Rdwy",
-        "CAMPUS": "UNL-NIC",
-        "location": "Innovation Campus",
-        "id": "CRES"
+        "abbrev": "CRES",
+        "name": "Campus Renewable Energy System Building"
       }
     },
     {
@@ -10846,13 +10591,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A057",
-        "ABBREV": "CSA",
-        "NAME": "Conservation & Survey Annex",
-        "Address": "2000 N 34th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CSA"
+        "abbrev": "CSA",
+        "name": "Conservation & Survey Annex"
       }
     },
     {
@@ -10885,13 +10625,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A540",
-        "ABBREV": "CTA1",
-        "NAME": "Colonial Terrace Apartment A-1",
-        "Address": "3330 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTA1"
+        "abbrev": "CTA1",
+        "name": "Colonial Terrace Apartment A-1"
       }
     },
     {
@@ -10924,13 +10659,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A541",
-        "ABBREV": "CTA2",
-        "NAME": "Colonial Terrace Apartment A-2",
-        "Address": "3400 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTA2"
+        "abbrev": "CTA2",
+        "name": "Colonial Terrace Apartment A-2"
       }
     },
     {
@@ -10963,13 +10693,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A542",
-        "ABBREV": "CTA3",
-        "NAME": "Colonial Terrace Apartment A-3",
-        "Address": "3323 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTA3"
+        "abbrev": "CTA3",
+        "name": "Colonial Terrace Apartment A-3"
       }
     },
     {
@@ -11002,13 +10727,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A543",
-        "ABBREV": "CTA4",
-        "NAME": "Colonial Terrace Apartment A-4",
-        "Address": "3401 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTA4"
+        "abbrev": "CTA4",
+        "name": "Colonial Terrace Apartment A-4"
       }
     },
     {
@@ -11041,13 +10761,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A544",
-        "ABBREV": "CTB",
-        "NAME": "Colonial Terrace Apartment B",
-        "Address": "3344 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTB"
+        "abbrev": "CTB",
+        "name": "Colonial Terrace Apartment B"
       }
     },
     {
@@ -11080,13 +10795,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A545",
-        "ABBREV": "CTC1",
-        "NAME": "Colonial Terrace Apartment C-1",
-        "Address": "3320 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTC1"
+        "abbrev": "CTC1",
+        "name": "Colonial Terrace Apartment C-1"
       }
     },
     {
@@ -11119,13 +10829,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A546",
-        "ABBREV": "CTC2",
-        "NAME": "Colonial Terrace Apartment C-2",
-        "Address": "3340 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTC2"
+        "abbrev": "CTC2",
+        "name": "Colonial Terrace Apartment C-2"
       }
     },
     {
@@ -11158,13 +10863,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A547",
-        "ABBREV": "CTC3",
-        "NAME": "Colonial Terrace Apartment C-3",
-        "Address": "3315 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTC3"
+        "abbrev": "CTC3",
+        "name": "Colonial Terrace Apartment C-3"
       }
     },
     {
@@ -11197,13 +10897,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A548",
-        "ABBREV": "CTC4",
-        "NAME": "Colonial Terrace Apartment C-4",
-        "Address": "3333 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTC4"
+        "abbrev": "CTC4",
+        "name": "Colonial Terrace Apartment C-4"
       }
     },
     {
@@ -11236,13 +10931,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A549",
-        "ABBREV": "CTD1",
-        "NAME": "Colonial Terrace Apartment D-1",
-        "Address": "3301 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTD1"
+        "abbrev": "CTD1",
+        "name": "Colonial Terrace Apartment D-1"
       }
     },
     {
@@ -11275,13 +10965,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A550",
-        "ABBREV": "CTD2",
-        "NAME": "Colonial Terrace Apartment D-2",
-        "Address": "3345 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTD2"
+        "abbrev": "CTD2",
+        "name": "Colonial Terrace Apartment D-2"
       }
     },
     {
@@ -11468,13 +11153,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C224",
-        "ABBREV": "CTES",
-        "NAME": "City Thermal Energy Storage",
-        "Address": "1340 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "CTES"
+        "abbrev": "CTES",
+        "name": "City Thermal Energy Storage"
       }
     },
     {
@@ -11507,13 +11187,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A551",
-        "ABBREV": "CTS1",
-        "NAME": "Colonial Terrace Apartments Shop 1",
-        "Address": "3332 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTS1"
+        "abbrev": "CTS1",
+        "name": "Colonial Terrace Apartments Shop 1"
       }
     },
     {
@@ -11546,13 +11221,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A552",
-        "ABBREV": "CTS2",
-        "NAME": "Colonial Terrace Apartments Shop 2",
-        "Address": "3342 Starr St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "CTS2"
+        "abbrev": "CTS2",
+        "name": "Colonial Terrace Apartments Shop 2"
       }
     },
     {
@@ -14033,13 +13703,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A068",
-        "ABBREV": "DENT",
-        "NAME": "College of Dentistry",
-        "Address": "4000 East Campus Loop S",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "DENT"
+        "abbrev": "DENT",
+        "name": "College of Dentistry"
       }
     },
     {
@@ -14408,13 +14073,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C100",
-        "ABBREV": "DEV",
-        "NAME": "Devaney Sports Center",
-        "Address": "1600 Court St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "DEV"
+        "abbrev": "DEV",
+        "name": "Devaney Sports Center"
       }
     },
     {
@@ -14447,13 +14107,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C232",
-        "ABBREV": "DF",
-        "NAME": "Documents Facility",
-        "Address": "1331 Military Rd",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "DF"
+        "abbrev": "DF",
+        "name": "Documents Facility"
       }
     },
     {
@@ -14486,13 +14141,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A004",
-        "ABBREV": "DINS",
-        "NAME": "Dinsdale Family Learning Commons",
-        "Address": "1625 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "DINS"
+        "abbrev": "DINS",
+        "name": "Dinsdale Family Learning Commons"
       }
     },
     {
@@ -14741,13 +14391,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C233",
-        "ABBREV": "DTC",
-        "NAME": "Sid and Hazel Dillon Tennis Center",
-        "Address": "2400 N Antelope Valley Pky",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "DTC"
+        "abbrev": "DTC",
+        "name": "Sid and Hazel Dillon Tennis Center"
       }
     },
     {
@@ -15116,13 +14761,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A029",
-        "ABBREV": "ECUP",
-        "NAME": "Utility Plant, East Campus",
-        "Address": "1935 N 37th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "ECUP"
+        "abbrev": "ECUP",
+        "name": "Utility Plant, East Campus"
       }
     },
     {
@@ -15155,13 +14795,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A722",
-        "ABBREV": "EGR2",
-        "NAME": "Entomology Greenhouse 2",
-        "Address": "2110 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "EGR2"
+        "abbrev": "EGR2",
+        "name": "Entomology Greenhouse 2"
       }
     },
     {
@@ -15194,13 +14829,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A723",
-        "ABBREV": "EGR3",
-        "NAME": "Entomology Greenhouse 3",
-        "Address": "2120 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "EGR3"
+        "abbrev": "EGR3",
+        "name": "Entomology Greenhouse 3"
       }
     },
     {
@@ -15249,13 +14879,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A040",
-        "ABBREV": "ENTO",
-        "NAME": "Entomology Hall",
-        "Address": "1700 East Campus Mall",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "ENTO"
+        "abbrev": "ENTO",
+        "name": "Entomology Hall"
       }
     },
     {
@@ -15356,13 +14981,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C250",
-        "ABBREV": "ERC",
-        "NAME": "Engineering Research Center",
-        "Address": "880 N 16th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ERC"
+        "abbrev": "ERC",
+        "name": "Engineering Research Center"
       }
     },
     {
@@ -15699,13 +15319,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C221",
-        "ABBREV": "ESST",
-        "NAME": "Eastside Suites",
-        "Address": "433 N 19th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ESST"
+        "abbrev": "ESST",
+        "name": "Eastside Suites"
       }
     },
     {
@@ -15976,13 +15591,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A134",
-        "ABBREV": "ETES",
-        "NAME": "East Thermal Energy Storage",
-        "Address": "3755 Merrill St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "ETES"
+        "abbrev": "ETES",
+        "name": "East Thermal Energy Storage"
       }
     },
     {
@@ -16079,13 +15689,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C032",
-        "ABBREV": "FAIR",
-        "NAME": "Fairfield Hall",
-        "Address": "1545 U St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FAIR"
+        "abbrev": "FAIR",
+        "name": "Fairfield Hall"
       }
     },
     {
@@ -16118,13 +15723,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C241",
-        "ABBREV": "FCB",
-        "NAME": "Fluid Cooler Building",
-        "Address": "520 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FCB"
+        "abbrev": "FCB",
+        "name": "Fluid Cooler Building"
       }
     },
     {
@@ -16157,13 +15757,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A203",
-        "ABBREV": "FFAB",
-        "NAME": "Fleming Fields Annex Building",
-        "Address": "2301 N 33rd St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "FFAB"
+        "abbrev": "FFAB",
+        "name": "Fleming Fields Annex Building"
       }
     },
     {
@@ -16196,13 +15791,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "L019",
-        "ABBREV": "FFCB",
-        "NAME": "Fleming Fields Park Concessions Bldg",
-        "Address": "3233 Huntington Ave",
-        "CAMPUS": "UNL-LINC",
-        "location": "Off Campus",
-        "id": "FFCB"
+        "abbrev": "FFCB",
+        "name": "Fleming Fields Park Concessions Bldg"
       }
     },
     {
@@ -16235,13 +15825,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C225",
-        "ABBREV": "FIB",
-        "NAME": "Facilities Implement Building",
-        "Address": "1330 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FIB"
+        "abbrev": "FIB",
+        "name": "Facilities Implement Building"
       }
     },
     {
@@ -18826,13 +18411,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "V005",
-        "ABBREV": "FIC",
-        "NAME": "Food Innovation Center",
-        "Address": "1901 N 21st St",
-        "CAMPUS": "UNL-NIC",
-        "location": "Innovation Campus",
-        "id": "FIC"
+        "abbrev": "FIC",
+        "name": "Food Innovation Center"
       }
     },
     {
@@ -18865,13 +18445,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C153",
-        "ABBREV": "FMC",
-        "NAME": "Facilities Management C",
-        "Address": "1901 Y St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FMC"
+        "abbrev": "FMC",
+        "name": "Facilities Management C"
       }
     },
     {
@@ -18904,13 +18479,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C154",
-        "ABBREV": "FMD",
-        "NAME": "Facilities Management D",
-        "Address": "1901 Y St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FMD"
+        "abbrev": "FMD",
+        "name": "Facilities Management D"
       }
     },
     {
@@ -18943,13 +18513,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C155",
-        "ABBREV": "FME",
-        "NAME": "Facilities Management E",
-        "Address": "1901 Y St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FME"
+        "abbrev": "FME",
+        "name": "Facilities Management E"
       }
     },
     {
@@ -18982,13 +18547,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C156",
-        "ABBREV": "FMF",
-        "NAME": "Facilities Management F",
-        "Address": "1901 Y St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FMF"
+        "abbrev": "FMF",
+        "name": "Facilities Management F"
       }
     },
     {
@@ -19021,13 +18581,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C249",
-        "ABBREV": "FMG",
-        "NAME": "Facilities Management G",
-        "Address": "1901 Y St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FMG"
+        "abbrev": "FMG",
+        "name": "Facilities Management G"
       }
     },
     {
@@ -19060,13 +18615,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C152",
-        "ABBREV": "FMP",
-        "NAME": "Facilities Management & Planning",
-        "Address": "1901 Y St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FMP"
+        "abbrev": "FMP",
+        "name": "Facilities Management & Planning"
       }
     },
     {
@@ -19119,13 +18669,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C187",
-        "ABBREV": "FMS",
-        "NAME": "Facilities Management Shops",
-        "Address": "942 N 22nd St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "FMS"
+        "abbrev": "FMS",
+        "name": "Facilities Management Shops"
       }
     },
     {
@@ -19274,13 +18819,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A201",
-        "ABBREV": "FOOD",
-        "NAME": "Food Industry Complex",
-        "Address": "3720 East Campus Loop S",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "FOOD"
+        "abbrev": "FOOD",
+        "name": "Food Industry Complex"
       }
     },
     {
@@ -19345,13 +18885,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A066",
-        "ABBREV": "FORL",
-        "NAME": "Forage Research Laboratory - USDA",
-        "Address": "3870 Center Dr",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "FORL"
+        "abbrev": "FORL",
+        "name": "Forage Research Laboratory - USDA"
       }
     },
     {
@@ -19404,13 +18939,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A061",
-        "ABBREV": "FORS",
-        "NAME": "Forestry Hall",
-        "Address": "1800 N 37th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "FORS"
+        "abbrev": "FORS",
+        "name": "Forestry Hall"
       }
     },
     {
@@ -19527,13 +19057,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A032",
-        "ABBREV": "FRC",
-        "NAME": "Family Resource Center",
-        "Address": "1615 N 35th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "FRC"
+        "abbrev": "FRC",
+        "name": "Family Resource Center"
       }
     },
     {
@@ -19582,13 +19107,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A202",
-        "ABBREV": "FYH",
-        "NAME": "Filley Hall",
-        "Address": "3720 East Campus Loop S",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "FYH"
+        "abbrev": "FYH",
+        "name": "Filley Hall"
       }
     },
     {
@@ -19937,13 +19457,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C181",
-        "ABBREV": "GAUN",
-        "NAME": "Jackie Gaughan Multicultural Center",
-        "Address": "1505 S St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "GAUN"
+        "abbrev": "GAUN",
+        "name": "Jackie Gaughan Multicultural Center"
       }
     },
     {
@@ -20328,13 +19843,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A084",
-        "ABBREV": "GNHS",
-        "NAME": "Gwendolyn A. Newkirk Human Sciences Building",
-        "Address": "1650 N 35th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "GNHS"
+        "abbrev": "GNHS",
+        "name": "Gwendolyn A. Newkirk Human Sciences Building"
       }
     },
     {
@@ -20367,13 +19877,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A125",
-        "ABBREV": "GRDN",
-        "NAME": "Community Garden Shed",
-        "Address": "4401 Fair St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "GRDN"
+        "abbrev": "GRDN",
+        "name": "Community Garden Shed"
       }
     },
     {
@@ -20498,13 +20003,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C074",
-        "ABBREV": "HAH",
-        "NAME": "Hamilton Hall",
-        "Address": "639 N 12th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "HAH"
+        "abbrev": "HAH",
+        "name": "Hamilton Hall"
       }
     },
     {
@@ -20709,13 +20209,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A065",
-        "ABBREV": "HARH",
-        "NAME": "Hardin Hall",
-        "Address": "3310 Holdrege St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "HARH"
+        "abbrev": "HARH",
+        "name": "Hardin Hall"
       }
     },
     {
@@ -22052,13 +21547,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C196",
-        "ABBREV": "HAYB",
-        "NAME": "Haymarket Park Baseball Stadium Complex",
-        "Address": "403 Line Drive Cir",
-        "CAMPUS": "UNL-LINC",
-        "location": "Off Campus",
-        "id": "HAYB"
+        "abbrev": "HAYB",
+        "name": "Haymarket Park Baseball Stadium Complex"
       }
     },
     {
@@ -22531,13 +22021,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C197",
-        "ABBREV": "HAYS",
-        "NAME": "Haymarket Park Softball Stadium Complex",
-        "Address": "400 Line Drive Cir",
-        "CAMPUS": "UNL-LINC",
-        "location": "Off Campus",
-        "id": "HAYS"
+        "abbrev": "HAYS",
+        "name": "Haymarket Park Softball Stadium Complex"
       }
     },
     {
@@ -22626,13 +22111,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C200",
-        "ABBREV": "HCC",
-        "NAME": "Hawks Championship Center",
-        "Address": "1111 Salt Creek Rdwy",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "HCC"
+        "abbrev": "HCC",
+        "name": "Hawks Championship Center"
       }
     },
     {
@@ -22981,13 +22461,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C244",
-        "ABBREV": "HCCN",
-        "NAME": "University Health Center and College of Nursing",
-        "Address": "550 N 19th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "HCCN"
+        "abbrev": "HCCN",
+        "name": "University Health Center and College of Nursing"
       }
     },
     {
@@ -24120,13 +23595,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C694",
-        "ABBREV": "HDC",
-        "NAME": "Harper Dining Center",
-        "Address": "1140 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "HDC"
+        "abbrev": "HDC",
+        "name": "Harper Dining Center"
       }
     },
     {
@@ -24291,13 +23761,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C055",
-        "ABBREV": "HENZ",
-        "NAME": "Henzlik Hall",
-        "Address": "1430 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "HENZ"
+        "abbrev": "HENZ",
+        "name": "Henzlik Hall"
       }
     },
     {
@@ -24330,13 +23795,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C174",
-        "ABBREV": "HEWP",
-        "NAME": "Hewit Place",
-        "Address": "1155 Q St",
-        "CAMPUS": "UNL-LINC",
-        "location": "Off Campus",
-        "id": "HEWP"
+        "abbrev": "HEWP",
+        "name": "Hewit Place"
       }
     },
     {
@@ -24437,13 +23897,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C222",
-        "ABBREV": "HLH",
-        "NAME": "Howard L. Hawks Hall",
-        "Address": "730 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "HLH"
+        "abbrev": "HLH",
+        "name": "Howard L. Hawks Hall"
       }
     },
     {
@@ -24888,13 +24343,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C691",
-        "ABBREV": "HRH",
-        "NAME": "Harper Hall",
-        "Address": "1150 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "HRH"
+        "abbrev": "HRH",
+        "name": "Harper Hall"
       }
     },
     {
@@ -24927,13 +24377,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C147",
-        "ABBREV": "HUSK",
-        "NAME": "Husker Hall",
-        "Address": "705 N 23rd St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "HUSK"
+        "abbrev": "HUSK",
+        "name": "Husker Hall"
       }
     },
     {
@@ -25026,13 +24471,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "V001",
-        "ABBREV": "ICBX",
-        "NAME": "Ice Box",
-        "Address": "1880 Transformation Dr",
-        "CAMPUS": "UNL-NIC",
-        "location": "Innovation Campus",
-        "id": "ICBX"
+        "abbrev": "ICBX",
+        "name": "Ice Box"
       }
     },
     {
@@ -26505,13 +25945,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "V006",
-        "ABBREV": "ICC",
-        "NAME": "Innovation Commons Conference Center",
-        "Address": "2021 Transformation Dr",
-        "CAMPUS": "UNL-NIC",
-        "location": "Innovation Campus",
-        "id": "ICC"
+        "abbrev": "ICC",
+        "name": "Innovation Commons Conference Center"
       }
     },
     {
@@ -26672,13 +26107,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "V007",
-        "ABBREV": "ICG",
-        "NAME": "Greenhouse Innovation Center",
-        "Address": "1920 N 21st St",
-        "CAMPUS": "UNL-NIC",
-        "location": "Innovation Campus",
-        "id": "ICG"
+        "abbrev": "ICG",
+        "name": "Greenhouse Innovation Center"
       }
     },
     {
@@ -26759,13 +26189,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A035",
-        "ABBREV": "INSB",
-        "NAME": "Insectary Building",
-        "Address": "3865 Fair St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "INSB"
+        "abbrev": "INSB",
+        "name": "Insectary Building"
       }
     },
     {
@@ -26950,13 +26375,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A124",
-        "ABBREV": "IQM",
-        "NAME": "International Quilt Museum",
-        "Address": "1523 N 33rd St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "IQM"
+        "abbrev": "IQM",
+        "name": "International Quilt Museum"
       }
     },
     {
@@ -27017,13 +26437,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C231",
-        "ABBREV": "ITSA",
-        "NAME": "ITS Annex",
-        "Address": "1321 Military Rd",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ITSA"
+        "abbrev": "ITSA",
+        "name": "ITS Annex"
       }
     },
     {
@@ -27160,13 +26575,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C205",
-        "ABBREV": "JH",
-        "NAME": "Theodore Jorgensen Hall",
-        "Address": "855 N 16th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "JH"
+        "abbrev": "JH",
+        "name": "Theodore Jorgensen Hall"
       }
     },
     {
@@ -27483,13 +26893,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C171",
-        "ABBREV": "KAUF",
-        "NAME": "Kauffman Academic Residential Center",
-        "Address": "630 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "KAUF"
+        "abbrev": "KAUF",
+        "name": "Kauffman Academic Residential Center"
       }
     },
     {
@@ -27522,13 +26927,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A017",
-        "ABBREV": "KCR",
-        "NAME": "Kiesselbach Crops Research Laboratory",
-        "Address": "1870 N 37th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "KCR"
+        "abbrev": "KCR",
+        "name": "Kiesselbach Crops Research Laboratory"
       }
     },
     {
@@ -27641,13 +27041,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A036",
-        "ABBREV": "KEIM",
-        "NAME": "Keim Hall",
-        "Address": "1825 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "KEIM"
+        "abbrev": "KEIM",
+        "name": "Keim Hall"
       }
     },
     {
@@ -27736,13 +27131,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C247",
-        "ABBREV": "KH",
-        "NAME": "Kiewit Hall",
-        "Address": "1700 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "KH"
+        "abbrev": "KH",
+        "name": "Kiewit Hall"
       }
     },
     {
@@ -28067,13 +27457,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C206",
-        "ABBREV": "KNOL",
-        "NAME": "The Robert E. Knoll Residential Center",
-        "Address": "440 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "KNOL"
+        "abbrev": "KNOL",
+        "name": "The Robert E. Knoll Residential Center"
       }
     },
     {
@@ -28338,13 +27723,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C091",
-        "ABBREV": "KRH",
-        "NAME": "Kimball Recital Hall",
-        "Address": "1113 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "KRH"
+        "abbrev": "KRH",
+        "name": "Kimball Recital Hall"
       }
     },
     {
@@ -28377,13 +27757,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "L014",
-        "ABBREV": "L014",
-        "NAME": "2511 Kimco Court A",
-        "Address": "2511 Kimco Ct",
-        "CAMPUS": "UNL-LINC",
-        "location": "Off Campus",
-        "id": "L014"
+        "abbrev": "L014",
+        "name": "2511 Kimco Court A"
       }
     },
     {
@@ -28456,13 +27831,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "L045",
-        "ABBREV": "L045",
-        "NAME": "Alex Gordon Training Complex",
-        "Address": "Line Dr",
-        "CAMPUS": "UNL-LINC",
-        "location": "Off Campus",
-        "id": "L045"
+        "abbrev": "L045",
+        "name": "Alex Gordon Training Complex"
       }
     },
     {
@@ -28527,13 +27897,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "L055",
-        "ABBREV": "L055",
-        "NAME": "1217 Q St",
-        "Address": "1217 Q St",
-        "CAMPUS": "UNL-LINC",
-        "location": "Off Campus",
-        "id": "L055"
+        "abbrev": "L055",
+        "name": "1217 Q St"
       }
     },
     {
@@ -29218,13 +28583,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A085",
-        "ABBREV": "LAW",
-        "NAME": "McCollum Hall",
-        "Address": "1875 N 42nd St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "LAW"
+        "abbrev": "LAW",
+        "name": "McCollum Hall"
       }
     },
     {
@@ -29545,13 +28905,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A122",
-        "ABBREV": "LDR",
-        "NAME": "Library Depository Retrieval Facility",
-        "Address": "2055 N 35th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "LDR"
+        "abbrev": "LDR",
+        "name": "Library Depository Retrieval Facility"
       }
     },
     {
@@ -29672,13 +29027,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A023",
-        "ABBREV": "LEV",
-        "NAME": "Leverton Hall",
-        "Address": "1700 N 35th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "LEV"
+        "abbrev": "LEV",
+        "name": "Leverton Hall"
       }
     },
     {
@@ -29711,13 +29061,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C238",
-        "ABBREV": "LIB",
-        "NAME": "Landscape Implement Building",
-        "Address": "1320 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "LIB"
+        "abbrev": "LIB",
+        "name": "Landscape Implement Building"
       }
     },
     {
@@ -30038,13 +29383,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C131",
-        "ABBREV": "LIED",
-        "NAME": "Lied Center for Performing Arts",
-        "Address": "301 N 12th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "LIED"
+        "abbrev": "LIED",
+        "name": "Lied Center for Performing Arts"
       }
     },
     {
@@ -30445,13 +29785,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C013",
-        "ABBREV": "LLN",
-        "NAME": "Love Library North & Link",
-        "Address": "1300 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "LLN"
+        "abbrev": "LLN",
+        "name": "Love Library North & Link"
       }
     },
     {
@@ -30564,13 +29899,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C011",
-        "ABBREV": "LLS",
-        "NAME": "Love Library South",
-        "Address": "1248 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "LLS"
+        "abbrev": "LLS",
+        "name": "Love Library South"
       }
     },
     {
@@ -30651,13 +29981,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A039",
-        "ABBREV": "LML",
-        "NAME": "Loeffel Meat Laboratory",
-        "Address": "3940 Fair St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "LML"
+        "abbrev": "LML",
+        "name": "Loeffel Meat Laboratory"
       }
     },
     {
@@ -30802,13 +30127,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C048",
-        "ABBREV": "LPH",
-        "NAME": "Louise Pound Hall",
-        "Address": "512 N 12th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "LPH"
+        "abbrev": "LPH",
+        "name": "Louise Pound Hall"
       }
     },
     {
@@ -30897,13 +30217,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A055",
-        "ABBREV": "LRH",
-        "NAME": "Love Memorial Hall",
-        "Address": "3420 Holdrege St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "LRH"
+        "abbrev": "LRH",
+        "name": "Love Memorial Hall"
       }
     },
     {
@@ -30944,13 +30259,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A133",
-        "ABBREV": "LSEB",
-        "NAME": "Landscape Services Equipment Building",
-        "Address": "3620 East Campus Loop N",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "LSEB"
+        "abbrev": "LSEB",
+        "name": "Landscape Services Equipment Building"
       }
     },
     {
@@ -31007,13 +30317,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A109",
-        "ABBREV": "LSEC",
-        "NAME": "Landscape Services East Campus",
-        "Address": "3520 East Campus Loop N",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "LSEC"
+        "abbrev": "LSEC",
+        "name": "Landscape Services East Campus"
       }
     },
     {
@@ -31046,13 +30351,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C190",
-        "ABBREV": "LSMC",
-        "NAME": "Landscape Services Metal Canopy",
-        "Address": "1340 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "LSMC"
+        "abbrev": "LSMC",
+        "name": "Landscape Services Metal Canopy"
       }
     },
     {
@@ -31101,13 +30401,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A060",
-        "ABBREV": "LTM",
-        "NAME": "Larsen Tractor Museum",
-        "Address": "1925 N 37th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "LTM"
+        "abbrev": "LTM",
+        "name": "Larsen Tractor Museum"
       }
     },
     {
@@ -31172,13 +30467,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C021",
-        "ABBREV": "M&N",
-        "NAME": "Pershing Military & Naval Science Building",
-        "Address": "1360 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "M&N"
+        "abbrev": "M&N",
+        "name": "Pershing Military & Naval Science Building"
       }
     },
     {
@@ -31523,13 +30813,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C101",
-        "ABBREV": "MANT",
-        "NAME": "Manter Hall",
-        "Address": "1101 T St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "MANT"
+        "abbrev": "MANT",
+        "name": "Manter Hall"
       }
     },
     {
@@ -31622,13 +30907,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A067",
-        "ABBREV": "MBH",
-        "NAME": "Baker Hall",
-        "Address": "1830 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "MBH"
+        "abbrev": "MBH",
+        "name": "Baker Hall"
       }
     },
     {
@@ -31661,13 +30941,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A137",
-        "ABBREV": "MHF",
-        "NAME": "Material Handling Facility",
-        "Address": "3700 Merrill St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "MHF"
+        "abbrev": "MHF",
+        "name": "Material Handling Facility"
       }
     },
     {
@@ -31700,13 +30975,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C122",
-        "ABBREV": "MIPC",
-        "NAME": "Mabel Lee Fields IPC",
-        "Address": "1433 W St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "MIPC"
+        "abbrev": "MIPC",
+        "name": "Mabel Lee Fields IPC"
       }
     },
     {
@@ -31739,13 +31009,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C248",
-        "ABBREV": "MLSS",
-        "NAME": "Mabel Lee Storage Shed",
-        "Address": "1433 W St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "MLSS"
+        "abbrev": "MLSS",
+        "name": "Mabel Lee Storage Shed"
       }
     },
     {
@@ -31790,13 +31055,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A209",
-        "ABBREV": "MMF",
-        "NAME": "Materials Management Facility",
-        "Address": "3735 Merrill St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "MMF"
+        "abbrev": "MMF",
+        "name": "Materials Management Facility"
       }
     },
     {
@@ -32005,13 +31265,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A126",
-        "ABBREV": "MOLR",
-        "NAME": "Morrison Center",
-        "Address": "4240 Fair St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "MOLR"
+        "abbrev": "MOLR",
+        "name": "Morrison Center"
       }
     },
     {
@@ -32196,13 +31451,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C022",
-        "ABBREV": "MORR",
-        "NAME": "Morrill Hall",
-        "Address": "1335 U St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "MORR"
+        "abbrev": "MORR",
+        "name": "Morrill Hall"
       }
     },
     {
@@ -32531,13 +31781,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A206",
-        "ABBREV": "MRC",
-        "NAME": "Massengale Residential Center",
-        "Address": "1710 Arbor Dr",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "MRC"
+        "abbrev": "MRC",
+        "name": "Massengale Residential Center"
       }
     },
     {
@@ -32570,13 +31815,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C237",
-        "ABBREV": "MSB",
-        "NAME": "Maintenance Storage Building",
-        "Address": "1910 N Antelope Valley Pky",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "MSB"
+        "abbrev": "MSB",
+        "name": "Maintenance Storage Building"
       }
     },
     {
@@ -33185,13 +32425,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C195",
-        "ABBREV": "MSTD",
-        "NAME": "Cornhuskers Athletic Complex",
-        "Address": "800 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "MSTD"
+        "abbrev": "MSTD",
+        "name": "Cornhuskers Athletic Complex"
       }
     },
     {
@@ -33240,13 +32475,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C023",
-        "ABBREV": "MUEL",
-        "NAME": "Mueller Tower",
-        "Address": "1307 U St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "MUEL"
+        "abbrev": "MUEL",
+        "name": "Mueller Tower"
       }
     },
     {
@@ -33519,13 +32749,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A041",
-        "ABBREV": "MUSH",
-        "NAME": "Mussehl Hall",
-        "Address": "1915 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "MUSH"
+        "abbrev": "MUSH",
+        "name": "Mussehl Hall"
       }
     },
     {
@@ -34106,13 +33331,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A069",
-        "ABBREV": "NAC",
-        "NAME": "National Agroforestry Center - USDA",
-        "Address": "1945 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "NAC"
+        "abbrev": "NAC",
+        "name": "National Agroforestry Center - USDA"
       }
     },
     {
@@ -34145,13 +33365,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A101",
-        "ABBREV": "NAST",
-        "NAME": "National Agroforestry Center Storage Building - USDA",
-        "Address": "2140 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "NAST"
+        "abbrev": "NAST",
+        "name": "National Agroforestry Center Storage Building - USDA"
       }
     },
     {
@@ -34256,13 +33471,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C227",
-        "ABBREV": "NB1",
-        "NAME": "North Building 1",
-        "Address": "1300 Military Rd",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "NB1"
+        "abbrev": "NB1",
+        "name": "North Building 1"
       }
     },
     {
@@ -34343,13 +33553,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C229",
-        "ABBREV": "NB2",
-        "NAME": "North Building 2",
-        "Address": "1350 Military Rd",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "NB2"
+        "abbrev": "NB2",
+        "name": "North Building 2"
       }
     },
     {
@@ -34734,13 +33939,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C178",
-        "ABBREV": "NECH",
-        "NAME": "Nebraska Champions Club",
-        "Address": "707 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "NECH"
+        "abbrev": "NECH",
+        "name": "Nebraska Champions Club"
       }
     },
     {
@@ -34889,13 +34089,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C228",
-        "ABBREV": "NEMA",
-        "NAME": "NEMA Building",
-        "Address": "1360 Military Rd",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "NEMA"
+        "abbrev": "NEMA",
+        "name": "NEMA Building"
       }
     },
     {
@@ -35008,13 +34203,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A086",
-        "ABBREV": "NEU",
-        "NAME": "Nebraska East Union",
-        "Address": "1705 Arbor Dr",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "NEU"
+        "abbrev": "NEU",
+        "name": "Nebraska East Union"
       }
     },
     {
@@ -35115,13 +34305,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C024",
-        "ABBREV": "NH",
-        "NAME": "Nebraska Hall",
-        "Address": "900 N 16th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "NH"
+        "abbrev": "NH",
+        "name": "Nebraska Hall"
       }
     },
     {
@@ -35170,13 +34355,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A732",
-        "ABBREV": "NRRA",
-        "NAME": "Natural Resources Research Annex",
-        "Address": "2051 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "NRRA"
+        "abbrev": "NRRA",
+        "name": "Natural Resources Research Annex"
       }
     },
     {
@@ -35225,13 +34405,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A213",
-        "ABBREV": "NSA2",
-        "NAME": "Nebraska Statewide Arboretum Greenhouse 2",
-        "Address": "2160 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "NSA2"
+        "abbrev": "NSA2",
+        "name": "Nebraska Statewide Arboretum Greenhouse 2"
       }
     },
     {
@@ -35264,13 +34439,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A110",
-        "ABBREV": "NSAG",
-        "NAME": "Nebraska Statewide Arboretum Greenhouse",
-        "Address": "2150 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "NSAG"
+        "abbrev": "NSAG",
+        "name": "Nebraska Statewide Arboretum Greenhouse"
       }
     },
     {
@@ -35479,13 +34649,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C026",
-        "ABBREV": "NU",
-        "NAME": "Nebraska Union",
-        "Address": "1400 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "NU"
+        "abbrev": "NU",
+        "name": "Nebraska Union"
       }
     },
     {
@@ -35702,13 +34867,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A204",
-        "ABBREV": "NVDC",
-        "NAME": "Nebraska Veterinary Diagnostic Center",
-        "Address": "4040 East Campus Loop N",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "NVDC"
+        "abbrev": "NVDC",
+        "name": "Nebraska Veterinary Diagnostic Center"
       }
     },
     {
@@ -35961,13 +35121,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C220",
-        "ABBREV": "OAC",
-        "NAME": "Outdoor Adventures Center",
-        "Address": "930 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "OAC"
+        "abbrev": "OAC",
+        "name": "Outdoor Adventures Center"
       }
     },
     {
@@ -36000,13 +35155,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A208",
-        "ABBREV": "OHR",
-        "NAME": "Orchard House Replacement",
-        "Address": "4417 Fair St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "OHR"
+        "abbrev": "OHR",
+        "name": "Orchard House Replacement"
       }
     },
     {
@@ -36235,13 +35385,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C252",
-        "ABBREV": "OLC",
-        "NAME": "Osborne Legacy Center",
-        "Address": "1210 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "OLC"
+        "abbrev": "OLC",
+        "name": "Osborne Legacy Center"
       }
     },
     {
@@ -36274,13 +35419,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C075",
-        "ABBREV": "OLDH",
-        "NAME": "Oldfather Hall",
-        "Address": "660 N 12th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "OLDH"
+        "abbrev": "OLDH",
+        "name": "Oldfather Hall"
       }
     },
     {
@@ -36313,13 +35453,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C207",
-        "ABBREV": "ORB7",
-        "NAME": "Campus Rec Equipment Building 7 - Mabel Lee Fields",
-        "Address": "1433 W St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "ORB7"
+        "abbrev": "ORB7",
+        "name": "Campus Rec Equipment Building 7 - Mabel Lee Fields"
       }
     },
     {
@@ -37324,13 +36459,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C173",
-        "ABBREV": "OTHM",
-        "NAME": "Othmer Hall",
-        "Address": "820 N 16th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "OTHM"
+        "abbrev": "OTHM",
+        "name": "Othmer Hall"
       }
     },
     {
@@ -37675,13 +36805,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "L053",
-        "ABBREV": "PBA",
-        "NAME": "Pinnacle Bank Arena",
-        "Address": "400 Pinnacle Arena Dr",
-        "CAMPUS": "UNL-LINC",
-        "location": "Off Campus",
-        "id": "PBA"
+        "abbrev": "PBA",
+        "name": "Pinnacle Bank Arena"
       }
     },
     {
@@ -37714,26 +36839,12 @@
         ]
       },
       "properties": {
-        "bldg_no": "A115",
-        "ABBREV": "PER",
-        "NAME": "Perin Porch",
-        "Address": "3621 East Campus Loop S",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "PER"
+        "abbrev": "PER",
+        "name": "Perin Porch"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "ABBREV": "PKI",
-        "NAME": "Peter Kiewit Institute",
-        "Address": "1110 S 67th St, Omaha, NE",
-        "CAMPUS": "UNL-LIN1",
-        "bldg_no": null,
-        "location": "Off Campus",
-        "id": "PKI"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -37916,6 +37027,10 @@
             ]
           ]
         ]
+      },
+      "properties": {
+        "abbrev": "PKI",
+        "name": "Peter Kiewit Institute"
       }
     },
     {
@@ -38028,13 +37143,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A092",
-        "ABBREV": "PLSH",
-        "NAME": "Plant Sciences Hall",
-        "Address": "1875 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "PLSH"
+        "abbrev": "PLSH",
+        "name": "Plant Sciences Hall"
       }
     },
     {
@@ -38195,13 +37305,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A576",
-        "ABBREV": "PM",
-        "NAME": "Pershing Maintenance",
-        "Address": "2000 N 33rd St",
-        "CAMPUS": "UNL-LIN1",
-        "location": "Off Campus",
-        "id": "PM"
+        "abbrev": "PM",
+        "name": "Pershing Maintenance"
       }
     },
     {
@@ -38330,13 +37435,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A099",
-        "ABBREV": "PPG",
-        "NAME": "Plant Pathology Greenhouse",
-        "Address": "2075 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "PPG"
+        "abbrev": "PPG",
+        "name": "Plant Pathology Greenhouse"
       }
     },
     {
@@ -38369,13 +37469,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A024",
-        "ABBREV": "PSTG",
-        "NAME": "Plant Science Teaching Greenhouse",
-        "Address": "3855 Fair St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "PSTG"
+        "abbrev": "PSTG",
+        "name": "Plant Science Teaching Greenhouse"
       }
     },
     {
@@ -38672,13 +37767,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C044",
-        "ABBREV": "RH",
-        "NAME": "Richards Hall",
-        "Address": "560 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "RH"
+        "abbrev": "RH",
+        "name": "Richards Hall"
       }
     },
     {
@@ -38711,13 +37801,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "V008",
-        "ABBREV": "RISE",
-        "NAME": "The Rise Building",
-        "Address": "2125 Transformation Dr",
-        "CAMPUS": "UNL-NIC",
-        "location": "Innovation Campus",
-        "id": "RISE"
+        "abbrev": "RISE",
+        "name": "The Rise Building"
       }
     },
     {
@@ -38762,13 +37847,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C230",
-        "ABBREV": "RRB",
-        "NAME": "Recycling and Refuse Building",
-        "Address": "1311 Military Rd",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "RRB"
+        "abbrev": "RRB",
+        "name": "Recycling and Refuse Building"
       }
     },
     {
@@ -40189,13 +39269,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C175",
-        "ABBREV": "RVB",
-        "NAME": "Mary Riepma Ross Media Arts Center-Van Brunt Visitors Center",
-        "Address": "313 N 13th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "RVB"
+        "abbrev": "RVB",
+        "name": "Mary Riepma Ross Media Arts Center-Van Brunt Visitors Center"
       }
     },
     {
@@ -40456,13 +39531,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A016",
-        "ABBREV": "RWC",
-        "NAME": "Recreation and Wellness Center",
-        "Address": "1717 N 35th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "RWC"
+        "abbrev": "RWC",
+        "name": "Recreation and Wellness Center"
       }
     },
     {
@@ -41271,13 +40341,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "V010",
-        "ABBREV": "SCAR",
-        "NAME": "The Scarlet Hotel",
-        "Address": "2101 Transformation Dr",
-        "CAMPUS": "UNL-NIC",
-        "location": "Innovation Campus",
-        "id": "SCAR"
+        "abbrev": "SCAR",
+        "name": "The Scarlet Hotel"
       }
     },
     {
@@ -41758,13 +40823,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C692",
-        "ABBREV": "SCRH",
-        "NAME": "Schramm Hall",
-        "Address": "1130 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SCRH"
+        "abbrev": "SCRH",
+        "name": "Schramm Hall"
       }
     },
     {
@@ -41861,13 +40921,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C162",
-        "ABBREV": "SDPG",
-        "NAME": "Stadium Drive Parking Garage",
-        "Address": "625 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SDPG"
+        "abbrev": "SDPG",
+        "name": "Stadium Drive Parking Garage"
       }
     },
     {
@@ -41996,13 +41051,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C086",
-        "ABBREV": "SEC",
-        "NAME": "Scott Engineering Center",
-        "Address": "844 N 16th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SEC"
+        "abbrev": "SEC",
+        "name": "Scott Engineering Center"
       }
     },
     {
@@ -42123,13 +41173,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C030",
-        "ABBREV": "SEH",
-        "NAME": "Seaton Hall",
-        "Address": "1525 U St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SEH"
+        "abbrev": "SEH",
+        "name": "Seaton Hall"
       }
     },
     {
@@ -42162,13 +41207,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C331",
-        "ABBREV": "SELD",
-        "NAME": "Selleck Quad Building D",
-        "Address": "600 N 15th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SELD"
+        "abbrev": "SELD",
+        "name": "Selleck Quad Building D"
       }
     },
     {
@@ -42225,13 +41265,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C332",
-        "ABBREV": "SELE",
-        "NAME": "Selleck Quad Building E",
-        "Address": "600 N 15th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SELE"
+        "abbrev": "SELE",
+        "name": "Selleck Quad Building E"
       }
     },
     {
@@ -42264,13 +41299,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C333",
-        "ABBREV": "SELF",
-        "NAME": "Selleck Quad Building F",
-        "Address": "600 N 15th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SELF"
+        "abbrev": "SELF",
+        "name": "Selleck Quad Building F"
       }
     },
     {
@@ -42327,13 +41357,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C334",
-        "ABBREV": "SELG",
-        "NAME": "Selleck Quad Building G",
-        "Address": "600 N 15th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SELG"
+        "abbrev": "SELG",
+        "name": "Selleck Quad Building G"
       }
     },
     {
@@ -42382,13 +41407,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C335",
-        "ABBREV": "SELH",
-        "NAME": "Selleck Quad Building H",
-        "Address": "600 N 15th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SELH"
+        "abbrev": "SELH",
+        "name": "Selleck Quad Building H"
       }
     },
     {
@@ -42929,13 +41949,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C341",
-        "ABBREV": "SELJ",
-        "NAME": "Selleck Quad Building J",
-        "Address": "600 N 15th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SELJ"
+        "abbrev": "SELJ",
+        "name": "Selleck Quad Building J"
       }
     },
     {
@@ -42968,13 +41983,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C035",
-        "ABBREV": "SELK",
-        "NAME": "Selleck Quad Building K",
-        "Address": "600 N 15th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SELK"
+        "abbrev": "SELK",
+        "name": "Selleck Quad Building K"
       }
     },
     {
@@ -43343,13 +42353,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C342",
-        "ABBREV": "SELL",
-        "NAME": "Selleck Quad Building L - Food Service",
-        "Address": "600 N 15th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SELL"
+        "abbrev": "SELL",
+        "name": "Selleck Quad Building L - Food Service"
       }
     },
     {
@@ -43398,13 +42403,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A097",
-        "ABBREV": "SEW",
-        "NAME": "Sewage Sterilization Plant",
-        "Address": "2005 N 43rd St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "SEW"
+        "abbrev": "SEW",
+        "name": "Sewage Sterilization Plant"
       }
     },
     {
@@ -52921,13 +51921,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C047",
-        "ABBREV": "SHEL",
-        "NAME": "Sheldon Museum of Art",
-        "Address": "451 N 12th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SHEL"
+        "abbrev": "SHEL",
+        "name": "Sheldon Museum of Art"
       }
     },
     {
@@ -53204,13 +52199,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C102",
-        "ABBREV": "SHOR",
-        "NAME": "Schorr Center",
-        "Address": "1100 T St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SHOR"
+        "abbrev": "SHOR",
+        "name": "Schorr Center"
       }
     },
     {
@@ -53659,13 +52649,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C693",
-        "ABBREV": "SMRH",
-        "NAME": "Smith Hall",
-        "Address": "1120 N 14th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SMRH"
+        "abbrev": "SMRH",
+        "name": "Smith Hall"
       }
     },
     {
@@ -53756,13 +52741,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A096",
-        "ABBREV": "SPL",
-        "NAME": "Splinter Laboratories",
-        "Address": "2000 N 35th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "SPL"
+        "abbrev": "SPL",
+        "name": "Splinter Laboratories"
       }
     },
     {
@@ -53803,13 +52783,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A071",
-        "ABBREV": "SSL",
-        "NAME": "Stewart Seed Laboratory",
-        "Address": "2101 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "SSL"
+        "abbrev": "SSL",
+        "name": "Stewart Seed Laboratory"
       }
     },
     {
@@ -54458,13 +53433,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C049",
-        "ABBREV": "STE",
-        "NAME": "Stadium East",
-        "Address": "1100 T St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "STE"
+        "abbrev": "STE",
+        "name": "Stadium East"
       }
     },
     {
@@ -54557,13 +53527,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C492",
-        "ABBREV": "STNO",
-        "NAME": "Stadium North",
-        "Address": "1100 T St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "STNO"
+        "abbrev": "STNO",
+        "name": "Stadium North"
       }
     },
     {
@@ -54652,13 +53617,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C502",
-        "ABBREV": "STSO",
-        "NAME": "Stadium South",
-        "Address": "1100 T St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "STSO"
+        "abbrev": "STSO",
+        "name": "Stadium South"
       }
     },
     {
@@ -55251,13 +54211,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C050",
-        "ABBREV": "STW",
-        "NAME": "Stadium West",
-        "Address": "1100 T St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "STW"
+        "abbrev": "STW",
+        "name": "Stadium West"
       }
     },
     {
@@ -55306,13 +54261,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A058",
-        "ABBREV": "SVC",
-        "NAME": "Service Building",
-        "Address": "1915 N 37th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "SVC"
+        "abbrev": "SVC",
+        "name": "Service Building"
       }
     },
     {
@@ -55409,13 +54359,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C062",
-        "ABBREV": "SZRH",
-        "NAME": "Sandoz Hall",
-        "Address": "820 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "SZRH"
+        "abbrev": "SZRH",
+        "name": "Sandoz Hall"
       }
     },
     {
@@ -56344,13 +55289,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C170",
-        "ABBREV": "TEAC",
-        "NAME": "Teachers College Hall",
-        "Address": "1400 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "TEAC"
+        "abbrev": "TEAC",
+        "name": "Teachers College Hall"
       }
     },
     {
@@ -56487,13 +55427,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A079",
-        "ABBREV": "TELC",
-        "NAME": "Terry M. Carpenter Telecommunications Center",
-        "Address": "1800 N 33rd St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "TELC"
+        "abbrev": "TELC",
+        "name": "Terry M. Carpenter Telecommunications Center"
       }
     },
     {
@@ -56602,13 +55537,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C053",
-        "ABBREV": "TEMP",
-        "NAME": "Temple Building",
-        "Address": "1209 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "TEMP"
+        "abbrev": "TEMP",
+        "name": "Temple Building"
       }
     },
     {
@@ -56641,13 +55571,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A028",
-        "ABBREV": "TGE",
-        "NAME": "Teaching Greenhouse East",
-        "Address": "3850 Center Dr",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "TGE"
+        "abbrev": "TGE",
+        "name": "Teaching Greenhouse East"
       }
     },
     {
@@ -56680,13 +55605,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A027",
-        "ABBREV": "TGW",
-        "NAME": "Teaching Greenhouse West",
-        "Address": "3850 Center Dr",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "TGW"
+        "abbrev": "TGW",
+        "name": "Teaching Greenhouse West"
       }
     },
     {
@@ -56775,26 +55695,12 @@
         ]
       },
       "properties": {
-        "bldg_no": "C185",
-        "ABBREV": "TRAN",
-        "NAME": "Transportation Services",
-        "Address": "1931 N Antelope Valley Pky",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "TRAN"
+        "abbrev": "TRAN",
+        "name": "Transportation Services"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "ABBREV": "UNFCU",
-        "NAME": "University of Nebraska Federal Credit Union",
-        "Address": "1720 P St",
-        "CAMPUS": "UNL-LIN1",
-        "bldg_no": null,
-        "location": "Off Campus",
-        "id": "UNFCU"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -56829,6 +55735,10 @@
             ]
           ]
         ]
+      },
+      "properties": {
+        "abbrev": "UNFCU",
+        "name": "University of Nebraska Federal Credit Union"
       }
     },
     {
@@ -57265,13 +56175,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C218",
-        "ABBREV": "UNST",
-        "NAME": "University Suites",
-        "Address": "1780 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "UNST"
+        "abbrev": "UNST",
+        "name": "University Suites"
       }
     },
     {
@@ -57304,13 +56209,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A108",
-        "ABBREV": "USDP",
-        "NAME": "USDA Physiology Building - USDA",
-        "Address": "3708 Merrill St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "USDP"
+        "abbrev": "USDP",
+        "name": "USDA Physiology Building - USDA"
       }
     },
     {
@@ -57343,13 +56243,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C159",
-        "ABBREV": "UST",
-        "NAME": "U Street Apartments",
-        "Address": "2224 U St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "UST"
+        "abbrev": "UST",
+        "name": "U Street Apartments"
       }
     },
     {
@@ -57382,13 +56277,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A205",
-        "ABBREV": "UTF",
-        "NAME": "Utility Response Facility",
-        "Address": "3730 Merrill St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "UTF"
+        "abbrev": "UTF",
+        "name": "Utility Response Facility"
       }
     },
     {
@@ -57421,13 +56311,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A082",
-        "ABBREV": "VARH",
-        "NAME": "Varner Hall",
-        "Address": "3835 Holdrege St",
-        "CAMPUS": "UNL-LIN1",
-        "location": "Off Campus",
-        "id": "VARH"
+        "abbrev": "VARH",
+        "name": "Varner Hall"
       }
     },
     {
@@ -57532,13 +56417,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A089",
-        "ABBREV": "VBS",
-        "NAME": "Veterinary Medicine and Biomedical Sciences Hall",
-        "Address": "1880 N 42nd St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "VBS"
+        "abbrev": "VBS",
+        "name": "Veterinary Medicine and Biomedical Sciences Hall"
       }
     },
     {
@@ -57603,13 +56483,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A088",
-        "ABBREV": "VBSA",
-        "NAME": "VBS Annex",
-        "Address": "1900 N 42nd St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "VBSA"
+        "abbrev": "VBSA",
+        "name": "VBS Annex"
       }
     },
     {
@@ -57690,13 +56565,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A091",
-        "ABBREV": "VCSL",
-        "NAME": "Veterinary Clinical Skills Laboratory",
-        "Address": "2000 N 43rd St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "VCSL"
+        "abbrev": "VCSL",
+        "name": "Veterinary Clinical Skills Laboratory"
       }
     },
     {
@@ -62335,13 +61205,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C186",
-        "ABBREV": "VILL",
-        "NAME": "The Village",
-        "Address": "1055 N 16th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "VILL"
+        "abbrev": "VILL",
+        "name": "The Village"
       }
     },
     {
@@ -62374,13 +61239,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A077",
-        "ABBREV": "W1",
-        "NAME": "Warehouse 1",
-        "Address": "3630 East Campus Loop N",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "W1"
+        "abbrev": "W1",
+        "name": "Warehouse 1"
       }
     },
     {
@@ -62413,13 +61273,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A080",
-        "ABBREV": "W2",
-        "NAME": "Warehouse 2",
-        "Address": "2105 N 38th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "W2"
+        "abbrev": "W2",
+        "name": "Warehouse 2"
       }
     },
     {
@@ -62464,13 +61319,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C025",
-        "ABBREV": "WAB",
-        "NAME": "Woods Art Building",
-        "Address": "1140 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "WAB"
+        "abbrev": "WAB",
+        "name": "Woods Art Building"
       }
     },
     {
@@ -62667,13 +61517,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C112",
-        "ABBREV": "WAT",
-        "NAME": "Watson Building",
-        "Address": "1309 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "WAT"
+        "abbrev": "WAT",
+        "name": "Watson Building"
       }
     },
     {
@@ -62762,13 +61607,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C243",
-        "ABBREV": "WCDC",
-        "NAME": "Willa S. Cather Dining Complex",
-        "Address": "530 N 17th St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "WCDC"
+        "abbrev": "WCDC",
+        "name": "Willa S. Cather Dining Complex"
       }
     },
     {
@@ -62869,13 +61709,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A103",
-        "ABBREV": "WELC",
-        "NAME": "Welpton Courtroom Building",
-        "Address": "1875 N 42nd St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "WELC"
+        "abbrev": "WELC",
+        "name": "Welpton Courtroom Building"
       }
     },
     {
@@ -63124,13 +61959,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C130",
-        "ABBREV": "WHIT",
-        "NAME": "Prem S. Paul Research Center at Whittier School",
-        "Address": "2200 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "WHIT"
+        "abbrev": "WHIT",
+        "name": "Prem S. Paul Research Center at Whittier School"
       }
     },
     {
@@ -63183,13 +62013,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C120",
-        "ABBREV": "WICK",
-        "NAME": "Wick Alumni Center",
-        "Address": "1520 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "WICK"
+        "abbrev": "WICK",
+        "name": "Wick Alumni Center"
       }
     },
     {
@@ -63226,13 +62051,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "A062",
-        "ABBREV": "WL",
-        "NAME": "Water Sciences Laboratory",
-        "Address": "1840 N 37th St",
-        "CAMPUS": "UNL-EAST",
-        "location": "East Campus",
-        "id": "WL"
+        "abbrev": "WL",
+        "name": "Water Sciences Laboratory"
       }
     },
     {
@@ -63389,13 +62209,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C058",
-        "ABBREV": "WMB",
-        "NAME": "Westbrook Music Building",
-        "Address": "1104 R St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "WMB"
+        "abbrev": "WMB",
+        "name": "Westbrook Music Building"
       }
     },
     {
@@ -63428,13 +62243,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C210",
-        "ABBREV": "YS1",
-        "NAME": "1101 Y",
-        "Address": "1101 Y St",
-        "CAMPUS": "UNL-LIN1",
-        "location": "Off Campus",
-        "id": "YS1"
+        "abbrev": "YS1",
+        "name": "1101 Y"
       }
     },
     {
@@ -63531,13 +62341,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C068",
-        "ABBREV": "501",
-        "NAME": "501 Building",
-        "Address": "501 Stadium Dr",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "501"
+        "abbrev": "501",
+        "name": "501 Building"
       }
     },
     {
@@ -63570,13 +62375,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C160",
-        "ABBREV": "2222",
-        "NAME": "Vine Street Apartments West",
-        "Address": "2222 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "2222"
+        "abbrev": "2222",
+        "name": "Vine Street Apartments West"
       }
     },
     {
@@ -63609,13 +62409,8 @@
         ]
       },
       "properties": {
-        "bldg_no": "C161",
-        "ABBREV": "2244",
-        "NAME": "Vine Street Apartments East",
-        "Address": "2244 Vine St",
-        "CAMPUS": "UNL-CITY",
-        "location": "City Campus",
-        "id": "2244"
+        "abbrev": "2244",
+        "name": "Vine Street Apartments East"
       }
     }
   ]
