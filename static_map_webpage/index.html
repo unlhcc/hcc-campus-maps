@@ -81,9 +81,10 @@
             if (geoJsonLayer) {
               map.removeLayer(geoJsonLayer);
             }
-
+            
+            geoJsonData = data['buildings'];
             // Add new GeoJSON layer with styling
-            geoJsonLayer = L.geoJSON(data, {
+            geoJsonLayer = L.geoJSON(geoJsonData, {
               style: function(feature) {
                 const usesHcc = feature.properties.departments.length > 0;
                 let fillColor, color, fillOpacity;
@@ -110,7 +111,7 @@
 
                 if (feature.properties) {
                   useful_properties = ["name", "abbrev", "departments"];
-                  for (let key in useful_properties) {
+                  for (let key in feature.properties) {
                     content += `${key}: ${feature.properties[key]}<br>`;
                   }
                 }
@@ -122,7 +123,7 @@
             }).addTo(map);
 
             // Update info
-            const featureCount = data.features ? data.features.length : 0;
+            const featureCount = geoJsonData.features ? geoJsonData.features.length : 0;
             const lastUpdate = new Date().toLocaleString();
             document.getElementById(
               "info"

@@ -98,7 +98,8 @@
       "Animal Science"
     ],
     "Chase Hall": [
-      "Biological Systems Engineering"
+      "Biological Systems Engineering",
+      "Agrcultural Engineering"
     ],
     "Burnett Hall": [
       "Psychology"
@@ -234,6 +235,479 @@
     "Behlen Laboratory": [
       "Biochemistry",
       "Center for Biotechnology"
-    ]
+    ],
+    "Stadium Drive Parking Garage": [
+      "Parking and Transit Services"
+    ],
+    "Nebraska Champions Club": [
+      "Athletics"
+    ],
+    "Cornhuskers Athletic Complex": [
+      "Athletics"
+    ],
+    "Stadium North": [
+      "Athletics"
+    ],
+    "Stadium West": [
+      "Athletics"
+    ],
+    "Stadium South": [
+      "Athletics"
+    ],
+    "Osborne Legacy Center": [
+      "Athletics"
+    ],
+    "Hawks Championship Center": [
+      "Athletics"
+    ],
+    "Coliseum": [
+      "Campus Recreation"
+    ],
+    "Sapp Recreation Facility": [
+      "Campus Recreation"
+    ],
+    "Pershing Military & Naval Science": [
+      "Military Science",
+      "ROTC"
+    ],
+    "Cook Pavilion": [
+      "Campus Recreation"
+    ],
+    "Utility Plant, City Campus": [
+      "Facilities Management"
+    ],
+    "14th & Avery Parking Garage": [
+      "Parking and Transit Services"
+    ],
+    "Harper Dining Center": [
+      "Dining Services"
+    ],
+    "Smith Hall": [
+      "Housing"
+    ],
+    "Schramm Hall": [
+      "Housing"
+    ],
+    "Harper Hall": [
+      "Housing"
+    ],
+    "The Village": [
+      "Housing"
+    ],
+    "Outdoor Adventures Center": [
+      "Campus Recreation"
+    ],
+    "Campus Rec Equipment Building 7 - Mabel Lee Fields": [
+      "Campus Recreation"
+    ],
+    "Mabel Lee Storage Shed": [
+      "Campus Recreation"
+    ],
+    "Mabel Lee Fields IPC": [
+      "Campus Recreation"
+    ],
+    "Morrill Hall": [
+      "State Museum"
+    ],
+    "Andrews Hall": [
+    ],
+    "Woods Art Building": [
+      "Art and Art History"
+    ],
+    "Architecture Hall West": [
+      "Architecture"
+    ],
+    "Architecture Hall Link": [
+      "Architecture"
+    ],
+    "Westbrook Music Building": [
+      "Music"
+    ],
+    "Kimball Recital Hall": [
+      "Music"
+    ],
+    "Lied Center for Performing Arts": [
+      "Lied Center for Performing Arts"
+    ],
+    "Temple Building": [
+
+    ],
+    "Mary Riepma Ross Media Arts Center-Van Brunt Visitors Center": [
+      "Theatre and Film",
+      "Visitors Center"
+    ],
+    "Hewit Place": [
+
+    ],
+    "1217 Q St": [
+
+    ],
+    "Sheldon Museum of Art": [
+      "Sheldon Museum of Art"
+    ],
+    "Canfield Administration Building South": [
+      "Administration",
+      "Sponsored Programs"
+    ],
+    "Alexander Building": [
+      "Administration",
+      "Admissions"
+    ],
+    "Nebraska Union": [
+      "Student Affairs",
+      "Dining Services",
+      "University Bookstore"
+    ],
+    "Jackie Gaughan Multicultural Center": [
+      "Diversity and Inclusion"
+    ],
+    "Wick Alumni Center": [
+      "Alumni Relations"
+    ],
+    "17th & R Parking Garage": [
+      "Parking and Transit Services"
+    ],
+    "18th & R Parking Garage": [
+      "Parking and Transit Services"
+    ],
+    "Eastside Suites": [
+      "Housing"
+    ],
+    "University Suites": [
+      "Housing"
+    ],
+    "The Robert E. Knoll Residential Center": [
+      "Housing",
+      "Honors Program"
+    ],
+    "18th & S Support Building": [
+      "Facilities Management"
+    ],
+    "Fluid Cooler Building": [
+      "Facilities Management"
+    ],
+    "Willa S. Cather Dining Complex": [
+      "Dining Services"
+    ],
+    "Bioscience Greenhouses": [
+      "School of Biological Sciences"
+    ],
+    "19th and Vine Parking Garage": [
+      "Parking and Transit Services"
+    ],
+    "Sandoz Hall": [
+      "Housing"
+    ],
+    "Abel-Sandoz Welcome Center": [
+      "Housing"
+    ],
+    "Abel Hall": [
+      "Housing"
+    ],
+    "Abel-Sandoz Food Service Building": [
+      "Dining Services"
+    ],
+    "U Street Apartments": [
+      "Housing"
+    ],
+    "Vine Street Apartments East": [
+      "Housing"
+    ],
+    "Vine Street Apartments West": [
+      "Housing"
+    ],
+    "Husker Hall": [
+
+    ],
+    "UNL Children's Center": [
+      "Child Care Services"
+    ],
+    "Facilities Management Shops": [
+      "Facilities Management"
+    ],
+    "Facilities Management & Planning": [
+      "Facilities Management"
+    ],
+    "Facilities Management C": [
+      "Facilities Management"
+    ],
+    "Facilities Management D": [
+      "Facilities Management"
+    ],
+    "Facilities Management E": [
+      "Facilities Management"
+    ],
+    "Facilities Management F": [
+      "Facilities Management"
+    ],
+    "Facilities Management G": [
+      "Facilities Management"
+    ],
+    "Business Services Complex": [
+
+    ],
+    "Watson Building": [
+
+    ],
+    "Landscape Implement Building": [
+      "Facilities Management"
+    ],
+    "Facilities Implement Building": [
+      "Facilities Management"
+    ],
+    "Landscape Services Metal Canopy": [
+      "Facilities Management"
+    ],
+    "City Thermal Energy Storage": [
+      "Facilities Management"
+    ],
+    "Devaney Sports Center": [
+      "Athletics"
+    ],
+    "Documents Facility": [
+
+    ],
+    "ITS Annex": [
+      "Information Technology Services"
+    ],
+    "Recycling and Refuse Building": [
+      "Facilities Management"
+    ],
+    "North Building 1": [
+
+    ],
+    "North Building 2": [
+    ],
+    "NEMA Building": [
+
+    ],
+    "Bus Garage": [
+      "Parking and Transit Services"
+    ],
+    "Transportation Services": [
+      "Parking and Transit Services"
+    ],
+    "Ice Box": [
+    ],
+    "Innovation Commons Conference Center": [
+      "Innovation Campus"
+    ],
+    "Greenhouse Innovation Center": [
+      "Innovation Campus"
+    ],
+    "The Scarlet Hotel": [
+      "Scarlet Hotel"
+    ],
+    "The Rise Building": [
+      "Innovation Campus"
+    ],
+    "Sid and Hazel Dillon Tennis Center": [
+      "Athletics"
+    ],
+    "Campus Renewable Energy System Building": [
+      "Facilities Management"
+    ],
+    "2511 Kimco Court A": [
+
+    ],
+    "Alex Gordon Training Complex": [
+      "Athletics"
+    ],
+    "Haymarket Park Baseball Stadium Complex": [
+      "Athletics"
+    ],
+    "Breslow Ice Center": [
+      "Athletics"
+    ],
+    "Pinnacle Bank Arena": [
+      "Athletics"
+    ],
+    "Fleming Fields Park Concessions Bldg": [
+      "Athletics"
+    ],
+    "Pershing Maintenance": [
+      "Facilities Management"
+    ],
+    "Library Depository Retrieval Facility": [
+      "University Libraries"
+    ],
+    "Terry M. Carpenter Telecommunications Center": [
+      "Information Technology Services"
+    ],
+    "International Quilt Museum": [
+      "International Quilt Museum"
+    ],
+    "Recreation and Wellness Center": [
+      "Campus Recreation"
+    ],
+    "Ruth Staples Laboratory": [
+
+    ],
+    "Love Memorial Hall": [
+
+    ],
+    "Bio-Fiber Development Laboratory": [
+      "Biological Systems Engineering"
+    ],
+    "Family Resource Center": [
+
+    ],
+    "Agricultural Hall": [
+
+    ],
+    "Nebraska East Union": [
+      "Student Affairs",
+      "Dining Services"
+    ],
+    "Food Industry Complex": [
+      "Food Science and Technology"
+    ],
+    "Dinsdale Family Learning Commons": [
+      "University Libraries"
+    ],
+    "Massengale Residential Center": [
+      "Housing"
+    ],
+    "Kiesselbach Crops Research Laboratory": [
+      "Agronomy and Horticulture"
+    ],
+    "Varner Hall": [
+
+    ],
+    "College of Dentistry": [
+      "Dentistry"
+    ],
+    "Forage Research Laboratory - USDA": [
+      "Agronomy and Horticulture",
+      "USDA"
+    ],
+    "Teaching Greenhouse East": [
+      "Agronomy and Horticulture"
+    ],
+    "Teaching Greenhouse West": [
+      "Agronomy and Horticulture"
+    ],
+    "Plant Science Teaching Greenhouse": [
+      "Agronomy and Horticulture",
+      "Plant Sciences"
+    ],
+    "Insectary Building": [
+      "Entomology"
+    ],
+    "Loeffel Meat Laboratory": [
+      "Animal Science"
+    ],
+    "Baker Hall": [
+
+    ],
+    "National Agroforestry Center - USDA": [
+      "School of Natural Resources",
+      "USDA"
+    ],
+    "Service Building": [
+      "Facilities Management"
+    ],
+    "Larsen Tractor Museum": [
+      "Larsen Tractor Museum"
+    ],
+    "Utility Plant, East Campus": [
+      "Facilities Management"
+    ],
+    "Landscape Services East Campus": [
+      "Facilities Management"
+    ],
+    "Warehouse 1": [
+      "Facilities Management"
+    ],
+    "Landscape Services Equipment Building": [
+      "Facilities Management"
+    ],
+    "Material Handling Facility": [
+
+    ],
+    "Agronomy & Horticulture Outstate Testing Laboratory": [
+      "Agronomy and Horticulture"
+    ],
+    "USDA Physiology Building - USDA": [
+      "USDA"
+    ],
+    "Agronomy & Horticulture Physiology Building": [
+      "Agronomy and Horticulture"
+    ],
+    "Utility Response Facility": [
+      "Facilities Management"
+    ],
+    "Agronomy & Horticulture/Forestry Shops": [
+      "Agronomy and Horticulture",
+      "School of Natural Resources"
+    ],
+    "Stewart Seed Laboratory": [
+      "Agronomy and Horticulture"
+    ],
+    "Warehouse 2": [
+      "Facilities Management"
+    ], 
+    "East Thermal Energy Storage": [
+      "Facilities Management"
+    ],
+    "Materials Management Facility": [
+      "Facilities Management"
+    ],
+    "Entomology Greenhouse 1": [
+      "Entomology"
+    ],
+    "Entomology Greenhouse 2": [
+      "Entomology"
+    ],
+    "Entomology Greenhouse 3": [
+      "Entomology"
+    ],
+    "National Agroforestry Center Storage Building - USDA": [
+      "USDA"
+    ],
+    "Nebraska Statewide Arboretum Greenhouse": [
+      "Nebraska Statewide Arboretum"
+    ],
+    "Nebraska Statewide Arboretum Greenhouse 2": [
+      "Nebraska Statewide Arboretum"
+    ],
+    "Plant Pathology Greenhouse": [
+      "Plant Pathology"
+    ],
+    "Nebraska Veterinary Diagnostic Center": [
+      "Veterinary Medicine and Biomedical Sciences Hall"
+    ],
+    "Sewage Sterilization Plant": [
+      "Facilities Management"
+    ],
+    "Veterinary Clinical Skills Laboratory": [
+      "Veterinary Medicine and Biomedical Sciences Hall"
+    ],
+    "VBS Annex": [
+      "Veterinary Medicine and Biomedical Sciences Hall"
+    ],
+    "Welpton Courtroom Building": [
+      "Law"
+    ],
+    "Community Garden Shed": [
+      
+    ],
+    "Orchard House Replacement": [
+      
+    ],
+    "Colonial Terrace Apartment D-1": [],
+    "Colonial Terrace Apartment C-3": [],
+    "Colonial Terrace Apartment A-3": [],
+    "Colonial Terrace Apartment C-4": [],
+    "Colonial Terrace Apartment D-2": [],
+    "Colonial Terrace Apartment A-4": [],
+    "Colonial Terrace Apartment A-2": [],
+    "Colonial Terrace Apartment B": [],
+    "Colonial Terrace Apartment C-2": [],
+    "Colonial Terrace Apartment A-1": [],
+    "Colonial Terrace Apartment C-1": [],
+    "Colonial Terrace Apartments Shop 1": [],
+    "Colonial Terrace Apartments Shop 2": []
+
   }
 }

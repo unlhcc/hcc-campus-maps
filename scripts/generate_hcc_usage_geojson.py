@@ -21,12 +21,12 @@ def generate_hcc_usage_geojson() -> dict:
   usage_geojson = dict()
   usage_geojson["buildings"] = fetch_building_geojson(SCRAPE_SOURCE_URL)
   
-  # Get departments
+  # Get departments using HCC
   departments = get_and_revise_departments(datetime.now() - timedelta(days=30), datetime.now())
   departments = departments["Department_Canonical"].drop_duplicates()
   usage_geojson["departments_using_hcc"] = departments.to_list()
   
-  # Add departments to building properties
+  # Add departments to building properties (this is independent of if they use HCC)
   departments_per_building_path = PROJECT_ROOT / 'data' / 'maps' / 'departments_per_building.json'
   with open(departments_per_building_path, 'r') as f:
     departments_per_building = json.load(f)['building_departments']
