@@ -45,17 +45,28 @@ if ! command -v python3 &> /dev/null; then
   exit 1
 fi
 
-# Generate initial GeoJSON data
-print_step "Running HCC usage GeoJSON generation now..."
+if [ -t 0 ]; then
+  # Interactive terminal
+  read -p "Do you want to generate a new hcc usage geojson? (y/n) " -n 1 -r
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    # Generate initial GeoJSON data
+    print_step "Running HCC usage GeoJSON generation now..."
 
-cd "$DEPLOY_SCRIPT_DIR"
-if python3 scripts/generate_hcc_usage_geojson.py "$GEOJSON_PATH" >> "$DEPLOY_SCRIPT_DIR/scripts/generate_hcc_usage_geojson.log" 2>&1; then
-  grep -c "uses_hcc\": true" "$GEOJSON_PATH" | \
-    xargs -I {} echo "Generated GeoJSON with {} buildings using HCC."
-  print_step "Initial GeoJSON generation completed successfully"
-else
-  print_error "Failed to generate initial GeoJSON. Check the log file."
+    cd "$DEPLOY_SCRIPT_DIR"
+    if python3 scripts/generate_hcc_usage_geojson.py "$GEOJSON_PATH" >> "$DEPLOY_SCRIPT_DIR/scripts/generate_hcc_usage_geojson.log" 2>&1; then
+      grep -c "uses_hcc\": true" "$GEOJSON_PATH" | \
+        xargs -I {} echo "Generated GeoJSON with {} buildings using HCC."
+      print_step "Initial GeoJSON generation completed successfully"
+    else
+      print_error "Failed to generate initial GeoJSON. Check the log file."
+    fi
+  else
+    print_warning "Skipping initial geojson generation."
+  fi
 fi
+
+
 
 # Setup cron job
 setup_cron() {

@@ -19,7 +19,7 @@ def save_dict_as_json(data_dict: dict, filename: str):
     json.dump(data_dict, json_file, indent=2)
     
 
-def fetch_building_geojson(url: str) -> dict:
+def fetch_raw_building_geojson(url: str) -> dict:
   try:
     print(f"Fetching building geojson data from {url}...")
     response = requests.get(url)
@@ -38,6 +38,25 @@ def fetch_building_geojson(url: str) -> dict:
     print(f"An error occurred while fetching or parsing the data: {e}")
     return {}
   
+
+def fetch_building_geojson(url: str) -> dict:
+  fetch_raw_buildings_dict = fetch_raw_building_geojson(url)
+  building_geojson = dict()
+  building_geojson["type"] = "FeatureCollection"
+  building_geojson["features"] = []
+  for building in fetch_raw_buildings_dict:
+    feature = {
+      "type": "Feature",
+      "geometry": building["geometry"],
+      "properties": dict()
+    }
+    feature["properties"]["abbrev"] = building.get("ABBREV", "")
+    feature["properties"]["name"] = building.get("NAME", "")
+    # "bldg_no", "ABBREV", "NAME", "Address", "CAMPUS", "location", "id" are all available
+    building_geojson["features"].append(feature)
+  return building_geojson
+
+
 def get_building_properties_dict():
   feature_collection = fetch_building_geojson(SCRAPE_SOURCE_URL)
   print(type(feature_collection))

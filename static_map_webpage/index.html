@@ -85,28 +85,16 @@
             // Add new GeoJSON layer with styling
             geoJsonLayer = L.geoJSON(data, {
               style: function(feature) {
-                const usesHcc = feature.properties.uses_hcc;
+                const usesHcc = feature.properties.departments.length > 0;
                 let fillColor, color, fillOpacity;
-                switch (usesHcc) {
-                  case "month":
-                    fillColor = "#FF0000";
-                    fillOpacity = 0.4;
-                    color = "#CC0000";
-                    break;
-                  case "week":
-                    fillColor = "#FF0000";
-                    fillOpacity = 0.6;
-                    color = "#CC0000";
-                    break;
-                  case "day":
-                    fillColor = "#FF0000";
-                    fillOpacity = 0.8;
-                    color = "#CC0000";
-                    break;
-                  default:
-                    fillColor = "#808080";
-                    fillOpacity = 0.4;
-                    color = "#606060";
+                if (usesHcc) {
+                  fillColor = "#FF0000";
+                  fillOpacity = 0.8;
+                  color = "#CC0000";
+                } else {
+                  fillColor = "#808080";
+                  fillOpacity = 0.4;
+                  color = "#606060";
                 }
                 return {
                   fillColor: fillColor,
@@ -121,7 +109,8 @@
                 content += "<strong>Feature Properties:</strong><br>";
 
                 if (feature.properties) {
-                  for (let key in feature.properties) {
+                  useful_properties = ["name", "abbrev", "departments"];
+                  for (let key in useful_properties) {
                     content += `${key}: ${feature.properties[key]}<br>`;
                   }
                 }

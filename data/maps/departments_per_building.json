@@ -1,0 +1,239 @@
+{
+  "building_departments": {
+    "Food Innovation Center": [
+      "Food Science and Technology"
+    ],
+    "Avery Hall": [
+      "School of Computing",
+      "Computer Science and Engineering",
+      "Mathematics",
+      "Statistics"
+    ],
+    "Theodore Jorgensen Hall": [
+      "Physics and Astronomy"
+    ],
+    "Bessey Hall": [
+      "Earth and Atmospheric Sciences"
+    ],
+    "Hamilton Hall": [
+      "Chemistry",
+      "Chemistry and Biochemistry"
+    ],
+    "Nebraska Hall": [
+      "Mechanical and Materials Engineering",
+      "Architectural Engineering",
+      "Durham School of Architectural Engineering and Construction",
+      "Gerontology",
+      "Criminal Justice"
+    ],
+    "Schorr Center": [
+      "Holland Computing Center",
+      "School of Computing",
+      "Computer Science and Engineering"
+    ],
+    "Beadle Center": [
+      "Agronomy and Horticulture",
+      "Biochemistry",
+      "Center for Biotechnology",
+      "Microbiology",
+      "Center for Plant Science Innovation"
+    ],
+    "Agronomy & Horticulture Greenhouse 4": [
+      "Agronomy and Horticulture"
+    ],
+    "Agronomy & Horticulture Greenhouse 3": [
+      "Agronomy and Horticulture"
+    ],
+    "Agronomy & Horticulture Greenhouse 2": [
+      "Agronomy and Horticulture"
+    ],
+    "Agronomy & Horticulture Greenhouse 1": [
+      "Agronomy and Horticulture"
+    ],
+    "Scott Engineering Center": [
+      "Electrical and Computer Engineering",
+      "Civil Engineering",
+      "Architectural Engineering"
+    ],
+    "Carolyn Pope Edwards Hall": [
+      "Education and Human Sciences",
+      "Child, Youth and Family Studies",
+      "Nebraska Center for Research on Children, Youth, Families and Schools",
+      "Teaching, Learning and Teacher Education"
+    ],
+    "Othmer Hall": [
+      "Chemical and Biomolecular Engineering"
+    ],
+    "Hardin Hall": [
+      "School of Natural Resources",
+      "Biostatistics",
+      "Environmental Studies"
+    ],
+    "Oldfather Hall": [
+      "Political Science",
+      "Arts and Sciences",
+      "Sociology",
+      "Anthropology",
+      "History"
+    ],
+    "Howard L. Hawks Hall": [
+      "Finance",
+      "Supply Chain Management and Analytics",
+      "Bureau and Business Research",
+      "Management",
+      "Marketing",
+      "Economics",
+      "School of Accountancy"
+    ],
+    "Peter Kiewit Institute": [
+      "School of Interdisciplinary Informatics",
+      "Information Science and Technology",
+      "Durham School of Architectural Engineering and Construction"
+    ],
+    "Manter Hall": [
+      "School of Biological Sciences"
+    ],
+    "Animal Science Complex": [
+      "Statistics",
+      "Animal Science"
+    ],
+    "Chase Hall": [
+      "Biological Systems Engineering"
+    ],
+    "Burnett Hall": [
+      "Psychology"
+    ],
+    "Stadium East": [
+      "Psychology",
+      "Center for Brain Biology and Behavior"
+    ],
+    "Louise Pound Hall": [
+      "English",
+      "Communication Studies",
+      "Classical and Religious Studies"
+    ],
+    "Love Library South": [
+      "Information Technology Services",
+      "Network and Technology Services",
+      "IT Security Services"
+    ],
+    "Johnny Carson Center for Emerging Media Arts": [
+      "Theatre and Film"
+    ],
+    "Filley Hall": [
+      "Agricultural Economics",
+      "School of Natural Resources"
+    ],
+    "Richards Hall": [
+      "Art and Art History"
+    ],
+    "Leverton Hall": [
+      "Nutrition and Health Sciences"
+    ],
+    "Love Library North & Link": [
+      "University Libraries"
+    ],
+    "Prem S. Paul Research Center at Whittier School": [
+      "Buffett and Childhood Institute",
+      "Civil Engineering"
+    ],
+    "Andersen Hall": [
+      "Advertising and Public Relations",
+      "Journalism and Mass Communications",
+      "Public Policy Center",
+      "News-Editorial"
+    ],
+    "Architecture Hall": [
+      "Community and Regional Planning",
+      "Architecture"
+    ],
+    "Teachers College Hall": [
+      "Educational Psychology",
+      "Educational Administration"
+    ],
+    "Kauffman Academic Residential Center": [
+      "Raikes School"
+    ],
+    "Mussehl Hall": [
+      "4-H and Youth Development"
+    ],
+    "Plant Sciences Hall": [
+      "Plant Pathology"
+    ],
+    "Veterinary Medicine and Biomedical Sciences Hall": [
+      "School of Veterinary Medicine and Biomedical Sciences",
+      "Pathology/Microbiology",
+      "Genetics Cell Biology and Anatomy"
+    ],
+    "Agricultural Communications Building": [
+      "Agricultural and Research Division"
+    ],
+    "Barkley Memorial Center": [
+      "Special Education and Communication Disorders"
+    ],
+    "Keim Hall": [
+      "Nebraska Statewide Arboretum"
+    ],
+    "McCollum Hall": [
+      "Law"
+    ],
+    "Gwendolyn A. Newkirk Human Sciences Building": [
+      "Apparel Design"
+    ],
+    "Canfield Administration Building North": [
+      "Sponsored Programs"
+    ],
+    "Engineering Research Center": [
+      "Engineering",
+      "Biomedical Engineering"
+    ],
+    "Kiewit Hall": [
+      "Engineering",
+      "Durham School of Architectural Engineering and Construction",
+      "Construction Management"
+    ],
+    "Morrison Center": [
+      "Biological Systems Engineering"
+    ],
+    "Splinter Laboratories": [
+      "Biological Systems Engineering"
+    ],
+    "Entomology Hall": [
+      "Entomology"
+    ],
+    "Brace Laboratory": [
+      "Midwest Roadside Safety Facility"
+    ],
+    "Life Sciences Annex": [
+      "School of Veterinary Medicine and Biomedical Sciences"
+    ],
+    "Nebraska Innovation Campus": [
+      "Nebraska Innovation Campus"
+    ],
+    "Water Sciences Laboratory": [
+      "School of Natural Resources",
+      "Hydrological Sciences"
+    ],
+    "Henzlik Hall": [
+      "Biomechanics"
+    ],
+    "University Health Center and College of Nursing": [
+      "Epidemiology",
+      "Environmental, Agricultural and Occupational Health"
+    ],
+    "Forestry Hall": [
+      "School of Natural Resources",
+      "Nebraska Cooperative Fish and Wildlife Research Unit"
+    ],
+    "Natural Resources Research Annex": [
+      "School of Natural Resources"
+    ],
+    "Conservation & Survey Annex": [
+      "School of Natural Resources"
+    ],
+    "Behlen Laboratory": [
+      "Biochemistry",
+      "Center for Biotechnology"
+    ]
+  }
+}
