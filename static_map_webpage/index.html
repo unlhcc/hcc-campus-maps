@@ -13,126 +13,230 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="controls">
-      <button id="streetsBtn" class="active">Streets</button>
-      <button id="satelliteBtn">Satellite</button>
-      <button id="topoBtn">Topographic</button>
+    <div class="controls" id="controls">
+      <!-- Buttons will be generated dynamically -->
     </div>
 
     <div id="map"></div>
 
-    <div class="info" id="info">Loading GeoJSON data...</div>
+    <div class="info" id="info">Loading configuration...</div>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""></script>
 
+    <!-- js-yaml for parsing YAML -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
     <script>
       let map;
-      let geoJsonLayer;
-      const GEOJSON_URL = "buildings_using_hcc.geojson";
+      let dataLayer;
+      let config;
+      let baseLayers = {};
 
-      // Define base layers
-      const baseLayers = {
-        streets: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          maxZoom: 19
-        }),
-        satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-          attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
-          maxZoom: 19
-        }),
-        topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-          attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
-          maxZoom: 17
-        })
+      // Base layer definitions
+      const baseLayerDefinitions = {
+        streets: {
+          layer: () => L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+          }),
+          label: 'Streets'
+        },
+        satellite: {
+          layer: () => L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+            maxZoom: 19
+          }),
+          label: 'Satellite'
+        },
+        topo: {
+          layer: () => L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+            maxZoom: 17
+          }),
+          label: 'Topographic'
+        }
       };
 
+      async function loadConfig() {
+        try {
+          const response = await fetch('map-config.yml');
+          if (!response.ok) {
+            throw new Error(`Failed to load config: ${response.status}`);
+          }
+          const yamlText = await response.text();
+          config = jsyaml.load(yamlText);
+          
+          document.getElementById('info').innerHTML = 'Configuration loaded. Initializing map...';
+          initMap();
+        } catch (error) {
+          console.error('Error loading configuration:', error);
+          document.getElementById('info').innerHTML = `Error loading configuration: ${error.message}`;
+        }
+      }
+
       function initMap() {
-        // Initialize map centered on University of Nebraska - Lincoln
-        map = L.map('map', {
-          center: [40.8202, -96.7006],
-          zoom: 16,
-          layers: [baseLayers.streets]
+        // Initialize base layers from config
+        config.base_layers.forEach(layerKey => {
+          if (baseLayerDefinitions[layerKey]) {
+            baseLayers[layerKey] = baseLayerDefinitions[layerKey].layer();
+          }
         });
 
-        // Load GeoJSON data
-        loadGeoJSON();
+        // Get default layer
+        const defaultLayer = baseLayers[config.default_layer] || baseLayers[config.base_layers[0]];
+
+        // Initialize map with config settings
+        map = L.map('map', {
+          center: [config.map.center.lat, config.map.center.lng],
+          zoom: config.map.zoom,
+          layers: [defaultLayer]
+        });
 
         // Setup map type controls
         setupControls();
 
-        // Auto-refresh every 6 hours (21600000 ms)
-        setInterval(loadGeoJSON, 21600000);
+        // Load GeoJSON data
+        loadGeoJsonDataLayer();
+
+        // Auto-refresh if configured
+        if (config.refresh_interval > 0) {
+          setInterval(loadGeoJsonDataLayer, config.refresh_interval);
+        }
       }
 
-      function loadGeoJSON() {
+      function shouldIncludeBuilding(feature) {
+        if (feature.properties.departments === undefined || feature.properties.member_departments === undefined) {
+          console.error("Feature missing departments or member_departments property:", feature);
+        }
+
+        const departments = feature.properties.departments || [];
+        const memberDepartments = feature.properties.member_departments || [];
+
+        // Exclude buildings serving only an excluded department
+        if (config.departments.excluded && config.departments.excluded.length > 0) {
+          const allExcluded = departments.every(dept => 
+            config.departments.excluded.includes(dept)
+          );
+          if (departments.length > 0 && allExcluded) {
+            return false;
+          }
+        }
+
+        if (!config.display.show_buildings_without_departments) {
+          if (departments.length === 0) {
+            return false;
+          }
+        }
+
+        if (!config.display.show_buildings_not_using_hcc) {
+          if (memberDepartments.length === 0) {
+            return false;
+          }
+        }
+
+        
+        return true;
+      }
+
+
+      function generateDataLayer(buildingData, usageData) {
+        const geoJsonData = buildingData['buildings'];
+        const departmentsUsingHcc = usageData.map(entry => entry['Department_Canonical']);
+
+        for (let feature of geoJsonData.features) {
+          // Add member_departments property
+          const buildingDepartments = feature.properties.departments || [];
+          feature.properties.member_departments = buildingDepartments.filter(dept => 
+            departmentsUsingHcc.includes(dept)
+          );
+        }
+
+        // Filter buildings based on config
+        const filteredFeatures = geoJsonData.features.filter(shouldIncludeBuilding);
+        const filteredGeoJson = {
+          ...geoJsonData,
+          features: filteredFeatures
+        };
+
+        // Add new GeoJSON layer with styling from config
+        dataLayer = L.geoJSON(filteredGeoJson, {
+          style: function(feature) {
+            const usesHcc = feature.properties.member_departments.length > 0;
+            const style = usesHcc ? config.styling.with_hcc : config.styling.without_hcc;
+            
+            return {
+              fillColor: style.fill_color,
+              fillOpacity: style.fill_opacity,
+              color: style.stroke_color,
+              weight: style.stroke_weight
+            };
+          },
+          onEachFeature: function(feature, layer) {
+            // Create popup content based on configured properties
+            let content = '<div style="padding: 10px;">';
+            content += "<strong>Feature Properties:</strong><br>";
+
+            if (feature.properties) {
+              // Show properties in the order specified in config
+              config.display.popup_properties.forEach(key => {
+                if (feature.properties.hasOwnProperty(key)) {
+                  const value = Array.isArray(feature.properties[key]) 
+                    ? feature.properties[key].join(', ') 
+                    : feature.properties[key];
+                  content += `<strong>${key}:</strong> ${value}<br>`;
+                }
+              });
+            }
+
+            content += "</div>";
+            layer.bindPopup(content);
+          }
+        });
+        return dataLayer;
+      }
+
+      function loadGeoJsonDataLayer() {
         const timestamp = new Date().getTime();
-        fetch(`${GEOJSON_URL}?t=${timestamp}`) // Cache busting
+        fetch(`${config.buildings_geojson_url}?t=${timestamp}`) // Cache busting
           .then((response) => {
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
             }
             return response.json();
           })
-          .then((data) => {
-            // Remove existing GeoJSON layer if it exists
-            if (geoJsonLayer) {
-              map.removeLayer(geoJsonLayer);
-            }
-            
-            geoJsonData = data['buildings'];
-            // Add new GeoJSON layer with styling
-            geoJsonLayer = L.geoJSON(geoJsonData, {
-              style: function(feature) {
-                const usesHcc = feature.properties.departments.length > 0;
-                let fillColor, color, fillOpacity;
-                if (usesHcc) {
-                  fillColor = "#FF0000";
-                  fillOpacity = 0.8;
-                  color = "#CC0000";
-                } else {
-                  fillColor = "#808080";
-                  fillOpacity = 0.4;
-                  color = "#606060";
+          .then((buildingData) => {
+            fetch(`${config.departments_using_hcc_url}?t=${timestamp}`) // Cache busting
+              .then((response) => {
+                if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                return {
-                  fillColor: fillColor,
-                  fillOpacity: fillOpacity,
-                  color: color,
-                  weight: 2
-                };
-              },
-              onEachFeature: function(feature, layer) {
-                // Create popup content
-                let content = '<div style="padding: 10px;">';
-                content += "<strong>Feature Properties:</strong><br>";
-
-                if (feature.properties) {
-                  useful_properties = ["name", "abbrev", "departments"];
-                  for (let key in feature.properties) {
-                    content += `${key}: ${feature.properties[key]}<br>`;
-                  }
+                return response.json();
+              })
+              .then((usageData) => {
+                dataLayer = generateDataLayer(buildingData, usageData);
+                // Remove existing GeoJSON layer if it exists
+                if (dataLayer) {
+                  map.removeLayer(dataLayer);
                 }
 
-                content += "</div>";
+                // Update info
+                const featureCount = buildingData['buildings'].features.length;
+                const lastUpdate = new Date().toLocaleString();
+                document.getElementById(
+                  "info"
+                ).innerHTML = `Features: ${featureCount} | Last updated: ${lastUpdate}`;
 
-                layer.bindPopup(content);
-              }
-            }).addTo(map);
+                // Auto-zoom to fit all features
+                if (dataLayer.getBounds().isValid()) {
+                  map.fitBounds(dataLayer.getBounds());
+                }
 
-            // Update info
-            const featureCount = geoJsonData.features ? geoJsonData.features.length : 0;
-            const lastUpdate = new Date().toLocaleString();
-            document.getElementById(
-              "info"
-            ).innerHTML = `Features: ${featureCount} | Last updated: ${lastUpdate}`;
-
-            // Auto-zoom to fit all features
-            if (geoJsonLayer.getBounds().isValid()) {
-              map.fitBounds(geoJsonLayer.getBounds());
-            }
+                // Add new GeoJSON layer to the map
+                dataLayer.addTo(map);
+              })
           })
           .catch((error) => {
             console.error("Error loading GeoJSON:", error);
@@ -143,32 +247,37 @@
       }
 
       function setupControls() {
-        document
-          .getElementById("streetsBtn")
-          .addEventListener("click", function () {
-            map.removeLayer(baseLayers.satellite);
-            map.removeLayer(baseLayers.topo);
-            map.addLayer(baseLayers.streets);
-            updateActiveButton(this);
-          });
+        const controlsDiv = document.getElementById('controls');
+        controlsDiv.innerHTML = ''; // Clear existing controls
 
-        document
-          .getElementById("satelliteBtn")
-          .addEventListener("click", function () {
-            map.removeLayer(baseLayers.streets);
-            map.removeLayer(baseLayers.topo);
-            map.addLayer(baseLayers.satellite);
-            updateActiveButton(this);
-          });
+        // Create buttons for each configured base layer
+        config.base_layers.forEach((layerKey, index) => {
+          if (baseLayerDefinitions[layerKey]) {
+            const button = document.createElement('button');
+            button.id = `${layerKey}Btn`;
+            button.textContent = baseLayerDefinitions[layerKey].label;
+            
+            // Set default layer as active
+            if (layerKey === config.default_layer) {
+              button.classList.add('active');
+            }
 
-        document
-          .getElementById("topoBtn")
-          .addEventListener("click", function () {
-            map.removeLayer(baseLayers.streets);
-            map.removeLayer(baseLayers.satellite);
-            map.addLayer(baseLayers.topo);
-            updateActiveButton(this);
-          });
+            button.addEventListener('click', function() {
+              // Remove all other layers
+              Object.keys(baseLayers).forEach(key => {
+                if (key !== layerKey) {
+                  map.removeLayer(baseLayers[key]);
+                }
+              });
+              
+              // Add selected layer
+              map.addLayer(baseLayers[layerKey]);
+              updateActiveButton(this);
+            });
+
+            controlsDiv.appendChild(button);
+          }
+        });
       }
 
       function updateActiveButton(activeBtn) {
@@ -178,8 +287,8 @@
         activeBtn.classList.add("active");
       }
 
-      // Initialize map when page loads
-      initMap();
+      // Load config and initialize map when page loads
+      loadConfig();
     </script>
   </body>
 </html>

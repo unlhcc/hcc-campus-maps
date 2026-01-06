@@ -1,0 +1,64 @@
+# Map Configuration
+
+# GeoJSON data source
+buildings_geojson_url: "buildings.geojson"
+departments_using_hcc_url: "departments_completing_jobs_in_past_fortnight.json"
+
+# Map initialization settings
+map:
+  center:
+    lat: 40.8202
+    lng: -96.7006
+  zoom: 16
+
+# Refresh interval in milliseconds (6 hours = 21600000 ms)
+refresh_interval: 21600000
+
+# Base layers to include (streets, satellite, topo)
+base_layers:
+  - streets
+  - satellite
+  - topo
+
+# Default base layer
+default_layer: streets
+
+# Building styling
+styling:
+  # Buildings that use HCC
+  with_hcc:
+    fill_color: "#FF0000"
+    fill_opacity: 0.8
+    stroke_color: "#CC0000"
+    stroke_weight: 2
+  
+  # Buildings that don't use HCC
+  without_hcc:
+    fill_color: "#808080"
+    fill_opacity: 0.4
+    stroke_color: "#606060"
+    stroke_weight: 2
+
+# Department filtering
+departments:
+  # Departments to exclude from the map entirely
+  excluded:
+    - "Parking and Transit Services"
+    - "Facilities Management"
+    - "Housing"
+    - "University Libraries"
+    - "Dining Services"
+    - "Campus Recreation"
+    - "Athletics"
+    - "Administration"
+# Display settings
+display:
+  # Show buildings with no departments
+  show_buildings_without_departments: true
+  show_buildings_not_using_hcc: true
+  
+  # Properties to display in feature popup (in order)
+  popup_properties:
+    - name
+    - abbrev
+    - departments
