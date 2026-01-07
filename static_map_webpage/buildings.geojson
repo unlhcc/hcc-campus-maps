@@ -1010,7 +1010,9 @@
         "properties": {
           "abbrev": "14PG",
           "name": "14th & Avery Parking Garage",
-          "departments": []
+          "departments": [
+            "Parking and Transit Services"
+          ]
         }
       },
       {
@@ -2142,7 +2144,9 @@
         "properties": {
           "abbrev": "17PG",
           "name": "17th & R Parking Garage",
-          "departments": []
+          "departments": [
+            "Parking and Transit Services"
+          ]
         }
       },
       {
@@ -2249,7 +2253,9 @@
         "properties": {
           "abbrev": "18R",
           "name": "18th & R Parking Garage",
-          "departments": []
+          "departments": [
+            "Parking and Transit Services"
+          ]
         }
       },
       {
@@ -2284,7 +2290,9 @@
         "properties": {
           "abbrev": "18S",
           "name": "18th & S Support Building",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -2355,7 +2363,9 @@
         "properties": {
           "abbrev": "19PG",
           "name": "19th and Vine Parking Garage",
-          "departments": []
+          "departments": [
+            "Parking and Transit Services"
+          ]
         }
       },
       {
@@ -2664,7 +2674,10 @@
         "properties": {
           "abbrev": "ADMS",
           "name": "Canfield Administration Building South",
-          "departments": []
+          "departments": [
+            "Administration",
+            "Sponsored Programs"
+          ]
         }
       },
       {
@@ -2770,7 +2783,10 @@
         "properties": {
           "abbrev": "AHFS",
           "name": "Agronomy & Horticulture/Forestry Shops",
-          "departments": []
+          "departments": [
+            "Agronomy and Horticulture",
+            "School of Natural Resources"
+          ]
         }
       },
       {
@@ -3265,7 +3281,9 @@
         "properties": {
           "abbrev": "AHPH",
           "name": "Agronomy & Horticulture Physiology Building",
-          "departments": []
+          "departments": [
+            "Agronomy and Horticulture"
+          ]
         }
       },
       {
@@ -3300,7 +3318,9 @@
         "properties": {
           "abbrev": "AHTL",
           "name": "Agronomy & Horticulture Outstate Testing Laboratory",
-          "departments": []
+          "departments": [
+            "Agronomy and Horticulture"
+          ]
         }
       },
       {
@@ -3335,7 +3355,10 @@
         "properties": {
           "abbrev": "ALEX",
           "name": "Alexander Building",
-          "departments": []
+          "departments": [
+            "Administration",
+            "Admissions"
+          ]
         }
       },
       {
@@ -3993,7 +4016,9 @@
         "properties": {
           "abbrev": "ARCL",
           "name": "Architecture Hall Link",
-          "departments": []
+          "departments": [
+            "Architecture"
+          ]
         }
       },
       {
@@ -4168,7 +4193,9 @@
         "properties": {
           "abbrev": "ARCW",
           "name": "Architecture Hall West",
-          "departments": []
+          "departments": [
+            "Architecture"
+          ]
         }
       },
       {
@@ -4235,7 +4262,9 @@
         "properties": {
           "abbrev": "ARH",
           "name": "Abel Hall",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -4402,7 +4431,9 @@
         "properties": {
           "abbrev": "ASFS",
           "name": "Abel-Sandoz Food Service Building",
-          "departments": []
+          "departments": [
+            "Dining Services"
+          ]
         }
       },
       {
@@ -4665,7 +4696,9 @@
         "properties": {
           "abbrev": "ASWC",
           "name": "Abel-Sandoz Welcome Center",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -4960,7 +4993,9 @@
         "properties": {
           "abbrev": "BDL",
           "name": "Bio-Fiber Development Laboratory",
-          "departments": []
+          "departments": [
+            "Biological Systems Engineering"
+          ]
         }
       },
       {
@@ -6082,7 +6117,9 @@
         "properties": {
           "abbrev": "BIC",
           "name": "Breslow Ice Center",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -6225,7 +6262,9 @@
         "properties": {
           "abbrev": "BIOG",
           "name": "Bioscience Greenhouses",
-          "departments": []
+          "departments": [
+            "School of Biological Sciences"
+          ]
         }
       },
       {
@@ -7858,7 +7897,9 @@
         "properties": {
           "abbrev": "BUSG",
           "name": "Bus Garage",
-          "departments": []
+          "departments": [
+            "Parking and Transit Services"
+          ]
         }
       },
       {
@@ -8385,7 +8426,9 @@
         "properties": {
           "abbrev": "CCUP",
           "name": "Utility Plant, City Campus",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -8557,7 +8600,8 @@
           "abbrev": "CHA",
           "name": "Chase Hall",
           "departments": [
-            "Biological Systems Engineering"
+            "Biological Systems Engineering",
+            "Agrcultural Engineering"
           ]
         }
       },
@@ -8617,7 +8661,9 @@
         "properties": {
           "abbrev": "CHC",
           "name": "UNL Children's Center",
-          "departments": []
+          "departments": [
+            "Child Care Services"
+          ]
         }
       },
       {
@@ -9140,7 +9186,9 @@
         "properties": {
           "abbrev": "COL",
           "name": "Coliseum",
-          "departments": []
+          "departments": [
+            "Campus Recreation"
+          ]
         }
       },
       {
@@ -9787,7 +9835,9 @@
         "properties": {
           "abbrev": "COOK",
           "name": "Cook Pavilion",
-          "departments": []
+          "departments": [
+            "Campus Recreation"
+          ]
         }
       },
       {
@@ -10517,7 +10567,9 @@
         "properties": {
           "abbrev": "CREC",
           "name": "Sapp Recreation Facility",
-          "departments": []
+          "departments": [
+            "Campus Recreation"
+          ]
         }
       },
       {
@@ -10552,7 +10604,9 @@
         "properties": {
           "abbrev": "CRES",
           "name": "Campus Renewable Energy System Building",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -11275,7 +11329,9 @@
         "properties": {
           "abbrev": "CTES",
           "name": "City Thermal Energy Storage",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -13828,7 +13884,9 @@
         "properties": {
           "abbrev": "DENT",
           "name": "College of Dentistry",
-          "departments": []
+          "departments": [
+            "Dentistry"
+          ]
         }
       },
       {
@@ -14199,7 +14257,9 @@
         "properties": {
           "abbrev": "DEV",
           "name": "Devaney Sports Center",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -14269,7 +14329,9 @@
         "properties": {
           "abbrev": "DINS",
           "name": "Dinsdale Family Learning Commons",
-          "departments": []
+          "departments": [
+            "University Libraries"
+          ]
         }
       },
       {
@@ -14520,7 +14582,9 @@
         "properties": {
           "abbrev": "DTC",
           "name": "Sid and Hazel Dillon Tennis Center",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -14891,7 +14955,9 @@
         "properties": {
           "abbrev": "ECUP",
           "name": "Utility Plant, East Campus",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -14926,7 +14992,9 @@
         "properties": {
           "abbrev": "EGR2",
           "name": "Entomology Greenhouse 2",
-          "departments": []
+          "departments": [
+            "Entomology"
+          ]
         }
       },
       {
@@ -14961,7 +15029,9 @@
         "properties": {
           "abbrev": "EGR3",
           "name": "Entomology Greenhouse 3",
-          "departments": []
+          "departments": [
+            "Entomology"
+          ]
         }
       },
       {
@@ -15459,7 +15529,9 @@
         "properties": {
           "abbrev": "ESST",
           "name": "Eastside Suites",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -15732,7 +15804,9 @@
         "properties": {
           "abbrev": "ETES",
           "name": "East Thermal Energy Storage",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -15866,7 +15940,9 @@
         "properties": {
           "abbrev": "FCB",
           "name": "Fluid Cooler Building",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -15936,7 +16012,9 @@
         "properties": {
           "abbrev": "FFCB",
           "name": "Fleming Fields Park Concessions Bldg",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -15971,7 +16049,9 @@
         "properties": {
           "abbrev": "FIB",
           "name": "Facilities Implement Building",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -18595,7 +18675,9 @@
         "properties": {
           "abbrev": "FMC",
           "name": "Facilities Management C",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -18630,7 +18712,9 @@
         "properties": {
           "abbrev": "FMD",
           "name": "Facilities Management D",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -18665,7 +18749,9 @@
         "properties": {
           "abbrev": "FME",
           "name": "Facilities Management E",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -18700,7 +18786,9 @@
         "properties": {
           "abbrev": "FMF",
           "name": "Facilities Management F",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -18735,7 +18823,9 @@
         "properties": {
           "abbrev": "FMG",
           "name": "Facilities Management G",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -18770,7 +18860,9 @@
         "properties": {
           "abbrev": "FMP",
           "name": "Facilities Management & Planning",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -18825,7 +18917,9 @@
         "properties": {
           "abbrev": "FMS",
           "name": "Facilities Management Shops",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -18976,7 +19070,9 @@
         "properties": {
           "abbrev": "FOOD",
           "name": "Food Industry Complex",
-          "departments": []
+          "departments": [
+            "Food Science and Technology"
+          ]
         }
       },
       {
@@ -19043,7 +19139,10 @@
         "properties": {
           "abbrev": "FORL",
           "name": "Forage Research Laboratory - USDA",
-          "departments": []
+          "departments": [
+            "Agronomy and Horticulture",
+            "USDA"
+          ]
         }
       },
       {
@@ -19625,7 +19724,9 @@
         "properties": {
           "abbrev": "GAUN",
           "name": "Jackie Gaughan Multicultural Center",
-          "departments": []
+          "departments": [
+            "Diversity and Inclusion"
+          ]
         }
       },
       {
@@ -21729,7 +21830,9 @@
         "properties": {
           "abbrev": "HAYB",
           "name": "Haymarket Park Baseball Stadium Complex",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -22295,7 +22398,9 @@
         "properties": {
           "abbrev": "HCC",
           "name": "Hawks Championship Center",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -23784,7 +23889,9 @@
         "properties": {
           "abbrev": "HDC",
           "name": "Harper Dining Center",
-          "departments": []
+          "departments": [
+            "Dining Services"
+          ]
         }
       },
       {
@@ -24546,7 +24653,9 @@
         "properties": {
           "abbrev": "HRH",
           "name": "Harper Hall",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -26151,7 +26260,9 @@
         "properties": {
           "abbrev": "ICC",
           "name": "Innovation Commons Conference Center",
-          "departments": []
+          "departments": [
+            "Innovation Campus"
+          ]
         }
       },
       {
@@ -26314,7 +26425,9 @@
         "properties": {
           "abbrev": "ICG",
           "name": "Greenhouse Innovation Center",
-          "departments": []
+          "departments": [
+            "Innovation Campus"
+          ]
         }
       },
       {
@@ -26397,7 +26510,9 @@
         "properties": {
           "abbrev": "INSB",
           "name": "Insectary Building",
-          "departments": []
+          "departments": [
+            "Entomology"
+          ]
         }
       },
       {
@@ -26584,7 +26699,9 @@
         "properties": {
           "abbrev": "IQM",
           "name": "International Quilt Museum",
-          "departments": []
+          "departments": [
+            "International Quilt Museum"
+          ]
         }
       },
       {
@@ -26647,7 +26764,9 @@
         "properties": {
           "abbrev": "ITSA",
           "name": "ITS Annex",
-          "departments": []
+          "departments": [
+            "Information Technology Services"
+          ]
         }
       },
       {
@@ -27144,7 +27263,9 @@
         "properties": {
           "abbrev": "KCR",
           "name": "Kiesselbach Crops Research Laboratory",
-          "departments": []
+          "departments": [
+            "Agronomy and Horticulture"
+          ]
         }
       },
       {
@@ -27683,7 +27804,10 @@
         "properties": {
           "abbrev": "KNOL",
           "name": "The Robert E. Knoll Residential Center",
-          "departments": []
+          "departments": [
+            "Housing",
+            "Honors Program"
+          ]
         }
       },
       {
@@ -27950,7 +28074,9 @@
         "properties": {
           "abbrev": "KRH",
           "name": "Kimball Recital Hall",
-          "departments": []
+          "departments": [
+            "Music"
+          ]
         }
       },
       {
@@ -28060,7 +28186,9 @@
         "properties": {
           "abbrev": "L045",
           "name": "Alex Gordon Training Complex",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -29139,7 +29267,9 @@
         "properties": {
           "abbrev": "LDR",
           "name": "Library Depository Retrieval Facility",
-          "departments": []
+          "departments": [
+            "University Libraries"
+          ]
         }
       },
       {
@@ -29299,7 +29429,9 @@
         "properties": {
           "abbrev": "LIB",
           "name": "Landscape Implement Building",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -29622,7 +29754,9 @@
         "properties": {
           "abbrev": "LIED",
           "name": "Lied Center for Performing Arts",
-          "departments": []
+          "departments": [
+            "Lied Center for Performing Arts"
+          ]
         }
       },
       {
@@ -30229,7 +30363,9 @@
         "properties": {
           "abbrev": "LML",
           "name": "Loeffel Meat Laboratory",
-          "departments": []
+          "departments": [
+            "Animal Science"
+          ]
         }
       },
       {
@@ -30514,7 +30650,9 @@
         "properties": {
           "abbrev": "LSEB",
           "name": "Landscape Services Equipment Building",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -30573,7 +30711,9 @@
         "properties": {
           "abbrev": "LSEC",
           "name": "Landscape Services East Campus",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -30608,7 +30748,9 @@
         "properties": {
           "abbrev": "LSMC",
           "name": "Landscape Services Metal Canopy",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -30659,7 +30801,9 @@
         "properties": {
           "abbrev": "LTM",
           "name": "Larsen Tractor Museum",
-          "departments": []
+          "departments": [
+            "Larsen Tractor Museum"
+          ]
         }
       },
       {
@@ -31240,7 +31384,9 @@
         "properties": {
           "abbrev": "MIPC",
           "name": "Mabel Lee Fields IPC",
-          "departments": []
+          "departments": [
+            "Campus Recreation"
+          ]
         }
       },
       {
@@ -31275,7 +31421,9 @@
         "properties": {
           "abbrev": "MLSS",
           "name": "Mabel Lee Storage Shed",
-          "departments": []
+          "departments": [
+            "Campus Recreation"
+          ]
         }
       },
       {
@@ -31322,7 +31470,9 @@
         "properties": {
           "abbrev": "MMF",
           "name": "Materials Management Facility",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -31722,7 +31872,9 @@
         "properties": {
           "abbrev": "MORR",
           "name": "Morrill Hall",
-          "departments": []
+          "departments": [
+            "State Museum"
+          ]
         }
       },
       {
@@ -32053,7 +32205,9 @@
         "properties": {
           "abbrev": "MRC",
           "name": "Massengale Residential Center",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -32699,7 +32853,9 @@
         "properties": {
           "abbrev": "MSTD",
           "name": "Cornhuskers Athletic Complex",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -33610,7 +33766,10 @@
         "properties": {
           "abbrev": "NAC",
           "name": "National Agroforestry Center - USDA",
-          "departments": []
+          "departments": [
+            "School of Natural Resources",
+            "USDA"
+          ]
         }
       },
       {
@@ -33645,7 +33804,9 @@
         "properties": {
           "abbrev": "NAST",
           "name": "National Agroforestry Center Storage Building - USDA",
-          "departments": []
+          "departments": [
+            "USDA"
+          ]
         }
       },
       {
@@ -34222,7 +34383,9 @@
         "properties": {
           "abbrev": "NECH",
           "name": "Nebraska Champions Club",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -34488,7 +34651,10 @@
         "properties": {
           "abbrev": "NEU",
           "name": "Nebraska East Union",
-          "departments": []
+          "departments": [
+            "Student Affairs",
+            "Dining Services"
+          ]
         }
       },
       {
@@ -34701,7 +34867,9 @@
         "properties": {
           "abbrev": "NSA2",
           "name": "Nebraska Statewide Arboretum Greenhouse 2",
-          "departments": []
+          "departments": [
+            "Nebraska Statewide Arboretum"
+          ]
         }
       },
       {
@@ -34736,7 +34904,9 @@
         "properties": {
           "abbrev": "NSAG",
           "name": "Nebraska Statewide Arboretum Greenhouse",
-          "departments": []
+          "departments": [
+            "Nebraska Statewide Arboretum"
+          ]
         }
       },
       {
@@ -34947,7 +35117,11 @@
         "properties": {
           "abbrev": "NU",
           "name": "Nebraska Union",
-          "departments": []
+          "departments": [
+            "Student Affairs",
+            "Dining Services",
+            "University Bookstore"
+          ]
         }
       },
       {
@@ -35166,7 +35340,9 @@
         "properties": {
           "abbrev": "NVDC",
           "name": "Nebraska Veterinary Diagnostic Center",
-          "departments": []
+          "departments": [
+            "Veterinary Medicine and Biomedical Sciences Hall"
+          ]
         }
       },
       {
@@ -35421,7 +35597,9 @@
         "properties": {
           "abbrev": "OAC",
           "name": "Outdoor Adventures Center",
-          "departments": []
+          "departments": [
+            "Campus Recreation"
+          ]
         }
       },
       {
@@ -35687,7 +35865,9 @@
         "properties": {
           "abbrev": "OLC",
           "name": "Osborne Legacy Center",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -35763,7 +35943,9 @@
         "properties": {
           "abbrev": "ORB7",
           "name": "Campus Rec Equipment Building 7 - Mabel Lee Fields",
-          "departments": []
+          "departments": [
+            "Campus Recreation"
+          ]
         }
       },
       {
@@ -37119,7 +37301,9 @@
         "properties": {
           "abbrev": "PBA",
           "name": "Pinnacle Bank Arena",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -37629,7 +37813,9 @@
         "properties": {
           "abbrev": "PM",
           "name": "Pershing Maintenance",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -37760,7 +37946,9 @@
         "properties": {
           "abbrev": "PPG",
           "name": "Plant Pathology Greenhouse",
-          "departments": []
+          "departments": [
+            "Plant Pathology"
+          ]
         }
       },
       {
@@ -37795,7 +37983,10 @@
         "properties": {
           "abbrev": "PSTG",
           "name": "Plant Science Teaching Greenhouse",
-          "departments": []
+          "departments": [
+            "Agronomy and Horticulture",
+            "Plant Sciences"
+          ]
         }
       },
       {
@@ -38131,7 +38322,9 @@
         "properties": {
           "abbrev": "RISE",
           "name": "The Rise Building",
-          "departments": []
+          "departments": [
+            "Innovation Campus"
+          ]
         }
       },
       {
@@ -38178,7 +38371,9 @@
         "properties": {
           "abbrev": "RRB",
           "name": "Recycling and Refuse Building",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -39601,7 +39796,10 @@
         "properties": {
           "abbrev": "RVB",
           "name": "Mary Riepma Ross Media Arts Center-Van Brunt Visitors Center",
-          "departments": []
+          "departments": [
+            "Theatre and Film",
+            "Visitors Center"
+          ]
         }
       },
       {
@@ -39864,7 +40062,9 @@
         "properties": {
           "abbrev": "RWC",
           "name": "Recreation and Wellness Center",
-          "departments": []
+          "departments": [
+            "Campus Recreation"
+          ]
         }
       },
       {
@@ -40675,7 +40875,9 @@
         "properties": {
           "abbrev": "SCAR",
           "name": "The Scarlet Hotel",
-          "departments": []
+          "departments": [
+            "Scarlet Hotel"
+          ]
         }
       },
       {
@@ -41158,7 +41360,9 @@
         "properties": {
           "abbrev": "SCRH",
           "name": "Schramm Hall",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -41257,7 +41461,9 @@
         "properties": {
           "abbrev": "SDPG",
           "name": "Stadium Drive Parking Garage",
-          "departments": []
+          "departments": [
+            "Parking and Transit Services"
+          ]
         }
       },
       {
@@ -42754,7 +42960,9 @@
         "properties": {
           "abbrev": "SEW",
           "name": "Sewage Sterilization Plant",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -52273,7 +52481,9 @@
         "properties": {
           "abbrev": "SHEL",
           "name": "Sheldon Museum of Art",
-          "departments": []
+          "departments": [
+            "Sheldon Museum of Art"
+          ]
         }
       },
       {
@@ -53007,7 +53217,9 @@
         "properties": {
           "abbrev": "SMRH",
           "name": "Smith Hall",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -53145,7 +53357,9 @@
         "properties": {
           "abbrev": "SSL",
           "name": "Stewart Seed Laboratory",
-          "departments": []
+          "departments": [
+            "Agronomy and Horticulture"
+          ]
         }
       },
       {
@@ -53894,7 +54108,9 @@
         "properties": {
           "abbrev": "STNO",
           "name": "Stadium North",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -53985,7 +54201,9 @@
         "properties": {
           "abbrev": "STSO",
           "name": "Stadium South",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -54580,7 +54798,9 @@
         "properties": {
           "abbrev": "STW",
           "name": "Stadium West",
-          "departments": []
+          "departments": [
+            "Athletics"
+          ]
         }
       },
       {
@@ -54631,7 +54851,9 @@
         "properties": {
           "abbrev": "SVC",
           "name": "Service Building",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -54730,7 +54952,9 @@
         "properties": {
           "abbrev": "SZRH",
           "name": "Sandoz Hall",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -55803,7 +56027,9 @@
         "properties": {
           "abbrev": "TELC",
           "name": "Terry M. Carpenter Telecommunications Center",
-          "departments": []
+          "departments": [
+            "Information Technology Services"
+          ]
         }
       },
       {
@@ -55949,7 +56175,9 @@
         "properties": {
           "abbrev": "TGE",
           "name": "Teaching Greenhouse East",
-          "departments": []
+          "departments": [
+            "Agronomy and Horticulture"
+          ]
         }
       },
       {
@@ -55984,7 +56212,9 @@
         "properties": {
           "abbrev": "TGW",
           "name": "Teaching Greenhouse West",
-          "departments": []
+          "departments": [
+            "Agronomy and Horticulture"
+          ]
         }
       },
       {
@@ -56075,7 +56305,9 @@
         "properties": {
           "abbrev": "TRAN",
           "name": "Transportation Services",
-          "departments": []
+          "departments": [
+            "Parking and Transit Services"
+          ]
         }
       },
       {
@@ -56557,7 +56789,9 @@
         "properties": {
           "abbrev": "UNST",
           "name": "University Suites",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -56592,7 +56826,9 @@
         "properties": {
           "abbrev": "USDP",
           "name": "USDA Physiology Building - USDA",
-          "departments": []
+          "departments": [
+            "USDA"
+          ]
         }
       },
       {
@@ -56627,7 +56863,9 @@
         "properties": {
           "abbrev": "UST",
           "name": "U Street Apartments",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -56662,7 +56900,9 @@
         "properties": {
           "abbrev": "UTF",
           "name": "Utility Response Facility",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -56875,7 +57115,9 @@
         "properties": {
           "abbrev": "VBSA",
           "name": "VBS Annex",
-          "departments": []
+          "departments": [
+            "Veterinary Medicine and Biomedical Sciences Hall"
+          ]
         }
       },
       {
@@ -56958,7 +57200,9 @@
         "properties": {
           "abbrev": "VCSL",
           "name": "Veterinary Clinical Skills Laboratory",
-          "departments": []
+          "departments": [
+            "Veterinary Medicine and Biomedical Sciences Hall"
+          ]
         }
       },
       {
@@ -61599,7 +61843,9 @@
         "properties": {
           "abbrev": "VILL",
           "name": "The Village",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -61634,7 +61880,9 @@
         "properties": {
           "abbrev": "W1",
           "name": "Warehouse 1",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -61669,7 +61917,9 @@
         "properties": {
           "abbrev": "W2",
           "name": "Warehouse 2",
-          "departments": []
+          "departments": [
+            "Facilities Management"
+          ]
         }
       },
       {
@@ -61716,7 +61966,9 @@
         "properties": {
           "abbrev": "WAB",
           "name": "Woods Art Building",
-          "departments": []
+          "departments": [
+            "Art and Art History"
+          ]
         }
       },
       {
@@ -62006,7 +62258,9 @@
         "properties": {
           "abbrev": "WCDC",
           "name": "Willa S. Cather Dining Complex",
-          "departments": []
+          "departments": [
+            "Dining Services"
+          ]
         }
       },
       {
@@ -62109,7 +62363,9 @@
         "properties": {
           "abbrev": "WELC",
           "name": "Welpton Courtroom Building",
-          "departments": []
+          "departments": [
+            "Law"
+          ]
         }
       },
       {
@@ -62418,7 +62674,9 @@
         "properties": {
           "abbrev": "WICK",
           "name": "Wick Alumni Center",
-          "departments": []
+          "departments": [
+            "Alumni Relations"
+          ]
         }
       },
       {
@@ -62619,7 +62877,9 @@
         "properties": {
           "abbrev": "WMB",
           "name": "Westbrook Music Building",
-          "departments": []
+          "departments": [
+            "Music"
+          ]
         }
       },
       {
@@ -62788,7 +63048,9 @@
         "properties": {
           "abbrev": "2222",
           "name": "Vine Street Apartments West",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       },
       {
@@ -62823,7 +63085,9 @@
         "properties": {
           "abbrev": "2244",
           "name": "Vine Street Apartments East",
-          "departments": []
+          "departments": [
+            "Housing"
+          ]
         }
       }
     ]
@@ -62836,77 +63100,70 @@
     "Biomedical Informatics",
     "School of Biological Sciences",
     "Computer Science and Engineering",
+    "Animal Sci",
     "Pathology/Microbiology",
     "Agronomy and Horticulture",
     "Animal Science",
+    "Department of Genetics, Cell Biology & Anatomy",
     "Chemical and Biomolecular Engineering",
-    "Economics",
+    "Civil Engineering",
     "Mech Eng",
     "Food Science and Technology",
-    "Pharmaceutical Sciences",
-    "Electrical and Computer Engineering",
     "Center for Plant Science Innovation",
     "Nebraska Innovation Campus",
-    "Center for Biotechnology",
     "Biochemistry",
     "Psychology",
-    "Statistics",
-    "Mechanical and Materials Engineering",
-    "Civil Engineering",
+    "Pharmaceutical Sciences",
     "Radiation Oncology",
+    "Mechanical and Materials Engineering",
     "Nutrition and Health Sciences",
     "Department of food science and technology",
-    "School of Basic Sciences",
-    "NPHL",
-    "School of Interdisciplinary Informatics",
+    "Electrical and Computer Engineering",
+    "Biological Systems Engineering",
+    "Biostatistics",
     "Genetics Cell Biology and Anatomy",
     "Survey Division - School of Nat Res",
-    "Biostatistics",
     "Mathematics",
+    "Statistics",
     "Earth and Atmospheric Sciences",
     "Epidemiology",
-    "Biological Systems Engineering",
-    "Arts and Sciences",
     "School of Natural Resources",
-    "Plant Pathology",
     "Graduate Studies",
-    "Manter Laboratory of Parasitology",
+    "NPHL",
     "Conservation Genetics",
+    "Plant Pathology",
     "Neurological Sciences",
     "Environmental, Agricultural and Occupational Health",
     "Integrated Plant Biology",
-    "Ophthalmology and Visual Sciences",
-    "Chemistry and Biochemistry",
     "Biomechanics",
-    "Biomedical Sciences",
+    "Cancer Research",
     "Eppley Institute",
     "Entomology",
     "Medical Microbiology and Immunology",
     "Civil Engineering- Geotechnical and Material",
     "College of Agricultural Sciences & Natural Resources",
-    "Engineering",
     "Bioinformatics and Systems Biology",
     "Integrated Biomedical Sciences Graduate Program",
     "Supply Chain Management and Analytics",
     "Hematology/Oncology",
     "School of Accountancy",
     "Complex Biosystems",
+    "Pharmacology/Exp Neuroscience",
     "Durham School of Architectural Engineering and Construction",
     "Open Science Grid",
     "Pharmacology CNND",
     "Nebraska Cooperative Fish and Wildlife Research Unit",
     "Student",
+    "School of Interdisciplinary Informatics",
+    "Applied ecology",
     "Information Technology Services",
-    "Department of Inorganic, Analytical and Physical Chemistry",
     "Center for Brain Biology and Behavior",
-    "Textiles, Merchan and Fashion Design",
     "Research Data Center",
     "Hydrological Sciences",
-    "Student Affairs",
     "Department of Agronomy and HorticultureI",
     "Nebraska State Climate Office",
     "University Libraries",
-    "School of Computing",
+    "Engineering",
     "Entomology IANR",
     "Internal Medicine"
   ]

@@ -333,14 +333,15 @@
       "Lied Center for Performing Arts"
     ],
     "Temple Building": [
-
+      "Theatre and Film",
+      "Dance"
     ],
     "Mary Riepma Ross Media Arts Center-Van Brunt Visitors Center": [
       "Theatre and Film",
       "Visitors Center"
     ],
     "Hewit Place": [
-
+      "Great Plains Art Museum"
     ],
     "1217 Q St": [
 
@@ -414,13 +415,16 @@
       "Housing"
     ],
     "Vine Street Apartments East": [
-      "Housing"
+      "Housing",
+      "Family Housing"
     ],
     "Vine Street Apartments West": [
-      "Housing"
+      "Housing",
+      "Family Housing"
+
     ],
     "Husker Hall": [
-
+      "Housing"
     ],
     "UNL Children's Center": [
       "Child Care Services"
@@ -447,7 +451,8 @@
       "Facilities Management"
     ],
     "Business Services Complex": [
-
+      "Business Services",
+      "Administration"
     ],
     "Watson Building": [
 
@@ -491,6 +496,7 @@
       "Parking and Transit Services"
     ],
     "Ice Box": [
+      "Athletics"
     ],
     "Innovation Commons Conference Center": [
       "Innovation Campus"
@@ -517,6 +523,9 @@
       "Athletics"
     ],
     "Haymarket Park Baseball Stadium Complex": [
+      "Athletics"
+    ],
+    "Haymarket Park Softball Stadium Complex": [
       "Athletics"
     ],
     "Breslow Ice Center": [
@@ -547,16 +556,17 @@
 
     ],
     "Love Memorial Hall": [
-
+      "Housing"
     ],
     "Bio-Fiber Development Laboratory": [
       "Biological Systems Engineering"
     ],
     "Family Resource Center": [
-
+      ""
     ],
     "Agricultural Hall": [
-
+      "Agricultural Economics",
+      "Agronomy and Horticulture"
     ],
     "Nebraska East Union": [
       "Student Affairs",
@@ -575,7 +585,7 @@
       "Agronomy and Horticulture"
     ],
     "Varner Hall": [
-
+      "Administration"
     ],
     "College of Dentistry": [
       "Dentistry"
@@ -601,7 +611,7 @@
       "Animal Science"
     ],
     "Baker Hall": [
-
+      "Animal Science"
     ],
     "National Agroforestry Center - USDA": [
       "School of Natural Resources",
@@ -626,7 +636,7 @@
       "Facilities Management"
     ],
     "Material Handling Facility": [
-
+      "Facilities Management"
     ],
     "Agronomy & Horticulture Outstate Testing Laboratory": [
       "Agronomy and Horticulture"
@@ -693,24 +703,109 @@
       "Law"
     ],
     "Community Garden Shed": [
-      
+      "Facilities Management"
     ],
     "Orchard House Replacement": [
-      
+      "Facilities Management"
     ],
-    "Colonial Terrace Apartment D-1": [],
-    "Colonial Terrace Apartment C-3": [],
-    "Colonial Terrace Apartment A-3": [],
-    "Colonial Terrace Apartment C-4": [],
-    "Colonial Terrace Apartment D-2": [],
-    "Colonial Terrace Apartment A-4": [],
-    "Colonial Terrace Apartment A-2": [],
-    "Colonial Terrace Apartment B": [],
-    "Colonial Terrace Apartment C-2": [],
-    "Colonial Terrace Apartment A-1": [],
-    "Colonial Terrace Apartment C-1": [],
-    "Colonial Terrace Apartments Shop 1": [],
-    "Colonial Terrace Apartments Shop 2": []
+    "Colonial Terrace Apartment D-1": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment C-3": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment A-3": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment C-4": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment D-2": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment A-4": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment A-2": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment B": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment C-2": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment A-1": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartment C-1": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartments Shop 1": [
+      "Housing",
+      "Family Housing"
+    ],
+    "Colonial Terrace Apartments Shop 2": [
+      "Housing",
+      "Family Housing"
+    ],
+    "501 Building": [
+      "Psychology",
+      "Neuroscience"
+    ],
+    "University of Nebraska Federal Credit Union": [
+      "University Federal Credit Union"
+    ],
+    "Selleck Quad Building D": [
+      "Housing"
+    ],
+    "Selleck Quad Building E": [
+      "Housing"
+    ],
+    "Selleck Quad Building F": [
+      "Housing"
+    ],
+    "Selleck Quad Building G": [
+      "Housing"
+    ],
+    "Selleck Quad Building H": [
+      "Housing"
+    ],
+    "Selleck Quad Building J": [
+      "Housing"
+    ],
+    "Selleck Quad Building K": [
+      "Housing"
+    ],
+    "Selleck Quad Building L - Food Service": [
+      "Dining Services"
+    ],
+    "Seaton Hall": [
+      "Housing"
+    ],
+    "Benton Hall": [
+      "Housing"
+    ],
+    "Fairfield Hall": [
+      "Housing"
+    ],
+    "Neihardt Center": [
+      "Housing"
+    ],
+    "The Courtyards": [
+      "Housing"
+    ]
 
   }
 }

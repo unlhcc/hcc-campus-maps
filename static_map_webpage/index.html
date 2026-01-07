@@ -96,7 +96,8 @@
         });
 
         // Setup map type controls
-        setupControls();
+        if (config.display.show_layers_control)
+          setupControls();
 
         // Load GeoJSON data
         loadGeoJsonDataLayer();
@@ -227,12 +228,7 @@
                 const lastUpdate = new Date().toLocaleString();
                 document.getElementById(
                   "info"
-                ).innerHTML = `Features: ${featureCount} | Last updated: ${lastUpdate}`;
-
-                // Auto-zoom to fit all features
-                if (dataLayer.getBounds().isValid()) {
-                  map.fitBounds(dataLayer.getBounds());
-                }
+                ).innerHTML = `Buildings:${featureCount} | Departments Using HCC: ${usageData.length} | Last updated: ${lastUpdate}`;
 
                 // Add new GeoJSON layer to the map
                 dataLayer.addTo(map);

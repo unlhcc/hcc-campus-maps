@@ -7,9 +7,9 @@ departments_using_hcc_url: "departments_completing_jobs_in_past_fortnight.json"
 # Map initialization settings
 map:
   center:
-    lat: 40.8202
-    lng: -96.7006
-  zoom: 16
+    lat: 40.825
+    lng: -96.682
+  zoom: 15
 
 # Refresh interval in milliseconds (6 hours = 21600000 ms)
 refresh_interval: 21600000
@@ -46,6 +46,7 @@ departments:
     - "Parking and Transit Services"
     - "Facilities Management"
     - "Housing"
+    - "Family Housing"
     - "University Libraries"
     - "Dining Services"
     - "Campus Recreation"
@@ -54,8 +55,10 @@ departments:
 # Display settings
 display:
   # Show buildings with no departments
-  show_buildings_without_departments: true
+  show_buildings_without_departments: false
   show_buildings_not_using_hcc: true
+
+  show_layers_control: false
   
   # Properties to display in feature popup (in order)
   popup_properties:
