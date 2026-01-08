@@ -57,3 +57,9 @@ body, html {
   font-size: 12px;
   z-index: 1000;
 }
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
