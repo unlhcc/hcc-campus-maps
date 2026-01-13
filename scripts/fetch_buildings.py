@@ -5,8 +5,6 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from building_department_mapping import get_and_revise_departments
-
 ######################################################################################################
 # Purpose: Scrapes the geojson list of buildings at UNL from maps.unl.edu. Attaches department info to each building.
 # Author:  Luke Doughty (ldoughty2@unl.edu)
@@ -65,11 +63,6 @@ def normalize_property_names(raw_buildings_geojson: dict) -> dict:
   
   
 def attach_departments_property(buildings_geojson: dict) -> dict:
-  # Get departments using HCC
-  departments = get_and_revise_departments(datetime.now() - timedelta(days=30), datetime.now())
-  departments = departments["Department_Canonical"].drop_duplicates()
-  buildings_geojson["departments_using_hcc"] = departments.to_list()
-  
   # Add departments to building properties (this is independent of if they use HCC)
   with open(DEPARTMENTS_PER_BUILDING_PATH, 'r') as f:
     departments_per_building = json.load(f)['building_departments']
@@ -94,12 +87,6 @@ def get_building_properties_dict():
   feature_collection = fetch_building_geojson(SCRAPE_SOURCE_URL)
   print(type(feature_collection))
   return [feature['properties'] for feature in feature_collection['features']]
-  
-
-def get_building_names():
-  buildings_properties_dict= get_building_properties_dict()
-  building_names_list = [building['NAME'] for building in buildings_properties_dict]
-  return building_names_list
 
 
 if __name__ == "__main__":
