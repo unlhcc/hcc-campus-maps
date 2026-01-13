@@ -1,18 +1,26 @@
 import json
 import requests
 import re
+import sys
+from datetime import datetime, timedelta
 from pathlib import Path
 
+from building_department_mapping import get_and_revise_departments
+
 ######################################################################################################
-# Purpose: Scrapes the geojson list of buildings at UNL from maps.unl.edu
+# Purpose: Scrapes the geojson list of buildings at UNL from maps.unl.edu. Attaches department info to each building.
 # Author:  Luke Doughty (ldoughty2@unl.edu)
 # Notes:
 #          Uses regex to scrape the json from the html, so any updates to maps.unl.edu could break this script.
 ######################################################################################################
 
+
 PROJECT_ROOT = Path(__file__).parent.parent
-OUTPUT_DIR = PROJECT_ROOT / 'data' / 'output'
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / 'data' / 'output'
+DEFAULT_OUTPUT_PATH = DEFAULT_OUTPUT_DIR / 'buildings.geojson'
+
 SCRAPE_SOURCE_URL = 'https://maps.unl.edu'
+DEPARTMENTS_PER_BUILDING_PATH = PROJECT_ROOT / 'data' / 'maps' / 'departments_per_building.json'
 
 def save_dict_as_json(data_dict: dict, filename: str):
   with open(filename, 'w') as json_file:
@@ -38,13 +46,12 @@ def fetch_raw_building_geojson(url: str) -> dict:
     print(f"An error occurred while fetching or parsing the data: {e}")
     return {}
   
-
-def fetch_building_geojson(url: str) -> dict:
-  fetch_raw_buildings_dict = fetch_raw_building_geojson(url)
-  building_geojson = dict()
-  building_geojson["type"] = "FeatureCollection"
-  building_geojson["features"] = []
-  for building in fetch_raw_buildings_dict["features"]:
+  
+def normalize_property_names(raw_buildings_geojson: dict) -> dict:
+  building_dict = dict()
+  building_dict["type"] = "FeatureCollection"
+  building_dict["features"] = []
+  for building in raw_buildings_geojson["features"]:
     feature = {
       "type": "Feature",
       "geometry": building["geometry"],
@@ -53,8 +60,34 @@ def fetch_building_geojson(url: str) -> dict:
     feature["properties"]["abbrev"] = building["properties"].get("ABBREV", "")
     feature["properties"]["name"] = building["properties"].get("NAME", "")
     # "bldg_no", "ABBREV", "NAME", "Address", "CAMPUS", "location", "id" are all available
-    building_geojson["features"].append(feature)
-  return building_geojson
+    building_dict["features"].append(feature)
+    return building_dict
+  
+  
+def attach_departments_property(buildings_geojson: dict) -> dict:
+  # Get departments using HCC
+  departments = get_and_revise_departments(datetime.now() - timedelta(days=30), datetime.now())
+  departments = departments["Department_Canonical"].drop_duplicates()
+  buildings_geojson["departments_using_hcc"] = departments.to_list()
+  
+  # Add departments to building properties (this is independent of if they use HCC)
+  with open(DEPARTMENTS_PER_BUILDING_PATH, 'r') as f:
+    departments_per_building = json.load(f)['building_departments']
+    
+  for building in buildings_geojson["buildings"]["features"]:
+    print(f"\nprocessing building: {building}")
+    building_name = building["properties"]["name"]
+    print(f"building_name: {building_name} has departments: {departments_per_building.get(building_name, [])}")
+    building["properties"]["departments"] = departments_per_building.get(building_name, [])
+    
+  return buildings_geojson
+  
+
+def fetch_building_geojson(url: str) -> dict:
+  raw_buildings_dict = fetch_raw_building_geojson(url)
+  buildings_dict = normalize_property_names(raw_buildings_dict)
+  buildings_dict = attach_departments_property(buildings_dict)
+  return buildings_dict
 
 
 def get_building_properties_dict():
@@ -70,9 +103,12 @@ def get_building_names():
 
 
 if __name__ == "__main__":
-  output_path = OUTPUT_DIR / 'buildings.geojson'
+  # Allows output path to be specified as an command line argument
+  output_path = Path(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1] else DEFAULT_OUTPUT_PATH
   buildings_dict = fetch_building_geojson(SCRAPE_SOURCE_URL)
   if buildings_dict:
     save_dict_as_json(buildings_dict, output_path)
-    print(f"Building geojson data saved to {output_path}.")
+    print(f"Building geojson saved to {output_path}.")
+  else:
+    print("something went wrong")
   

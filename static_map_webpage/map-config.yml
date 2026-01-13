@@ -54,7 +54,6 @@ departments:
     - "Administration"
 # Display settings
 display:
-  # Show buildings with no departments
   show_buildings_without_departments: false
   show_buildings_not_using_hcc: true
 
