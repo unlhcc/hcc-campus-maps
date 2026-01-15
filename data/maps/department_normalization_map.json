@@ -1,20 +1,27 @@
 {
   "description": "Maps various department name variations to their official canonical names",
   "mappings": {
+    "holland computing center": "Holland Computing Center",
+    "hcc": "Holland Computing Center",
+    "holland computing center (hcc)": "Holland Computing Center",
+
     "biochem and molecular biology": "Biochemistry",
     "biochemistry": "Biochemistry",
     "chemistry and biochemistry": "Chemistry and Biochemistry",
     "department of chemistry and biochemistry": "Chemistry and Biochemistry",
     "chemistry": "Chemistry",
+    "department of inorganic, analytical and physical chemistry": "Chemistry",
     "chem eng": "Chemical and Biomolecular Engineering",
     "chemical and biomolecular engineering": "Chemical and Biomolecular Engineering",
-    
-    "comp sci": "Computer Science and Engineering",
-    "computer science": "Computer Science and Engineering",
-    "computer science and engineering": "Computer Science and Engineering",
-    "engineering computer science": "Computer Science and Engineering",
-    "software engineering": "Computer Science and Engineering",
-    "school of computing": "School of Computing",
+
+    "comp sci": "College of Computing",
+    "compsci": "College of Computing",
+    "computer science": "College of Computing",
+    "computer science and engineering": "College of Computing",
+    "engineering computer science": "College of Computing",
+    "software engineering": "College of Computing",
+    "school of computing": "College of Computing",
+
     "computer and electronics engineering": "Electrical and Computer Engineering",
     "electrical and computer engineering": "Electrical and Computer Engineering",
     
@@ -32,12 +39,15 @@
     "physics and astronomy": "Physics and Astronomy",
     
     "animal science": "Animal Science",
+    "animal sci": "Animal Science",
     "animal breeding and genetics": "Animal Science",
     "department of animal science": "Animal Science",
     
     "biological systems": "Biological Systems Engineering",
     "biological systems engineering": "Biological Systems Engineering",
     "biossistems engineer": "Biological Systems Engineering",
+    "complex biosystems": "Biological Systems Engineering",
+
     
     "pathology": "Pathology/Microbiology",
     "pathology ": "Pathology/Microbiology",
@@ -48,6 +58,8 @@
     
     "natural resources": "School of Natural Resources",
     "school of natural resources": "School of Natural Resources",
+    "survey division - school of nat res": "School of Natural Resources",
+    "college of agricultural sciences & natural resources": "School of Natural Resources",
     
     "civil engineering-lincoln": "Civil Engineering",
     "civil engineering-omaha": "Civil Engineering",
@@ -63,6 +75,9 @@
     "school of accountancy": "School of Accountancy",
     
     "mechanical and materials engineering": "Mechanical and Materials Engineering",
+    "mechanical engineering": "Mechanical and Materials Engineering",
+    "materials engineering": "Mechanical and Materials Engineering",
+    "mech eng": "Mechanical and Materials Engineering",
     
     "epidemiology": "Epidemiology",
     
@@ -94,7 +109,8 @@
     "midwest roadside safety facility": "Midwest Roadside Safety Facility",
     "mwrsf": "Midwest Roadside Safety Facility",
     
-    "durham school arch engr and const": "Durham School of Architectural Engineering and Construction",
+    "durham school arch engr and const": "Architectural Engineering and Construction",
+    "architectural engineering": "Architectural Engineering and Construction",
     
     "eppley inst faculty": "Eppley Institute",
     
@@ -109,7 +125,9 @@
     
     "environ, agri and occ health": "Environmental, Agricultural and Occupational Health",
     
-    "nebraska cooperative fish and wildlife research unit": "Nebraska Cooperative Fish and Wildlife Research Unit",
+    "fisheries and wildlife": "Fisheries and Wildlife",
+    "fisheries & wildlife": "Fisheries and Wildlife",
+    "nebraska cooperative fish and wildlife research unit": "Fisheries and Wildlife",
     
     "nebraska state climate office": "Nebraska State Climate Office",
     
@@ -120,14 +138,11 @@
     
     "information technology services": "Information Technology Services",
     
-    "college of agricultural sciences & natural resources": "College of Agricultural Sciences and Natural Resources",
     
     "arts and sciences": "Arts and Sciences",
     
     "engineering": "Engineering",
-    
-    "complex biosystems": "Complex Biosystems",
-    
+        
     "osg": "Open Science Grid",
     
     "igpbs": "Integrated Biomedical Sciences Graduate Program",

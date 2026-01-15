@@ -59,7 +59,7 @@ def normalize_property_names(raw_buildings_geojson: dict) -> dict:
     feature["properties"]["name"] = building["properties"].get("NAME", "")
     # "bldg_no", "ABBREV", "NAME", "Address", "CAMPUS", "location", "id" are all available
     building_dict["features"].append(feature)
-    return building_dict
+  return building_dict
   
   
 def attach_departments_property(buildings_geojson: dict) -> dict:

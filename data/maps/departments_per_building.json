@@ -5,7 +5,7 @@
     ],
     "Avery Hall": [
       "School of Computing",
-      "Computer Science and Engineering",
+      "Electrical and Computer Engineering",
       "Mathematics",
       "Statistics"
     ],
@@ -21,15 +21,14 @@
     ],
     "Nebraska Hall": [
       "Mechanical and Materials Engineering",
-      "Architectural Engineering",
-      "Durham School of Architectural Engineering and Construction",
+      "Architectural Engineering and Construction",
       "Gerontology",
       "Criminal Justice"
     ],
     "Schorr Center": [
       "Holland Computing Center",
       "School of Computing",
-      "Computer Science and Engineering"
+      "Engineering"
     ],
     "Beadle Center": [
       "Agronomy and Horticulture",
@@ -53,13 +52,16 @@
     "Scott Engineering Center": [
       "Electrical and Computer Engineering",
       "Civil Engineering",
-      "Architectural Engineering"
+      "Architectural Engineering and Construction",
+      "Engineering"
     ],
     "Carolyn Pope Edwards Hall": [
+      "College of Computing",
       "Education and Human Sciences",
       "Child, Youth and Family Studies",
-      "Nebraska Center for Research on Children, Youth, Families and Schools",
-      "Teaching, Learning and Teacher Education"
+      "Teaching, Learning and Teacher Education",
+      "Nebraska Center for Research on Children, Youth, Families and Schools"
+
     ],
     "Othmer Hall": [
       "Chemical and Biomolecular Engineering"
@@ -150,11 +152,13 @@
     ],
     "Teachers College Hall": [
       "Educational Psychology",
-      "Educational Administration"
+      "Educational Administration",
+      "Education and Human Sciences",
+      "Child, Youth and Family Studies",
+      "Teaching, Learning and Teacher Education"
     ],
     "Kauffman Academic Residential Center": [
       "Raikes School",
-      "Computer Science",
       "School of Computing",
       "Housing"
     ],
@@ -193,7 +197,9 @@
     ],
     "Kiewit Hall": [
       "Engineering",
-      "Durham School of Architectural Engineering and Construction",
+      "College of Computing",
+      "Mechanical and Materials Engineering",
+      "Architectural Engineering and Construction",
       "Construction Management"
     ],
     "Morrison Center": [
@@ -219,7 +225,10 @@
       "Hydrological Sciences"
     ],
     "Henzlik Hall": [
-      "Biomechanics"
+      "Biomechanics",
+      "Education and Human Sciences",
+      "Teaching, Learning and Teacher Education",
+      "Information Technology Services"
     ],
     "University Health Center and College of Nursing": [
       "Epidemiology",
@@ -360,7 +369,8 @@
     "Nebraska Union": [
       "Student Affairs",
       "Dining Services",
-      "University Bookstore"
+      "University Bookstore",
+      "Information Technology Services"
     ],
     "Jackie Gaughan Multicultural Center": [
       "Diversity and Inclusion"
@@ -570,7 +580,8 @@
     ],
     "Nebraska East Union": [
       "Student Affairs",
-      "Dining Services"
+      "Dining Services",
+      "Information Technology Services"
     ],
     "Food Industry Complex": [
       "Food Science and Technology"

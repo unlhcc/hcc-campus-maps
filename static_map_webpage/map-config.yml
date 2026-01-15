@@ -2,7 +2,7 @@
 
 # GeoJSON data source
 buildings_geojson_url: "buildings.geojson"
-departments_using_hcc_url: "departments_completing_jobs_in_past_fortnight.json"
+departments_using_hcc_url: "departments_completing_jobs.json"
 
 # Map initialization settings
 map:

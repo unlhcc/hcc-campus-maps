@@ -112,10 +112,9 @@ function shouldIncludeBuilding(feature) {
 
 
 function generateDataLayer(buildingData, usageData) {
-  const geoJsonData = buildingData['buildings'];
   const departmentsUsingHcc = usageData.map(entry => entry['Department_Canonical']);
 
-  for (let feature of geoJsonData.features) {
+  for (let feature of buildingData.features) {
     // Add member_departments property
     const buildingDepartments = feature.properties.departments || [];
     feature.properties.member_departments = buildingDepartments.filter(dept => 
@@ -124,9 +123,9 @@ function generateDataLayer(buildingData, usageData) {
   }
 
   // Filter buildings based on config
-  const filteredFeatures = geoJsonData.features.filter(shouldIncludeBuilding);
+  const filteredFeatures = buildingData.features.filter(shouldIncludeBuilding);
   const filteredGeoJson = {
-    ...geoJsonData,
+    ...buildingData,
     features: filteredFeatures
   };
 
