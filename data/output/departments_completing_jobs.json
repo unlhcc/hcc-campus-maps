@@ -1,0 +1,290 @@
+[
+  {
+    "Department":"Phys",
+    "Department_Canonical":"Physics and Astronomy"
+  },
+  {
+    "Department":"Physics",
+    "Department_Canonical":"Physics and Astronomy"
+  },
+  {
+    "Department":"CompSci",
+    "Department_Canonical":"CompSci"
+  },
+  {
+    "Department":"Chemistry",
+    "Department_Canonical":"Chemistry"
+  },
+  {
+    "Department":"Comp Sci",
+    "Department_Canonical":"Computer Science and Engineering"
+  },
+  {
+    "Department":"Management",
+    "Department_Canonical":"Management"
+  },
+  {
+    "Department":"Animal Sci",
+    "Department_Canonical":"Animal Sci"
+  },
+  {
+    "Department":"Agronomy",
+    "Department_Canonical":"Agronomy and Horticulture"
+  },
+  {
+    "Department":"Chem Eng",
+    "Department_Canonical":"Chemical and Biomolecular Engineering"
+  },
+  {
+    "Department":"Pathology\/Microbiology",
+    "Department_Canonical":"Pathology\/Microbiology"
+  },
+  {
+    "Department":"Civ Eng",
+    "Department_Canonical":"Civil Engineering"
+  },
+  {
+    "Department":"Food Science & Technology",
+    "Department_Canonical":"Food Science and Technology"
+  },
+  {
+    "Department":"Foodscience",
+    "Department_Canonical":"Food Science and Technology"
+  },
+  {
+    "Department":"Food Science and Technology",
+    "Department_Canonical":"Food Science and Technology"
+  },
+  {
+    "Department":"Mech Eng",
+    "Department_Canonical":"Mech Eng"
+  },
+  {
+    "Department":"Computer Science and Engineering",
+    "Department_Canonical":"Computer Science and Engineering"
+  },
+  {
+    "Department":"Engineering Computer Science",
+    "Department_Canonical":"Computer Science and Engineering"
+  },
+  {
+    "Department":"PSI",
+    "Department_Canonical":"Center for Plant Science Innovation"
+  },
+  {
+    "Department":"Nebraska Innovation Campus",
+    "Department_Canonical":"Nebraska Innovation Campus"
+  },
+  {
+    "Department":"Biochemistry",
+    "Department_Canonical":"Biochemistry"
+  },
+  {
+    "Department":"Agronomy and Horticulture",
+    "Department_Canonical":"Agronomy and Horticulture"
+  },
+  {
+    "Department":"Physics and Astronomy",
+    "Department_Canonical":"Physics and Astronomy"
+  },
+  {
+    "Department":"Earth and Atmospheric Sciences",
+    "Department_Canonical":"Earth and Atmospheric Sciences"
+  },
+  {
+    "Department":"Animal Science",
+    "Department_Canonical":"Animal Science"
+  },
+  {
+    "Department":"Mechanical and Materials Engineering",
+    "Department_Canonical":"Mechanical and Materials Engineering"
+  },
+  {
+    "Department":"Civil Engineering-Lincoln",
+    "Department_Canonical":"Civil Engineering"
+  },
+  {
+    "Department":"Biology",
+    "Department_Canonical":"School of Biological Sciences"
+  },
+  {
+    "Department":"Radiation Oncology",
+    "Department_Canonical":"Radiation Oncology"
+  },
+  {
+    "Department":"HOLLAND COMPUTING CENTER (HCC)",
+    "Department_Canonical":"HOLLAND COMPUTING CENTER (HCC)"
+  },
+  {
+    "Department":"Psychology",
+    "Department_Canonical":"Psychology"
+  },
+  {
+    "Department":"Plant Breeding and Genetics",
+    "Department_Canonical":"Plant Breeding and Genetics"
+  },
+  {
+    "Department":"Computer and Electronics Engineering",
+    "Department_Canonical":"Electrical and Computer Engineering"
+  },
+  {
+    "Department":"Mathematics",
+    "Department_Canonical":"Mathematics"
+  },
+  {
+    "Department":"Biostatistics",
+    "Department_Canonical":"Biostatistics"
+  },
+  {
+    "Department":"Chemical and Biomolecular Engineering",
+    "Department_Canonical":"Chemical and Biomolecular Engineering"
+  },
+  {
+    "Department":"Survey Division - School of Nat Res",
+    "Department_Canonical":"Survey Division - School of Nat Res"
+  },
+  {
+    "Department":"FISHERIES & WILDLIFE",
+    "Department_Canonical":"FISHERIES & WILDLIFE"
+  },
+  {
+    "Department":"Center for Plant Science Innovation",
+    "Department_Canonical":"Center for Plant Science Innovation"
+  },
+  {
+    "Department":"Epidemiology",
+    "Department_Canonical":"Epidemiology"
+  },
+  {
+    "Department":"Genetics Cell Biology and Anatomy",
+    "Department_Canonical":"Genetics Cell Biology and Anatomy"
+  },
+  {
+    "Department":"School of Natural Resources",
+    "Department_Canonical":"School of Natural Resources"
+  },
+  {
+    "Department":"Pharmaceutical Science",
+    "Department_Canonical":"Pharmaceutical Sciences"
+  },
+  {
+    "Department":"Food Science",
+    "Department_Canonical":"Food Science and Technology"
+  },
+  {
+    "Department":"NPHL",
+    "Department_Canonical":"NPHL"
+  },
+  {
+    "Department":"Conservation Genetics",
+    "Department_Canonical":"Conservation Genetics"
+  },
+  {
+    "Department":"Neurological Sciences",
+    "Department_Canonical":"Neurological Sciences"
+  },
+  {
+    "Department":"Civil Engineering-Omaha",
+    "Department_Canonical":"Civil Engineering"
+  },
+  {
+    "Department":"Biomechanics",
+    "Department_Canonical":"Biomechanics"
+  },
+  {
+    "Department":"Department of Animal Science",
+    "Department_Canonical":"Animal Science"
+  },
+  {
+    "Department":"Eppley Inst Faculty",
+    "Department_Canonical":"Eppley Institute"
+  },
+  {
+    "Department":"College of Agricultural Sciences & Natural Resources",
+    "Department_Canonical":"College of Agricultural Sciences & Natural Resources"
+  },
+  {
+    "Department":"Bioinformatics and Systems Biology",
+    "Department_Canonical":"Bioinformatics and Systems Biology"
+  },
+  {
+    "Department":"Supply Chain Management and Analytics",
+    "Department_Canonical":"Supply Chain Management and Analytics"
+  },
+  {
+    "Department":"School of Accountancy",
+    "Department_Canonical":"School of Accountancy"
+  },
+  {
+    "Department":"Plant Pathology",
+    "Department_Canonical":"Plant Pathology"
+  },
+  {
+    "Department":"Complex Biosystems",
+    "Department_Canonical":"Complex Biosystems"
+  },
+  {
+    "Department":"Pharmacology\/Exp Neuroscience",
+    "Department_Canonical":"Pharmacology\/Exp Neuroscience"
+  },
+  {
+    "Department":"School of Biological Sciences",
+    "Department_Canonical":"School of Biological Sciences"
+  },
+  {
+    "Department":"OSG",
+    "Department_Canonical":"Open Science Grid"
+  },
+  {
+    "Department":"Statistics",
+    "Department_Canonical":"Statistics"
+  },
+  {
+    "Department":"Biological Systems Engineering",
+    "Department_Canonical":"Biological Systems Engineering"
+  },
+  {
+    "Department":"Nebraska Cooperative Fish and Wildlife Research Unit",
+    "Department_Canonical":"Nebraska Cooperative Fish and Wildlife Research Unit"
+  },
+  {
+    "Department":"School of Interdisciplinary Informat",
+    "Department_Canonical":"School of Interdisciplinary Informatics"
+  },
+  {
+    "Department":"Applied ecology",
+    "Department_Canonical":"Applied ecology"
+  },
+  {
+    "Department":"Information Technology Services",
+    "Department_Canonical":"Information Technology Services"
+  },
+  {
+    "Department":"Department of Inorganic, Analytical and Physical Chemistry",
+    "Department_Canonical":"Department of Inorganic, Analytical and Physical Chemistry"
+  },
+  {
+    "Department":"biomedical informatics",
+    "Department_Canonical":"Biomedical Informatics"
+  },
+  {
+    "Department":"Environ, Agri and Occ Health",
+    "Department_Canonical":"Environmental, Agricultural and Occupational Health"
+  },
+  {
+    "Department":"Department of Earth and Atmospheric Sciences",
+    "Department_Canonical":"Earth and Atmospheric Sciences"
+  },
+  {
+    "Department":"Natural Resources",
+    "Department_Canonical":"School of Natural Resources"
+  },
+  {
+    "Department":"DEPARTMENT OF AGRONOMY AND HORTICULTURE",
+    "Department_Canonical":"Agronomy and Horticulture"
+  },
+  {
+    "Department":"Engineering",
+    "Department_Canonical":"Engineering"
+  }
+]
