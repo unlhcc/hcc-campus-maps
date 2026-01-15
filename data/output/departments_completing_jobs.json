@@ -9,7 +9,7 @@
   },
   {
     "Department":"CompSci",
-    "Department_Canonical":"CompSci"
+    "Department_Canonical":"College of Computing"
   },
   {
     "Department":"Chemistry",
@@ -17,7 +17,7 @@
   },
   {
     "Department":"Comp Sci",
-    "Department_Canonical":"Computer Science and Engineering"
+    "Department_Canonical":"College of Computing"
   },
   {
     "Department":"Management",
@@ -25,7 +25,7 @@
   },
   {
     "Department":"Animal Sci",
-    "Department_Canonical":"Animal Sci"
+    "Department_Canonical":"Animal Science"
   },
   {
     "Department":"Agronomy",
@@ -57,15 +57,15 @@
   },
   {
     "Department":"Mech Eng",
-    "Department_Canonical":"Mech Eng"
+    "Department_Canonical":"Mechanical and Materials Engineering"
   },
   {
     "Department":"Computer Science and Engineering",
-    "Department_Canonical":"Computer Science and Engineering"
+    "Department_Canonical":"College of Computing"
   },
   {
     "Department":"Engineering Computer Science",
-    "Department_Canonical":"Computer Science and Engineering"
+    "Department_Canonical":"College of Computing"
   },
   {
     "Department":"PSI",
@@ -113,7 +113,7 @@
   },
   {
     "Department":"HOLLAND COMPUTING CENTER (HCC)",
-    "Department_Canonical":"HOLLAND COMPUTING CENTER (HCC)"
+    "Department_Canonical":"Holland Computing Center"
   },
   {
     "Department":"Psychology",
@@ -141,11 +141,11 @@
   },
   {
     "Department":"Survey Division - School of Nat Res",
-    "Department_Canonical":"Survey Division - School of Nat Res"
+    "Department_Canonical":"School of Natural Resources"
   },
   {
     "Department":"FISHERIES & WILDLIFE",
-    "Department_Canonical":"FISHERIES & WILDLIFE"
+    "Department_Canonical":"Fisheries and Wildlife"
   },
   {
     "Department":"Center for Plant Science Innovation",
@@ -158,6 +158,10 @@
   {
     "Department":"Genetics Cell Biology and Anatomy",
     "Department_Canonical":"Genetics Cell Biology and Anatomy"
+  },
+  {
+    "Department":"Arts and Sciences",
+    "Department_Canonical":"Arts and Sciences"
   },
   {
     "Department":"School of Natural Resources",
@@ -221,7 +225,7 @@
   },
   {
     "Department":"Complex Biosystems",
-    "Department_Canonical":"Complex Biosystems"
+    "Department_Canonical":"Biological Systems Engineering"
   },
   {
     "Department":"Pharmacology\/Exp Neuroscience",
@@ -245,7 +249,7 @@
   },
   {
     "Department":"Nebraska Cooperative Fish and Wildlife Research Unit",
-    "Department_Canonical":"Nebraska Cooperative Fish and Wildlife Research Unit"
+    "Department_Canonical":"Fisheries and Wildlife"
   },
   {
     "Department":"School of Interdisciplinary Informat",
@@ -261,7 +265,7 @@
   },
   {
     "Department":"Department of Inorganic, Analytical and Physical Chemistry",
-    "Department_Canonical":"Department of Inorganic, Analytical and Physical Chemistry"
+    "Department_Canonical":"Chemistry"
   },
   {
     "Department":"biomedical informatics",

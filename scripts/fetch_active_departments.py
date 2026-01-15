@@ -86,10 +86,9 @@ if __name__ == "__main__":
   jobs_completed_in_past_fortnite = get_jobs_completed_in_time_range(datetime.now() - timedelta(days=14), datetime.now())
   users = jobs_completed_in_past_fortnite['User']
   depts = get_departments_from_slurm_users(users)
-  print(depts)
-  print('\n')
-
   normalized_depts = apply_department_normalization(depts)
+  print(normalized_depts)
+  print('\n')
   with open(OUTPUT_PATH, 'w') as json_file:
     normalized_depts.to_json(json_file, orient='records', indent=2)
   print(f"departments completing jobs in past fortnight saved to {OUTPUT_PATH}.")

@@ -68,7 +68,6 @@ def attach_departments_property(buildings_geojson: dict) -> dict:
     departments_per_building = json.load(f)['building_departments']
     
   for building in buildings_geojson["features"]:
-    print(f"\nprocessing building: {building}")
     building_name = building["properties"]["name"]
     print(f"building_name: {building_name} has departments: {departments_per_building.get(building_name, [])}")
     building["properties"]["departments"] = departments_per_building.get(building_name, [])
