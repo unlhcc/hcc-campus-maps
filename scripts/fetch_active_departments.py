@@ -1,3 +1,4 @@
+import json
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -89,6 +90,11 @@ if __name__ == "__main__":
   normalized_depts = apply_department_normalization(depts)
   print(normalized_depts)
   print('\n')
+  active_departments_dict = {
+    "last_updated": datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
+    "departments_completing_jobs": normalized_depts[['Department']].sort_values(by='Department').reset_index(drop=True).to_dict(orient='records')
+  }
   with open(OUTPUT_PATH, 'w') as json_file:
-    normalized_depts.to_json(json_file, orient='records', indent=2)
+    json.dump(active_departments_dict, json_file, indent=2)
   print(f"departments completing jobs in past fortnight saved to {OUTPUT_PATH}.")
+  

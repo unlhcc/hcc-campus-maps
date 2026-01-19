@@ -42,7 +42,7 @@ def normalize_department_name(dept_name, normalization_map):
 
 def apply_department_normalization(df, dept_column='Department', 
                                    json_path=DEFAULT_NORMALIZATION_MAP_PATH,
-                                   output_column='Department_Canonical'):
+                                   output_column='Department_Canonical') -> pd.DataFrame:
   """
   Apply department normalization to a DataFrame.
   

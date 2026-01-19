@@ -9,7 +9,7 @@
   },
   {
     "Department":"CompSci",
-    "Department_Canonical":"College of Computing"
+    "Department_Canonical":"School of Computing"
   },
   {
     "Department":"Chemistry",
@@ -17,7 +17,7 @@
   },
   {
     "Department":"Comp Sci",
-    "Department_Canonical":"College of Computing"
+    "Department_Canonical":"School of Computing"
   },
   {
     "Department":"Management",
@@ -61,11 +61,11 @@
   },
   {
     "Department":"Computer Science and Engineering",
-    "Department_Canonical":"College of Computing"
+    "Department_Canonical":"School of Computing"
   },
   {
     "Department":"Engineering Computer Science",
-    "Department_Canonical":"College of Computing"
+    "Department_Canonical":"School of Computing"
   },
   {
     "Department":"PSI",

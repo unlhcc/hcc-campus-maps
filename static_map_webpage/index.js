@@ -199,18 +199,18 @@ function loadGeoJsonDataLayer() {
           return response.json();
         })
         .then((usageData) => {
-          dataLayer = generateDataLayer(buildingData, usageData);
+          dataLayer = generateDataLayer(buildingData, usageData.departments_completing_jobs);
           // Remove existing GeoJSON layer if it exists
           if (dataLayer) {
             map.removeLayer(dataLayer);
           }
 
           // Update info
-          const featureCount = buildingData['buildings'].features.length;
-          const lastUpdate = new Date().toLocaleString();
+          const featureCount = buildingData.features.length;
+          const lastUpdate = new Date(usageData.last_updated).toLocaleString();
           document.getElementById(
             "info"
-          ).innerHTML = `Buildings:${featureCount} | Departments Using HCC: ${usageData.length} | Last updated: ${lastUpdate}`;
+          ).innerHTML = `Buildings:${featureCount} | Departments Using HCC: ${usageData.departments_completing_jobs.length} | Last updated: ${lastUpdate}`;
 
           // Add new GeoJSON layer to the map
           dataLayer.addTo(map);
