@@ -25,11 +25,6 @@
     "computer and electronics engineering": "Electrical and Computer Engineering",
     "electrical and computer engineering": "Electrical and Computer Engineering",
     
-    "agronomy": "Agronomy and Horticulture",
-    "agronomy and horticulture": "Agronomy and Horticulture",
-    "agronomy & horticulture": "Agronomy and Horticulture",
-    "department of agronomy and horticulture": "Agronomy and Horticulture",
-    
     "food science": "Food Science and Technology",
     "foodscience": "Food Science and Technology",
     "food science and technology": "Food Science and Technology",
@@ -53,17 +48,22 @@
     "pathology ": "Pathology/Microbiology",
     "pathology/microbiology": "Pathology/Microbiology",
     
-    "biomedical informatics": "Biomedical Informatics",
-    "bioinforma": "Biomedical Informatics",
-    
-    "natural resources": "School of Natural Resources",
-    "school of natural resources": "School of Natural Resources",
-    "survey division - school of nat res": "School of Natural Resources",
-    "college of agricultural sciences & natural resources": "School of Natural Resources",
+    "casnr": "CASNR",
+    "natural resources": "CASNR",
+    "school of natural resources": "CASNR",
+    "survey division - school of nat res": "CASNR",
+    "college of agricultural sciences & natural resources": "CASNR",
+
+    "agronomy": "Agronomy and Horticulture",
+    "agronomy and horticulture": "Agronomy and Horticulture",
+    "agronomy & horticulture": "Agronomy and Horticulture",
+    "department of agronomy and horticulture": "Agronomy and Horticulture",
     
     "civil engineering-lincoln": "Civil Engineering",
     "civil engineering-omaha": "Civil Engineering",
     "civ eng": "Civil Engineering",
+    "civil engineering- geotechnical and material": "Civil Engineering",
+
     
     "earth and atmospheric sciences": "Earth and Atmospheric Sciences",
     "department of earth and atmospheric sciences": "Earth and Atmospheric Sciences",
@@ -83,10 +83,6 @@
     
     "hydrological sciences": "Hydrological Sciences",
     
-    "biostatistics": "Biostatistics",
-    
-    "ophthalmology and visual sciences": "Ophthalmology and Visual Sciences",
-    
     "plant pathology": "Plant Pathology",
     
     "entomology": "Entomology",
@@ -101,6 +97,7 @@
     
     "school of biological sciences": "School of Biological Sciences",
     "biology": "School of Biological Sciences",
+    "conservation genetics": "School of Biological Sciences",
     
     "center for brain biology and behavior": "Center for Brain Biology and Behavior",
     
@@ -115,9 +112,7 @@
     "eppley inst faculty": "Eppley Institute",
     
     "genetics cell biology and anatomy": "Genetics Cell Biology and Anatomy",
-    
-    "neurological sciences": "Neurological Sciences",
-    
+        
     "radiation oncology": "Radiation Oncology",
     
     "pharmaceutical science": "Pharmaceutical Sciences",
@@ -131,7 +126,7 @@
     
     "nebraska state climate office": "Nebraska State Climate Office",
     
-    "nebraska innovation campus": "Nebraska Innovation Campus",
+    "nebraska innovation campus": "Innovation Campus",
     
     "center for plant science innovation": "Center for Plant Science Innovation",
     "psi": "Center for Plant Science Innovation",
@@ -143,12 +138,24 @@
     
     "engineering": "Engineering",
         
+    "open science grid": "Open Science Grid",
     "osg": "Open Science Grid",
     
-    "igpbs": "Integrated Biomedical Sciences Graduate Program",
-    
+    "biomedical sciences": "Biomedical Sciences",
+    "integrated biomedical sciences graduate program": "Biomedical Sciences",
+    "igpbs": "Biomedical Sciences",
     "bms": "Biomedical Sciences",
     
+    "biomedical informatics": "Biomedical Informatics",
+    "bioinforma": "Biomedical Informatics",
+
+    "neurological sciences": "Neurological Sciences",
+
+    "biostatistics": "Biostatistics",
+    "ophthalmology and visual sciences": "Ophthalmology and Visual Sciences",
+
+    "medical microbiology and immunology": "Medical Microbiology and Immunology",
+
     "school of basic sciences": "School of Basic Sciences",
     
     "student affairs": "Student Affairs",

@@ -64,3 +64,5 @@ display:
     - name
     - abbrev
     - departments
+
+show_usage_stats_in_console: true

@@ -111,6 +111,27 @@ function shouldIncludeBuilding(feature) {
 }
 
 
+function printUsageStats(buildingData, usageData) {
+  const departmentsUsingHcc = [...new Set(usageData.map(entry => entry['Department_Canonical']))];
+
+  if (departmentsUsingHcc.length != usageData.length)
+    console.warn("Warning: Duplicate entries found in provided usage data file.");
+
+  // Log all departments not associated with any building
+  let all_departments_in_buildings_set = buildingData.features.reduce((deptSet, feature) => {
+    const buildingDepartments = feature.properties.departments || [];
+    buildingDepartments.forEach(dept => deptSet.add(dept));
+    return deptSet;
+  }, new Set());
+  let all_departments_not_in_buildings_set = new Set(departmentsUsingHcc.filter(dept => !all_departments_in_buildings_set.has(dept)));
+  console.log("All departments associated with buildings:", [...all_departments_in_buildings_set]);
+  console.log("All departments using HCC:", [...new Set(departmentsUsingHcc)]);
+  console.log("Departments using HCC but not associated with any building:", [...all_departments_not_in_buildings_set]);
+  console.log("Departments in buildings using HCC:", [...all_departments_in_buildings_set].filter(dept => departmentsUsingHcc.includes(dept)));
+  console.log("Departments in buildings not using HCC:", [...all_departments_in_buildings_set].filter(dept => !departmentsUsingHcc.includes(dept)));
+}
+
+
 function generateDataLayer(buildingData, usageData) {
   const departmentsUsingHcc = usageData.map(entry => entry['Department_Canonical']);
 
@@ -190,7 +211,7 @@ function loadGeoJsonDataLayer() {
       }
       return response.json();
     })
-    .then((buildingData) => {
+    .then((buildingGeoJSON) => {
       fetch(`${config.departments_using_hcc_url}?t=${timestamp}`) // Cache busting
         .then((response) => {
           if (!response.ok) {
@@ -198,19 +219,22 @@ function loadGeoJsonDataLayer() {
           }
           return response.json();
         })
-        .then((usageData) => {
-          dataLayer = generateDataLayer(buildingData, usageData.departments_completing_jobs);
+        .then((usageJSON) => {
+          dataLayer = generateDataLayer(buildingGeoJSON, usageJSON.departments_completing_jobs);
           // Remove existing GeoJSON layer if it exists
           if (dataLayer) {
             map.removeLayer(dataLayer);
           }
 
+          if (config.show_usage_stats_in_console)
+            printUsageStats(buildingGeoJSON, usageJSON.departments_completing_jobs);
+
           // Update info
-          const featureCount = buildingData.features.length;
-          const lastUpdate = new Date(usageData.last_updated).toLocaleString();
+          const featureCount = buildingGeoJSON.features.length;
+          const lastUpdate = new Date(usageJSON.last_updated).toLocaleString();
           document.getElementById(
             "info"
-          ).innerHTML = `Buildings:${featureCount} | Departments Using HCC: ${usageData.departments_completing_jobs.length} | Last updated: ${lastUpdate}`;
+          ).innerHTML = `Buildings:${featureCount} | Departments Using HCC: ${usageJSON.departments_completing_jobs.length} | Last updated: ${lastUpdate}`;
 
           // Add new GeoJSON layer to the map
           dataLayer.addTo(map);
