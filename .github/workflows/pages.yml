@@ -1,0 +1,88 @@
+name: Build and deploy map
+
+# Department data is pushed daily from HCC by scripts/publish_departments.sh.
+# This workflow scrapes building outlines (public), assembles the site, and deploys to GitHub Pages.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "static_map_webpage/**"
+      - "data/maps/**"
+      - "scripts/fetch_buildings.py"
+      - ".github/workflows/pages.yml"
+  schedule:
+    # Daily, a few hours after the HCC job, so the freshness check below catches a stalled pipeline
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # Fail the run (and email the repo admins) if HCC hasn't pushed data in this many days
+  MAX_DATA_AGE_DAYS: 3
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install scrape dependencies
+        run: pip install requests
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp static_map_webpage/index.html static_map_webpage/index.css static_map_webpage/index.js \
+             static_map_webpage/map-config.yml static_map_webpage/departments_completing_jobs.json _site/
+
+      - name: Scrape building outlines
+        run: |
+          if python scripts/fetch_buildings.py _site/buildings.geojson > scrape.log; then
+            echo "Scraped $(jq '.features | length' _site/buildings.geojson) buildings from maps.unl.edu"
+          else
+            cat scrape.log
+            echo "::warning::Building scrape failed; using committed static_map_webpage/buildings.geojson"
+            cp static_map_webpage/buildings.geojson _site/buildings.geojson
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  check-freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check department data age
+        run: |
+          file=static_map_webpage/departments_completing_jobs.json
+          last_updated=$(jq -r '.last_updated' "$file")
+          age_days=$(( ( $(date -u +%s) - $(date -u -d "$last_updated" +%s) ) / 86400 ))
+          echo "Department data last updated $last_updated ($age_days days ago)"
+          if [ "$age_days" -gt "$MAX_DATA_AGE_DAYS" ]; then
+            echo "::error::Department data is $age_days days old; check the HCC publish job (scripts/publish_departments.sh)"
+            exit 1
+          fi
