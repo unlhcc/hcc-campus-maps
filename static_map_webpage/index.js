@@ -56,12 +56,22 @@ function initMap() {
   // Get default layer
   const defaultLayer = baseLayers[config.default_layer] || baseLayers[config.base_layers[0]];
 
+  const embedded = isEmbedded();
+  if (embedded)
+    document.body.classList.add('embed');
+
   // Initialize map with config settings
   map = L.map('map', {
     center: [config.map.center.lat, config.map.center.lng],
     zoom: config.map.zoom,
-    layers: [defaultLayer]
+    layers: [defaultLayer],
+    // When embedded, don't hijack the host page's scrolling until the map is activated
+    scrollWheelZoom: !embedded,
+    dragging: !(embedded && L.Browser.mobile)
   });
+
+  if (embedded)
+    setupEmbedMode();
 
   // Setup map type controls
   if (config.display.show_layers_control)
@@ -74,6 +84,64 @@ function initMap() {
   if (config.refresh_interval > 0) {
     setInterval(loadGeoJsonDataLayer, config.refresh_interval);
   }
+}
+
+// Embed mode is on with ?embed=1, off with ?embed=0, and otherwise on when the page is inside an iframe
+function isEmbedded() {
+  const param = new URLSearchParams(window.location.search).get('embed');
+  if (param !== null)
+    return param !== '0' && param !== 'false';
+  const autoDetect = config.embed?.auto_detect_iframe ?? true;
+  return autoDetect && window.self !== window.top;
+}
+
+function setupEmbedMode() {
+  const container = map.getContainer();
+  const hint = document.getElementById('embed-hint');
+  hint.textContent = L.Browser.mobile ? 'Tap the map to pan and zoom' : 'Click the map to zoom with the scroll wheel';
+  let hintTimer;
+
+  const showHint = () => {
+    hint.classList.add('visible');
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(() => hint.classList.remove('visible'), 1500);
+  };
+  const activate = () => {
+    map.scrollWheelZoom.enable();
+    map.dragging.enable();
+    hint.classList.remove('visible');
+  };
+  const deactivate = () => {
+    map.scrollWheelZoom.disable();
+    if (L.Browser.mobile)
+      map.dragging.disable();
+  };
+
+  map.on('click focus', activate);
+  container.addEventListener('mouseleave', deactivate);
+  window.addEventListener('blur', deactivate); // user clicked back into the host page
+  container.addEventListener('wheel', () => {
+    if (!map.scrollWheelZoom.enabled()) showHint();
+  }, { passive: true });
+  container.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 1 && !map.dragging.enabled()) showHint();
+  }, { passive: true });
+
+  // Link out to the standalone map (opened top-level, so embed mode turns off)
+  const fullMapUrl = new URL(window.location.href);
+  fullMapUrl.searchParams.delete('embed');
+  const FullMapControl = L.Control.extend({
+    onAdd: function() {
+      const link = L.DomUtil.create('a', 'full-map-link');
+      link.href = fullMapUrl.toString();
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = 'Open full map \u2197';
+      L.DomEvent.disableClickPropagation(link);
+      return link;
+    }
+  });
+  new FullMapControl({ position: 'topright' }).addTo(map);
 }
 
 function shouldIncludeBuilding(feature) {

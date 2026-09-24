@@ -66,3 +66,9 @@ display:
     - departments
 
 show_usage_stats_in_console: true
+
+# Embed mode (for iframes, e.g. on hcc.unl.edu): scroll-wheel zoom and one-finger touch panning
+# stay off until the map is clicked/tapped, and an "Open full map" link is shown.
+# Force it with ?embed=1 or ?embed=0 in the URL.
+embed:
+  auto_detect_iframe: true
