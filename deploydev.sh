@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # GeoJSON Map Viewer - Local Development Server
-# For production deployment with HTTPS, use deploy-nginx.sh instead
+# Production is deployed to GitHub Pages by .github/workflows/pages.yml
 # This script is for local development and testing only
 
 set -e
@@ -30,14 +30,12 @@ print_error() {
 
 # Get the directory where this bash script is located
 DEPLOY_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-GEOJSON_PATH="$DEPLOY_SCRIPT_DIR/static_map_webpage/buildings_using_hcc.geojson"
+GEOJSON_PATH="$DEPLOY_SCRIPT_DIR/static_map_webpage/buildings.geojson"
 cd "$DEPLOY_SCRIPT_DIR/scripts"
 
 echo "==============================="
 echo "   Deploying $PROJECT_NAME"
 echo "==============================="
-
-# I need to create/activate my conda environment here. I have a requirements.txt for the pip libraries, but I also need to install mysql
 
 # Check if Python 3 is available
 if ! command -v python3 &> /dev/null; then
@@ -45,64 +43,21 @@ if ! command -v python3 &> /dev/null; then
   exit 1
 fi
 
+# Department data is published daily from HCC (scripts/publish_departments.sh) and deployed by
+# GitHub Actions, so there's no cron here. Building outlines can be refreshed locally since
+# maps.unl.edu is public.
 if [ -t 0 ]; then
-  # Interactive terminal
-  read -p "Do you want to generate a new hcc usage geojson? (y/n) " -n 1 -r
+  read -p "Do you want to re-scrape building outlines from maps.unl.edu? (y/n) " -n 1 -r
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]; then
-    # Generate initial GeoJSON data
-    print_step "Running HCC usage GeoJSON generation now..."
-
+    print_step "Scraping building outlines..."
     cd "$DEPLOY_SCRIPT_DIR"
-    if python3 scripts/generate_hcc_usage_geojson.py "$GEOJSON_PATH" >> "$DEPLOY_SCRIPT_DIR/scripts/generate_hcc_usage_geojson.log" 2>&1; then
-      grep -c "uses_hcc\": true" "$GEOJSON_PATH" | \
-        xargs -I {} echo "Generated GeoJSON with {} buildings using HCC."
-      print_step "Initial GeoJSON generation completed successfully"
+    if python3 scripts/fetch_buildings.py "$GEOJSON_PATH" > "$DEPLOY_SCRIPT_DIR/scripts/fetch_buildings.log" 2>&1; then
+      print_step "Building outlines saved to $GEOJSON_PATH"
     else
-      print_error "Failed to generate initial GeoJSON. Check the log file."
+      print_error "Failed to scrape buildings. Check scripts/fetch_buildings.log"
     fi
-  else
-    print_warning "Skipping initial geojson generation."
   fi
-fi
-
-
-
-# Setup cron job
-setup_cron() {
-  print_step "Setting up cron job (runs every 6 hours)..."
-  
-  # Create a cron entry
-  CRON_CMD="0 */6 * * * cd $DEPLOY_SCRIPT_DIR && python3 scripts/generate_hcc_usage_geojson.py >> $DEPLOY_SCRIPT_DIR/scripts/generate_hcc_usage_geojson.log 2>&1"
-  
-  # Check if cron entry already exists
-  if crontab -l 2>/dev/null | grep -q "scripts/generate_hcc_usage_geojson.py"; then
-    print_warning "Cron job already exists. Skipping cron setup."
-  else
-    # Add to crontab
-    (crontab -l 2>/dev/null; echo "$CRON_CMD") | crontab -
-    print_step "Cron job added successfully"
-  fi
-  
-  echo ""
-  echo "Cron job will run every 6 hours at: 00:00, 06:00, 12:00, 18:00"
-  echo "To view your cron jobs: crontab -l"
-  echo "To remove the cron job: crontab -e (then delete the line with generate_hcc_usage_geojson.py)"
-}
-
-# Detect if running on a server where cron makes sense
-if [ -t 0 ]; then
-  # Interactive terminal
-  read -p "Do you want to set up the cron job? (y/n) " -n 1 -r
-  echo
-  if [[ $REPLY =~ ^[Yy]$ ]]; then
-    setup_cron
-  else
-    print_warning "Skipping cron setup. You can run 'python3 scripts/generate_hcc_usage_geojson.py' manually."
-  fi
-else
-  # Non-interactive (e.g., automated deployment)
-  setup_cron
 fi
 
 # Start web server
@@ -134,7 +89,7 @@ echo "  http://localhost:$PORT"
 echo ""
 echo ""
 echo "⚠️  NOTE: This is for LOCAL DEVELOPMENT only (HTTP, not HTTPS)"
-echo "For production deployment with HTTPS, use: sudo ./deploy-nginx.sh"
+echo "Production is deployed to GitHub Pages by .github/workflows/pages.yml"
 echo ""
 echo "Press Ctrl+C to stop the server"
 echo ""

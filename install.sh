@@ -68,10 +68,10 @@ if conda env list | grep -q "^$ENV_NAME "; then
     print_step "Environment updated successfully"
     
     # Activate and generate data
-    print_step "Generating initial GeoJSON data..."
+    print_step "Scraping building outlines..."
     eval "$(conda shell.bash hook)"
     conda activate "$ENV_NAME"
-    python scripts/generate_hcc_usage_geojson.py
+    python scripts/fetch_buildings.py static_map_webpage/buildings.geojson
     
     echo ""
     echo -e "${GREEN}Installation complete!${NC}"
@@ -89,13 +89,13 @@ conda env create -f environment.yml
 print_step "Conda environment '$ENV_NAME' created successfully"
 
 # Activate environment and generate initial data
-print_step "Generating initial GeoJSON data..."
+print_step "Scraping building outlines..."
 
 # Initialize conda for bash (needed for conda activate to work in script)
 eval "$(conda shell.bash hook)"
 conda activate "$ENV_NAME"
 
-python scripts/generate_hcc_usage_geojson.py
+python scripts/fetch_buildings.py static_map_webpage/buildings.geojson
 
 echo ""
 echo -e "${GREEN}Installation complete!${NC}"

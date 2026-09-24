@@ -77,6 +77,8 @@ def attach_departments_property(buildings_geojson: dict) -> dict:
 
 def fetch_building_geojson(url: str) -> dict:
   raw_buildings_dict = fetch_raw_building_geojson(url)
+  if not raw_buildings_dict:
+    return {}
   norm_buildings_dict = normalize_property_names(raw_buildings_dict)
   buildings_dict = attach_departments_property(norm_buildings_dict)
   return buildings_dict
@@ -96,5 +98,5 @@ if __name__ == "__main__":
     save_dict_as_json(buildings_dict, output_path)
     print(f"Building geojson saved to {output_path}.")
   else:
-    print("something went wrong")
+    sys.exit("ERROR: failed to fetch building geojson; not writing output.")
   

@@ -1,5 +1,7 @@
+import argparse
 import json
 import os
+import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -8,7 +10,7 @@ from io import StringIO
 import pandas as pd
 import sacct
 import mysql.connector
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from normalize_department_names import apply_department_normalization
 
@@ -75,26 +77,47 @@ def get_jobs_completed_in_time_range(start_time, end_time) -> pd.DataFrame:
   return df
   
 
-if __name__ == "__main__":
-  PROJECT_ROOT = Path(__file__).parent.parent
-  DATA_DIR = PROJECT_ROOT / 'data'
-  OUTPUT_DIR = PROJECT_ROOT / 'data' / 'output'
-  OUTPUT_PATH = OUTPUT_DIR / 'departments_completing_jobs.json'
-  TODAY = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-  END_OF_DAY = datetime.now().replace(hour=23, minute=59, second=59, microsecond=999999)
+PROJECT_ROOT = Path(__file__).parent.parent
+DEFAULT_OUTPUT_PATH = PROJECT_ROOT / 'static_map_webpage' / 'departments_completing_jobs.json'
 
-  print("Departments Completing Jobs in the past fortnight:")
-  jobs_completed_in_past_fortnite = get_jobs_completed_in_time_range(datetime.now() - timedelta(days=14), datetime.now())
-  users = jobs_completed_in_past_fortnite['User']
+
+def parse_args():
+  parser = argparse.ArgumentParser(description="Write the list of departments that completed Slurm jobs recently.")
+  parser.add_argument('output', nargs='?', type=Path, default=DEFAULT_OUTPUT_PATH,
+                      help=f"output JSON path (default: {DEFAULT_OUTPUT_PATH})")
+  parser.add_argument('--days', type=int, default=14, help="lookback window in days (default: 14)")
+  return parser.parse_args()
+
+
+if __name__ == "__main__":
+  args = parse_args()
+  end_time = datetime.now()
+  start_time = end_time - timedelta(days=args.days)
+
+  print(f"Departments completing jobs in the past {args.days} days:")
+  jobs = get_jobs_completed_in_time_range(start_time, end_time)
+  users = jobs['User'].dropna().unique().tolist()
+  if not users:
+    # Refuse to publish an empty map; most likely sacct is misbehaving
+    sys.exit("ERROR: sacct returned no users with completed jobs; not writing output.")
+
   depts = get_departments_from_slurm_users(users)
+  if depts.empty:
+    sys.exit("ERROR: no departments found for Slurm users; not writing output.")
+
   normalized_depts = apply_department_normalization(depts)
   print(normalized_depts)
   print('\n')
+  # Only aggregate department names are written; usernames never leave this script
+  records = (normalized_depts[['Department', 'Department_Canonical']]
+             .sort_values(by=['Department_Canonical', 'Department'])
+             .reset_index(drop=True)
+             .to_dict(orient='records'))
   active_departments_dict = {
-    "last_updated": datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
-    "departments_completing_jobs": normalized_depts[['Department']].sort_values(by='Department').reset_index(drop=True).to_dict(orient='records')
+    "last_updated": datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+    "departments_completing_jobs": records
   }
-  with open(OUTPUT_PATH, 'w') as json_file:
+  args.output.parent.mkdir(parents=True, exist_ok=True)
+  with open(args.output, 'w') as json_file:
     json.dump(active_departments_dict, json_file, indent=2)
-  print(f"departments completing jobs in past fortnight saved to {OUTPUT_PATH}.")
-  
+  print(f"{len(records)} departments completing jobs saved to {args.output}.")

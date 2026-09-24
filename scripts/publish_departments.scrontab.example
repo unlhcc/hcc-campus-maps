@@ -1,0 +1,12 @@
+# Install on HCC with `scrontab -e` and paste the lines below (edit paths/partition first).
+# Runs daily at 05:30 cluster time. The job's node needs outbound access to github.com and
+# network access to the RCF MySQL server; if compute nodes lack that, use plain cron on a
+# service/login node instead:
+#   30 5 * * * /path/to/hcc-campus-maps/scripts/publish_departments.sh >> $HOME/logs/hcc-campus-map.log 2>&1
+
+#SCRON --job-name=hcc-campus-map
+#SCRON --time=00:15:00
+#SCRON --mem=2G
+#SCRON --partition=<partition>
+#SCRON --output=/path/to/logs/hcc-campus-map-%j.out
+30 5 * * * /path/to/hcc-campus-maps/scripts/publish_departments.sh
