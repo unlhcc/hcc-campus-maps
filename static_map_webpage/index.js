@@ -5,6 +5,15 @@ let baseLayers = {};
 
 // Base layer definitions
 const baseLayerDefinitions = {
+  campus: {
+    // OpenStreetMap, desaturated in index.css (.tiles-campus) so the buildings stand out
+    layer: () => L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+      className: 'tiles-campus'
+    }),
+    label: 'Campus'
+  },
   streets: {
     layer: () => L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -37,11 +46,10 @@ async function loadConfig() {
     const yamlText = await response.text();
     config = jsyaml.load(yamlText);
     
-    document.getElementById('info').innerHTML = 'Configuration loaded. Initializing map...';
     initMap();
   } catch (error) {
     console.error('Error loading configuration:', error);
-    document.getElementById('info').innerHTML = `Error loading configuration: ${error.message}`;
+    showError(`Couldn't load the map settings (${error.message}). Reload the page to try again.`);
   }
 }
 
@@ -65,10 +73,24 @@ function initMap() {
     center: [config.map.center.lat, config.map.center.lng],
     zoom: config.map.zoom,
     layers: [defaultLayer],
+    zoomControl: false,
+    zoomSnap: 0.25,
     // When embedded, don't hijack the host page's scrolling until the map is activated
     scrollWheelZoom: !embedded,
     dragging: !(embedded && L.Browser.mobile)
   });
+
+  L.control.zoom({ position: 'topright' }).addTo(map);
+
+  // Frame the campuses. On narrow screens the title card spans the top, so leave room below it.
+  if (config.map.fit_bounds) {
+    const panel = document.getElementById('panel');
+    const narrow = window.innerWidth <= 560;
+    map.fitBounds(config.map.fit_bounds, {
+      paddingTopLeft: narrow ? [8, panel.offsetHeight + 16] : [16, 16],
+      paddingBottomRight: [16, 16]
+    });
+  }
 
   if (embedded)
     setupEmbedMode();
@@ -220,55 +242,125 @@ function generateDataLayer(buildingData, usageData) {
   };
 
   // Add new GeoJSON layer with styling from config
+  let selectedLayer = null;
+  // Pan opened popups clear of the title card. On short maps there isn't room, so the card
+  // fades out while a popup is open instead (body.popup-open in index.css).
+  const panel = document.getElementById('panel');
+  const shortMap = map.getSize().y <= 480;
+  const popupPaddingTopLeft = shortMap ? [16, 16] : [16, panel.offsetHeight + 20];
   dataLayer = L.geoJSON(filteredGeoJson, {
-    style: function(feature) {
-      const usesHcc = feature.properties.member_departments.length > 0;
-      const style = usesHcc ? config.styling.with_hcc : config.styling.without_hcc;
-      
-      return {
-        fillColor: style.fill_color,
-        fillOpacity: style.fill_opacity,
-        color: style.stroke_color,
-        weight: style.stroke_weight
-      };
-    },
+    style: buildingStyle,
     onEachFeature: function(feature, layer) {
-      // Create popup content based on configured properties
-      let content = '<div style="padding: 10px;">';
-      if (feature.properties) {
-        const memberDepts = feature.properties.member_departments || [];
+      layer.bindPopup(() => buildPopup(feature.properties), {
+        className: 'building-popup',
+        minWidth: 240,
+        maxWidth: 300,
+        autoPanPaddingTopLeft: popupPaddingTopLeft
+      });
 
-        // Show properties in the order specified in config
-        config.display.popup_properties.forEach(key => {
-          if (feature.properties.hasOwnProperty(key)) {
-            let value;
-            
-            // Special handling for departments to highlight HCC users
-            if (key === 'departments' && Array.isArray(feature.properties[key])) {
-              const allDepts = feature.properties[key];
-              const nonMemberDepts = allDepts.filter(dept => !memberDepts.includes(dept));
-              
-              // Member departments first (in red), then non-members
-              const redDepts = memberDepts.map(dept => 
-                `<span style="color: ${config.styling.with_hcc.stroke_color}; font-weight: bold;">${dept}</span>`
-              );
-              
-              value = [...redDepts, ...nonMemberDepts].join(', ');
-            } else if (Array.isArray(feature.properties[key])) {
-              value = feature.properties[key].join(', ');
-            } else {
-              value = feature.properties[key];
-            }
-            content += `<li><strong>${key}:</strong> ${value}</li>`;
-          }
+      // Hover labels only where there is a pointer to hover with
+      if (!L.Browser.mobile)
+        layer.bindTooltip(feature.properties.name || '', {
+          className: 'building-tooltip',
+          direction: 'top',
+          sticky: true,
+          offset: [0, -8]
         });
-      }
 
-      content += "</ul></div>";
-      layer.bindPopup(content);
+      layer.on({
+        mouseover: () => layer.setStyle(buildingStyle(feature, true)),
+        mouseout: () => {
+          if (layer !== selectedLayer)
+            layer.setStyle(buildingStyle(feature));
+        },
+        popupopen: () => {
+          selectedLayer = layer;
+          document.body.classList.add('popup-open');
+          layer.closeTooltip();
+          layer.setStyle(buildingStyle(feature, true));
+          layer.bringToFront();
+        },
+        popupclose: () => {
+          selectedLayer = null;
+          document.body.classList.remove('popup-open');
+          layer.setStyle(buildingStyle(feature));
+        }
+      });
     }
   });
   return dataLayer;
+}
+
+function buildingStyle(feature, highlighted = false) {
+  const usesHcc = feature.properties.member_departments.length > 0;
+  const style = usesHcc ? config.styling.with_hcc : config.styling.without_hcc;
+  const hover = config.styling.hover || {};
+
+  return {
+    fillColor: style.fill_color,
+    fillOpacity: highlighted ? Math.min(1, style.fill_opacity + (hover.fill_opacity_boost ?? 0.15)) : style.fill_opacity,
+    color: style.stroke_color,
+    weight: highlighted ? style.stroke_weight + (hover.extra_stroke_weight ?? 1.5) : style.stroke_weight
+  };
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, ch => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[ch]);
+}
+
+function pluralize(count, word) {
+  return `${count} ${count === 1 ? word : word + 's'}`;
+}
+
+// Popup card: building code and name, a one-line HCC summary, then the departments.
+// Any other keys listed in display.popup_properties are shown in a small table underneath.
+function buildPopup(props) {
+  const shown = config.display.popup_properties;
+  const allDepts = props.departments || [];
+  const memberDepts = props.member_departments || [];
+  const usesHcc = memberDepts.length > 0;
+  const days = config.usage_window_days;
+  const timeframe = days ? ` in the past ${days} days` : ' recently';
+  const otherClass = usesHcc ? '' : ' is-other';
+
+  let head = '';
+  if (shown.includes('abbrev') && props.abbrev)
+    head += `<span class="code-tag${otherClass}">${escapeHtml(props.abbrev)}</span>`;
+  if (shown.includes('name') && props.name)
+    head += `<h2 class="bp-name">${escapeHtml(props.name)}</h2>`;
+
+  let body = '';
+  if (shown.includes('departments') && allDepts.length > 0) {
+    const status = usesHcc
+      ? `${memberDepts.length} of ${pluralize(allDepts.length, 'department')} here ran jobs on HCC${timeframe}`
+      : `No departments here ran jobs on HCC${timeframe}`;
+    head += `<p class="bp-status">${status}</p>`;
+
+    // HCC departments first, then the rest
+    const others = allDepts.filter(dept => !memberDepts.includes(dept));
+    body += '<ul class="bp-depts">'
+      + memberDepts.map(dept => `<li class="is-hcc">${escapeHtml(dept)}</li>`).join('')
+      + others.map(dept => `<li>${escapeHtml(dept)}</li>`).join('')
+      + '</ul>';
+  }
+
+  const extras = shown.filter(key => !['name', 'abbrev', 'departments'].includes(key) && props[key] != null);
+  if (extras.length > 0) {
+    body += '<dl class="bp-extra">' + extras.map(key => {
+      const value = Array.isArray(props[key]) ? props[key].join(', ') : props[key];
+      return `<dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value)}</dd>`;
+    }).join('') + '</dl>';
+  }
+
+  return `<article class="bp${otherClass}"><header class="bp-head">${head}</header>${body}</article>`;
+}
+
+function showError(message) {
+  const info = document.getElementById('info');
+  info.textContent = message;
+  info.classList.add('is-error');
 }
 
 function loadGeoJsonDataLayer() {
@@ -281,7 +373,7 @@ function loadGeoJsonDataLayer() {
       return response.json();
     })
     .then((buildingGeoJSON) => {
-      fetch(`${config.departments_using_hcc_url}?t=${timestamp}`) // Cache busting
+      return fetch(`${config.departments_using_hcc_url}?t=${timestamp}`) // Cache busting
         .then((response) => {
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -298,14 +390,17 @@ function loadGeoJsonDataLayer() {
           if (config.show_usage_stats_in_console)
             printUsageStats(buildingGeoJSON, usageJSON.departments_completing_jobs);
 
-          // Update info
-          const featureCount = buildingGeoJSON.features.length;
+          // Update the title card
           // Count canonical departments; the data has one entry per raw name variant (e.g. "Phys", "Physics")
           const departmentCount = new Set(usageJSON.departments_completing_jobs.map(entry => entry['Department_Canonical'])).size;
-          const lastUpdate = new Date(usageJSON.last_updated).toLocaleString();
-          document.getElementById(
-            "info"
-          ).innerHTML = `Buildings:${featureCount} | Departments Using HCC: ${departmentCount} | Last updated: ${lastUpdate}`;
+          const hccBuildingCount = dataLayer.getLayers().filter(layer => layer.feature.properties.member_departments.length > 0).length;
+          const days = config.usage_window_days;
+          const info = document.getElementById("info");
+          info.classList.remove("is-error");
+          info.innerHTML = `<strong>${departmentCount}</strong> departments in <strong>${hccBuildingCount}</strong> buildings ran jobs on HCC${days ? ` in the past ${days} days` : ''}.`;
+
+          const lastUpdate = new Date(usageJSON.last_updated);
+          document.getElementById("updated").textContent = `Updated ${lastUpdate.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}`;
 
           // Add new GeoJSON layer to the map
           dataLayer.addTo(map);
@@ -313,9 +408,7 @@ function loadGeoJsonDataLayer() {
     })
     .catch((error) => {
       console.error("Error loading GeoJSON:", error);
-      document.getElementById(
-        "info"
-      ).innerHTML = `Error loading data: ${error.message}`;
+      showError(`Couldn't load building data (${error.message}). Reload the page to try again.`);
     });
 }
 

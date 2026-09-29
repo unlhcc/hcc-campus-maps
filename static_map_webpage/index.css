@@ -1,3 +1,23 @@
+/* UNL scarlet and cream, with a warm stone neutral for buildings not using HCC.
+   Building fills themselves come from map-config.yml; keep --scarlet/--stone in step with it. */
+:root {
+  --scarlet: #D00000;
+  --scarlet-deep: #8A0000;
+  --stone: #B8B1A5;
+  --stone-deep: #8F887C;
+  --cream: #FEFDFA;
+  --ink: #1F1B17;
+  --ink-muted: #6B645B;
+  --hairline: #E6E0D4;
+  --map-ground: #EFECE6;
+
+  --font-body: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(31, 27, 23, 0.08), 0 6px 20px rgba(31, 27, 23, 0.12);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,54 +28,357 @@ body, html {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--map-ground);
 }
 
 #map {
   height: 100%;
   width: 100%;
+  background: var(--map-ground);
+  font-family: var(--font-body);
 }
 
-.controls {
+/* Muted street basemap so the buildings carry the color */
+.tiles-campus {
+  filter: grayscale(1) sepia(0.12) brightness(1.04) contrast(0.86);
+}
+
+/* Building-code tag: used for HCC in the title and each building's code in popups */
+.code-tag {
+  display: inline-block;
+  padding: 0.18em 0.45em 0.14em;
+  border-radius: 3px;
+  background: var(--scarlet);
+  color: var(--cream);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.78em;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  vertical-align: 0.12em;
+}
+
+.code-tag.is-other {
+  background: var(--stone);
+  color: var(--ink);
+}
+
+/* Title card */
+.panel {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background: white;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  top: 16px;
+  left: 16px;
   z-index: 1000;
+  width: 300px;
+  max-width: calc(100% - 32px);
+  padding: 16px 18px 14px;
+  background: var(--cream);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
-.controls button {
-  padding: 8px 12px;
-  margin: 0 5px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  background: white;
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: var(--scarlet);
+}
+
+.panel-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  font-stretch: 112%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.panel-title {
+  margin-top: 4px;
+  font-size: 24px;
+  font-weight: 750;
+  font-stretch: 78%;
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+}
+
+.panel-summary {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.panel-summary strong {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--scarlet);
+}
+
+.panel-summary.is-error {
+  color: var(--scarlet-deep);
+}
+
+.legend {
+  list-style: none;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--hairline);
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.swatch {
+  flex: none;
+  width: 14px;
+  height: 14px;
   border-radius: 3px;
 }
 
+.swatch-hcc {
+  background: var(--scarlet);
+  box-shadow: inset 0 0 0 1px var(--scarlet-deep);
+}
+
+.swatch-other {
+  background: color-mix(in srgb, var(--stone) 60%, var(--map-ground));
+  box-shadow: inset 0 0 0 1px var(--stone-deep);
+}
+
+.panel-updated {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-muted);
+}
+
+.panel-updated:empty {
+  display: none;
+}
+
+/* Base layer switcher (map-config.yml: display.show_layers_control) */
+.controls {
+  position: absolute;
+  bottom: 28px;
+  right: 10px;
+  z-index: 1000;
+  display: flex;
+  padding: 3px;
+  gap: 2px;
+  background: var(--cream);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.controls:empty {
+  display: none;
+}
+
+.controls button {
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  border-radius: 6px;
+  font: 500 13px var(--font-body);
+  color: var(--ink);
+}
+
 .controls button:hover {
-  background: #f0f0f0;
+  background: var(--hairline);
 }
 
 .controls button.active {
-  background: #4285f4;
-  color: white;
-  border-color: #4285f4;
+  background: var(--ink);
+  color: var(--cream);
 }
 
-.info {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: white;
-  padding: 8px 12px;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+.controls button:focus-visible,
+.full-map-link:focus-visible,
+.leaflet-bar a:focus-visible,
+.leaflet-popup-close-button:focus-visible {
+  outline: 2px solid var(--scarlet);
+  outline-offset: 2px;
+}
+
+/* Leaflet chrome */
+.leaflet-bar {
+  border: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: var(--shadow) !important;
+  overflow: hidden;
+}
+
+.leaflet-bar a {
+  width: 34px !important;
+  height: 34px !important;
+  line-height: 34px !important;
+  background: var(--cream);
+  color: var(--ink);
+  border-bottom-color: var(--hairline);
+}
+
+.leaflet-bar a:hover {
+  background: var(--hairline);
+  color: var(--ink);
+}
+
+.leaflet-control-attribution {
+  background: rgba(254, 253, 250, 0.8) !important;
+  color: var(--ink-muted);
+  font-size: 10px;
+}
+
+.leaflet-control-attribution a {
+  color: var(--ink-muted);
+}
+
+.leaflet-interactive:focus {
+  outline: none;
+}
+
+/* Hover label */
+.building-tooltip {
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--ink);
+  color: var(--cream);
+  font: 600 12px var(--font-body);
+  box-shadow: 0 2px 8px rgba(31, 27, 23, 0.25);
+}
+
+.building-tooltip::before {
+  display: none;
+}
+
+/* Building popup */
+.building-popup .leaflet-popup-content-wrapper {
+  padding: 0;
+  border-radius: var(--radius);
+  background: var(--cream);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.building-popup .leaflet-popup-content {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.building-popup .leaflet-popup-tip {
+  background: var(--cream);
+  box-shadow: none;
+}
+
+.building-popup a.leaflet-popup-close-button {
+  top: 10px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  font: 400 20px/24px var(--font-body);
+  color: var(--ink-muted);
+}
+
+.building-popup a.leaflet-popup-close-button:hover {
+  background: var(--hairline);
+  color: var(--ink);
+}
+
+.bp {
+  border-left: 4px solid var(--scarlet);
+}
+
+.bp.is-other {
+  border-left-color: var(--stone);
+}
+
+.bp-head {
+  padding: 14px 44px 12px 14px;
+}
+
+.bp-head .code-tag {
   font-size: 12px;
-  z-index: 1000;
+  vertical-align: baseline;
+}
+
+.bp-name {
+  margin-top: 6px;
+  font-size: 19px;
+  font-weight: 750;
+  font-stretch: 82%;
+  line-height: 1.15;
+}
+
+.building-popup .bp-status {
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  color: var(--ink-muted);
+}
+
+.bp-depts {
+  list-style: none;
+  padding: 10px 16px 14px 14px;
+  border-top: 1px solid var(--hairline);
+  display: grid;
+  gap: 7px;
+}
+
+.bp-depts li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--ink-muted);
+}
+
+/* Hollow ring for departments not using HCC, filled scarlet for those that do */
+.bp-depts li::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 0.38em;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1.5px var(--stone-deep);
+}
+
+.bp-depts li.is-hcc {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.bp-depts li.is-hcc::before {
+  background: var(--scarlet);
+  box-shadow: none;
+}
+
+.bp-extra {
+  padding: 10px 16px 14px 14px;
+  border-top: 1px solid var(--hairline);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  font-size: 12.5px;
+}
+
+.bp-extra dt {
+  color: var(--ink-muted);
 }
 
 /* Embed mode (see setupEmbedMode in index.js) */
@@ -67,9 +390,10 @@ body, html {
   justify-content: center;
   padding: 16px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.45);
-  color: white;
+  background: rgba(31, 27, 23, 0.5);
+  color: var(--cream);
   font-size: 18px;
+  font-weight: 600;
   z-index: 1100;
   opacity: 0;
   pointer-events: none;
@@ -80,29 +404,103 @@ body, html {
   opacity: 1;
 }
 
-body.embed .info {
-  bottom: 6px;
-  left: 6px;
-  padding: 4px 8px;
-  font-size: 11px;
-}
-
-.full-map-link {
-  background: white;
-  padding: 6px 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  font-size: 12px;
-  color: #333;
+.leaflet-container a.full-map-link {
+  display: block;
+  padding: 7px 11px;
+  background: var(--cream);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  font: 600 12px var(--font-body);
+  color: var(--ink);
   text-decoration: none;
 }
 
-.full-map-link:hover {
-  background: #f0f0f0;
+.leaflet-container a.full-map-link:hover {
+  background: var(--hairline);
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 0.5rem;
+/* Compact title card for iframes and phones */
+body.embed .panel {
+  top: 10px;
+  left: 10px;
+  width: 260px;
+  padding: 11px 13px 10px;
+}
+
+body.embed .panel-eyebrow,
+body.embed .panel-updated {
+  display: none;
+}
+
+body.embed .panel-title {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+body.embed .panel-summary {
+  margin-top: 6px;
+  font-size: 12.5px;
+}
+
+body.embed .legend {
+  margin-top: 8px;
+  padding-top: 8px;
+  gap: 4px;
+  font-size: 12px;
+}
+
+@media (max-width: 560px) {
+  .panel {
+    top: 10px;
+    left: 10px;
+    right: 58px;
+    width: auto;
+    max-width: none;
+    padding: 11px 13px 10px;
+  }
+
+  body.embed .panel {
+    width: auto;
+  }
+
+  .panel-eyebrow,
+  .panel-updated {
+    display: none;
+  }
+
+  .panel-title {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .panel-summary {
+    margin-top: 6px;
+    font-size: 12.5px;
+  }
+
+  .legend {
+    margin-top: 8px;
+    padding-top: 8px;
+    gap: 4px;
+    font-size: 12px;
+  }
+}
+
+/* Not enough height to pan popups below the title card, so get it out of the way */
+.panel {
+  transition: opacity 0.2s;
+}
+
+@media (max-height: 480px) {
+  body.popup-open .panel {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .embed-hint,
+  .panel {
+    transition: none;
+  }
 }

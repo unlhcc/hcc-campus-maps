@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GeoJSON Map Viewer</title>
-    
+    <title>HCC Campus Map</title>
+    <meta name="description" content="UNL buildings whose departments have run jobs on the Holland Computing Center." />
+
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""/>
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@500;600&display=swap" />
+
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div id="map"></div>
+
+    <aside class="panel" id="panel" aria-label="About this map">
+      <p class="panel-eyebrow">Holland Computing Center</p>
+      <h1 class="panel-title"><span class="code-tag">HCC</span> across campus</h1>
+      <p class="panel-summary" id="info">Loading usage data…</p>
+      <ul class="legend">
+        <li><span class="swatch swatch-hcc" aria-hidden="true"></span>Houses a department using HCC</li>
+        <li><span class="swatch swatch-other" aria-hidden="true"></span>Other campus buildings</li>
+      </ul>
+      <p class="panel-updated" id="updated"></p>
+    </aside>
+
     <div class="controls" id="controls">
       <!-- Buttons will be generated dynamically -->
     </div>
-
-    <div id="map"></div>
-
-    <div class="info" id="info">Loading configuration...</div>
 
     <!-- Shown in embed mode when someone scrolls over the map before activating it -->
     <div class="embed-hint" id="embed-hint" aria-hidden="true"></div>

@@ -10,34 +10,51 @@ map:
     lat: 40.825
     lng: -96.682
   zoom: 15
+  # Initial view: frame City, Innovation, and East campuses ([south, west], [north, east]).
+  # The title card overlaps the empty northwest corner. Remove to use center/zoom instead.
+  fit_bounds:
+    - [40.8168, -96.7085]
+    - [40.8360, -96.6585]
+
+# Days of job history behind departments_completing_jobs.json (LOOKBACK_DAYS in
+# scripts/publish_departments.sh); only used for wording on the page
+usage_window_days: 14
 
 # Refresh interval in milliseconds (6 hours = 21600000 ms)
 refresh_interval: 21600000
 
-# Base layers to include (streets, satellite, topo)
+# Base layers to include (campus, streets, satellite, topo).
+# "campus" is OpenStreetMap desaturated so the buildings stand out.
 base_layers:
+  - campus
   - streets
   - satellite
   - topo
 
 # Default base layer
-default_layer: streets
+default_layer: campus
 
 # Building styling
 styling:
   # Buildings that use HCC
+  # (UNL scarlet; keep --scarlet/--stone in index.css in step for the legend and popups)
   with_hcc:
-    fill_color: "#FF0000"
-    fill_opacity: 0.8
-    stroke_color: "#CC0000"
-    stroke_weight: 2
-  
+    fill_color: "#D00000"
+    fill_opacity: 0.85
+    stroke_color: "#8A0000"
+    stroke_weight: 1
+
   # Buildings that don't use HCC
   without_hcc:
-    fill_color: "#808080"
-    fill_opacity: 0.4
-    stroke_color: "#606060"
-    stroke_weight: 2
+    fill_color: "#B8B1A5"
+    fill_opacity: 0.6
+    stroke_color: "#8F887C"
+    stroke_weight: 1
+
+  # Hovered or selected building
+  hover:
+    fill_opacity_boost: 0.15
+    extra_stroke_weight: 1.5
 
 # Department filtering
 departments:
