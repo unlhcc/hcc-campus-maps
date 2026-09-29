@@ -1,4 +1,5 @@
 # Install on HCC with `scrontab -e` and paste the lines below (edit paths/partition first).
+# Swan has scrontab and cron disabled for users; use scripts/publish_departments.sbatch there instead.
 # Runs daily at 05:30 cluster time. The job's node needs outbound access to github.com and
 # network access to the RCF MySQL server; if compute nodes lack that, use plain cron on a
 # service/login node instead:
