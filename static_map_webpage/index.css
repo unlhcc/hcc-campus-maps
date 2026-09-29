@@ -301,16 +301,8 @@ body, html {
   color: var(--ink);
 }
 
-.bp {
-  border-left: 4px solid var(--scarlet);
-}
-
-.bp.is-other {
-  border-left-color: var(--stone);
-}
-
 .bp-head {
-  padding: 14px 44px 12px 14px;
+  padding: 14px 44px 12px 16px;
 }
 
 .bp-head .code-tag {
@@ -334,7 +326,7 @@ body, html {
 
 .bp-depts {
   list-style: none;
-  padding: 10px 16px 14px 14px;
+  padding: 10px 16px 14px;
   border-top: 1px solid var(--hairline);
   display: grid;
   gap: 7px;
@@ -369,7 +361,7 @@ body, html {
 }
 
 .bp-extra {
-  padding: 10px 16px 14px 14px;
+  padding: 10px 16px 14px;
   border-top: 1px solid var(--hairline);
   display: grid;
   grid-template-columns: auto 1fr;
