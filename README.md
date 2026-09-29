@@ -51,7 +51,13 @@ Do this as whichever HCC account should own the job.
    ```
    You should see `Published static_map_webpage/departments_completing_jobs.json`. That push triggers a deploy.
 
-5. Schedule it: run `scrontab -e` and paste in the entry from `scripts/publish_departments.scrontab.example`, filling in the partition and log path. The job needs outbound access to github.com and network access to the RCF MySQL server. If compute nodes don't have that, use the plain `cron` line from the same file on a login or service node instead.
+5. Schedule it. On Swan, `scrontab` and `crontab` are both disabled for users, so use the self-resubmitting batch job. It runs now, and each run queues the next one for 05:30 the following day:
+   ```bash
+   mkdir -p $WORK/logs && sbatch --output=$WORK/logs/hcc-campus-map-%j.out ~/hcc-campus-maps/scripts/publish_departments.sbatch
+   ```
+   The job runs on a compute node, so compute nodes need outbound access to github.com and to the RCF MySQL server. To change the time, set `RUN_AT=HH:MM` in `publish.env`. Check the chain with `squeue --me --name=hcc-campus-map`, and stop it with `scancel --name=hcc-campus-map`.
+
+   On clusters that allow `scrontab` or `cron`, use `scripts/publish_departments.scrontab.example` instead.
 
 ### 3. Embed the map on hcc.unl.edu
 
