@@ -14,13 +14,23 @@
     "chem eng": "Chemical and Biomolecular Engineering",
     "chemical and biomolecular engineering": "Chemical and Biomolecular Engineering",
 
-    "comp sci": "College of Computing",
-    "compsci": "College of Computing",
-    "computer science": "College of Computing",
-    "computer science and engineering": "College of Computing",
-    "engineering computer science": "College of Computing",
-    "software engineering": "College of Computing",
-    "school of computing": "College of Computing",
+    "comp sci": "School of Computing",
+    "compsci": "School of Computing",
+    "computer science": "School of Computing",
+    "computer science and engineering": "School of Computing",
+    "engineering computer science": "School of Computing",
+    "software engineering": "School of Computing",
+    "school of computing": "School of Computing",
+
+    "journalism and mass comm": "Journalism and Mass Communications",
+    "graduate journalism": "Journalism and Mass Communications",
+    "broadcasting": "Journalism and Mass Communications",
+
+    "carson ctr for emerging media arts": "Theatre and Film",
+    "johnny carson school-theatre and film": "Theatre and Film",
+
+    "industrial and mgmt syst engineering": "Industrial and Management Systems Engineering",
+    "industrial and management systems engineering": "Industrial and Management Systems Engineering",
 
     "computer and electronics engineering": "Electrical and Computer Engineering",
     "electrical and computer engineering": "Electrical and Computer Engineering",
@@ -84,6 +94,7 @@
     "hydrological sciences": "Hydrological Sciences",
     
     "plant pathology": "Plant Pathology",
+    "department of plant pathology": "Plant Pathology",
     
     "entomology": "Entomology",
     

@@ -20547,7 +20547,8 @@
         "departments": [
           "School of Natural Resources",
           "Biostatistics",
-          "Environmental Studies"
+          "Environmental Studies",
+          "Fisheries and Wildlife"
         ]
       }
     },
@@ -26329,7 +26330,8 @@
         "abbrev": "ICC",
         "name": "Innovation Commons Conference Center",
         "departments": [
-          "Innovation Campus"
+          "Innovation Campus",
+          "Nebraska Water Center"
         ]
       }
     },
@@ -26974,7 +26976,8 @@
         "abbrev": "JH",
         "name": "Theodore Jorgensen Hall",
         "departments": [
-          "Physics and Astronomy"
+          "Physics and Astronomy",
+          "Nebraska Nanoscale Facility"
         ]
       }
     },
@@ -31762,7 +31765,8 @@
         "abbrev": "MOLR",
         "name": "Morrison Center",
         "departments": [
-          "Biological Systems Engineering"
+          "Biological Systems Engineering",
+          "Nebraska Center for Virology"
         ]
       }
     },
@@ -34840,7 +34844,8 @@
           "Mechanical and Materials Engineering",
           "Architectural Engineering and Construction",
           "Gerontology",
-          "Criminal Justice"
+          "Criminal Justice",
+          "Industrial and Management Systems Engineering"
         ]
       }
     },
