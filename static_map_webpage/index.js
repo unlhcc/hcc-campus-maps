@@ -182,7 +182,8 @@ function shouldIncludeBuilding(feature) {
 function printUsageStats(buildingData, usageData) {
   const departmentsUsingHcc = [...new Set(usageData.map(entry => entry['Department_Canonical']))];
 
-  if (departmentsUsingHcc.length != usageData.length)
+  // Several raw names can map to one canonical department, so only flag repeated raw names
+  if (new Set(usageData.map(entry => entry['Department'])).size != usageData.length)
     console.warn("Warning: Duplicate entries found in provided usage data file.");
 
   // Log all departments not associated with any building
@@ -288,21 +289,23 @@ function loadGeoJsonDataLayer() {
           return response.json();
         })
         .then((usageJSON) => {
-          dataLayer = generateDataLayer(buildingGeoJSON, usageJSON.departments_completing_jobs);
-          // Remove existing GeoJSON layer if it exists
+          // Remove the previous GeoJSON layer (from an earlier refresh) before replacing it
           if (dataLayer) {
             map.removeLayer(dataLayer);
           }
+          dataLayer = generateDataLayer(buildingGeoJSON, usageJSON.departments_completing_jobs);
 
           if (config.show_usage_stats_in_console)
             printUsageStats(buildingGeoJSON, usageJSON.departments_completing_jobs);
 
           // Update info
           const featureCount = buildingGeoJSON.features.length;
+          // Count canonical departments; the data has one entry per raw name variant (e.g. "Phys", "Physics")
+          const departmentCount = new Set(usageJSON.departments_completing_jobs.map(entry => entry['Department_Canonical'])).size;
           const lastUpdate = new Date(usageJSON.last_updated).toLocaleString();
           document.getElementById(
             "info"
-          ).innerHTML = `Buildings:${featureCount} | Departments Using HCC: ${usageJSON.departments_completing_jobs.length} | Last updated: ${lastUpdate}`;
+          ).innerHTML = `Buildings:${featureCount} | Departments Using HCC: ${departmentCount} | Last updated: ${lastUpdate}`;
 
           // Add new GeoJSON layer to the map
           dataLayer.addTo(map);
