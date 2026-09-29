@@ -18,7 +18,7 @@ map:
 
 # Days of job history behind departments_completing_jobs.json (LOOKBACK_DAYS in
 # scripts/publish_departments.sh); only used for wording on the page
-usage_window_days: 14
+usage_window_days: 365
 
 # Refresh interval in milliseconds (6 hours = 21600000 ms)
 refresh_interval: 21600000

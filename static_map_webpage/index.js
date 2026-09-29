@@ -314,6 +314,14 @@ function pluralize(count, word) {
   return `${count} ${count === 1 ? word : word + 's'}`;
 }
 
+// " in the past year" for 365 days, " in the past 14 days" otherwise, "" when unset
+function usageWindowPhrase() {
+  const days = config.usage_window_days;
+  if (!days) return '';
+  if (days % 365 === 0) return days === 365 ? ' in the past year' : ` in the past ${days / 365} years`;
+  return ` in the past ${days} days`;
+}
+
 // Popup card: building code and name, a one-line HCC summary, then the departments.
 // Any other keys listed in display.popup_properties are shown in a small table underneath.
 function buildPopup(props) {
@@ -321,8 +329,7 @@ function buildPopup(props) {
   const allDepts = props.departments || [];
   const memberDepts = props.member_departments || [];
   const usesHcc = memberDepts.length > 0;
-  const days = config.usage_window_days;
-  const timeframe = days ? ` in the past ${days} days` : ' recently';
+  const timeframe = usageWindowPhrase() || ' recently';
   const otherClass = usesHcc ? '' : ' is-other';
 
   let head = '';
@@ -394,10 +401,9 @@ function loadGeoJsonDataLayer() {
           // Count canonical departments; the data has one entry per raw name variant (e.g. "Phys", "Physics")
           const departmentCount = new Set(usageJSON.departments_completing_jobs.map(entry => entry['Department_Canonical'])).size;
           const hccBuildingCount = dataLayer.getLayers().filter(layer => layer.feature.properties.member_departments.length > 0).length;
-          const days = config.usage_window_days;
           const info = document.getElementById("info");
           info.classList.remove("is-error");
-          info.innerHTML = `<strong>${departmentCount}</strong> departments in <strong>${hccBuildingCount}</strong> buildings ran jobs on HCC${days ? ` in the past ${days} days` : ''}.`;
+          info.innerHTML = `<strong>${departmentCount}</strong> departments in <strong>${hccBuildingCount}</strong> buildings ran jobs on HCC${usageWindowPhrase()}.`;
 
           const lastUpdate = new Date(usageJSON.last_updated);
           document.getElementById("updated").textContent = `Updated ${lastUpdate.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}`;

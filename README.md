@@ -10,13 +10,13 @@ The live map is at **https://unlhcc.github.io/hcc-campus-maps/** and refreshes d
 HCC (daily, scrontab or cron)                GitHub
 ───────────────────────────────              ──────────────────────────────────────
 scripts/publish_departments.sh                .github/workflows/pages.yml
-  sacct (14 days) → usernames                   on push to static_map_webpage/ + daily:
-  RCF MySQL → departments                         scrape buildings (maps.unl.edu)
+  hcc-xdmod (365 days)                          on push to static_map_webpage/ + daily:
+    → jobs by department                          scrape buildings (maps.unl.edu)
   normalize → departments JSON  ──git push──►     deploy to GitHub Pages
-  (usernames never leave HCC)                     fail if data is > 3 days old
+                                                  fail if data is > 3 days old
 ```
 
-Getting the department list needs `sacct` and the internal RCF MySQL database, so that step runs inside HCC. It pushes only `static_map_webpage/departments_completing_jobs.json`, which holds aggregate department names; usernames never leave HCC. Everything else (scraping building outlines from maps.unl.edu, building the site, hosting it) runs on GitHub.
+The department list comes from HCC's Open XDMoD (https://hcc-xdmod.unl.edu): the Jobs realm grouped by Department, for the past year, read through its public view with no login. XDMoD is only reachable on the campus network or through the VPN, so that step runs inside HCC. It pushes only `static_map_webpage/departments_completing_jobs.json`, which holds aggregate department names. Everything else (scraping building outlines from maps.unl.edu, building the site, hosting it) runs on GitHub.
 
 ## Deployment
 
@@ -43,7 +43,7 @@ Do this as whichever HCC account should own the job.
    ```bash
    mkdir -p ~/.config/hcc-campus-maps && cp scripts/publish.env.example ~/.config/hcc-campus-maps/publish.env && chmod 600 ~/.config/hcc-campus-maps/publish.env
    ```
-   Fill in the `RCF_MYSQL_*` values, and check that `PYTHON` points at the environment `install.sh` created.
+   Check that `PYTHON` points at the environment `install.sh` created. No credentials are needed; XDMoD is read through its public view.
 
 4. Run it once by hand:
    ```bash
@@ -55,7 +55,7 @@ Do this as whichever HCC account should own the job.
    ```bash
    mkdir -p $WORK/logs && sbatch --output=$WORK/logs/hcc-campus-map-%j.out ~/hcc-campus-maps/scripts/publish_departments.sbatch
    ```
-   The job runs on a compute node, so compute nodes need outbound access to github.com and to the RCF MySQL server. To change the time, set `RUN_AT=HH:MM` in `publish.env`. Each run deletes this job's logs older than 30 days; set `LOG_RETENTION_DAYS` to change that. Check the chain with `squeue --me --name=hcc-campus-map`, and stop it with `scancel --name=hcc-campus-map`.
+   The job runs on a compute node, so compute nodes need outbound access to github.com and to hcc-xdmod.unl.edu. To change the time, set `RUN_AT=HH:MM` in `publish.env`. Each run deletes this job's logs older than 30 days; set `LOG_RETENTION_DAYS` to change that. Check the chain with `squeue --me --name=hcc-campus-map`, and stop it with `scancel --name=hcc-campus-map`.
 
    On clusters that allow `scrontab` or `cron`, use `scripts/publish_departments.scrontab.example` instead.
 
@@ -88,8 +88,9 @@ Add `?embed=1` to the URL to force embed mode on, or `?embed=0` to force it off.
 ## Operations
 
 - **Monitoring:** if the HCC job stops pushing, the daily workflow's `check-freshness` job fails once the data is more than 3 days old, and GitHub emails the repo admins. Check the job's log on HCC; the path is set by `--output` in your scrontab entry.
+- **Lookback window:** set `LOOKBACK_DAYS` in `publish.env` (default 365), and set `usage_window_days` in `static_map_webpage/map-config.yml` to match; the page uses it for wording such as "in the past year".
 - **Manual refresh:** use **Actions → Build and deploy map → Run workflow** to redeploy, or run `scripts/publish_departments.sh` on HCC to push new department data.
-- **Building-to-department mapping:** `data/maps/departments_per_building.json` sets which departments are in each building, and `data/maps/department_normalization_map.json` maps the raw department names in the RCF database to canonical names. Run `find_missing_buildings.sh` to list buildings that have no departments assigned.
+- **Building-to-department mapping:** `data/maps/departments_per_building.json` sets which departments are in each building, and `data/maps/department_normalization_map.json` maps the raw department names in XDMoD to canonical names. Run `find_missing_buildings.sh` to list buildings that have no departments assigned.
 
 ## Local development
 
@@ -109,3 +110,8 @@ Add `?embed=1` to the URL to force embed mode on, or `?embed=0` to force it off.
    ```
 
 To test embed mode locally, open `http://localhost:8000/?embed=1`.
+
+To refresh the department data locally, connect to the campus network or VPN and run:
+```bash
+python scripts/fetch_active_departments.py
+```

@@ -12,7 +12,7 @@
 #          (runs now, then daily at RUN_AT; stop the chain with `scancel -n hcc-campus-map`)
 #          Logs older than LOG_RETENTION_DAYS (default 30) are deleted on each run.
 # Notes:
-#          Compute nodes need outbound access to github.com and to the RCF MySQL server.
+#          Compute nodes need outbound access to github.com and to hcc-xdmod.unl.edu.
 #          Settings come from the same env file as publish_departments.sh.
 ######################################################################################################
 

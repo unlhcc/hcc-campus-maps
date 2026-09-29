@@ -1,7 +1,7 @@
 # Install on HCC with `scrontab -e` and paste the lines below (edit paths/partition first).
 # Swan has scrontab and cron disabled for users; use scripts/publish_departments.sbatch there instead.
 # Runs daily at 05:30 cluster time. The job's node needs outbound access to github.com and
-# network access to the RCF MySQL server; if compute nodes lack that, use plain cron on a
+# network access to hcc-xdmod.unl.edu; if compute nodes lack that, use plain cron on a
 # service/login node instead:
 #   30 5 * * * /path/to/hcc-campus-maps/scripts/publish_departments.sh >> $HOME/logs/hcc-campus-map.log 2>&1
 

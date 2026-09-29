@@ -4,7 +4,8 @@
 # Purpose: Runs inside HCC (via scrontab or cron). Generates the list of departments completing jobs
 #          and pushes it to GitHub, where the Pages workflow rebuilds and publishes the map.
 # Notes:
-#          Only aggregate department names are pushed; usernames never leave HCC.
+#          Usage comes from hcc-xdmod.unl.edu, which is only reachable on campus or the VPN.
+#          Only aggregate department names are pushed.
 #          Configuration is read from an env file (default: ~/.config/hcc-campus-maps/publish.env).
 #          See scripts/publish.env.example for the available settings.
 ######################################################################################################
@@ -17,7 +18,7 @@ if [ ! -f "$ENV_FILE" ]; then
   exit 1
 fi
 
-# Export everything in the env file so the Python script sees the RCF_MYSQL_* settings
+# Export everything in the env file so the Python script sees settings like XDMOD_URL
 set -a
 # shellcheck source=/dev/null
 . "$ENV_FILE"
@@ -27,7 +28,7 @@ set +a
 REPO_URL="${REPO_URL:-git@github.com:unlhcc/hcc-campus-maps.git}"
 BRANCH="${BRANCH:-main}"
 PYTHON="${PYTHON:-python3}"
-LOOKBACK_DAYS="${LOOKBACK_DAYS:-14}"
+LOOKBACK_DAYS="${LOOKBACK_DAYS:-365}"
 GIT_AUTHOR_NAME="${GIT_AUTHOR_NAME:-HCC Campus Map Bot}"
 GIT_AUTHOR_EMAIL="${GIT_AUTHOR_EMAIL:-hcc-campus-map-bot@users.noreply.github.com}"
 OUTPUT_REL="static_map_webpage/departments_completing_jobs.json"
