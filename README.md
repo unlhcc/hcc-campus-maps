@@ -55,7 +55,7 @@ Do this as whichever HCC account should own the job.
    ```bash
    mkdir -p $WORK/logs && sbatch --output=$WORK/logs/hcc-campus-map-%j.out ~/hcc-campus-maps/scripts/publish_departments.sbatch
    ```
-   The job runs on a compute node, so compute nodes need outbound access to github.com and to the RCF MySQL server. To change the time, set `RUN_AT=HH:MM` in `publish.env`. Check the chain with `squeue --me --name=hcc-campus-map`, and stop it with `scancel --name=hcc-campus-map`.
+   The job runs on a compute node, so compute nodes need outbound access to github.com and to the RCF MySQL server. To change the time, set `RUN_AT=HH:MM` in `publish.env`. Each run deletes this job's logs older than 30 days; set `LOG_RETENTION_DAYS` to change that. Check the chain with `squeue --me --name=hcc-campus-map`, and stop it with `scancel --name=hcc-campus-map`.
 
    On clusters that allow `scrontab` or `cron`, use `scripts/publish_departments.scrontab.example` instead.
 

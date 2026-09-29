@@ -10,6 +10,7 @@
 #          mkdir -p $WORK/logs
 #          sbatch --output=$WORK/logs/hcc-campus-map-%j.out scripts/publish_departments.sbatch
 #          (runs now, then daily at RUN_AT; stop the chain with `scancel -n hcc-campus-map`)
+#          Logs older than LOG_RETENTION_DAYS (default 30) are deleted on each run.
 # Notes:
 #          Compute nodes need outbound access to github.com and to the RCF MySQL server.
 #          Settings come from the same env file as publish_departments.sh.
@@ -27,6 +28,7 @@ fi
 
 RUN_AT="${RUN_AT:-05:30}"
 LOG_DIR="${LOG_DIR:-${WORK:-$HOME}/logs}"
+LOG_RETENTION_DAYS="${LOG_RETENTION_DAYS:-30}"
 JOB_NAME="${SLURM_JOB_NAME:-hcc-campus-map}"
 
 # Inside a batch job $0 is Slurm's spooled copy, so ask Slurm for the original script path
@@ -42,6 +44,12 @@ else
   next_run="$(date -d "tomorrow $RUN_AT" +%Y-%m-%dT%H:%M:%S)"
   sbatch --quiet --begin="$next_run" --output="$LOG_DIR/$JOB_NAME-%j.out" "$SCRIPT_PATH"
   echo "==> Queued next run for $next_run"
+fi
+
+# Delete this job's old logs. Never let cleanup stop the publish.
+if [ -d "$LOG_DIR" ]; then
+  find "$LOG_DIR" -maxdepth 1 -type f -name "$JOB_NAME-*.out" -mtime +"$LOG_RETENTION_DAYS" -delete \
+    || echo "WARNING: failed to clean up old logs in $LOG_DIR" >&2
 fi
 
 "$PUBLISH_SCRIPT"
