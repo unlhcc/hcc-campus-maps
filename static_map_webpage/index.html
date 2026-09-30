@@ -18,18 +18,28 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="map"></div>
-
-    <aside class="panel" id="panel" aria-label="About this map">
+    <!-- Before the map in the DOM so screen readers and Tab reach the title and building list first -->
+    <aside class="panel" id="panel" aria-labelledby="panel-title">
       <p class="panel-eyebrow">Holland Computing Center</p>
-      <h1 class="panel-title"><span class="code-tag">HCC</span> across campus</h1>
-      <p class="panel-summary" id="info">Loading usage data…</p>
+      <div class="panel-head">
+        <h1 class="panel-title" id="panel-title"><span class="code-tag">HCC</span> across campus</h1>
+        <button type="button" class="browse-toggle" id="browse-toggle" aria-expanded="false" aria-controls="browse" hidden>
+          Buildings
+          <svg class="chevron" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <p class="panel-summary" id="info" aria-live="polite">Loading usage data…</p>
       <ul class="legend">
-        <li><span class="swatch swatch-hcc" aria-hidden="true"></span>Houses a department using HCC</li>
+        <li><span class="swatch swatch-hcc" aria-hidden="true"></span><span class="label-long">Houses a department using HCC</span><span class="label-short">Uses HCC</span></li>
         <li><span class="swatch swatch-other" aria-hidden="true"></span>Other campus buildings</li>
       </ul>
+      <!-- Text alternative to the map: buildings using HCC, grouped by campus (filled by index.js) -->
+      <div class="browse" id="browse" hidden></div>
       <p class="panel-updated" id="updated"></p>
     </aside>
+
+    <div id="map" role="region" aria-label="Campus map" aria-describedby="map-help"></div>
+    <p class="visually-hidden" id="map-help">Buildings with a department using HCC are shown in scarlet. Arrow keys pan the map and plus and minus zoom. To read about each building, use the Buildings list above the map.</p>
 
     <div class="controls" id="controls">
       <!-- Buttons will be generated dynamically -->

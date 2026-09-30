@@ -24,6 +24,25 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: color-mix(in srgb, var(--scarlet) 22%, var(--cream));
+  color: var(--ink);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Long/short label pairs: short ones on narrow maps (see the max-width: 560px block) */
+.label-short {
+  display: none;
+}
+
 body, html {
   height: 100%;
   width: 100%;
@@ -70,9 +89,14 @@ body, html {
   position: absolute;
   top: 16px;
   left: 16px;
-  z-index: 1000;
-  width: 300px;
+  /* Above Leaflet's control corners (1000); the card comes before the map in the DOM */
+  z-index: 1010;
+  width: 340px;
   max-width: calc(100% - 32px);
+  /* Room for the open Buildings list, which scrolls inside the card */
+  max-height: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
   padding: 16px 18px 14px;
   background: var(--cream);
   border-radius: var(--radius);
@@ -97,8 +121,18 @@ body, html {
   color: var(--ink-muted);
 }
 
-.panel-title {
+.panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   margin-top: 4px;
+}
+
+.panel-title {
+  /* On very narrow maps the Buildings button wraps under the title instead of breaking it */
+  white-space: nowrap;
   font-size: 24px;
   font-weight: 750;
   font-stretch: 78%;
@@ -168,6 +202,165 @@ body, html {
   display: none;
 }
 
+/* Buildings list toggle, beside the title */
+.browse-toggle {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  height: 28px;
+  padding: 0 7px 0 9px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--hairline);
+  color: var(--ink);
+  font: 600 12px var(--font-body);
+  cursor: pointer;
+}
+
+.browse-toggle[hidden] {
+  display: none;
+}
+
+.browse-toggle:hover {
+  background: color-mix(in srgb, var(--stone) 45%, var(--cream));
+}
+
+.browse-toggle .chevron {
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.browse-toggle[aria-expanded="true"] {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.browse-toggle[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+.browse {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  margin: 12px -18px -14px;
+  border-top: 1px solid var(--hairline);
+  scrollbar-width: thin;
+  scrollbar-color: var(--stone) transparent;
+}
+
+.browse-group ul {
+  list-style: none;
+  padding-bottom: 6px;
+}
+
+.browse-campus {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px 18px 4px;
+  background: var(--cream);
+  font-size: 12px;
+  font-weight: 700;
+  font-stretch: 90%;
+  color: var(--ink);
+}
+
+.browse-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-muted);
+}
+
+.browse-group button {
+  display: grid;
+  grid-template-columns: 4.6em 1fr;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  min-height: 30px;
+  padding: 5px 18px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 500 13px/1.3 var(--font-body);
+  text-align: left;
+  cursor: pointer;
+}
+
+.browse-group button .code-tag {
+  justify-self: start;
+  font-size: 10.5px;
+  vertical-align: baseline;
+}
+
+.browse-group button:hover {
+  background: color-mix(in srgb, var(--hairline) 70%, var(--cream));
+}
+
+.browse-group button[aria-current="true"] {
+  background: color-mix(in srgb, var(--scarlet) 8%, var(--cream));
+}
+
+.browse-group button:focus-visible {
+  outline: 2px solid var(--scarlet);
+  outline-offset: -2px;
+}
+
+/* Campus buttons, bottom left */
+.campus-switcher {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: var(--cream);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.campus-switcher button {
+  height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink);
+  font: 600 12px var(--font-body);
+  cursor: pointer;
+}
+
+.campus-switcher button:hover {
+  background: var(--hairline);
+}
+
+.campus-switcher button:active {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+/* Taller hit areas on touch without making the controls look heavier */
+@media (pointer: coarse) {
+  .browse-toggle,
+  .campus-switcher button {
+    position: relative;
+  }
+
+  .browse-toggle::after,
+  .campus-switcher button::after {
+    content: "";
+    position: absolute;
+    inset: -8px 0;
+  }
+
+  .browse-group button {
+    min-height: 40px;
+  }
+}
+
 /* Base layer switcher (map-config.yml: display.show_layers_control) */
 .controls {
   position: absolute;
@@ -208,9 +401,20 @@ body, html {
 .controls button:focus-visible,
 .full-map-link:focus-visible,
 .leaflet-bar a:focus-visible,
-.leaflet-popup-close-button:focus-visible {
+.leaflet-popup-close-button:focus-visible,
+.browse-toggle:focus-visible,
+.campus-switcher button:focus-visible {
   outline: 2px solid var(--scarlet);
   outline-offset: 2px;
+}
+
+.leaflet-container:focus-visible {
+  outline: 2px solid var(--scarlet);
+  outline-offset: -2px;
+}
+
+.bp-name:focus {
+  outline: none;
 }
 
 /* Leaflet chrome */
@@ -243,10 +447,6 @@ body, html {
 
 .leaflet-control-attribution a {
   color: var(--ink-muted);
-}
-
-.leaflet-interactive:focus {
-  outline: none;
 }
 
 /* Hover label */
@@ -302,12 +502,24 @@ body, html {
 }
 
 .bp-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 14px 44px 12px 16px;
 }
 
+/* The name comes first in the DOM; the code tag shows above it */
 .bp-head .code-tag {
+  order: -1;
   font-size: 12px;
   vertical-align: baseline;
+}
+
+/* Long department lists scroll (maxHeight in preparePopup) */
+.building-popup .leaflet-popup-scrolled {
+  border: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--stone) transparent;
 }
 
 .bp-name {
@@ -397,8 +609,10 @@ body, html {
 }
 
 .leaflet-container a.full-map-link {
-  display: block;
-  padding: 7px 11px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 10px 7px 11px;
   background: var(--cream);
   border-radius: 8px;
   box-shadow: var(--shadow);
@@ -415,7 +629,8 @@ body, html {
 body.embed .panel {
   top: 10px;
   left: 10px;
-  width: 260px;
+  width: 272px;
+  max-height: calc(100% - 20px);
   padding: 11px 13px 10px;
 }
 
@@ -424,8 +639,11 @@ body.embed .panel-updated {
   display: none;
 }
 
-body.embed .panel-title {
+body.embed .panel-head {
   margin-top: 0;
+}
+
+body.embed .panel-title {
   font-size: 18px;
 }
 
@@ -441,18 +659,25 @@ body.embed .legend {
   font-size: 12px;
 }
 
+body.embed .browse {
+  margin: 10px -13px -10px;
+}
+
+body.embed .browse-campus,
+body.embed .browse-group button {
+  padding-inline: 13px;
+}
+
 @media (max-width: 560px) {
-  .panel {
+  .panel,
+  body.embed .panel {
     top: 10px;
     left: 10px;
     right: 58px;
     width: auto;
     max-width: none;
+    max-height: calc(100% - 20px);
     padding: 11px 13px 10px;
-  }
-
-  body.embed .panel {
-    width: auto;
   }
 
   .panel-eyebrow,
@@ -460,8 +685,11 @@ body.embed .legend {
     display: none;
   }
 
-  .panel-title {
+  .panel-head {
     margin-top: 0;
+  }
+
+  .panel-title {
     font-size: 18px;
   }
 
@@ -470,29 +698,74 @@ body.embed .legend {
     font-size: 12.5px;
   }
 
+  /* One legend row, to keep the card short on phones */
   .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
     margin-top: 8px;
     padding-top: 8px;
-    gap: 4px;
     font-size: 12px;
+  }
+
+  .legend li {
+    gap: 6px;
+  }
+
+  .label-long {
+    display: none;
+  }
+
+  .label-short {
+    display: inline;
+  }
+
+  .browse {
+    margin: 10px -13px -10px;
+  }
+
+  .browse-campus,
+  .browse-group button {
+    padding-inline: 13px;
+  }
+
+  .campus-switcher button {
+    padding: 0 8px;
+  }
+}
+
+.panel,
+.leaflet-top.leaflet-right,
+.leaflet-bottom.leaflet-left,
+.leaflet-container a.full-map-link {
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+/* Small maps: while a popup is open, the controls step aside so they don't cover it */
+@media (max-width: 560px), (max-height: 480px) {
+  body.popup-open .leaflet-top.leaflet-right,
+  body.popup-open .leaflet-bottom.leaflet-left,
+  body.popup-open .leaflet-container a.full-map-link {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
 /* Not enough height to pan popups below the title card, so get it out of the way */
-.panel {
-  transition: opacity 0.2s;
-}
-
 @media (max-height: 480px) {
   body.popup-open .panel {
     opacity: 0;
-    pointer-events: none;
+    visibility: hidden;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .embed-hint,
-  .panel {
+  .panel,
+  .leaflet-top.leaflet-right,
+  .leaflet-bottom.leaflet-left,
+  .leaflet-container a.full-map-link,
+  .browse-toggle .chevron {
     transition: none;
   }
 }
