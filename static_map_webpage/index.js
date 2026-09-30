@@ -93,8 +93,8 @@ function initMap() {
   if (embedded)
     setupEmbedMode();
 
-  setupCampusSwitcher();
-  frameAll(false);
+  frameDefaultCampus();
+  setupCampusPointers();
 
   const container = map.getContainer();
   ['pointerdown', 'wheel', 'keydown'].forEach(type =>
@@ -177,36 +177,6 @@ function setupEmbedMode() {
   new FullMapControl({ position: 'bottomright' }).addTo(map);
 }
 
-// Campus buttons ("All", "City", ...) in the bottom-left corner
-function setupCampusSwitcher() {
-  const campuses = (config.campuses || []).filter(campus => campus.switcher !== false);
-  if (campuses.length === 0)
-    return;
-
-  const Switcher = L.Control.extend({
-    onAdd: function() {
-      const group = L.DomUtil.create('div', 'campus-switcher');
-      group.setAttribute('role', 'group');
-      group.setAttribute('aria-label', 'Zoom to a campus');
-      const addButton = (label, title, onClick) => {
-        const button = L.DomUtil.create('button', '', group);
-        button.type = 'button';
-        button.textContent = label;
-        button.title = title;
-        button.addEventListener('click', onClick);
-      };
-      if (config.map.fit_bounds)
-        addButton('All', 'All Lincoln campuses', () => frameAll(true));
-      campuses.forEach(campus =>
-        addButton(campus.label || campus.name, campus.name, () => frameCampus(campus)));
-      L.DomEvent.disableClickPropagation(group);
-      L.DomEvent.disableScrollPropagation(group);
-      return group;
-    }
-  });
-  new Switcher({ position: 'bottomleft' }).addTo(map);
-}
-
 // Room to leave around a framed area so no building lands under the title card or the bottom controls.
 // Wide maps have the card in the top-left corner, so reserve its height or its width, whichever costs less.
 function framePadding(bounds) {
@@ -236,18 +206,27 @@ function frameBounds(bounds, animate) {
     map.fitBounds(bounds, { ...options, animate: false });
 }
 
-function frameAll(animate) {
-  if (config.map.fit_bounds)
-    frameBounds(config.map.fit_bounds, animate);
+// The campus the map opens on (map.default_campus); without one it opens at map.center/zoom
+function defaultCampus() {
+  return (config.campuses || []).find(campus => campus.name === config.map.default_campus) || null;
 }
 
-// Frame the buildings shown on a campus (tighter than its whole area)
-function frameCampus(campus) {
+function frameDefaultCampus() {
+  const campus = defaultCampus();
+  if (campus)
+    frameCampus(campus, false);
+}
+
+// The buildings shown on a campus (tighter than its whole area), or the area before data loads
+function campusBounds(campus) {
   const layers = dataLayer ? buildingsOnCampus(campus) : [];
-  const bounds = layers.length > 0
+  return layers.length > 0
     ? layers.reduce((acc, layer) => acc.extend(layer.getBounds()), L.latLngBounds(layers[0].getBounds()))
     : L.latLngBounds(campus.area);
-  frameBounds(bounds, true);
+}
+
+function frameCampus(campus, animate = true) {
+  frameBounds(campusBounds(campus), animate);
 }
 
 function campusOf(layer) {
@@ -257,6 +236,106 @@ function campusOf(layer) {
 
 function buildingsOnCampus(campus) {
   return dataLayer.getLayers().filter(layer => campusOf(layer) === campus);
+}
+
+// Off-screen campus pointers. Like a game's off-screen marker: each campus that isn't in view gets a
+// pointer pinned to the map's edge, in the direction of that campus. Clicking one flies there.
+let campusPointers = [];
+
+function setupCampusPointers() {
+  const campuses = (config.campuses || []).filter(campus => campus.pointer !== false);
+  if (campuses.length < 2)
+    return;
+
+  const layer = L.DomUtil.create('div', 'campus-pointers', map.getContainer());
+  L.DomEvent.disableClickPropagation(layer);
+  L.DomEvent.disableScrollPropagation(layer);
+  campusPointers = campuses.map(campus => {
+    const button = L.DomUtil.create('button', 'campus-pointer', layer);
+    button.type = 'button';
+    button.hidden = true;
+    button.innerHTML = '<span class="cp-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" width="18" height="18">'
+      + '<path d="M4 10h11M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
+      + `<span class="cp-text"><span class="cp-name"><span class="visually-hidden">Go to </span>${escapeHtml(campus.name)}</span>`
+      + '<span class="cp-count"></span></span>';
+    button.addEventListener('click', () => frameCampus(campus));
+    return { campus, button, count: button.querySelector('.cp-count') };
+  });
+
+  let frame = null;
+  map.on('move zoom resize', () => {
+    if (!frame)
+      frame = requestAnimationFrame(() => { frame = null; updateCampusPointers(); });
+  });
+  updateCampusPointers();
+}
+
+function updateCampusPointers() {
+  if (campusPointers.length === 0)
+    return;
+  const size = map.getSize();
+  const origin = map.getContainer().getBoundingClientRect();
+  const toMap = el => {
+    const r = el.getBoundingClientRect();
+    return { left: r.left - origin.left, top: r.top - origin.top, right: r.right - origin.left, bottom: r.bottom - origin.top };
+  };
+  const gap = 8;
+  const safe = { left: 10, top: 10, right: size.x - 10, bottom: size.y - bottomControlsHeight() - 4 };
+  // Keep pointers off the title card and the zoom buttons
+  const obstacles = [document.getElementById('panel'), map.getContainer().querySelector('.leaflet-top.leaflet-right')]
+    .filter(el => el && el.getClientRects().length > 0)
+    .map(toMap);
+  const overlaps = (a, b) => a.left < b.right + gap && a.right > b.left - gap && a.top < b.bottom + gap && a.bottom > b.top - gap;
+  const fits = r => r.left >= safe.left && r.top >= safe.top && r.right <= safe.right && r.bottom <= safe.bottom;
+  const placed = [];
+
+  campusPointers.forEach(({ campus, button, count }) => {
+    if (dataLayer) {
+      const hcc = buildingsOnCampus(campus).filter(layer => layer.feature.properties.member_departments.length > 0).length;
+      count.textContent = `${hcc} HCC ${hcc === 1 ? 'building' : 'buildings'}`;
+    }
+
+    // In view means on the map and not hidden behind the title card
+    const target = map.latLngToContainerPoint(campusBounds(campus).getCenter());
+    const inside = (r, p) => p.x >= r.left && p.x <= r.right && p.y >= r.top && p.y <= r.bottom;
+    if (inside(safe, target) && !obstacles.some(o => inside(o, target))) {
+      button.hidden = true;
+      return;
+    }
+    button.hidden = false;
+    const w = button.offsetWidth;
+    const h = button.offsetHeight;
+
+    // Where the line from the middle of the map toward the campus meets the edge (with room for the pointer)
+    const cx = (safe.left + safe.right) / 2;
+    const cy = (safe.top + safe.bottom) / 2;
+    const dx = target.x - cx;
+    const dy = target.y - cy;
+    const reachX = Math.max(0, (safe.right - safe.left - w) / 2) / Math.max(Math.abs(dx), 1e-6);
+    const reachY = Math.max(0, (safe.bottom - safe.top - h) / 2) / Math.max(Math.abs(dy), 1e-6);
+    const onSideEdge = reachX <= reachY;
+    const reach = Math.min(reachX, reachY);
+    const at = (left, top) => ({ left, top, right: left + w, bottom: top + h });
+    let rect = at(cx + dx * reach - w / 2, cy + dy * reach - h / 2);
+
+    // Slide along the edge past anything in the way
+    for (let tries = 0; tries < 4; tries++) {
+      const blocker = [...obstacles, ...placed].find(o => overlaps(rect, o));
+      if (!blocker)
+        break;
+      const moves = onSideEdge
+        ? [at(rect.left, blocker.bottom + gap), at(rect.left, blocker.top - gap - h)]
+        : [at(blocker.right + gap, rect.top), at(blocker.left - gap - w, rect.top),
+           dy < 0 ? at(rect.left, blocker.bottom + gap) : at(rect.left, blocker.top - gap - h)];
+      rect = moves.find(move => fits(move) && ![...obstacles, ...placed].some(o => overlaps(move, o))) || moves.find(fits) || rect;
+    }
+    placed.push(rect);
+
+    const angle = Math.atan2(target.y - (rect.top + h / 2), target.x - (rect.left + w / 2)) * 180 / Math.PI;
+    button.style.transform = `translate(${Math.round(rect.left)}px, ${Math.round(rect.top)}px)`;
+    button.style.setProperty('--angle', `${angle.toFixed(1)}deg`);
+    button.classList.toggle('is-right', target.x > rect.left + w / 2);
+  });
 }
 
 function shouldIncludeBuilding(feature) {
@@ -669,7 +748,8 @@ function loadGeoJsonDataLayer() {
 
           // The title card just grew from its one-line loading state, so reframe unless someone has moved the map
           if (!userMovedMap)
-            frameAll(false);
+            frameDefaultCampus();
+          updateCampusPointers();
         })
     })
     .catch((error) => {

@@ -10,35 +10,28 @@ map:
     lat: 40.825
     lng: -96.682
   zoom: 15
-  # Initial view and the "All" campus button: frame City, Innovation, and East campuses
-  # ([south, west], [north, east]), leaving room for the title card. Remove to use center/zoom instead.
-  fit_bounds:
-    - [40.8147, -96.7080]
-    - [40.8358, -96.6562]
+  # The map opens framed on this campus (see campuses below). Remove to use center/zoom instead.
+  default_campus: City Campus
 
 # Campuses, in order. A building belongs to the first campus whose area contains its center.
-# Each campus gets a zoom button on the map (unless switcher is false) and a group in the
-# Buildings list. The button frames that campus's buildings, not the whole area.
+# Each campus gets a group in the Buildings list and, unless pointer is false, a pointer at the
+# edge of the map whenever it's out of view. The pointer flies to that campus's buildings.
 campuses:
   - name: City Campus
-    label: City
     area:
       - [40.8120, -96.7120]
       - [40.8262, -96.6880]
   - name: East Campus
-    label: East
     area:
       - [40.8260, -96.6760]
       - [40.8400, -96.6540]
   - name: Innovation Campus
-    label: Innovation
     area:
       - [40.8262, -96.6980]
       - [40.8400, -96.6880]
   - name: Omaha
-    label: Omaha
     # About 50 miles from Lincoln, so it's only in the Buildings list
-    switcher: false
+    pointer: false
     area:
       - [41.0000, -96.3000]
       - [41.5000, -95.7000]
