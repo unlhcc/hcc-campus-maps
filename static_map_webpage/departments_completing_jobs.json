@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01T10:30:27Z",
+  "last_updated": "2026-10-02T10:30:25Z",
   "departments_completing_jobs": [
     {
       "Department": "Academic Affairs Office",
@@ -192,6 +192,10 @@
     {
       "Department": "Food Science and Technology",
       "Department_Canonical": "Food Science and Technology"
+    },
+    {
+      "Department": "GI",
+      "Department_Canonical": "GI"
     },
     {
       "Department": "General Education",
