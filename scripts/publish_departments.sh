@@ -28,7 +28,8 @@ set +a
 REPO_URL="${REPO_URL:-git@github.com:unlhcc/hcc-campus-maps.git}"
 BRANCH="${BRANCH:-main}"
 PYTHON="${PYTHON:-python3}"
-LOOKBACK_DAYS="${LOOKBACK_DAYS:-365}"
+# Space-separated lookback windows in days; the page has a toggle to switch between them
+LOOKBACK_DAYS="${LOOKBACK_DAYS:-365 1825}"
 GIT_AUTHOR_NAME="${GIT_AUTHOR_NAME:-HCC Campus Map Bot}"
 GIT_AUTHOR_EMAIL="${GIT_AUTHOR_EMAIL:-hcc-campus-map-bot@users.noreply.github.com}"
 OUTPUT_REL="static_map_webpage/departments_completing_jobs.json"
@@ -44,8 +45,9 @@ echo "==> $(date '+%Y-%m-%dT%H:%M:%S%z') Cloning $REPO_URL ($BRANCH)"
 git clone --quiet --depth 1 --branch "$BRANCH" "$REPO_URL" "$WORK_DIR/repo"
 cd "$WORK_DIR/repo"
 
-echo "==> Generating active departments (past $LOOKBACK_DAYS days)"
-"$PYTHON" scripts/fetch_active_departments.py "$OUTPUT_REL" --days "$LOOKBACK_DAYS"
+echo "==> Generating active departments (windows: $LOOKBACK_DAYS days)"
+# shellcheck disable=SC2086 # one argument per window
+"$PYTHON" scripts/fetch_active_departments.py "$OUTPUT_REL" --days $LOOKBACK_DAYS
 
 if git diff --quiet -- "$OUTPUT_REL"; then
   echo "==> No changes to publish"

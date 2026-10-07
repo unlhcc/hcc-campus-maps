@@ -36,9 +36,10 @@ campuses:
       - [41.0000, -96.3000]
       - [41.5000, -95.7000]
 
-# Days of job history behind departments_completing_jobs.json (LOOKBACK_DAYS in
-# scripts/publish_departments.sh); only used for wording on the page
-usage_window_days: 365
+# departments_completing_jobs.json has one department list per time period (LOOKBACK_DAYS in
+# scripts/publish_departments.sh), and the page has a toggle to switch between them. The map
+# opens on this one, in days; if it isn't in the data, it opens on the shortest.
+default_window_days: 365
 
 # Refresh interval in milliseconds (6 hours = 21600000 ms)
 refresh_interval: 21600000

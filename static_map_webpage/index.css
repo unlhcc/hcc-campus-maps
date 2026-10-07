@@ -140,6 +140,44 @@ body, html {
   letter-spacing: -0.005em;
 }
 
+/* Time-period toggle: a segmented control, the selected period raised on cream */
+.window-toggle {
+  display: flex;
+  align-self: flex-start;
+  gap: 2px;
+  margin-top: 12px;
+  padding: 2px;
+  border-radius: 7px;
+  background: var(--hairline);
+}
+
+.window-toggle[hidden] {
+  display: none;
+}
+
+.window-toggle button {
+  height: 24px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--ink-muted);
+  font: 600 12px var(--font-body);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.window-toggle button:hover {
+  color: var(--ink);
+}
+
+.window-toggle button[aria-pressed="true"] {
+  background: var(--cream);
+  color: var(--scarlet-deep);
+  box-shadow: 0 1px 2px rgba(31, 27, 23, 0.14);
+  cursor: default;
+}
+
 .panel-summary {
   margin-top: 10px;
   font-size: 14px;
@@ -442,6 +480,16 @@ body.popup-open .campus-pointers {
   .browse-group button {
     min-height: 40px;
   }
+
+  .window-toggle button {
+    position: relative;
+  }
+
+  .window-toggle button::after {
+    content: "";
+    position: absolute;
+    inset: -8px 0;
+  }
 }
 
 /* Base layer switcher (map-config.yml: display.show_layers_control) */
@@ -485,7 +533,8 @@ body.popup-open .campus-pointers {
 .full-map-link:focus-visible,
 .leaflet-bar a:focus-visible,
 .leaflet-popup-close-button:focus-visible,
-.browse-toggle:focus-visible {
+.browse-toggle:focus-visible,
+.window-toggle button:focus-visible {
   outline: 2px solid var(--scarlet);
   outline-offset: 2px;
 }
@@ -729,6 +778,10 @@ body.embed .panel-title {
   font-size: 18px;
 }
 
+body.embed .window-toggle {
+  margin-top: 8px;
+}
+
 body.embed .panel-summary {
   margin-top: 6px;
   font-size: 12.5px;
@@ -773,6 +826,10 @@ body.embed .browse-group button {
 
   .panel-title {
     font-size: 18px;
+  }
+
+  .window-toggle {
+    margin-top: 8px;
   }
 
   .panel-summary {

@@ -10,13 +10,13 @@ The live map is at **https://unlhcc.github.io/hcc-campus-maps/** and refreshes d
 HCC (daily, scrontab or cron)                GitHub
 ───────────────────────────────              ──────────────────────────────────────
 scripts/publish_departments.sh                .github/workflows/pages.yml
-  hcc-xdmod (365 days)                          on push to static_map_webpage/ + daily:
+  hcc-xdmod (past year, past 5 years)           on push to static_map_webpage/ + daily:
     → jobs by department                          scrape buildings (maps.unl.edu)
   normalize → departments JSON  ──git push──►     deploy to GitHub Pages
                                                   fail if data is > 3 days old
 ```
 
-The department list comes from HCC's Open XDMoD (https://hcc-xdmod.unl.edu): the Jobs realm grouped by Department, for the past year, read through its public view with no login. XDMoD is only reachable on the campus network or through the VPN, so that step runs inside HCC. It pushes only `static_map_webpage/departments_completing_jobs.json`, which holds aggregate department names. Everything else (scraping building outlines from maps.unl.edu, building the site, hosting it) runs on GitHub.
+The department list comes from HCC's Open XDMoD (https://hcc-xdmod.unl.edu): the Jobs realm grouped by Department, for the past year and the past 5 years, read through its public view with no login. XDMoD is only reachable on the campus network or through the VPN, so that step runs inside HCC. It pushes only `static_map_webpage/departments_completing_jobs.json`, which holds aggregate department names. Everything else (scraping building outlines from maps.unl.edu, building the site, hosting it) runs on GitHub.
 
 ## Deployment
 
@@ -88,7 +88,7 @@ Add `?embed=1` to the URL to force embed mode on, or `?embed=0` to force it off.
 ## Operations
 
 - **Monitoring:** if the HCC job stops pushing, the daily workflow's `check-freshness` job fails once the data is more than 3 days old, and GitHub emails the repo admins. Check the job's log on HCC; the path is set by `--output` in your scrontab entry.
-- **Lookback window:** set `LOOKBACK_DAYS` in `publish.env` (default 365), and set `usage_window_days` in `static_map_webpage/map-config.yml` to match; the page uses it for wording such as "in the past year".
+- **Time periods:** the data file has one department list per lookback window, and the page has a toggle (**Past year** / **Past 5 years**) to switch between them. The windows are set by `LOOKBACK_DAYS` in `publish.env`, a space-separated list in days (default `"365 1825"`); the toggle shows whatever windows the data has, and is hidden when there's only one. The map opens on `default_window_days` in `static_map_webpage/map-config.yml` (365). A longer window can bring in older department names that `data/maps/department_normalization_map.json` doesn't map yet; they show up in the browser console under "Departments using HCC but not associated with any building".
 - **Manual refresh:** use **Actions → Build and deploy map → Run workflow** to redeploy, or run `scripts/publish_departments.sh` on HCC to push new department data.
 - **Campuses:** `campuses` in `static_map_webpage/map-config.yml` sets the groups in the **Buildings** list (also the map's text alternative for keyboard and screen-reader users) and the pointers at the map's edge that point toward, and fly to, each campus that's out of view. The map opens on `map.default_campus` (City Campus). A building belongs to the first campus whose `area` contains its center; anything outside every area is listed under "Other locations".
 - **Building-to-department mapping:** `data/maps/departments_per_building.json` sets which departments are in each building, and `data/maps/department_normalization_map.json` maps the raw department names in XDMoD to canonical names. Run `find_missing_buildings.sh` to list buildings that have no departments assigned.

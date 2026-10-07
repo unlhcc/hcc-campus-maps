@@ -64,39 +64,51 @@ def get_departments_from_xdmod(start_date, end_date) -> pd.DataFrame:
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DEFAULT_OUTPUT_PATH = PROJECT_ROOT / 'static_map_webpage' / 'departments_completing_jobs.json'
+# Past year and past 5 years
+DEFAULT_WINDOWS_DAYS = [365, 1825]
 
 
 def parse_args():
   parser = argparse.ArgumentParser(description="Write the list of departments that ran jobs on HCC recently, from XDMoD.")
   parser.add_argument('output', nargs='?', type=Path, default=DEFAULT_OUTPUT_PATH,
                       help=f"output JSON path (default: {DEFAULT_OUTPUT_PATH})")
-  parser.add_argument('--days', type=int, default=365, help="lookback window in days (default: 365)")
+  parser.add_argument('--days', type=int, nargs='+', default=DEFAULT_WINDOWS_DAYS,
+                      help="lookback windows in days; the page has a toggle to switch between them "
+                           f"(default: {' '.join(map(str, DEFAULT_WINDOWS_DAYS))})")
   return parser.parse_args()
 
 
-if __name__ == "__main__":
-  args = parse_args()
+def departments_for_window(days):
+  """Return [{Department, Department_Canonical}, ...] for jobs that ended in the past `days` days."""
   end_date = date.today()
-  start_date = end_date - timedelta(days=args.days)
+  start_date = end_date - timedelta(days=days)
 
   print(f"Departments running jobs from {start_date} to {end_date} (from {XDMOD_URL}):")
   depts = get_departments_from_xdmod(start_date, end_date)
   if depts.empty:
     # Refuse to publish an empty map; most likely XDMoD is misbehaving
-    sys.exit("ERROR: XDMoD returned no departments with jobs; not writing output.")
+    sys.exit(f"ERROR: XDMoD returned no departments with jobs in the past {days} days; not writing output.")
 
   normalized_depts = apply_department_normalization(depts)
   print(normalized_depts)
   print('\n')
-  records = (normalized_depts[['Department', 'Department_Canonical']]
-             .sort_values(by=['Department_Canonical', 'Department'])
-             .reset_index(drop=True)
-             .to_dict(orient='records'))
+  return (normalized_depts[['Department', 'Department_Canonical']]
+          .sort_values(by=['Department_Canonical', 'Department'])
+          .reset_index(drop=True)
+          .to_dict(orient='records'))
+
+
+if __name__ == "__main__":
+  args = parse_args()
+  windows = [{"days": days, "departments_completing_jobs": departments_for_window(days)}
+             for days in sorted(set(args.days))]
   active_departments_dict = {
     "last_updated": datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
-    "departments_completing_jobs": records
+    "windows": windows
   }
   args.output.parent.mkdir(parents=True, exist_ok=True)
   with open(args.output, 'w') as json_file:
     json.dump(active_departments_dict, json_file, indent=2)
-  print(f"{len(records)} departments running jobs saved to {args.output}.")
+  for window in windows:
+    print(f"{len(window['departments_completing_jobs'])} departments ran jobs in the past {window['days']} days.")
+  print(f"Saved to {args.output}.")

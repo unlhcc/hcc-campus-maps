@@ -3,6 +3,9 @@ let dataLayer;
 let config;
 let baseLayers = {};
 let selectedLayer = null;
+let buildingGeoJSON;
+let usageWindows = []; // one department list per time period, shortest first
+let selectedWindowDays = null;
 let userMovedMap = false; // once someone pans or zooms, refreshes stop reframing the map
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -101,6 +104,7 @@ function initMap() {
     container.addEventListener(type, () => { userMovedMap = true; }, { passive: true }));
   map.on('zoomend', restyleBuildings);
   setupBrowseList();
+  setupWindowToggle();
 
   // Setup map type controls
   if (config.display.show_layers_control)
@@ -519,12 +523,15 @@ function pluralize(count, word) {
   return `${count} ${count === 1 ? word : word + 's'}`;
 }
 
-// " in the past year" for 365 days, " in the past 14 days" otherwise, "" when unset
+// "year" for 365 days, "5 years" for 1825, "14 days" otherwise
+function windowDuration(days) {
+  if (days % 365 === 0) return days === 365 ? 'year' : `${days / 365} years`;
+  return `${days} days`;
+}
+
+// " in the past year" for the selected time period
 function usageWindowPhrase() {
-  const days = config.usage_window_days;
-  if (!days) return '';
-  if (days % 365 === 0) return days === 365 ? ' in the past year' : ` in the past ${days / 365} years`;
-  return ` in the past ${days} days`;
+  return ` in the past ${windowDuration(selectedWindowDays)}`;
 }
 
 // Popup card: building code and name, a one-line HCC summary, then the departments.
@@ -534,7 +541,7 @@ function buildPopup(props) {
   const allDepts = props.departments || [];
   const memberDepts = props.member_departments || [];
   const usesHcc = memberDepts.length > 0;
-  const timeframe = usageWindowPhrase() || ' recently';
+  const timeframe = usageWindowPhrase();
   const otherClass = usesHcc ? '' : ' is-other';
 
   // Name before code in the DOM so screen readers start with the name; CSS shows the code tag first
@@ -713,7 +720,7 @@ function loadGeoJsonDataLayer() {
       }
       return response.json();
     })
-    .then((buildingGeoJSON) => {
+    .then((buildings) => {
       return fetch(`${config.departments_using_hcc_url}?t=${timestamp}`) // Cache busting
         .then((response) => {
           if (!response.ok) {
@@ -722,40 +729,96 @@ function loadGeoJsonDataLayer() {
           return response.json();
         })
         .then((usageJSON) => {
-          // Remove the previous GeoJSON layer (from an earlier refresh) before replacing it
-          if (dataLayer) {
-            map.removeLayer(dataLayer);
-          }
-          dataLayer = generateDataLayer(buildingGeoJSON, usageJSON.departments_completing_jobs);
-
-          if (config.show_usage_stats_in_console)
-            printUsageStats(buildingGeoJSON, usageJSON.departments_completing_jobs);
-
-          // Update the title card
-          // Count canonical departments; the data has one entry per raw name variant (e.g. "Phys", "Physics")
-          const departmentCount = new Set(usageJSON.departments_completing_jobs.map(entry => entry['Department_Canonical'])).size;
-          const hccBuildingCount = dataLayer.getLayers().filter(layer => layer.feature.properties.member_departments.length > 0).length;
-          const info = document.getElementById("info");
-          info.classList.remove("is-error");
-          info.innerHTML = `<strong>${departmentCount}</strong> departments in <strong>${hccBuildingCount}</strong> buildings ran jobs on HCC${usageWindowPhrase()}.`;
+          buildingGeoJSON = buildings;
+          // Data published before the time-period toggle has one list, for the past year
+          usageWindows = (usageJSON.windows
+            || [{ days: 365, departments_completing_jobs: usageJSON.departments_completing_jobs }])
+            .slice().sort((a, b) => a.days - b.days);
+          // Keep the period someone picked across refreshes, as long as it's still in the data
+          const days = [selectedWindowDays, config.default_window_days]
+            .find(d => usageWindows.some(w => w.days === d));
+          selectedWindowDays = days ?? usageWindows[0].days;
 
           const lastUpdate = new Date(usageJSON.last_updated);
           document.getElementById("updated").textContent = `Updated ${lastUpdate.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}`;
 
-          // Add new GeoJSON layer to the map
-          dataLayer.addTo(map);
-          fillBrowseList();
-
-          // The title card just grew from its one-line loading state, so reframe unless someone has moved the map
-          if (!userMovedMap)
-            frameDefaultCampus();
-          updateCampusPointers();
+          renderWindowToggle();
+          renderUsage();
         })
     })
     .catch((error) => {
       console.error("Error loading GeoJSON:", error);
       showError(`Couldn't load building data (${error.message}). Reload the page to try again.`);
     });
+}
+
+// Draws the buildings, title card and Buildings list for the selected time period
+function renderUsage() {
+  const departments = usageWindows.find(w => w.days === selectedWindowDays).departments_completing_jobs;
+
+  // Removing the old layer leaves its popup open with the old period's text, so close it here and
+  // reopen it on the same building below
+  const open = selectedLayer && { feature: selectedLayer.feature, latlng: selectedLayer.getPopup().getLatLng() };
+  map.closePopup();
+
+  // Remove the previous GeoJSON layer (from an earlier refresh or time period) before replacing it
+  if (dataLayer) {
+    map.removeLayer(dataLayer);
+  }
+  dataLayer = generateDataLayer(buildingGeoJSON, departments);
+
+  if (config.show_usage_stats_in_console)
+    printUsageStats(buildingGeoJSON, departments);
+
+  // Update the title card
+  // Count canonical departments; the data has one entry per raw name variant (e.g. "Phys", "Physics")
+  const departmentCount = new Set(departments.map(entry => entry['Department_Canonical'])).size;
+  const hccBuildingCount = dataLayer.getLayers().filter(layer => layer.feature.properties.member_departments.length > 0).length;
+  const info = document.getElementById("info");
+  info.classList.remove("is-error");
+  info.innerHTML = `<strong>${departmentCount}</strong> departments in <strong>${hccBuildingCount}</strong> buildings ran jobs on HCC${usageWindowPhrase()}.`;
+
+  // Add new GeoJSON layer to the map
+  dataLayer.addTo(map);
+  fillBrowseList();
+
+  // The title card just grew from its one-line loading state, so reframe unless someone has moved the map
+  if (!userMovedMap)
+    frameDefaultCampus();
+  updateCampusPointers();
+
+  const reopen = open && dataLayer.getLayers().find(layer => layer.feature === open.feature);
+  if (reopen) {
+    preparePopup(reopen);
+    reopen.openPopup(open.latlng);
+  }
+}
+
+// Time-period toggle: one button per period in the data ("Past year", "Past 5 years"), hidden when
+// there's only one
+function setupWindowToggle() {
+  document.getElementById('window-toggle').addEventListener('click', (e) => {
+    const button = e.target.closest('button[data-days]');
+    if (!button || Number(button.dataset.days) === selectedWindowDays)
+      return;
+    selectedWindowDays = Number(button.dataset.days);
+    renderWindowToggle();
+    renderUsage();
+  });
+}
+
+function renderWindowToggle() {
+  const toggle = document.getElementById('window-toggle');
+  // Only rebuild the buttons when the periods change, so a focused button keeps focus
+  const key = usageWindows.map(w => w.days).join(',');
+  if (toggle.dataset.windows !== key) {
+    toggle.dataset.windows = key;
+    toggle.innerHTML = usageWindows.map(w =>
+      `<button type="button" data-days="${w.days}">Past ${windowDuration(w.days)}</button>`).join('');
+  }
+  toggle.querySelectorAll('button').forEach(button =>
+    button.setAttribute('aria-pressed', String(Number(button.dataset.days) === selectedWindowDays)));
+  toggle.hidden = usageWindows.length < 2;
 }
 
 function setupControls() {
