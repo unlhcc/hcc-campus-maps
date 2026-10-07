@@ -758,7 +758,11 @@ function renderUsage() {
 
   // Removing the old layer leaves its popup open with the old period's text, so close it here and
   // reopen it on the same building below
-  const open = selectedLayer && { feature: selectedLayer.feature, latlng: selectedLayer.getPopup().getLatLng() };
+  const open = selectedLayer && {
+    feature: selectedLayer.feature,
+    latlng: selectedLayer.getPopup().getLatLng(),
+    fromList: browseReturnId === String(L.stamp(selectedLayer))
+  };
   map.closePopup();
 
   // Remove the previous GeoJSON layer (from an earlier refresh or time period) before replacing it
@@ -791,6 +795,9 @@ function renderUsage() {
   if (reopen) {
     preparePopup(reopen);
     reopen.openPopup(open.latlng);
+    // A building opened from the Buildings list still goes back to the list on ×
+    if (open.fromList)
+      browseReturnId = String(L.stamp(reopen));
   }
 }
 
