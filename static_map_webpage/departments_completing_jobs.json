@@ -30,16 +30,16 @@
       "Department_Canonical": "Architectural Engineering and Construction"
     },
     {
-      "Department": "Bio Process Development Facility",
-      "Department_Canonical": "Bio Process Development Facility"
-    },
-    {
       "Department": "Biochem and Molecular Biology",
       "Department_Canonical": "Biochemistry"
     },
     {
       "Department": "Biochemistry",
       "Department_Canonical": "Biochemistry"
+    },
+    {
+      "Department": "Bio Process Development Facility",
+      "Department_Canonical": "Biological Process Development Facility"
     },
     {
       "Department": "Biological Systems Engineering",
@@ -59,7 +59,7 @@
     },
     {
       "Department": "Bureau Business Research",
-      "Department_Canonical": "Bureau Business Research"
+      "Department_Canonical": "Bureau and Business Research"
     },
     {
       "Department": "CAHP Student Affairs",
@@ -127,7 +127,7 @@
     },
     {
       "Department": "Community and Regional Planning Program",
-      "Department_Canonical": "Community and Regional Planning Program"
+      "Department_Canonical": "Community and Regional Planning"
     },
     {
       "Department": "Dean's Business Office",
@@ -142,20 +142,12 @@
       "Department_Canonical": "Division of Continuing Studies"
     },
     {
-      "Department": "EPSCOR",
-      "Department_Canonical": "EPSCOR"
-    },
-    {
       "Department": "Earth and Atmospheric Sciences",
       "Department_Canonical": "Earth and Atmospheric Sciences"
     },
     {
       "Department": "Economics",
       "Department_Canonical": "Economics"
-    },
-    {
-      "Department": "Education Abroad",
-      "Department_Canonical": "Education Abroad"
     },
     {
       "Department": "Computer and Electronics Engineering",
@@ -171,7 +163,7 @@
     },
     {
       "Department": "Engineering Research Center",
-      "Department_Canonical": "Engineering Research Center"
+      "Department_Canonical": "Engineering"
     },
     {
       "Department": "Entomology",
@@ -210,6 +202,14 @@
       "Department_Canonical": "Geography/Geology"
     },
     {
+      "Department": "Education Abroad",
+      "Department_Canonical": "Global Affairs"
+    },
+    {
+      "Department": "Senior International Officer",
+      "Department_Canonical": "Global Affairs"
+    },
+    {
       "Department": "Global Studies",
       "Department_Canonical": "Global Studies"
     },
@@ -223,6 +223,10 @@
     },
     {
       "Department": "Graduate Studies",
+      "Department_Canonical": "Graduate Studies"
+    },
+    {
+      "Department": "OGS",
       "Department_Canonical": "Graduate Studies"
     },
     {
@@ -263,7 +267,7 @@
     },
     {
       "Department": "Inst. Effectiveness and Analytics",
-      "Department_Canonical": "Inst. Effectiveness and Analytics"
+      "Department_Canonical": "Institutional Effectiveness and Analytics"
     },
     {
       "Department": "Broadcasting",
@@ -302,16 +306,16 @@
       "Department_Canonical": "Medical Nutrition Education Div"
     },
     {
-      "Department": "Museum  Shop",
-      "Department_Canonical": "Museum  Shop"
-    },
-    {
       "Department": "Nebraska Center for Virology",
       "Department_Canonical": "Nebraska Center for Virology"
     },
     {
       "Department": "Nebraska DHHS",
       "Department_Canonical": "Nebraska DHHS"
+    },
+    {
+      "Department": "EPSCOR",
+      "Department_Canonical": "Nebraska EPSCoR"
     },
     {
       "Department": "Nebraska Nanoscale Facility",
@@ -336,10 +340,6 @@
     {
       "Department": "Nutrition and Health Sciences",
       "Department_Canonical": "Nutrition and Health Sciences"
-    },
-    {
-      "Department": "OGS",
-      "Department_Canonical": "OGS"
     },
     {
       "Department": "Ob/Gyn Maternal Care Prgm/Fam Plng",
@@ -459,15 +459,15 @@
     },
     {
       "Department": "School of Veterinary Medicine & Biomedical Sciences",
-      "Department_Canonical": "School of Veterinary Medicine & Biomedical Sciences"
-    },
-    {
-      "Department": "Senior International Officer",
-      "Department_Canonical": "Senior International Officer"
+      "Department_Canonical": "School of Veterinary Medicine and Biomedical Sciences"
     },
     {
       "Department": "Social/Behavioral Sci Rsch Consort",
-      "Department_Canonical": "Social/Behavioral Sci Rsch Consort"
+      "Department_Canonical": "Social and Behavioral Sciences Research Consortium"
+    },
+    {
+      "Department": "Museum  Shop",
+      "Department_Canonical": "State Museum"
     },
     {
       "Department": "Statistics",

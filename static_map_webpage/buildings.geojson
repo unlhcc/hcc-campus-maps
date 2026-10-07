@@ -2559,7 +2559,8 @@
         "abbrev": "ADMN",
         "name": "Canfield Administration Building North",
         "departments": [
-          "Sponsored Programs"
+          "Sponsored Programs",
+          "Institutional Effectiveness and Analytics"
         ]
       }
     },
@@ -2677,7 +2678,8 @@
         "name": "Canfield Administration Building South",
         "departments": [
           "Administration",
-          "Sponsored Programs"
+          "Sponsored Programs",
+          "Research Finance and Information Systems"
         ]
       }
     },
@@ -8610,7 +8612,8 @@
         "name": "Chase Hall",
         "departments": [
           "Biological Systems Engineering",
-          "Agrcultural Engineering"
+          "Agrcultural Engineering",
+          "CASNR"
         ]
       }
     },
@@ -18692,7 +18695,8 @@
         "abbrev": "FIC",
         "name": "Food Innovation Center",
         "departments": [
-          "Food Science and Technology"
+          "Food Science and Technology",
+          "Nebraska EPSCoR"
         ]
       }
     },
@@ -20548,6 +20552,7 @@
           "School of Natural Resources",
           "Biostatistics",
           "Environmental Studies",
+          "CASNR",
           "Fisheries and Wildlife"
         ]
       }
@@ -30590,7 +30595,8 @@
         "departments": [
           "English",
           "Communication Studies",
-          "Classical and Religious Studies"
+          "Classical and Religious Studies",
+          "Global Affairs"
         ]
       }
     },
@@ -35993,7 +35999,8 @@
           "Arts and Sciences",
           "Sociology",
           "Anthropology",
-          "History"
+          "History",
+          "Global Studies"
         ]
       }
     },
@@ -37039,7 +37046,8 @@
         "abbrev": "OTHM",
         "name": "Othmer Hall",
         "departments": [
-          "Chemical and Biomolecular Engineering"
+          "Chemical and Biomolecular Engineering",
+          "Biological Process Development Facility"
         ]
       }
     },
@@ -41809,7 +41817,8 @@
         "abbrev": "SEH",
         "name": "Seaton Hall",
         "departments": [
-          "Housing"
+          "Housing",
+          "Graduate Studies"
         ]
       }
     },
@@ -52870,7 +52879,8 @@
         "departments": [
           "Holland Computing Center",
           "School of Computing",
-          "Engineering"
+          "Engineering",
+          "Open Science Grid"
         ]
       }
     },
@@ -62733,7 +62743,8 @@
         "name": "Prem S. Paul Research Center at Whittier School",
         "departments": [
           "Buffett and Childhood Institute",
-          "Civil Engineering"
+          "Civil Engineering",
+          "Social and Behavioral Sciences Research Consortium"
         ]
       }
     },

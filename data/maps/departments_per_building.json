@@ -1,7 +1,8 @@
 {
   "building_departments": {
     "Food Innovation Center": [
-      "Food Science and Technology"
+      "Food Science and Technology",
+      "Nebraska EPSCoR"
     ],
     "Avery Hall": [
       "School of Computing",
@@ -67,7 +68,8 @@
 
     ],
     "Othmer Hall": [
-      "Chemical and Biomolecular Engineering"
+      "Chemical and Biomolecular Engineering",
+      "Biological Process Development Facility"
     ],
     "Hardin Hall": [
       "School of Natural Resources",
@@ -81,7 +83,8 @@
       "Arts and Sciences",
       "Sociology",
       "Anthropology",
-      "History"
+      "History",
+      "Global Studies"
     ],
     "Howard L. Hawks Hall": [
       "Finance",
@@ -119,7 +122,8 @@
     "Louise Pound Hall": [
       "English",
       "Communication Studies",
-      "Classical and Religious Studies"
+      "Classical and Religious Studies",
+      "Global Affairs"
     ],
     "Love Library South": [
       "Information Technology Services",
@@ -144,7 +148,8 @@
     ],
     "Prem S. Paul Research Center at Whittier School": [
       "Buffett and Childhood Institute",
-      "Civil Engineering"
+      "Civil Engineering",
+      "Social and Behavioral Sciences Research Consortium"
     ],
     "Andersen Hall": [
       "Advertising and Public Relations",
@@ -195,7 +200,8 @@
       "Apparel Design"
     ],
     "Canfield Administration Building North": [
-      "Sponsored Programs"
+      "Sponsored Programs",
+      "Institutional Effectiveness and Analytics"
     ],
     "Engineering Research Center": [
       "Engineering",
@@ -367,7 +373,8 @@
     ],
     "Canfield Administration Building South": [
       "Administration",
-      "Sponsored Programs"
+      "Sponsored Programs",
+      "Research Finance and Information Systems"
     ],
     "Alexander Building": [
       "Administration",
@@ -811,7 +818,8 @@
       "Dining Services"
     ],
     "Seaton Hall": [
-      "Housing"
+      "Housing",
+      "Graduate Studies"
     ],
     "Benton Hall": [
       "Housing"

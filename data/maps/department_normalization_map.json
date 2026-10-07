@@ -175,7 +175,23 @@
     "student": "Student",
     
     "graduate studies": "Graduate Studies",
-    
-    "economics": "Economics"
+    "ogs": "Graduate Studies",
+
+    "economics": "Economics",
+
+    "bureau business research": "Bureau and Business Research",
+    "community and regional planning program": "Community and Regional Planning",
+    "school of veterinary medicine and biomedical sciences": "School of Veterinary Medicine and Biomedical Sciences",
+    "engineering research center": "Engineering",
+    "bio process development facility": "Biological Process Development Facility",
+
+    "senior international officer": "Global Affairs",
+    "education abroad": "Global Affairs",
+
+    "social/behavioral sci rsch consort": "Social and Behavioral Sciences Research Consortium",
+    "epscor": "Nebraska EPSCoR",
+    "inst. effectiveness and analytics": "Institutional Effectiveness and Analytics",
+
+    "museum shop": "State Museum"
   }
 }
