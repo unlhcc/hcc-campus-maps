@@ -1,501 +1,1247 @@
 {
-  "last_updated": "2026-10-07T10:30:20Z",
-  "departments_completing_jobs": [
-    {
-      "Department": "Academic Affairs Office",
-      "Department_Canonical": "Academic Affairs Office"
-    },
-    {
-      "Department": "Agricultural Economics",
-      "Department_Canonical": "Agricultural Economics"
-    },
-    {
-      "Department": "Agronomy & Horticulture",
-      "Department_Canonical": "Agronomy and Horticulture"
-    },
-    {
-      "Department": "Agronomy and Horticulture",
-      "Department_Canonical": "Agronomy and Horticulture"
-    },
-    {
-      "Department": "Animal Science",
-      "Department_Canonical": "Animal Science"
-    },
-    {
-      "Department": "Anthropology",
-      "Department_Canonical": "Anthropology"
-    },
-    {
-      "Department": "Durham School Arch Engr and Const",
-      "Department_Canonical": "Architectural Engineering and Construction"
-    },
-    {
-      "Department": "Biochem and Molecular Biology",
-      "Department_Canonical": "Biochemistry"
-    },
-    {
-      "Department": "Biochemistry",
-      "Department_Canonical": "Biochemistry"
-    },
-    {
-      "Department": "Bio Process Development Facility",
-      "Department_Canonical": "Biological Process Development Facility"
-    },
-    {
-      "Department": "Biological Systems Engineering",
-      "Department_Canonical": "Biological Systems Engineering"
-    },
-    {
-      "Department": "Biological systems engineering",
-      "Department_Canonical": "Biological Systems Engineering"
-    },
-    {
-      "Department": "Biomechanics",
-      "Department_Canonical": "Biomechanics"
-    },
-    {
-      "Department": "Biostatistics",
-      "Department_Canonical": "Biostatistics"
-    },
-    {
-      "Department": "Bureau Business Research",
-      "Department_Canonical": "Bureau and Business Research"
-    },
-    {
-      "Department": "CAHP Student Affairs",
-      "Department_Canonical": "CAHP Student Affairs"
-    },
-    {
-      "Department": "School of Natural Resources",
-      "Department_Canonical": "CASNR"
-    },
-    {
-      "Department": "Survey Division - School of Nat Res",
-      "Department_Canonical": "CASNR"
-    },
-    {
-      "Department": "CON-Learning Resource Center",
-      "Department_Canonical": "CON-Learning Resource Center"
-    },
-    {
-      "Department": "Cardiology",
-      "Department_Canonical": "Cardiology"
-    },
-    {
-      "Department": "Center for Brain Biology and Behavior",
-      "Department_Canonical": "Center for Brain Biology and Behavior"
-    },
-    {
-      "Department": "Center for Public Affairs Research",
-      "Department_Canonical": "Center for Public Affairs Research"
-    },
-    {
-      "Department": "Chemical and Biomolecular Engineering",
-      "Department_Canonical": "Chemical and Biomolecular Engineering"
-    },
-    {
-      "Department": "Chemistry",
-      "Department_Canonical": "Chemistry"
-    },
-    {
-      "Department": "Chemistry and Biochemistry",
-      "Department_Canonical": "Chemistry and Biochemistry"
-    },
-    {
-      "Department": "Department of Chemistry and Biochemistry",
-      "Department_Canonical": "Chemistry and Biochemistry"
-    },
-    {
-      "Department": "Civ Eng",
-      "Department_Canonical": "Civil Engineering"
-    },
-    {
-      "Department": "Civil Engineering-Lincoln",
-      "Department_Canonical": "Civil Engineering"
-    },
-    {
-      "Department": "Civil Engineering-Omaha",
-      "Department_Canonical": "Civil Engineering"
-    },
-    {
-      "Department": "Cntr for Entrepreneurship and Rural Dev",
-      "Department_Canonical": "Cntr for Entrepreneurship and Rural Dev"
-    },
-    {
-      "Department": "Communication and Biology",
-      "Department_Canonical": "Communication and Biology"
-    },
-    {
-      "Department": "Community and Regional Planning Program",
-      "Department_Canonical": "Community and Regional Planning"
-    },
-    {
-      "Department": "Dean's Business Office",
-      "Department_Canonical": "Dean's Business Office"
-    },
-    {
-      "Department": "Department of Medical Microbiology and Immunology",
-      "Department_Canonical": "Department of Medical Microbiology and Immunology"
-    },
-    {
-      "Department": "Division of Continuing Studies",
-      "Department_Canonical": "Division of Continuing Studies"
-    },
-    {
-      "Department": "Earth and Atmospheric Sciences",
-      "Department_Canonical": "Earth and Atmospheric Sciences"
-    },
-    {
-      "Department": "Economics",
-      "Department_Canonical": "Economics"
-    },
-    {
-      "Department": "Computer and Electronics Engineering",
-      "Department_Canonical": "Electrical and Computer Engineering"
-    },
-    {
-      "Department": "Electrical and Computer Engineering",
-      "Department_Canonical": "Electrical and Computer Engineering"
-    },
-    {
-      "Department": "Engineering",
-      "Department_Canonical": "Engineering"
-    },
-    {
-      "Department": "Engineering Research Center",
-      "Department_Canonical": "Engineering"
-    },
-    {
-      "Department": "Entomology",
-      "Department_Canonical": "Entomology"
-    },
-    {
-      "Department": "Environ, Agri and Occ Health",
-      "Department_Canonical": "Environmental, Agricultural and Occupational Health"
-    },
-    {
-      "Department": "Eppley Inst Faculty",
-      "Department_Canonical": "Eppley Institute"
-    },
-    {
-      "Department": "Nebraska Cooperative Fish and Wildlife Research Unit",
-      "Department_Canonical": "Fisheries and Wildlife"
-    },
-    {
-      "Department": "Food Science and Technology",
-      "Department_Canonical": "Food Science and Technology"
-    },
-    {
-      "Department": "GI",
-      "Department_Canonical": "GI"
-    },
-    {
-      "Department": "General Education",
-      "Department_Canonical": "General Education"
-    },
-    {
-      "Department": "Genetics Cell Biology and Anatomy",
-      "Department_Canonical": "Genetics Cell Biology and Anatomy"
-    },
-    {
-      "Department": "Geography/Geology",
-      "Department_Canonical": "Geography/Geology"
-    },
-    {
-      "Department": "Education Abroad",
-      "Department_Canonical": "Global Affairs"
-    },
-    {
-      "Department": "Senior International Officer",
-      "Department_Canonical": "Global Affairs"
-    },
-    {
-      "Department": "Global Studies",
-      "Department_Canonical": "Global Studies"
-    },
-    {
-      "Department": "Goodrich",
-      "Department_Canonical": "Goodrich"
-    },
-    {
-      "Department": "Graduate Medical Education",
-      "Department_Canonical": "Graduate Medical Education"
-    },
-    {
-      "Department": "Graduate Studies",
-      "Department_Canonical": "Graduate Studies"
-    },
-    {
-      "Department": "OGS",
-      "Department_Canonical": "Graduate Studies"
-    },
-    {
-      "Department": "Greater NE Business Center",
-      "Department_Canonical": "Greater NE Business Center"
-    },
-    {
-      "Department": "Holland Computing Center",
-      "Department_Canonical": "Holland Computing Center"
-    },
-    {
-      "Department": "Hospital Dentistry",
-      "Department_Canonical": "Hospital Dentistry"
-    },
-    {
-      "Department": "House Officers",
-      "Department_Canonical": "House Officers"
-    },
-    {
-      "Department": "ISQA",
-      "Department_Canonical": "ISQA"
-    },
-    {
-      "Department": "Industrial and Mgmt Syst Engineering",
-      "Department_Canonical": "Industrial and Management Systems Engineering"
-    },
-    {
-      "Department": "Infectious Disease",
-      "Department_Canonical": "Infectious Disease"
-    },
-    {
-      "Department": "Information Security",
-      "Department_Canonical": "Information Security"
-    },
-    {
-      "Department": "NIC",
-      "Department_Canonical": "Innovation Campus"
-    },
-    {
-      "Department": "Inst. Effectiveness and Analytics",
-      "Department_Canonical": "Institutional Effectiveness and Analytics"
-    },
-    {
-      "Department": "Broadcasting",
-      "Department_Canonical": "Journalism and Mass Communications"
-    },
-    {
-      "Department": "Graduate Journalism",
-      "Department_Canonical": "Journalism and Mass Communications"
-    },
-    {
-      "Department": "Journalism and Mass Comm",
-      "Department_Canonical": "Journalism and Mass Communications"
-    },
-    {
-      "Department": "Kearney Division",
-      "Department_Canonical": "Kearney Division"
-    },
-    {
-      "Department": "MBA Program",
-      "Department_Canonical": "MBA Program"
-    },
-    {
-      "Department": "Mathematics",
-      "Department_Canonical": "Mathematics"
-    },
-    {
-      "Department": "Mech Eng",
-      "Department_Canonical": "Mechanical and Materials Engineering"
-    },
-    {
-      "Department": "Mechanical and Materials Engineering",
-      "Department_Canonical": "Mechanical and Materials Engineering"
-    },
-    {
-      "Department": "Medical Nutrition Education Div",
-      "Department_Canonical": "Medical Nutrition Education Div"
-    },
-    {
-      "Department": "Nebraska Center for Virology",
-      "Department_Canonical": "Nebraska Center for Virology"
-    },
-    {
-      "Department": "Nebraska DHHS",
-      "Department_Canonical": "Nebraska DHHS"
-    },
-    {
-      "Department": "EPSCOR",
-      "Department_Canonical": "Nebraska EPSCoR"
-    },
-    {
-      "Department": "Nebraska Nanoscale Facility",
-      "Department_Canonical": "Nebraska Nanoscale Facility"
-    },
-    {
-      "Department": "Nebraska Water Center",
-      "Department_Canonical": "Nebraska Water Center"
-    },
-    {
-      "Department": "Network & Technology Services",
-      "Department_Canonical": "Network & Technology Services"
-    },
-    {
-      "Department": "Neurological Sciences",
-      "Department_Canonical": "Neurological Sciences"
-    },
-    {
-      "Department": "Neurosurgery",
-      "Department_Canonical": "Neurosurgery"
-    },
-    {
-      "Department": "Nutrition and Health Sciences",
-      "Department_Canonical": "Nutrition and Health Sciences"
-    },
-    {
-      "Department": "Ob/Gyn Maternal Care Prgm/Fam Plng",
-      "Department_Canonical": "Ob/Gyn Maternal Care Prgm/Fam Plng"
-    },
-    {
-      "Department": "Ob/Gyn Women, Infants and Children",
-      "Department_Canonical": "Ob/Gyn Women, Infants and Children"
-    },
-    {
-      "Department": "Obstetrics/Gynecology",
-      "Department_Canonical": "Obstetrics/Gynecology"
-    },
-    {
-      "Department": "Panhandle Rsch and Ext Center",
-      "Department_Canonical": "Panhandle Rsch and Ext Center"
-    },
-    {
-      "Department": "Pathology/Microbiology",
-      "Department_Canonical": "Pathology/Microbiology"
-    },
-    {
-      "Department": "Pediatrics",
-      "Department_Canonical": "Pediatrics"
-    },
-    {
-      "Department": "Pharmaceutical Science",
-      "Department_Canonical": "Pharmaceutical Sciences"
-    },
-    {
-      "Department": "Pharmacology & Neuroscience",
-      "Department_Canonical": "Pharmacology & Neuroscience"
-    },
-    {
-      "Department": "Pharmacology/Exp Neuroscience",
-      "Department_Canonical": "Pharmacology/Exp Neuroscience"
-    },
-    {
-      "Department": "Pharmacy Practice",
-      "Department_Canonical": "Pharmacy Practice"
-    },
-    {
-      "Department": "Physics",
-      "Department_Canonical": "Physics and Astronomy"
-    },
-    {
-      "Department": "Physics and Astronomy",
-      "Department_Canonical": "Physics and Astronomy"
-    },
-    {
-      "Department": "Department of Plant Pathology",
-      "Department_Canonical": "Plant Pathology"
-    },
-    {
-      "Department": "Plant Pathology",
-      "Department_Canonical": "Plant Pathology"
-    },
-    {
-      "Department": "Plastic and Reconstructive",
-      "Department_Canonical": "Plastic and Reconstructive"
-    },
-    {
-      "Department": "Prim Care Network Occupational Hlth",
-      "Department_Canonical": "Prim Care Network Occupational Hlth"
-    },
-    {
-      "Department": "Primary Care Network",
-      "Department_Canonical": "Primary Care Network"
-    },
-    {
-      "Department": "Primary Care Network General",
-      "Department_Canonical": "Primary Care Network General"
-    },
-    {
-      "Department": "Psychiatry",
-      "Department_Canonical": "Psychiatry"
-    },
-    {
-      "Department": "Psychology",
-      "Department_Canonical": "Psychology"
-    },
-    {
-      "Department": "Pulmonary",
-      "Department_Canonical": "Pulmonary"
-    },
-    {
-      "Department": "Radiology",
-      "Department_Canonical": "Radiology"
-    },
-    {
-      "Department": "Research Finance and Information Systems",
-      "Department_Canonical": "Research Finance and Information Systems"
-    },
-    {
-      "Department": "Biology",
-      "Department_Canonical": "School of Biological Sciences"
-    },
-    {
-      "Department": "School of Biological Sciences",
-      "Department_Canonical": "School of Biological Sciences"
-    },
-    {
-      "Department": "Computer Science and Engineering",
-      "Department_Canonical": "School of Computing"
-    },
-    {
-      "Department": "Engineering Computer Science",
-      "Department_Canonical": "School of Computing"
-    },
-    {
-      "Department": "School of Computing",
-      "Department_Canonical": "School of Computing"
-    },
-    {
-      "Department": "School of Interdisciplinary Informat",
-      "Department_Canonical": "School of Interdisciplinary Informatics"
-    },
-    {
-      "Department": "School of Veterinary Medicine & Biomedical Sciences",
-      "Department_Canonical": "School of Veterinary Medicine and Biomedical Sciences"
-    },
-    {
-      "Department": "Social/Behavioral Sci Rsch Consort",
-      "Department_Canonical": "Social and Behavioral Sciences Research Consortium"
-    },
-    {
-      "Department": "Museum  Shop",
-      "Department_Canonical": "State Museum"
-    },
-    {
-      "Department": "Statistics",
-      "Department_Canonical": "Statistics"
-    },
-    {
-      "Department": "Student Research",
-      "Department_Canonical": "Student Research"
-    },
-    {
-      "Department": "Supply Chain Management and Analytics",
-      "Department_Canonical": "Supply Chain Management and Analytics"
-    },
-    {
-      "Department": "Telecommunications",
-      "Department_Canonical": "Telecommunications"
-    },
-    {
-      "Department": "Testing Center",
-      "Department_Canonical": "Testing Center"
-    },
-    {
-      "Department": "University Libraries",
-      "Department_Canonical": "University Libraries"
-    },
-    {
-      "Department": "Youth Learning Center",
-      "Department_Canonical": "Youth Learning Center"
+  "last_updated": "2026-10-07T19:46:19Z",
+  "windows": [
+    {
+      "days": 365,
+      "departments_completing_jobs": [
+        {
+          "Department": "Academic Affairs Office",
+          "Department_Canonical": "Academic Affairs Office"
+        },
+        {
+          "Department": "Agricultural Economics",
+          "Department_Canonical": "Agricultural Economics"
+        },
+        {
+          "Department": "Agronomy & Horticulture",
+          "Department_Canonical": "Agronomy and Horticulture"
+        },
+        {
+          "Department": "Agronomy and Horticulture",
+          "Department_Canonical": "Agronomy and Horticulture"
+        },
+        {
+          "Department": "Animal Science",
+          "Department_Canonical": "Animal Science"
+        },
+        {
+          "Department": "Anthropology",
+          "Department_Canonical": "Anthropology"
+        },
+        {
+          "Department": "Durham School Arch Engr and Const",
+          "Department_Canonical": "Architectural Engineering and Construction"
+        },
+        {
+          "Department": "Biochem and Molecular Biology",
+          "Department_Canonical": "Biochemistry"
+        },
+        {
+          "Department": "Biochemistry",
+          "Department_Canonical": "Biochemistry"
+        },
+        {
+          "Department": "Bio Process Development Facility",
+          "Department_Canonical": "Biological Process Development Facility"
+        },
+        {
+          "Department": "Biological Systems Engineering",
+          "Department_Canonical": "Biological Systems Engineering"
+        },
+        {
+          "Department": "Biological systems engineering",
+          "Department_Canonical": "Biological Systems Engineering"
+        },
+        {
+          "Department": "Biomechanics",
+          "Department_Canonical": "Biomechanics"
+        },
+        {
+          "Department": "Biostatistics",
+          "Department_Canonical": "Biostatistics"
+        },
+        {
+          "Department": "Bureau Business Research",
+          "Department_Canonical": "Bureau and Business Research"
+        },
+        {
+          "Department": "CAHP Student Affairs",
+          "Department_Canonical": "CAHP Student Affairs"
+        },
+        {
+          "Department": "School of Natural Resources",
+          "Department_Canonical": "CASNR"
+        },
+        {
+          "Department": "Survey Division - School of Nat Res",
+          "Department_Canonical": "CASNR"
+        },
+        {
+          "Department": "CON-Learning Resource Center",
+          "Department_Canonical": "CON-Learning Resource Center"
+        },
+        {
+          "Department": "Cardiology",
+          "Department_Canonical": "Cardiology"
+        },
+        {
+          "Department": "Center for Brain Biology and Behavior",
+          "Department_Canonical": "Center for Brain Biology and Behavior"
+        },
+        {
+          "Department": "Center for Public Affairs Research",
+          "Department_Canonical": "Center for Public Affairs Research"
+        },
+        {
+          "Department": "Chemical and Biomolecular Engineering",
+          "Department_Canonical": "Chemical and Biomolecular Engineering"
+        },
+        {
+          "Department": "Chemistry",
+          "Department_Canonical": "Chemistry"
+        },
+        {
+          "Department": "Chemistry and Biochemistry",
+          "Department_Canonical": "Chemistry and Biochemistry"
+        },
+        {
+          "Department": "Department of Chemistry and Biochemistry",
+          "Department_Canonical": "Chemistry and Biochemistry"
+        },
+        {
+          "Department": "Civ Eng",
+          "Department_Canonical": "Civil Engineering"
+        },
+        {
+          "Department": "Civil Engineering-Lincoln",
+          "Department_Canonical": "Civil Engineering"
+        },
+        {
+          "Department": "Civil Engineering-Omaha",
+          "Department_Canonical": "Civil Engineering"
+        },
+        {
+          "Department": "Cntr for Entrepreneurship and Rural Dev",
+          "Department_Canonical": "Cntr for Entrepreneurship and Rural Dev"
+        },
+        {
+          "Department": "Communication and Biology",
+          "Department_Canonical": "Communication and Biology"
+        },
+        {
+          "Department": "Community and Regional Planning Program",
+          "Department_Canonical": "Community and Regional Planning"
+        },
+        {
+          "Department": "Dean's Business Office",
+          "Department_Canonical": "Dean's Business Office"
+        },
+        {
+          "Department": "Department of Medical Microbiology and Immunology",
+          "Department_Canonical": "Department of Medical Microbiology and Immunology"
+        },
+        {
+          "Department": "Division of Continuing Studies",
+          "Department_Canonical": "Division of Continuing Studies"
+        },
+        {
+          "Department": "Earth and Atmospheric Sciences",
+          "Department_Canonical": "Earth and Atmospheric Sciences"
+        },
+        {
+          "Department": "Economics",
+          "Department_Canonical": "Economics"
+        },
+        {
+          "Department": "Computer and Electronics Engineering",
+          "Department_Canonical": "Electrical and Computer Engineering"
+        },
+        {
+          "Department": "Electrical and Computer Engineering",
+          "Department_Canonical": "Electrical and Computer Engineering"
+        },
+        {
+          "Department": "Engineering",
+          "Department_Canonical": "Engineering"
+        },
+        {
+          "Department": "Engineering Research Center",
+          "Department_Canonical": "Engineering"
+        },
+        {
+          "Department": "Entomology",
+          "Department_Canonical": "Entomology"
+        },
+        {
+          "Department": "Environ, Agri and Occ Health",
+          "Department_Canonical": "Environmental, Agricultural and Occupational Health"
+        },
+        {
+          "Department": "Eppley Inst Faculty",
+          "Department_Canonical": "Eppley Institute"
+        },
+        {
+          "Department": "Nebraska Cooperative Fish and Wildlife Research Unit",
+          "Department_Canonical": "Fisheries and Wildlife"
+        },
+        {
+          "Department": "Food Science and Technology",
+          "Department_Canonical": "Food Science and Technology"
+        },
+        {
+          "Department": "GI",
+          "Department_Canonical": "GI"
+        },
+        {
+          "Department": "General Education",
+          "Department_Canonical": "General Education"
+        },
+        {
+          "Department": "Genetics Cell Biology and Anatomy",
+          "Department_Canonical": "Genetics Cell Biology and Anatomy"
+        },
+        {
+          "Department": "Geography/Geology",
+          "Department_Canonical": "Geography/Geology"
+        },
+        {
+          "Department": "Education Abroad",
+          "Department_Canonical": "Global Affairs"
+        },
+        {
+          "Department": "Senior International Officer",
+          "Department_Canonical": "Global Affairs"
+        },
+        {
+          "Department": "Global Studies",
+          "Department_Canonical": "Global Studies"
+        },
+        {
+          "Department": "Goodrich",
+          "Department_Canonical": "Goodrich"
+        },
+        {
+          "Department": "Graduate Medical Education",
+          "Department_Canonical": "Graduate Medical Education"
+        },
+        {
+          "Department": "Graduate Studies",
+          "Department_Canonical": "Graduate Studies"
+        },
+        {
+          "Department": "OGS",
+          "Department_Canonical": "Graduate Studies"
+        },
+        {
+          "Department": "Greater NE Business Center",
+          "Department_Canonical": "Greater NE Business Center"
+        },
+        {
+          "Department": "Holland Computing Center",
+          "Department_Canonical": "Holland Computing Center"
+        },
+        {
+          "Department": "Hospital Dentistry",
+          "Department_Canonical": "Hospital Dentistry"
+        },
+        {
+          "Department": "House Officers",
+          "Department_Canonical": "House Officers"
+        },
+        {
+          "Department": "ISQA",
+          "Department_Canonical": "ISQA"
+        },
+        {
+          "Department": "Industrial and Mgmt Syst Engineering",
+          "Department_Canonical": "Industrial and Management Systems Engineering"
+        },
+        {
+          "Department": "Infectious Disease",
+          "Department_Canonical": "Infectious Disease"
+        },
+        {
+          "Department": "Information Security",
+          "Department_Canonical": "Information Security"
+        },
+        {
+          "Department": "NIC",
+          "Department_Canonical": "Innovation Campus"
+        },
+        {
+          "Department": "Inst. Effectiveness and Analytics",
+          "Department_Canonical": "Institutional Effectiveness and Analytics"
+        },
+        {
+          "Department": "Broadcasting",
+          "Department_Canonical": "Journalism and Mass Communications"
+        },
+        {
+          "Department": "Graduate Journalism",
+          "Department_Canonical": "Journalism and Mass Communications"
+        },
+        {
+          "Department": "Journalism and Mass Comm",
+          "Department_Canonical": "Journalism and Mass Communications"
+        },
+        {
+          "Department": "Kearney Division",
+          "Department_Canonical": "Kearney Division"
+        },
+        {
+          "Department": "MBA Program",
+          "Department_Canonical": "MBA Program"
+        },
+        {
+          "Department": "Mathematics",
+          "Department_Canonical": "Mathematics"
+        },
+        {
+          "Department": "Mech Eng",
+          "Department_Canonical": "Mechanical and Materials Engineering"
+        },
+        {
+          "Department": "Mechanical and Materials Engineering",
+          "Department_Canonical": "Mechanical and Materials Engineering"
+        },
+        {
+          "Department": "Medical Nutrition Education Div",
+          "Department_Canonical": "Medical Nutrition Education Div"
+        },
+        {
+          "Department": "Nebraska Center for Virology",
+          "Department_Canonical": "Nebraska Center for Virology"
+        },
+        {
+          "Department": "Nebraska DHHS",
+          "Department_Canonical": "Nebraska DHHS"
+        },
+        {
+          "Department": "EPSCOR",
+          "Department_Canonical": "Nebraska EPSCoR"
+        },
+        {
+          "Department": "Nebraska Nanoscale Facility",
+          "Department_Canonical": "Nebraska Nanoscale Facility"
+        },
+        {
+          "Department": "Nebraska Water Center",
+          "Department_Canonical": "Nebraska Water Center"
+        },
+        {
+          "Department": "Network & Technology Services",
+          "Department_Canonical": "Network & Technology Services"
+        },
+        {
+          "Department": "Neurological Sciences",
+          "Department_Canonical": "Neurological Sciences"
+        },
+        {
+          "Department": "Neurosurgery",
+          "Department_Canonical": "Neurosurgery"
+        },
+        {
+          "Department": "Nutrition and Health Sciences",
+          "Department_Canonical": "Nutrition and Health Sciences"
+        },
+        {
+          "Department": "Ob/Gyn Maternal Care Prgm/Fam Plng",
+          "Department_Canonical": "Ob/Gyn Maternal Care Prgm/Fam Plng"
+        },
+        {
+          "Department": "Ob/Gyn Women, Infants and Children",
+          "Department_Canonical": "Ob/Gyn Women, Infants and Children"
+        },
+        {
+          "Department": "Obstetrics/Gynecology",
+          "Department_Canonical": "Obstetrics/Gynecology"
+        },
+        {
+          "Department": "Panhandle Rsch and Ext Center",
+          "Department_Canonical": "Panhandle Rsch and Ext Center"
+        },
+        {
+          "Department": "Pathology/Microbiology",
+          "Department_Canonical": "Pathology/Microbiology"
+        },
+        {
+          "Department": "Pediatrics",
+          "Department_Canonical": "Pediatrics"
+        },
+        {
+          "Department": "Pharmaceutical Science",
+          "Department_Canonical": "Pharmaceutical Sciences"
+        },
+        {
+          "Department": "Pharmacology & Neuroscience",
+          "Department_Canonical": "Pharmacology & Neuroscience"
+        },
+        {
+          "Department": "Pharmacology/Exp Neuroscience",
+          "Department_Canonical": "Pharmacology/Exp Neuroscience"
+        },
+        {
+          "Department": "Pharmacy Practice",
+          "Department_Canonical": "Pharmacy Practice"
+        },
+        {
+          "Department": "Physics",
+          "Department_Canonical": "Physics and Astronomy"
+        },
+        {
+          "Department": "Physics and Astronomy",
+          "Department_Canonical": "Physics and Astronomy"
+        },
+        {
+          "Department": "Department of Plant Pathology",
+          "Department_Canonical": "Plant Pathology"
+        },
+        {
+          "Department": "Plant Pathology",
+          "Department_Canonical": "Plant Pathology"
+        },
+        {
+          "Department": "Plastic and Reconstructive",
+          "Department_Canonical": "Plastic and Reconstructive"
+        },
+        {
+          "Department": "Prim Care Network Occupational Hlth",
+          "Department_Canonical": "Prim Care Network Occupational Hlth"
+        },
+        {
+          "Department": "Primary Care Network",
+          "Department_Canonical": "Primary Care Network"
+        },
+        {
+          "Department": "Primary Care Network General",
+          "Department_Canonical": "Primary Care Network General"
+        },
+        {
+          "Department": "Psychiatry",
+          "Department_Canonical": "Psychiatry"
+        },
+        {
+          "Department": "Psychology",
+          "Department_Canonical": "Psychology"
+        },
+        {
+          "Department": "Pulmonary",
+          "Department_Canonical": "Pulmonary"
+        },
+        {
+          "Department": "Radiology",
+          "Department_Canonical": "Radiology"
+        },
+        {
+          "Department": "Research Finance and Information Systems",
+          "Department_Canonical": "Research Finance and Information Systems"
+        },
+        {
+          "Department": "Biology",
+          "Department_Canonical": "School of Biological Sciences"
+        },
+        {
+          "Department": "School of Biological Sciences",
+          "Department_Canonical": "School of Biological Sciences"
+        },
+        {
+          "Department": "Computer Science and Engineering",
+          "Department_Canonical": "School of Computing"
+        },
+        {
+          "Department": "Engineering Computer Science",
+          "Department_Canonical": "School of Computing"
+        },
+        {
+          "Department": "School of Computing",
+          "Department_Canonical": "School of Computing"
+        },
+        {
+          "Department": "School of Interdisciplinary Informat",
+          "Department_Canonical": "School of Interdisciplinary Informatics"
+        },
+        {
+          "Department": "School of Veterinary Medicine & Biomedical Sciences",
+          "Department_Canonical": "School of Veterinary Medicine and Biomedical Sciences"
+        },
+        {
+          "Department": "Social/Behavioral Sci Rsch Consort",
+          "Department_Canonical": "Social and Behavioral Sciences Research Consortium"
+        },
+        {
+          "Department": "Museum  Shop",
+          "Department_Canonical": "State Museum"
+        },
+        {
+          "Department": "Statistics",
+          "Department_Canonical": "Statistics"
+        },
+        {
+          "Department": "Student Research",
+          "Department_Canonical": "Student Research"
+        },
+        {
+          "Department": "Supply Chain Management and Analytics",
+          "Department_Canonical": "Supply Chain Management and Analytics"
+        },
+        {
+          "Department": "Telecommunications",
+          "Department_Canonical": "Telecommunications"
+        },
+        {
+          "Department": "Testing Center",
+          "Department_Canonical": "Testing Center"
+        },
+        {
+          "Department": "University Libraries",
+          "Department_Canonical": "University Libraries"
+        },
+        {
+          "Department": "Youth Learning Center",
+          "Department_Canonical": "Youth Learning Center"
+        }
+      ]
+    },
+    {
+      "days": 1825,
+      "departments_completing_jobs": [
+        {
+          "Department": "ADEC",
+          "Department_Canonical": "ADEC"
+        },
+        {
+          "Department": "Acad Partnerships for Instruction",
+          "Department_Canonical": "Acad Partnerships for Instruction"
+        },
+        {
+          "Department": "Academic Affairs Office",
+          "Department_Canonical": "Academic Affairs Office"
+        },
+        {
+          "Department": "Advertising",
+          "Department_Canonical": "Advertising"
+        },
+        {
+          "Department": "Agricultural Economics",
+          "Department_Canonical": "Agricultural Economics"
+        },
+        {
+          "Department": "Agricultural economics",
+          "Department_Canonical": "Agricultural economics"
+        },
+        {
+          "Department": "Agronomy",
+          "Department_Canonical": "Agronomy and Horticulture"
+        },
+        {
+          "Department": "Agronomy & Horticulture",
+          "Department_Canonical": "Agronomy and Horticulture"
+        },
+        {
+          "Department": "Agronomy and Horticulture",
+          "Department_Canonical": "Agronomy and Horticulture"
+        },
+        {
+          "Department": "Department of Agronomy and Horticulture",
+          "Department_Canonical": "Agronomy and Horticulture"
+        },
+        {
+          "Department": "Animal Science",
+          "Department_Canonical": "Animal Science"
+        },
+        {
+          "Department": "Anthropology",
+          "Department_Canonical": "Anthropology"
+        },
+        {
+          "Department": "Applied Ecology",
+          "Department_Canonical": "Applied Ecology"
+        },
+        {
+          "Department": "Durham School Arch Engr and Const",
+          "Department_Canonical": "Architectural Engineering and Construction"
+        },
+        {
+          "Department": "Architecture",
+          "Department_Canonical": "Architecture"
+        },
+        {
+          "Department": "Biochem and Molecular Biology",
+          "Department_Canonical": "Biochemistry"
+        },
+        {
+          "Department": "Biochemistry",
+          "Department_Canonical": "Biochemistry"
+        },
+        {
+          "Department": "Bio Process Development Facility",
+          "Department_Canonical": "Biological Process Development Facility"
+        },
+        {
+          "Department": "Biological Systems Engineering",
+          "Department_Canonical": "Biological Systems Engineering"
+        },
+        {
+          "Department": "Biological systems engineering",
+          "Department_Canonical": "Biological Systems Engineering"
+        },
+        {
+          "Department": "Biomechanics",
+          "Department_Canonical": "Biomechanics"
+        },
+        {
+          "Department": "Biosecurity and Biopreparedness",
+          "Department_Canonical": "Biosecurity and Biopreparedness"
+        },
+        {
+          "Department": "Biostatistics",
+          "Department_Canonical": "Biostatistics"
+        },
+        {
+          "Department": "Bureau Business Research",
+          "Department_Canonical": "Bureau and Business Research"
+        },
+        {
+          "Department": "CAHP Student Affairs",
+          "Department_Canonical": "CAHP Student Affairs"
+        },
+        {
+          "Department": "School of Natural Resources",
+          "Department_Canonical": "CASNR"
+        },
+        {
+          "Department": "Survey Division - School of Nat Res",
+          "Department_Canonical": "CASNR"
+        },
+        {
+          "Department": "CON-Continuing Education",
+          "Department_Canonical": "CON-Continuing Education"
+        },
+        {
+          "Department": "CON-Instructional Support",
+          "Department_Canonical": "CON-Instructional Support"
+        },
+        {
+          "Department": "CON-Learning Resource Center",
+          "Department_Canonical": "CON-Learning Resource Center"
+        },
+        {
+          "Department": "Cardiology",
+          "Department_Canonical": "Cardiology"
+        },
+        {
+          "Department": "Carson Ctr for Emerging Media Arts",
+          "Department_Canonical": "Carson Center for Emerging Media Arts"
+        },
+        {
+          "Department": "Cellular/Integrative Physiology",
+          "Department_Canonical": "Cellular/Integrative Physiology"
+        },
+        {
+          "Department": "Center for Brain Biology and Behavior",
+          "Department_Canonical": "Center for Brain Biology and Behavior"
+        },
+        {
+          "Department": "Center for Brain, Biology and Behavior",
+          "Department_Canonical": "Center for Brain, Biology and Behavior"
+        },
+        {
+          "Department": "Center for Plant Science Innovation",
+          "Department_Canonical": "Center for Plant Science Innovation"
+        },
+        {
+          "Department": "Center for Public Affairs Research",
+          "Department_Canonical": "Center for Public Affairs Research"
+        },
+        {
+          "Department": "Chemical and Biomolecular Engineering",
+          "Department_Canonical": "Chemical and Biomolecular Engineering"
+        },
+        {
+          "Department": "Chemistry",
+          "Department_Canonical": "Chemistry"
+        },
+        {
+          "Department": "Chemistry and Biochemistry",
+          "Department_Canonical": "Chemistry and Biochemistry"
+        },
+        {
+          "Department": "Department of Chemistry and Biochemistry",
+          "Department_Canonical": "Chemistry and Biochemistry"
+        },
+        {
+          "Department": "Civ Eng",
+          "Department_Canonical": "Civil Engineering"
+        },
+        {
+          "Department": "Civil Engineering-Lincoln",
+          "Department_Canonical": "Civil Engineering"
+        },
+        {
+          "Department": "Civil Engineering-Omaha",
+          "Department_Canonical": "Civil Engineering"
+        },
+        {
+          "Department": "Cntr for Entrepreneurship and Rural Dev",
+          "Department_Canonical": "Cntr for Entrepreneurship and Rural Dev"
+        },
+        {
+          "Department": "Communication and Biology",
+          "Department_Canonical": "Communication and Biology"
+        },
+        {
+          "Department": "Community and Regional Planning",
+          "Department_Canonical": "Community and Regional Planning"
+        },
+        {
+          "Department": "Community and Regional Planning Program",
+          "Department_Canonical": "Community and Regional Planning"
+        },
+        {
+          "Department": "Ctr on Children Families and the Law",
+          "Department_Canonical": "Ctr on Children Families and the Law"
+        },
+        {
+          "Department": "Cyber Systems",
+          "Department_Canonical": "Cyber Systems"
+        },
+        {
+          "Department": "Dean's Business Office",
+          "Department_Canonical": "Dean's Business Office"
+        },
+        {
+          "Department": "Department of Medical Microbiology and Immunology",
+          "Department_Canonical": "Department of Medical Microbiology and Immunology"
+        },
+        {
+          "Department": "Deprtament of Agronomy and Horticulture",
+          "Department_Canonical": "Deprtament of Agronomy and Horticulture"
+        },
+        {
+          "Department": "Dept of Finance Banking and Real Est",
+          "Department_Canonical": "Dept of Finance Banking and Real Est"
+        },
+        {
+          "Department": "Developmental Medicine",
+          "Department_Canonical": "Developmental Medicine"
+        },
+        {
+          "Department": "Division of Continuing Studies",
+          "Department_Canonical": "Division of Continuing Studies"
+        },
+        {
+          "Department": "Earth and Atmospheric Sciences",
+          "Department_Canonical": "Earth and Atmospheric Sciences"
+        },
+        {
+          "Department": "Economics",
+          "Department_Canonical": "Economics"
+        },
+        {
+          "Department": "Computer and Electronics Engineering",
+          "Department_Canonical": "Electrical and Computer Engineering"
+        },
+        {
+          "Department": "Electrical and Computer Engineering",
+          "Department_Canonical": "Electrical and Computer Engineering"
+        },
+        {
+          "Department": "Eng Dean's Office-Omaha",
+          "Department_Canonical": "Eng Dean's Office-Omaha"
+        },
+        {
+          "Department": "Engineering",
+          "Department_Canonical": "Engineering"
+        },
+        {
+          "Department": "Engineering Research Center",
+          "Department_Canonical": "Engineering"
+        },
+        {
+          "Department": "Entomology",
+          "Department_Canonical": "Entomology"
+        },
+        {
+          "Department": "Environmental Science",
+          "Department_Canonical": "Environmental Science"
+        },
+        {
+          "Department": "Environ, Agri and Occ Health",
+          "Department_Canonical": "Environmental, Agricultural and Occupational Health"
+        },
+        {
+          "Department": "Eppley Inst Faculty",
+          "Department_Canonical": "Eppley Institute"
+        },
+        {
+          "Department": "Family Medicine Volunteer",
+          "Department_Canonical": "Family Medicine Volunteer"
+        },
+        {
+          "Department": "Finance",
+          "Department_Canonical": "Finance"
+        },
+        {
+          "Department": "Nebraska Cooperative Fish and Wildlife Research Unit",
+          "Department_Canonical": "Fisheries and Wildlife"
+        },
+        {
+          "Department": "Food Science and Technology",
+          "Department_Canonical": "Food Science and Technology"
+        },
+        {
+          "Department": "Food Science and Technology / Biochemistry",
+          "Department_Canonical": "Food Science and Technology / Biochemistry"
+        },
+        {
+          "Department": "GI",
+          "Department_Canonical": "GI"
+        },
+        {
+          "Department": "General Education",
+          "Department_Canonical": "General Education"
+        },
+        {
+          "Department": "Genetics Cell Biology and Anatomy",
+          "Department_Canonical": "Genetics Cell Biology and Anatomy"
+        },
+        {
+          "Department": "Geography/Geology",
+          "Department_Canonical": "Geography/Geology"
+        },
+        {
+          "Department": "Education Abroad",
+          "Department_Canonical": "Global Affairs"
+        },
+        {
+          "Department": "Senior International Officer",
+          "Department_Canonical": "Global Affairs"
+        },
+        {
+          "Department": "Global Engagement",
+          "Department_Canonical": "Global Engagement"
+        },
+        {
+          "Department": "Global Studies",
+          "Department_Canonical": "Global Studies"
+        },
+        {
+          "Department": "Goodrich",
+          "Department_Canonical": "Goodrich"
+        },
+        {
+          "Department": "Graduate Medical Education",
+          "Department_Canonical": "Graduate Medical Education"
+        },
+        {
+          "Department": "Graduate Studies",
+          "Department_Canonical": "Graduate Studies"
+        },
+        {
+          "Department": "OGS",
+          "Department_Canonical": "Graduate Studies"
+        },
+        {
+          "Department": "Great Plains NITV Library",
+          "Department_Canonical": "Great Plains NITV Library"
+        },
+        {
+          "Department": "Greater NE Business Center",
+          "Department_Canonical": "Greater NE Business Center"
+        },
+        {
+          "Department": "History",
+          "Department_Canonical": "History"
+        },
+        {
+          "Department": "Hlth Pr, Soc and Behv Health",
+          "Department_Canonical": "Hlth Pr, Soc and Behv Health"
+        },
+        {
+          "Department": "Holland Computing Center",
+          "Department_Canonical": "Holland Computing Center"
+        },
+        {
+          "Department": "Hospital Dentistry",
+          "Department_Canonical": "Hospital Dentistry"
+        },
+        {
+          "Department": "House Officers",
+          "Department_Canonical": "House Officers"
+        },
+        {
+          "Department": "Human Molecular Genetics",
+          "Department_Canonical": "Human Molecular Genetics"
+        },
+        {
+          "Department": "ISQA",
+          "Department_Canonical": "ISQA"
+        },
+        {
+          "Department": "Industrial and Mgmt Syst Engineering",
+          "Department_Canonical": "Industrial and Management Systems Engineering"
+        },
+        {
+          "Department": "Infectious Disease",
+          "Department_Canonical": "Infectious Disease"
+        },
+        {
+          "Department": "Info Science and Tech",
+          "Department_Canonical": "Info Science and Tech"
+        },
+        {
+          "Department": "Info Tech/Info Systems eng",
+          "Department_Canonical": "Info Tech/Info Systems eng"
+        },
+        {
+          "Department": "Information Security",
+          "Department_Canonical": "Information Security"
+        },
+        {
+          "Department": "NIC",
+          "Department_Canonical": "Innovation Campus"
+        },
+        {
+          "Department": "Inst. Effectiveness and Analytics",
+          "Department_Canonical": "Institutional Effectiveness and Analytics"
+        },
+        {
+          "Department": "Broadcasting",
+          "Department_Canonical": "Journalism and Mass Communications"
+        },
+        {
+          "Department": "Graduate Journalism",
+          "Department_Canonical": "Journalism and Mass Communications"
+        },
+        {
+          "Department": "Journalism and Mass Comm",
+          "Department_Canonical": "Journalism and Mass Communications"
+        },
+        {
+          "Department": "Kearney Division",
+          "Department_Canonical": "Kearney Division"
+        },
+        {
+          "Department": "Law",
+          "Department_Canonical": "Law"
+        },
+        {
+          "Department": "Lincoln Clinic Administration",
+          "Department_Canonical": "Lincoln Clinic Administration"
+        },
+        {
+          "Department": "MBA Program",
+          "Department_Canonical": "MBA Program"
+        },
+        {
+          "Department": "Mathematics",
+          "Department_Canonical": "Mathematics"
+        },
+        {
+          "Department": "Mech Eng",
+          "Department_Canonical": "Mechanical and Materials Engineering"
+        },
+        {
+          "Department": "Mechanical and Materials Engineering",
+          "Department_Canonical": "Mechanical and Materials Engineering"
+        },
+        {
+          "Department": "Medical Nutrition Education Div",
+          "Department_Canonical": "Medical Nutrition Education Div"
+        },
+        {
+          "Department": "Modern Languages and Literatures",
+          "Department_Canonical": "Modern Languages and Literatures"
+        },
+        {
+          "Department": "Nebraska Center for Virology",
+          "Department_Canonical": "Nebraska Center for Virology"
+        },
+        {
+          "Department": "Nebraska DHHS",
+          "Department_Canonical": "Nebraska DHHS"
+        },
+        {
+          "Department": "EPSCOR",
+          "Department_Canonical": "Nebraska EPSCoR"
+        },
+        {
+          "Department": "Nebraska Nanoscale Facility",
+          "Department_Canonical": "Nebraska Nanoscale Facility"
+        },
+        {
+          "Department": "Nebraska Research Initiative",
+          "Department_Canonical": "Nebraska Research Initiative"
+        },
+        {
+          "Department": "Nebraska Water Center",
+          "Department_Canonical": "Nebraska Water Center"
+        },
+        {
+          "Department": "Network & Technology Services",
+          "Department_Canonical": "Network & Technology Services"
+        },
+        {
+          "Department": "Neurological Sciences",
+          "Department_Canonical": "Neurological Sciences"
+        },
+        {
+          "Department": "Neurosurgery",
+          "Department_Canonical": "Neurosurgery"
+        },
+        {
+          "Department": "None",
+          "Department_Canonical": "None"
+        },
+        {
+          "Department": "Nutrition and Health Sciences",
+          "Department_Canonical": "Nutrition and Health Sciences"
+        },
+        {
+          "Department": "ODE Distance Education Srvcs",
+          "Department_Canonical": "ODE Distance Education Srvcs"
+        },
+        {
+          "Department": "Ob/Gyn Maternal Care Prgm/Fam Plng",
+          "Department_Canonical": "Ob/Gyn Maternal Care Prgm/Fam Plng"
+        },
+        {
+          "Department": "Ob/Gyn Research Lab",
+          "Department_Canonical": "Ob/Gyn Research Lab"
+        },
+        {
+          "Department": "Ob/Gyn Women, Infants and Children",
+          "Department_Canonical": "Ob/Gyn Women, Infants and Children"
+        },
+        {
+          "Department": "Obstetrics/Gynecology",
+          "Department_Canonical": "Obstetrics/Gynecology"
+        },
+        {
+          "Department": "Office of Medical Education",
+          "Department_Canonical": "Office of Medical Education"
+        },
+        {
+          "Department": "Office of the Dean of Students",
+          "Department_Canonical": "Office of the Dean of Students"
+        },
+        {
+          "Department": "Panhandle Rsch and Ext Center",
+          "Department_Canonical": "Panhandle Rsch and Ext Center"
+        },
+        {
+          "Department": "Pathology/Microbiology",
+          "Department_Canonical": "Pathology/Microbiology"
+        },
+        {
+          "Department": "pathology",
+          "Department_Canonical": "Pathology/Microbiology"
+        },
+        {
+          "Department": "Pediatrics",
+          "Department_Canonical": "Pediatrics"
+        },
+        {
+          "Department": "Pharmaceutical Science",
+          "Department_Canonical": "Pharmaceutical Sciences"
+        },
+        {
+          "Department": "Pharmacology & Neuroscience",
+          "Department_Canonical": "Pharmacology & Neuroscience"
+        },
+        {
+          "Department": "Pharmacology/Exp Neuroscience",
+          "Department_Canonical": "Pharmacology/Exp Neuroscience"
+        },
+        {
+          "Department": "Pharmacy Practice",
+          "Department_Canonical": "Pharmacy Practice"
+        },
+        {
+          "Department": "Physics",
+          "Department_Canonical": "Physics and Astronomy"
+        },
+        {
+          "Department": "Physics and Astronomy",
+          "Department_Canonical": "Physics and Astronomy"
+        },
+        {
+          "Department": "Department of Plant Pathology",
+          "Department_Canonical": "Plant Pathology"
+        },
+        {
+          "Department": "Plant Pathology",
+          "Department_Canonical": "Plant Pathology"
+        },
+        {
+          "Department": "Plastic and Reconstructive",
+          "Department_Canonical": "Plastic and Reconstructive"
+        },
+        {
+          "Department": "Prim Care Network Occupational Hlth",
+          "Department_Canonical": "Prim Care Network Occupational Hlth"
+        },
+        {
+          "Department": "Primary Care Network",
+          "Department_Canonical": "Primary Care Network"
+        },
+        {
+          "Department": "Primary Care Network General",
+          "Department_Canonical": "Primary Care Network General"
+        },
+        {
+          "Department": "Primary Care Network Internal Med",
+          "Department_Canonical": "Primary Care Network Internal Med"
+        },
+        {
+          "Department": "Primary Care Network Ob/Gyn",
+          "Department_Canonical": "Primary Care Network Ob/Gyn"
+        },
+        {
+          "Department": "Psychiatry",
+          "Department_Canonical": "Psychiatry"
+        },
+        {
+          "Department": "Psychology",
+          "Department_Canonical": "Psychology"
+        },
+        {
+          "Department": "Pulmonary",
+          "Department_Canonical": "Pulmonary"
+        },
+        {
+          "Department": "Radiation Oncology",
+          "Department_Canonical": "Radiation Oncology"
+        },
+        {
+          "Department": "Radiation Therapy Technology Div",
+          "Department_Canonical": "Radiation Therapy Technology Div"
+        },
+        {
+          "Department": "Radiology",
+          "Department_Canonical": "Radiology"
+        },
+        {
+          "Department": "Research Data Center",
+          "Department_Canonical": "Research Data Center"
+        },
+        {
+          "Department": "Research Finance and Information Systems",
+          "Department_Canonical": "Research Finance and Information Systems"
+        },
+        {
+          "Department": "Research Resp-Human Subj Prot Prog",
+          "Department_Canonical": "Research Resp-Human Subj Prot Prog"
+        },
+        {
+          "Department": "Retirees",
+          "Department_Canonical": "Retirees"
+        },
+        {
+          "Department": "Rheumatology",
+          "Department_Canonical": "Rheumatology"
+        },
+        {
+          "Department": "School of Accountancy",
+          "Department_Canonical": "School of Accountancy"
+        },
+        {
+          "Department": "Biology",
+          "Department_Canonical": "School of Biological Sciences"
+        },
+        {
+          "Department": "School of Biological Sciences",
+          "Department_Canonical": "School of Biological Sciences"
+        },
+        {
+          "Department": "Computer Science",
+          "Department_Canonical": "School of Computing"
+        },
+        {
+          "Department": "Computer Science and Engineering",
+          "Department_Canonical": "School of Computing"
+        },
+        {
+          "Department": "Engineering Computer Science",
+          "Department_Canonical": "School of Computing"
+        },
+        {
+          "Department": "School of Computing",
+          "Department_Canonical": "School of Computing"
+        },
+        {
+          "Department": "School of Interdisciplinary Informat",
+          "Department_Canonical": "School of Interdisciplinary Informatics"
+        },
+        {
+          "Department": "School of Veterinary Medicine & Biomedical Sciences",
+          "Department_Canonical": "School of Veterinary Medicine and Biomedical Sciences"
+        },
+        {
+          "Department": "School of Veterinary Medicine and Biomedical Sciences",
+          "Department_Canonical": "School of Veterinary Medicine and Biomedical Sciences"
+        },
+        {
+          "Department": "School of Veterinary Medicine and Biomedical Sciences (SVMBS)",
+          "Department_Canonical": "School of Veterinary Medicine and Biomedical Sciences (SVMBS)"
+        },
+        {
+          "Department": "Social Work",
+          "Department_Canonical": "Social Work"
+        },
+        {
+          "Department": "Social/Behavioral Sci Rsch Consort",
+          "Department_Canonical": "Social and Behavioral Sciences Research Consortium"
+        },
+        {
+          "Department": "Sponsored Programs and Rsch Dev",
+          "Department_Canonical": "Sponsored Programs and Rsch Dev"
+        },
+        {
+          "Department": "Museum  Shop",
+          "Department_Canonical": "State Museum"
+        },
+        {
+          "Department": "Statistics",
+          "Department_Canonical": "Statistics"
+        },
+        {
+          "Department": "Student Research",
+          "Department_Canonical": "Student Research"
+        },
+        {
+          "Department": "Supply Chain Management and Analytics",
+          "Department_Canonical": "Supply Chain Management and Analytics"
+        },
+        {
+          "Department": "Telecommunications",
+          "Department_Canonical": "Telecommunications"
+        },
+        {
+          "Department": "Testing Center",
+          "Department_Canonical": "Testing Center"
+        },
+        {
+          "Department": "Johnny Carson School-Theatre and Film",
+          "Department_Canonical": "Theatre and Film"
+        },
+        {
+          "Department": "Thompson Scholar Lrng Comm",
+          "Department_Canonical": "Thompson Scholar Lrng Comm"
+        },
+        {
+          "Department": "University Libraries",
+          "Department_Canonical": "University Libraries"
+        },
+        {
+          "Department": "Vet and Biomedical Sciences",
+          "Department_Canonical": "Vet and Biomedical Sciences"
+        },
+        {
+          "Department": "Youth Learning Center",
+          "Department_Canonical": "Youth Learning Center"
+        }
+      ]
     }
   ]
 }
